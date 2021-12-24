@@ -1,0 +1,426 @@
+
+
+#main-productos {
+    .productos-intro {
+       @include intro-container;
+       background-image: linear-gradient(to top, #202020cf, #33a2f279), url(../images/productos-intro.jpg);
+
+        .productos-intro__container {
+
+
+            .section-title {
+                color: #f2f3f4;
+                font-weight: 600;
+                font-size: 3rem;
+                line-height: 1.1;
+                margin-inline-start: auto;
+                margin-inline-end: auto;
+                
+            }
+
+
+
+            .btn {
+                margin: 1rem 0;
+                padding: .5rem 1.5rem;
+            }
+        }
+    }
+
+    @media (min-width: $tablet) {
+        .productos-intro {
+            width: 95%;
+            min-height: 40vh;
+
+            .productos-intro__container {
+                width: 70%;
+
+
+                .title {
+                    width: 90%;
+                    font-size: 5rem;
+                }
+
+                .btn {
+                    display: none;
+                }
+
+            }
+        }
+    }
+
+    @media (min-width: $laptop) {
+
+
+        .productos-intro {
+            width: 95%;
+            min-height: 50vh;
+            margin-top: 2rem;
+
+            .productos-intro__container {
+                text-align: center;
+                width: 60%;
+                margin: auto;
+
+                .section-title {
+                    font-size: clamp(2rem, 4vw, 5rem);
+                }
+
+                // .sticky-title {
+                //     position: sticky;
+                //     top: 0;
+                // }
+
+                .p-large {
+                    font-size: 1.4rem;
+                }
+            }
+
+            .btn {
+                display: none;
+            }
+        }
+    }
+}
+
+#main-productos {
+    #credito {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+
+        .info {
+            
+            .info-container {
+                @include container;
+                text-align: center;
+
+                .section-title {
+                    font-weight: 600;
+                }
+
+                .credito-img {
+                    padding: 1rem;
+                    width: 90%;
+                    margin: 2rem auto;
+                }
+            }
+        }
+
+        .cards {
+            @include container;
+
+            .cards-container {
+
+                .card {
+                    .subtitle {
+                        font-weight: 600;
+                        margin-block-end: .5rem;
+                    }
+                }
+            }
+        }
+
+    }
+
+    @media (min-width: $laptop) {
+
+        // media dasktop
+        #credito {
+            padding: 5rem 0;
+            @include container;
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            gap: 3rem;
+
+            .info {
+                place-self: center;
+
+                .info-container {
+                    width: 100%;
+
+                    .title {
+                        text-align: center;
+                        font-size: 4rem;
+                    }
+
+                    .p-large {
+                        font-size: 1.25rem;
+                    }
+
+                    .credito-img {
+                        width: 90%;
+                        margin: auto;
+                        padding: 2rem;
+                    }
+                }
+            }
+
+            .cards {
+
+                .title {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
+
+#main-productos {
+    #arrendamiento {
+        // color: #f2f2f2;
+        width: 100vw;
+        padding: 5rem 0;
+
+        .info {
+
+            .info-container {
+                @include container;
+                text-align: center;
+
+                .title {
+                    font-weight: 600;
+                    font-size: 2.5rem!important;
+                }
+
+
+                .p-large {
+                    font-weight: 400;
+                    .bold {
+                        // font-weight: 600;
+                        background-color: rgb(27, 187, 102);
+                    }
+                    
+                }
+
+                .container-img {
+                    width: 100%;
+                    margin: 2rem auto;
+
+                    .lap-credito {
+                        width: 190%;
+                        transform: translateX(10%)
+                    }
+                }
+            }
+        }
+
+        .cards {
+            @include container;
+
+            .cards-container {
+
+                .card {
+
+                    .subtitle {
+                        font-weight: 600;
+
+                    }
+                }
+            }
+
+            // .p-large {
+            // color: #f2f2f2a3;
+            // }
+        }
+
+    }
+
+    @media (min-width: $tablet) {
+        #arrendamiento {
+
+            .info {
+
+                .info-container {
+
+                    .title {
+                        font-size:$big-title;
+                    }
+                    .container-img {
+                        display: grid;
+                        place-items: center;
+                        width: 100%;
+                        margin: 2rem auto;
+
+                        .lap-credito {
+                            width: 70%;
+
+                            transform: translateX(0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: $laptop) {
+        #arrendamiento {
+
+            padding: 5rem 0;
+            display: grid;
+            grid-template-rows: auto auto;
+            grid-template-areas:
+                "img"
+                "info"
+            ;
+
+            // gap: 3rem;
+            .info {
+                @include container;
+                grid-row: 1;
+                grid-column: 1;
+                grid-area: img;
+                place-self: center;
+
+                .info-container {
+                    width: 100%;
+                    text-align: center;
+
+                    .title {
+                        font-size: 4rem;
+                    }
+
+                    .p-large {
+                        font-size: 1.25rem;
+                        width: 70%;
+                        margin-inline-start: auto;
+                        margin-inline-end: auto;
+
+                        .bold {
+                            font-weight: 600;
+                        }
+                    }
+
+                    .container-img {
+                        overflow: hidden;
+                        width: 50%;
+                        margin: auto;
+                        padding: 2rem;
+
+                        .lap-credito {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .cards {
+                // background-color: #171717;
+                grid-row: 2;
+                grid-column: 1;
+                padding: 3rem;
+                width: 90vw;
+                grid-area: info;
+                place-self: center;
+
+                .cards-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 2rem;
+                }
+
+                .title {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
+
+#main-productos {
+    .banner {
+        .big-title {
+            font-weight: 700;
+            width: 70%;
+            margin-inline-start: auto;
+            margin-inline-end: auto;
+            margin-block-end: 1rem;
+        }
+
+        .subtitle {
+            width: 70%;
+        }
+    }
+}
+
+#main-productos {
+    #factoraje {
+        padding: 5rem 0;
+
+        .info {
+
+            .info-container {
+                @include container;
+
+                .title {
+                    font-weight: 600;
+                }
+
+                .credito-img {
+                    padding: 1rem;
+                    width: 90%;
+                    margin: 2rem auto;
+                }
+            }
+        }
+
+        .cards {
+            @include container;
+
+            .cards-container {
+
+                .card {
+
+                    .subtitle {
+                        font-weight: 600;
+                        margin-block-end: .5rem;
+                    }
+                }
+            }
+        }
+
+    }
+    
+    @media (min-width: $laptop) {
+
+        // media dasktop
+        #factoraje {
+
+            padding: 5rem 0;
+            @include container;
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            gap: 3rem;
+
+            .info {
+                place-self: center;
+
+                .info-container {
+                    width: 100%;
+
+                    .title {
+                        text-align: center;
+                        font-size: 4rem;
+                    }
+
+                    .p-large {
+                        font-size: 1.25rem;
+                    }
+
+                    .credito-img {
+                        width: 90%;
+                        margin: auto;
+                        padding: 2rem;
+                    }
+                }
+            }
+
+            .cards {
+                .title {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
+}
+

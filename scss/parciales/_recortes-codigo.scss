@@ -1,0 +1,140 @@
+// ? cambiar el codigo css y cargar las imagenes desde html con loading="lazy" para guardar el espacio y no salte el navegador cuando cargue la página. tambien agregar un max-width: 100% en css y height: auto;
+//! <img loading="lazy" width="" height="" src="images/business-man-owner-company-office.jpg" alt="">
+
+
+.regulacion {
+    width: 100vw;
+    position: relative;
+
+    .regulacion__img {
+        min-height: 32vh;
+        // background-image: linear-gradient(360deg,
+        //         #ffffff 10%,
+        //         #e8ebf5de 30%,
+        //         #f2f2f200 40%),
+        //     url(../../images/business-people-shaking-hands-meeting-room.jpg);
+        background-size: cover;
+        background-position: center center;
+        outline: 1px solid red;
+
+        .regulacion-img {
+            width: 140%;
+            height: 130%;
+            outline: 1px solid red;
+        }
+    }
+
+    .regulacion__content {
+        @include container;
+        min-height: 30vh;
+        width: 100vw;
+
+        // display: grid;
+        .title-container {
+            margin-top: -5rem;
+            background-image: linear-gradient(to top, #f2f2f2, #f2f2f2);
+            background-color: rgb(20, 90, 210);
+            width: 100%;
+            height: 100%;
+
+            .p-large {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    .cards-container {
+        background-color: #202020;
+        padding: 2rem;
+        color: #f2f2f2;
+
+        .p-large {
+            color: #f2f2f2a3;
+        }
+    }
+
+
+    @media only screen and (min-width:$tablet) {
+        position: relative;
+
+        .regulacion__img {
+            min-height: 38rem;
+            background-image: linear-gradient(300deg,
+                    #ffffff 10%,
+                    #e8ebf5de 30%,
+                    #d8dce885 50%,
+                    #f2f2f200 60%),
+                url(../../images/business-people-shaking-hands-meeting-room.jpg);
+        }
+
+        .regulacion__content {
+            margin: 0;
+            text-align: right;
+
+            .title-container {
+                // position: absolute;
+                // top: 23%;
+                // right: 5%;
+                // width: 45%;
+
+                .p-large {
+                    font-size: clamp(1rem, 1.5vw, 1.6rem);
+                }
+            }
+        }
+
+        .cards-container {
+
+            background-color: #202020;
+            color: #f2f2f2;
+
+            .cards-wrapper {
+                min-height: 35vh;
+                display: grid;
+                align-content: center;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 2rem;
+                padding: 1.5rem 5rem;
+
+                .card {
+                    padding: 2rem 1rem;
+
+                    .card-title {
+                        margin-bottom: 2rem;
+                    }
+
+                    .p-large {
+                        color: #f2f2f2a3;
+                    }
+                }
+
+                .card:nth-last-of-type(3) {
+                    border-right: 2px solid #f2f3f4;
+                }
+
+                .card:nth-last-of-type(2) {
+                    border-right: 2px solid #f2f3f4;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width:$laptop) {
+        .regulacion__img {
+            min-height: 35rem;
+            background-image: linear-gradient(300deg,
+                    #ffffff 10%,
+                    #e8ebf5de 30%,
+                    #d8dce885 50%,
+                    #f2f2f200 60%),
+                url(../../images/business-people-shaking-hands-meeting-room.jpg);
+            background-position: center;
+        }
+
+        .regulacion__content {
+            .title-container {
+                width: 40%;
+            }
+        }
+    }
+}

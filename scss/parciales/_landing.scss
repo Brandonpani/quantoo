@@ -1,0 +1,43 @@
+#main {
+    width: 100vw;
+    // height: 100vh;
+    background-color: #202020;
+    color: #f2f2f2;
+    display: grid;
+
+    .wrapper {
+        @include container;
+        padding-block-start: 3rem;
+        padding-block-end: 3rem;
+
+        .main__title {
+            .logo {}
+
+            .main-title {
+                line-height: 1.2;
+                padding: 1rem 0;
+            }
+
+            .main-subtitle {
+                font-size: 1.1rem;
+                font-weight: 400;
+                padding: .75rem 1.75rem;
+                background-color: rgb(20, 90, 210);
+                margin: 1rem 0;
+            }
+        }
+
+        .formulario {
+            margin-block-start: 2rem;
+
+            input {
+                margin-block-end: 1rem;
+
+                ::placeholder {}
+            }
+        }
+
+    }
+
+    .img {}
+}

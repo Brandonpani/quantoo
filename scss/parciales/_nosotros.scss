@@ -1,0 +1,60 @@
+#main-nosotros {
+
+    .hero-nosotros {
+        width: 90%;
+        margin: auto;
+        background-image: linear-gradient(to top, #202020cf, #33a2f279), url(../../images/colleagues-giving-fist-bump.jpg);
+        margin-top: 1.1rem;
+        min-height: 85vh;
+        padding: 2rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: grid;
+        place-content: center;
+
+        .hero-info {
+            outline: 1px solid red;
+            height: 100%;
+            width: 100%;
+
+            color: #f2f2f2cd;
+
+            .title {
+                color: #f2f2f2;
+            }
+
+            .arrow-down-container {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                .arrow-down {
+                    justify-self: center;
+                    display: grid;
+                    place-content: center;
+                    border-radius: 50%;
+                    width: 2rem;
+                    aspect-ratio: 1;
+                    background-color: #f2f2f2cd;
+                    font-size: 1.5rem;
+                    color: #202020;
+                    // cursor: pointer;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+}
+
+#main-nosotros {
+
+    #adn {
+        @include container;
+        padding: 5rem 0 3rem;
+
+        .adn-title {
+            outline: 1px solid red;
+        }
+    }
+}

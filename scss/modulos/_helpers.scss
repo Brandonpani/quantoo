@@ -1,0 +1,93 @@
+// body {
+//     scroll-behavior: smooth;
+// }
+
+.btn {
+    padding: .75rem 1.75rem;
+    background-color: rgb(20, 90, 210);
+    font-size: 1rem;
+    text-align: center;
+    display: inline-block;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all .6s ease-in-out;
+
+    &:focus {
+        outline-offset: .5rem;
+    }
+
+}
+
+.btn--gray {
+    background-color: #202020;
+}
+
+.btn--fill {
+    background-color: rgb(20, 90, 210);
+    color: #f2f2f2;
+    font-size: 1rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    &:before {
+        content: '';
+        position: absolute;
+        background-color: rgb(30, 108, 242);
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        // border-radius: .5rem;
+        z-index: -1;
+        transform: translateX(-100%);
+        transform-origin: left;
+        transition: transform .2s ease-in-out;
+
+
+    }
+
+    &:hover::before {
+        transform: translateX(0);
+    }
+
+
+}
+
+.cta {
+    margin-inline-end: 1rem;
+}
+
+.card {
+    border-radius: .25rem;
+    padding-bottom: 1.5rem;
+}
+
+// .card-title {
+//     display: flex;
+//     align-items: center;
+//     font-size: 1.25rem;
+//     font-weight: bold;
+//     margin-bottom: .5rem;
+// }
+
+// .icon {
+//     width: 2rem;
+//     margin-right: 1rem;
+// }
+
+// .icon-card {
+//     width: 2rem;
+//     margin-right: 1rem;
+// }
+
+
+
+
+.separador {
+    width: 90%;
+    height: 2px;
+    background-color: #2020204c;
+    margin: auto;
+}

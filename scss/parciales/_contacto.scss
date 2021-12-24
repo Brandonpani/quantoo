@@ -1,0 +1,63 @@
+#main-contacto {
+
+    #contacto {
+        width: 100vw;
+
+        .contacto__img {
+            min-height: 80vh;
+            background-image: linear-gradient(to bottom, #202020f0 20%, #22222295 60%, #20202070 90%), url(../../images/mapa-mundial-codigo-binario.jpg);
+            background-position: center left;
+            background-size: cover;
+            background-attachment: fixed;
+            display: grid;
+            place-content: start center;
+
+            .title-container {
+                // margin-block-start: 2rem;
+                padding: 2rem;
+                // background-color: #202020cb;
+                color: #f2f2f2;
+
+                .title {}
+
+                .p-normal {}
+            }
+        }
+
+        .form__container {
+            @include container;
+            margin-block-start: -15rem;
+            margin-block-end: 2rem;
+            outline: 2px solid #f2f2f2cd;
+            outline-offset: -1rem, ;
+            color: #f2f2f2;
+
+            .formulario {
+
+                padding: 2rem;
+                background-color: #202020;
+                background-image: linear-gradient(#202020cf 20%, #20202095 50%, #20202070 90%), url(../../images/mapa-mundial-codigo-binario.jpg);
+                background-position: center;
+                background-size: cover;
+
+                .title {
+                    margin-block-start: 1rem;
+                }
+
+                input {
+
+                    padding: .75rem .5rem;
+                    margin-block-end: 1rem;
+                    display: block;
+                    border: none;
+                }
+
+                input:not(:last-child) {
+                    color: #202020;
+                }
+            }
+        }
+
+        @media only screen and (min-width: $tablet) {}
+    }
+}

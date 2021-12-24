@@ -1,0 +1,168 @@
+#footer {
+    padding-top: 2.5rem;
+    background-color: $dark-bg;
+    color: #f2f3f4;
+
+    .container {
+
+        .leyenda {
+            font-size: .875rem;
+            color: rgb(183, 183, 183);
+            font-weight: 600;
+            text-align: center;
+            padding: 1rem 0 1.5rem;
+
+            i {
+                margin-right: .5rem;
+            }
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            margin-bottom: 3rem;
+            width: 100%;
+            margin: 2rem 0;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 90%;
+                height: 2px;
+                background-color: gray;
+                left: 5%;
+                bottom: -2rem;
+                margin-bottom: 1rem;
+
+            }
+
+            .footer-col {
+                width: 33%;
+                padding: 0 1rem;
+                transition: .3s ease;
+                text-align: center;
+
+                // TITULO
+                h4 {
+                    margin-bottom: 2rem;
+                    color: rgb(183, 183, 183);
+                    font-size: 1.3rem;
+                    position: relative;
+
+                    // &::before {
+                    //     content: '';
+                    //     position: absolute;
+                    //     left: 40%;
+                    //     bottom: -10px;
+                    //     height: 2px;
+                    //     width: 4rem;
+                    //     background-color: rgb(183, 183, 183);
+                    // }
+                }
+
+                ul {
+                    li:not(:last-child) {
+                        margin-bottom: .5rem;
+                    }
+
+                }
+
+                // LINKS
+                a {
+                    color: gray;
+                    margin-bottom: 1rem;
+                    display: inline-block;
+                    transition: all 0.3s ease;
+
+                    &:hover:nth-child(1) {
+                        color: rgb(20, 90, 210);
+                        padding-left: .2rem;
+                    }
+                }
+
+                // SOCIAL LINKS
+                .social-links a {
+                    display: inline-block;
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    background-color: gray;
+                    color: #f2f3f4;
+                    border-radius: 5rem;
+                    line-height: 2.5rem;
+                    text-align: center;
+                    margin-right: 1rem;
+
+                    &:hover {
+                        color: gray;
+                        background-color: #f2f3f4;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 70rem) {
+
+    #footer {
+
+        .container {
+
+            .row {
+
+                .footer-col {
+                    width: 50%;
+                    margin-bottom: 2rem;
+
+                    a {
+                        color: gray;
+                        margin-bottom: 1rem;
+                        display: inline-block;
+                        transition: all 0.3s ease;
+
+                        &:hover {
+                            color: #f2f3f4;
+                            padding-left: .2rem;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+@media (max-width: 32rem) {
+
+    #footer {
+
+        .container {
+
+            .row {
+
+                .footer-col {
+                    width: 100%;
+
+                    a {
+                        color: gray;
+                        margin-bottom: 1rem;
+                        display: inline-block;
+                        transition: all 0.3s ease;
+
+                        &:hover {
+                            color: #f2f3f4;
+                            padding-left: .2rem;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+// el footer si creo desktop first. 

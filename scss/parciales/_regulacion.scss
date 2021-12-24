@@ -1,0 +1,201 @@
+#main-regulacion {
+
+    .regulacion-intro {
+        width: 90%;
+        margin: auto;
+        background-image: linear-gradient(to top, #202020cf, #33a2f279), url(../../images/productos-intro.jpg);
+        margin-top: 1.1rem;
+        min-height: 85vh;
+        padding: 2rem;
+        color: #f2f3f4;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: grid;
+        place-content: center;
+
+        .regulacion-intro__container {
+            height: 100%;
+
+            .info {
+                color: #f2f3f4cd;
+
+                .title {
+                    color: #f2f2f2;
+                }
+
+                .p-large {
+                    margin-block-end: 1rem;
+                }
+            }
+
+
+
+        }
+    }
+
+    @media (min-width: $tablet) {
+
+        .regulacion-intro {
+            width: 95%;
+            min-height: 40vh;
+
+
+            .regulacion-intro__container {
+                width: 70%;
+
+                .info {
+                    .title {
+                        width: 90%;
+                    }
+
+                    .btn {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: $laptop) {
+
+        .regulacion-intro {
+            margin-block-start: 2rem;
+            min-height: 50vh;
+
+            .regulacion-intro__container {
+                width: 60%;
+                margin-inline-start: auto;
+                margin-inline-end: auto;
+                text-align: center;
+
+                .info {
+
+                    .title {
+                        font-size: clamp(2rem, 4vw, 5rem)
+                    }
+
+                    .p-large {
+                        font-size: 1.4rem;
+                    }
+
+
+                }
+            }
+        }
+    }
+
+
+}
+
+#main-regulacion {
+
+    #seguridad {
+
+        .info {
+
+            .info-container {
+                @include container;
+                padding-block-start: 3rem;
+                padding-block-end: 5rem;
+
+                .seguridad-title {
+
+
+                    .p-large {
+                        margin-block-end: 1rem;
+                    }
+                }
+
+                .ssl {
+                    padding: 2rem 0;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: $blue;
+                    color: #f2f2f2;
+                    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+                    .ssl-check {
+                        margin-inline-end: 1rem;
+                        color: #f2f2f2;
+                        font-size: 2.5rem;
+                    }
+
+
+                    .ssl-title {
+                        text-transform: uppercase;
+                        font-size: 1.8rem;
+                        line-height: .6;
+                        font-weight: 700;
+
+                        span {
+                            font-size: .85rem;
+                            font-weight: 300;
+                        }
+                    }
+                }
+
+
+
+            }
+        }
+
+        @media (min-width: $tablet) {
+            .info {
+
+                .info-container {
+
+                    .ssl {}
+
+                    .seguridad-title {
+
+                        text-align: center;
+
+                        .title {}
+                    }
+                }
+            }
+        }
+
+        @media (min-width: $laptop) {
+            .info {
+
+                .info-container {
+                    display: flex;
+                    gap: 2rem;
+
+                    .seguridad-title {
+                        text-align: start;
+                        margin: auto;
+
+                        .p-large {
+                            width: 85%;
+                        }
+                    }
+
+
+                    .ssl {}
+                }
+            }
+        }
+    }
+
+}
+
+#main-regulacion {
+
+    #cumplimiento {
+
+        .info {
+
+            .info-container {
+                @include container;
+                padding-block-start: 3rem;
+                padding-block-end: 5rem;
+            }
+        }
+    }
+
+}
