@@ -441,7 +441,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-productos #arrendamiento .info .info-container .p-large { font-weight: 400; }
 
-#main-productos #arrendamiento .info .info-container .p-large .bold { background-color: #1bbb66; }
+#main-productos #arrendamiento .info .info-container .p-large .bold { font-weight: 600; }
 
 #main-productos #arrendamiento .info .info-container .container-img { width: 100%; margin: 2rem auto; }
 
