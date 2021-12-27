@@ -396,6 +396,10 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 .banner .banner-content .banner-cta .call:focus .cta, .banner .banner-content .banner-cta .call:focus-within .cta, .banner .banner-content .banner-cta .call:hover .cta { -webkit-margin-end: 2rem; margin-inline-end: 2rem; }
 
+.banner .big-title { font-weight: 700; width: 70%; -webkit-margin-start: auto; margin-inline-start: auto; -webkit-margin-end: auto; margin-inline-end: auto; -webkit-margin-after: 1rem; margin-block-end: 1rem; }
+
+.banner .subtitle { width: 70%; }
+
 #main-productos .productos-intro { width: 90%; max-width: 1400px; margin: auto; margin-top: 1.1rem; min-height: 85vh; padding: 2rem; color: #f2f3f4; background-size: cover; background-repeat: no-repeat; background-position: center; display: -ms-grid; display: grid; place-content: center; border-radius: 1rem; background-image: -webkit-gradient(linear, left bottom, left top, from(#202020cf), to(#33a2f279)), url(../images/productos-intro.jpg); background-image: linear-gradient(to top, #202020cf, #33a2f279), url(../images/productos-intro.jpg); }
 
 #main-productos .productos-intro .productos-intro__container .section-title { color: #f2f3f4; font-weight: 600; font-size: 3rem; line-height: 1.1; -webkit-margin-start: auto; margin-inline-start: auto; -webkit-margin-end: auto; margin-inline-end: auto; }
@@ -467,9 +471,16 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
   #main-productos #arrendamiento .cards .cards-container { display: -ms-grid; display: grid; -ms-grid-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; gap: 2rem; }
   #main-productos #arrendamiento .cards .title { font-size: 1.3rem; } }
 
-#main-productos .banner .big-title { font-weight: 700; width: 70%; -webkit-margin-start: auto; margin-inline-start: auto; -webkit-margin-end: auto; margin-inline-end: auto; -webkit-margin-after: 1rem; margin-block-end: 1rem; }
+#main-productos .banner { width: 100%; height: auto; display: -ms-grid; display: grid; place-content: center; }
+
+#main-productos .banner .title { text-align: center; font-weight: 700; width: 100%; -webkit-padding-before: 3rem; padding-block-start: 3rem; }
 
 #main-productos .banner .subtitle { width: 70%; }
+
+@media only screen and (min-width: 768px) { #main-productos .banner .title, #main-productos .banner .subtitle { width: 60%; -webkit-margin-start: auto; margin-inline-start: auto; -webkit-margin-end: auto; margin-inline-end: auto; }
+  #main-productos .banner .title { font-size: clamp(2.5rem, 4vw, 5rem); } }
+
+@media only screen and (min-width: 1024px) { #main-productos .banner .title, #main-productos .banner .subtitle { width: 70%; -webkit-margin-start: auto; margin-inline-start: auto; -webkit-margin-end: auto; margin-inline-end: auto; } }
 
 #main-productos #factoraje { padding: 5rem 0; }
 
