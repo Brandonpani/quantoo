@@ -398,7 +398,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-productos .productos-intro { width: 90%; max-width: 1400px; margin: auto; margin-top: 1.1rem; min-height: 85vh; padding: 2rem; color: #f2f3f4; background-size: cover; background-repeat: no-repeat; background-position: center; display: -ms-grid; display: grid; place-content: center; border-radius: 1rem; background-image: -webkit-gradient(linear, left bottom, left top, from(#202020cf), to(#33a2f279)), url(../images/productos-intro.jpg); background-image: linear-gradient(to top, #202020cf, #33a2f279), url(../images/productos-intro.jpg); }
 
-#main-productos .productos-intro .productos-intro__container { width: 100%; -webkit-margin-before: auto; margin-block-start: auto; -webkit-margin-after: auto; margin-block-end: auto; }
+#main-productos .productos-intro .productos-intro__container { text-align: center; width: 100%; -webkit-margin-before: auto; margin-block-start: auto; -webkit-margin-after: auto; margin-block-end: auto; }
 
 #main-productos .productos-intro .productos-intro__container .section-title { color: #f2f3f4; font-weight: 600; font-size: 3rem; line-height: 1.1; -webkit-margin-start: auto; margin-inline-start: auto; -webkit-margin-end: auto; margin-inline-end: auto; }
 
