@@ -14,10 +14,16 @@
         background-position: center;
 
         .plataforma-intro__container {
+            text-align: center;
             margin-top: 3rem;
 
-            .title {
+            .section-title {
                 color: #f2f3f4;
+                font-weight: 600;
+                font-size: 3rem;
+                line-height: 1.1;
+                margin-inline-start: auto;
+                margin-inline-end: auto;
             }
 
             .btn {
@@ -31,6 +37,12 @@
         .plataforma-intro {
             margin-top: 2rem;
             min-height: 40vh;
+
+            .plataforma-intro__container {
+                .section-title {
+                    font-size: clamp(2rem, 4vw, 5rem);
+                }
+            }
         }
     }
 

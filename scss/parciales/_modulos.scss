@@ -8,6 +8,7 @@
 
 
         .modulos-intro__container {
+            text-align: center;
             margin-top: 3rem;
 
             .section-title {
@@ -29,12 +30,12 @@
             
             
             .modulos-intro__container {
-                width: 100%;
+                width: 70%;
                 margin-inline-start: auto;
                 margin-inline-end: auto;
 
                 .section-title {
-                    font-size: $section-title;
+                    font-size: clamp(2rem, 4vw, 5rem);
                 }
             }
         }
