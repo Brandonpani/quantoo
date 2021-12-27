@@ -502,21 +502,23 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-modulos .modulos-intro .modulos-intro__container { text-align: center; margin-top: 3rem; }
 
-#main-modulos .modulos-intro .modulos-intro__container .section-title { color: #f2f3f4; font-size: 2.5rem; }
+#main-modulos .modulos-intro .modulos-intro__container .section-title { color: #f2f3f4; font-size: 2.5rem; line-height: 1.1; }
 
 #main-modulos .modulos-intro .modulos-intro__container .btn { margin: 1rem 0; padding: .5rem 1.5rem; }
 
-@media (min-width: 768px) { #main-modulos .modulos-intro { margin-top: 2rem; min-height: 40vh; }
+@media (min-width: 768px) { #main-modulos .modulos-intro { -webkit-margin-before: 2rem; margin-block-start: 2rem; min-height: 40vh; }
   #main-modulos .modulos-intro .modulos-intro__container { width: 70%; -webkit-margin-start: auto; margin-inline-start: auto; -webkit-margin-end: auto; margin-inline-end: auto; }
   #main-modulos .modulos-intro .modulos-intro__container .section-title { font-size: clamp(2rem, 4vw, 5rem); } }
 
 @media (min-width: 1024px) { #main-modulos .modulos-intro { width: 90%; max-width: 1400px; margin: auto; margin-top: 1.1rem; min-height: 85vh; padding: 2rem; color: #f2f3f4; background-size: cover; background-repeat: no-repeat; background-position: center; display: -ms-grid; display: grid; place-content: center; border-radius: 1rem; background-image: -webkit-gradient(linear, left bottom, left top, from(#202020cf), to(#33a2f279)), url(../images/young-concentrated-businesswoman-glasses-striped-shirt-working-with-papers-home.jpg); background-image: linear-gradient(to top, #202020cf, #33a2f279), url(../images/young-concentrated-businesswoman-glasses-striped-shirt-working-with-papers-home.jpg); min-height: 50vh; -webkit-margin-before: 2rem; margin-block-start: 2rem; }
   #main-modulos .modulos-intro .modulos-intro__container { color: #f2f3f4; text-align: center; width: 60%; margin: auto; }
-  #main-modulos .modulos-intro .modulos-intro__container .title { color: #f2f3f4; }
+  #main-modulos .modulos-intro .modulos-intro__container .section-title { color: #f2f3f4; }
   #main-modulos .modulos-intro .modulos-intro__container .p-large { font-size: 1.4rem; }
   #main-modulos .modulos-intro .btn { display: none; } }
 
 #main-modulos #clientes { padding-top: 5rem; padding-bottom: 5rem; }
+
+#main-modulos #clientes .info { height: -webkit-min-content; height: -moz-min-content; height: min-content; }
 
 #main-modulos #clientes .info .info-container { width: 90%; max-width: 1400px; margin: 0 auto; }
 
@@ -526,7 +528,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 @media (min-width: 1024px) { #main-modulos #clientes { padding: 5rem 0; width: 90%; max-width: 1400px; margin: 0 auto; display: -ms-grid; display: grid; -ms-grid-columns: 2fr 3fr; grid-template-columns: 2fr 3fr; gap: 3rem; }
   #main-modulos #clientes .info { place-self: center; }
-  #main-modulos #clientes .info .info-container { width: 100%; text-align: center; }
+  #main-modulos #clientes .info .info-container { width: 90%; text-align: center; }
   #main-modulos #clientes .info .info-container .p-large { font-size: 1.25rem; }
   #main-modulos #clientes .info .info-container .credito-img { width: 100%; margin: 0; }
   #main-modulos #clientes .cards .subtitle { font-size: 1.3rem; } }
@@ -553,7 +555,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 .scroll { height: 100vh; }
 
-#main-plataforma .plataforma-intro { width: 90%; margin: auto; background-image: -webkit-gradient(linear, left bottom, left top, from(#202020cf), to(#33a2f279)), url(../../images/young-concentrated-businesswoman-glasses-striped-shirt-working-with-papers-home.jpg); background-image: linear-gradient(to top, #202020cf, #33a2f279), url(../../images/young-concentrated-businesswoman-glasses-striped-shirt-working-with-papers-home.jpg); margin-top: 1.1rem; height: 95vh; max-height: 600px; padding: 2rem; color: #f2f3f4; background-size: cover; background-repeat: no-repeat; background-position: center; }
+#main-plataforma .plataforma-intro { width: 90%; max-width: 1400px; margin: auto; margin-top: 1.1rem; min-height: 85vh; padding: 2rem; color: #f2f3f4; background-size: cover; background-repeat: no-repeat; background-position: center; display: -ms-grid; display: grid; place-content: center; border-radius: 1rem; background-image: -webkit-gradient(linear, left bottom, left top, from(#202020cf), to(#33a2f279)), url(../../images/young-concentrated-businesswoman-glasses-striped-shirt-working-with-papers-home.jpg); background-image: linear-gradient(to top, #202020cf, #33a2f279), url(../../images/young-concentrated-businesswoman-glasses-striped-shirt-working-with-papers-home.jpg); }
 
 #main-plataforma .plataforma-intro .plataforma-intro__container { text-align: center; margin-top: 3rem; }
 
