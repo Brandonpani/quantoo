@@ -172,7 +172,7 @@
 
         #rendimiento {
 
-            padding: 5rem 0;
+            padding: 5rem 0 0;
             @include container;
             display: grid;
             grid-template-rows: 1fr 1fr;
@@ -197,6 +197,9 @@
 
                     .p-large {
                         font-size: 1.25rem;
+                        width: 60%;
+                        margin-inline-start: auto;
+                        margin-inline-end: auto;
                     }
 
                     .credito-img {
@@ -241,7 +244,7 @@
 
             .info-container {
                 @include container;
-
+                text-align: center;
                 .credito-img {
                     padding: 2rem
                 }
@@ -277,6 +280,10 @@
 
                     .p-large {
                         font-size: 1.25rem;
+                        width: 60%;
+                        margin-inline-start: auto;
+                        margin-inline-end: auto;
+
                     }
 
                     .credito-img {
