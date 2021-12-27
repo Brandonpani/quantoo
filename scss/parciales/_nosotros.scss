@@ -26,16 +26,20 @@
             min-height: 50vh;
             
             
-            .modulos-intro__container {
+            .section-title {
+                font-size: clamp(2rem, 4vw, 5rem);
+                    
+            }
+            .p-large {
                 width: 70%;
                 margin-inline-start: auto;
                 margin-inline-end: auto;
-
-                .section-title {
-                    font-size: clamp(2rem, 4vw, 5rem);
-                    
-                }
             }
+                
+            .btn {
+                display: none
+            }
+                
         }
 
     }
