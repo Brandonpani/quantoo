@@ -566,8 +566,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 @media (min-width: 768px) { #main-plataforma .plataforma-intro { margin-top: 2rem; min-height: 40vh; }
   #main-plataforma .plataforma-intro .plataforma-intro__container .section-title { font-size: clamp(2rem, 4vw, 5rem); } }
 
-@media (min-width: 1024px) { #main-plataforma .plataforma-intro { padding: 2rem; width: 95%; min-height: 50vh; margin: auto; margin-top: 2rem; background-image: linear-gradient to right, #202020a3, #33a2f279, url(../../images/young-concentrated-businesswoman-glasses-striped-shirt-working-with-papers-home.jpg); background-size: cover; background-repeat: no-repeat; background-position: center 30%; display: -ms-grid; display: grid; place-content: center; }
-  #main-plataforma .plataforma-intro .plataforma-intro__container { color: #f2f3f4; text-align: center; width: 60%; margin: auto; }
+@media (min-width: 1024px) { #main-plataforma .plataforma-intro .plataforma-intro__container { color: #f2f3f4; text-align: center; width: 60%; margin: auto; }
   #main-plataforma .plataforma-intro .plataforma-intro__container .title { color: #f2f3f4; font-size: clamp(2rem, 4vw, 5rem); }
   #main-plataforma .plataforma-intro .plataforma-intro__container .p-large { font-size: 1.4rem; }
   #main-plataforma .plataforma-intro .btn { display: none; } }
