@@ -4,10 +4,10 @@
     .productos-intro {
        @include intro-container;
        background-image: linear-gradient(to top, #202020cf, #33a2f279), url(../images/productos-intro.jpg);
-
-        .productos-intro__container {
-
-
+       .productos-intro__container {
+           width: 100%;
+           margin-block-start: auto; 
+           margin-block-end: auto; 
             .section-title {
                 color: #f2f3f4;
                 font-weight: 600;
@@ -34,7 +34,8 @@
 
             .productos-intro__container {
                 width: 70%;
-
+                margin-inline-start: auto;
+                margin-inline-end: auto;
 
                 .title {
                     width: 90%;
