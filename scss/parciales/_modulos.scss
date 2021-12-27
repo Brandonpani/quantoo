@@ -9,7 +9,7 @@
 
         .modulos-intro__container {
             text-align: center;
-            margin-top: 3rem;
+            // margin-top: 3rem;
 
             .section-title {
                 color: #f2f3f4;
@@ -27,7 +27,7 @@
     @media (min-width: $tablet) {
         .modulos-intro {
             margin-block-start: 2rem;
-            min-height: 40vh;
+            min-height: 50vh;
             
             
             .modulos-intro__container {
@@ -38,6 +38,9 @@
                 .section-title {
                     font-size: clamp(2rem, 4vw, 5rem);
                     
+                }
+                .btn {
+                    display: none;
                 }
             }
         }

@@ -27,8 +27,9 @@
 
     @media (min-width: $tablet) {
         .productos-intro {
-            width: 95%;
-            min-height: 40vh;
+            // width: 95%;
+            margin-block-start: 2rem;
+            min-height: 50vh;
 
             .productos-intro__container {
                 width: 70%;
