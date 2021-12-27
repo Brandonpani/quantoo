@@ -85,7 +85,9 @@
         padding-bottom: 5rem;
 
         .info {
-            height: auto;
+            @include container;
+            text-align: center;
+            height: min-content;
             .section-title {
                 font-weight: 600;
             }
@@ -119,16 +121,15 @@
         // media dasktop
         #credito {
             padding: 5rem 0;
-            @include container;
+            
             display: grid;
             grid-template-columns: 2fr 3fr;
             gap: 3rem;
 
             .info {
-                position: sticky;
-                top: 2rem;
+               @include container;
                 text-align: center;
-               
+                place-self: center;
 
                 .title {
                     // text-align: center;
@@ -363,7 +364,10 @@
         padding: 5rem 0;
 
         .info {
-            height: auto;
+            @include container;
+            text-align: center;
+            height: 100%;
+
            
                 .title {
                     font-weight: 600;
@@ -407,9 +411,7 @@
             gap: 3rem;
             
             .info {
-                height: 100%;
-                position: sticky;
-                top: 2rem;
+                place-self: center;
                 height: min-content;
                 text-align: center;
                 // place-self: center;

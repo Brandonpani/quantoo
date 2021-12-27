@@ -113,6 +113,8 @@ html { scroll-behavior: smooth; }
 
 body { line-height: 1.55; text-rendering: optimizeSpeed; }
 
+html, body { overflow-x: hidden; }
+
 a { display: inline-block; }
 
 *, *::after, *::before { -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -414,7 +416,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-productos #credito { padding-top: 5rem; padding-bottom: 5rem; }
 
-#main-productos #credito .info { height: auto; }
+#main-productos #credito .info { width: 90%; max-width: 1400px; margin: 0 auto; text-align: center; height: -webkit-min-content; height: -moz-min-content; height: min-content; }
 
 #main-productos #credito .info .section-title { font-weight: 600; }
 
@@ -424,8 +426,8 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-productos #credito .cards .cards-container .card .subtitle { font-weight: 600; -webkit-margin-after: .5rem; margin-block-end: .5rem; }
 
-@media (min-width: 1024px) { #main-productos #credito { padding: 5rem 0; width: 90%; max-width: 1400px; margin: 0 auto; display: -ms-grid; display: grid; -ms-grid-columns: 2fr 3fr; grid-template-columns: 2fr 3fr; gap: 3rem; }
-  #main-productos #credito .info { position: -webkit-sticky; position: sticky; top: 2rem; text-align: center; }
+@media (min-width: 1024px) { #main-productos #credito { padding: 5rem 0; display: -ms-grid; display: grid; -ms-grid-columns: 2fr 3fr; grid-template-columns: 2fr 3fr; gap: 3rem; }
+  #main-productos #credito .info { width: 90%; max-width: 1400px; margin: 0 auto; text-align: center; place-self: center; }
   #main-productos #credito .info .title { font-size: 4rem; }
   #main-productos #credito .info .p-large { font-size: 1.25rem; }
   #main-productos #credito .info .credito-img { width: 90%; margin: auto; padding: 2rem; }
@@ -478,7 +480,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-productos #factoraje { padding: 5rem 0; }
 
-#main-productos #factoraje .info { height: auto; }
+#main-productos #factoraje .info { width: 90%; max-width: 1400px; margin: 0 auto; text-align: center; height: 100%; }
 
 #main-productos #factoraje .info .title { font-weight: 600; }
 
@@ -489,7 +491,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 #main-productos #factoraje .cards .cards-container .card .subtitle { font-weight: 600; -webkit-margin-after: .5rem; margin-block-end: .5rem; }
 
 @media (min-width: 1024px) { #main-productos #factoraje { height: auto; padding: 5rem 0; width: 90%; max-width: 1400px; margin: 0 auto; display: -ms-grid; display: grid; -ms-grid-columns: 2fr 3fr; grid-template-columns: 2fr 3fr; gap: 3rem; }
-  #main-productos #factoraje .info { height: 100%; position: -webkit-sticky; position: sticky; top: 2rem; height: -webkit-min-content; height: -moz-min-content; height: min-content; text-align: center; }
+  #main-productos #factoraje .info { place-self: center; height: -webkit-min-content; height: -moz-min-content; height: min-content; text-align: center; }
   #main-productos #factoraje .info .title { font-size: 4rem; }
   #main-productos #factoraje .info .p-large { font-size: 1.25rem; }
   #main-productos #factoraje .info .credito-img { width: 90%; margin: auto; padding: 2rem; }
