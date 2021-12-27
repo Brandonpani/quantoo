@@ -370,6 +370,7 @@
 
             .info-container {
                 @include container;
+                text-align: center;
 
                 .title {
                     font-weight: 600;

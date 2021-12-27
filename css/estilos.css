@@ -481,7 +481,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-productos #factoraje { padding: 5rem 0; }
 
-#main-productos #factoraje .info .info-container { width: 90%; max-width: 1400px; margin: 0 auto; }
+#main-productos #factoraje .info .info-container { width: 90%; max-width: 1400px; margin: 0 auto; text-align: center; }
 
 #main-productos #factoraje .info .info-container .title { font-weight: 600; }
 
