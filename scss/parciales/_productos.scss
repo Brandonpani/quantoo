@@ -327,16 +327,41 @@
 
 #main-productos {
     .banner {
-        .big-title {
+        // padding-block-start: 3rem;
+        width: 100%;
+        height: auto;
+        display: grid;
+        place-content: center;
+        .title {
+            text-align: center;
             font-weight: 700;
-            width: 70%;
-            margin-inline-start: auto;
-            margin-inline-end: auto;
-            margin-block-end: 1rem;
+            width: 100%;
+            padding-block-start: 3rem;
         }
 
         .subtitle {
             width: 70%;
+        }
+
+        @media only screen and (min-width: $tablet) {
+            .title,
+            .subtitle {
+                width: 60%;
+                margin-inline-start: auto;
+                margin-inline-end: auto;
+            }
+            .title {
+                font-size: $banner-title--clamp;
+            }
+        }
+        @media only screen and (min-width: $laptop) {
+            .title,
+            .subtitle {
+                width: 70%;
+                margin-inline-start: auto;
+                margin-inline-end: auto;
+            }
+            
         }
     }
 }
