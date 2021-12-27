@@ -502,7 +502,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-modulos .modulos-intro .modulos-intro__container { text-align: center; margin-top: 3rem; }
 
-#main-modulos .modulos-intro .modulos-intro__container .section-title { color: #f2f3f4; font-size: 2.5rem; line-height: 1.1; }
+#main-modulos .modulos-intro .modulos-intro__container .section-title { color: #f2f3f4; font-size: 3rem; line-height: 1.1; }
 
 #main-modulos .modulos-intro .modulos-intro__container .btn { margin: 1rem 0; padding: .5rem 1.5rem; }
 
@@ -557,13 +557,13 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-plataforma .plataforma-intro { width: 90%; max-width: 1400px; margin: auto; margin-top: 1.1rem; min-height: 85vh; padding: 2rem; color: #f2f3f4; background-size: cover; background-repeat: no-repeat; background-position: center; display: -ms-grid; display: grid; place-content: center; border-radius: 1rem; background-image: -webkit-gradient(linear, left bottom, left top, from(#202020cf), to(#33a2f279)), url(../../images/young-concentrated-businesswoman-glasses-striped-shirt-working-with-papers-home.jpg); background-image: linear-gradient(to top, #202020cf, #33a2f279), url(../../images/young-concentrated-businesswoman-glasses-striped-shirt-working-with-papers-home.jpg); }
 
-#main-plataforma .plataforma-intro .plataforma-intro__container { text-align: center; margin-top: 3rem; }
+#main-plataforma .plataforma-intro .plataforma-intro__container { text-align: center; }
 
 #main-plataforma .plataforma-intro .plataforma-intro__container .section-title { color: #f2f3f4; font-weight: 600; font-size: 3rem; line-height: 1.1; -webkit-margin-start: auto; margin-inline-start: auto; -webkit-margin-end: auto; margin-inline-end: auto; }
 
 #main-plataforma .plataforma-intro .plataforma-intro__container .btn { margin: 1rem 0; padding: .5rem 1.5rem; }
 
-@media (min-width: 768px) { #main-plataforma .plataforma-intro { margin-top: 2rem; min-height: 40vh; }
+@media (min-width: 768px) { #main-plataforma .plataforma-intro { margin-top: 2rem; min-height: 50vh; }
   #main-plataforma .plataforma-intro .plataforma-intro__container .section-title { font-size: clamp(2rem, 4vw, 5rem); } }
 
 @media (min-width: 1024px) { #main-plataforma .plataforma-intro .plataforma-intro__container { color: #f2f3f4; text-align: center; width: 60%; margin: auto; }
@@ -592,7 +592,9 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-plataforma #rendimiento { padding-top: 5rem; }
 
-#main-plataforma #rendimiento .info .info-container { width: 90%; max-width: 1400px; margin: 0 auto; }
+#main-plataforma #rendimiento .info .info-container { width: 90%; max-width: 1400px; margin: 0 auto; text-align: center; }
+
+#main-plataforma #rendimiento .info .info-container .section-title { font-size: 3rem; }
 
 #main-plataforma #rendimiento .info .info-container .credito-img { padding: 2rem; width: 100%; margin: auto; }
 

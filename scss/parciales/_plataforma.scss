@@ -3,11 +3,11 @@
     .plataforma-intro {
        @include intro-container;
        background-image: linear-gradient(to top, #202020cf, #33a2f279), url(../../images/young-concentrated-businesswoman-glasses-striped-shirt-working-with-papers-home.jpg);
-
+        
 
         .plataforma-intro__container {
             text-align: center;
-            margin-top: 3rem;
+            // margin-top: 3rem;
 
             .section-title {
                 color: #f2f3f4;
@@ -28,7 +28,7 @@
     @media (min-width: $tablet) {
         .plataforma-intro {
             margin-top: 2rem;
-            min-height: 40vh;
+            min-height: 50vh;
 
             .plataforma-intro__container {
                 .section-title {
@@ -148,7 +148,10 @@
 
             .info-container {
                 @include container;
-
+                text-align: center;
+                .section-title {
+                    font-size: 3rem;
+                }
                 .credito-img {
                     padding: 2rem;
                     width: 100%;
