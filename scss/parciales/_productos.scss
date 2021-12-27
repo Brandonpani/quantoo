@@ -85,21 +85,17 @@
         padding-bottom: 5rem;
 
         .info {
-            
-            .info-container {
-                @include container;
-                text-align: center;
-
-                .section-title {
-                    font-weight: 600;
-                }
-
-                .credito-img {
-                    padding: 1rem;
-                    width: 90%;
-                    margin: 2rem auto;
-                }
+            height: auto;
+            .section-title {
+                font-weight: 600;
             }
+
+            .credito-img {
+                padding: 1rem;
+                width: 90%;
+                margin: 2rem auto;
+            }
+            
         }
 
         .cards {
@@ -129,26 +125,26 @@
             gap: 3rem;
 
             .info {
-                place-self: center;
+                position: sticky;
+                top: 2rem;
+                text-align: center;
+               
 
-                .info-container {
-                    width: 100%;
-
-                    .title {
-                        text-align: center;
-                        font-size: 4rem;
-                    }
-
-                    .p-large {
-                        font-size: 1.25rem;
-                    }
-
-                    .credito-img {
-                        width: 90%;
-                        margin: auto;
-                        padding: 2rem;
-                    }
+                .title {
+                    // text-align: center;
+                    font-size: 4rem;
                 }
+
+                .p-large {
+                    font-size: 1.25rem;
+                }
+
+                .credito-img {
+                    width: 90%;
+                    margin: auto;
+                    padding: 2rem;
+                }
+                
             }
 
             .cards {
@@ -367,11 +363,8 @@
         padding: 5rem 0;
 
         .info {
-
-            .info-container {
-                @include container;
-                text-align: center;
-
+            height: auto;
+           
                 .title {
                     font-weight: 600;
                 }
@@ -381,7 +374,7 @@
                     width: 90%;
                     margin: 2rem auto;
                 }
-            }
+            
         }
 
         .cards {
@@ -405,37 +398,42 @@
 
         // media dasktop
         #factoraje {
-
+            height: auto;
             padding: 5rem 0;
             @include container;
+            // display: flex;
             display: grid;
             grid-template-columns: 2fr 3fr;
             gap: 3rem;
-
+            
             .info {
-                place-self: center;
+                height: 100%;
+                position: sticky;
+                top: 2rem;
+                height: min-content;
+                text-align: center;
+                // place-self: center;
 
-                .info-container {
-                    width: 100%;
+               
 
-                    .title {
-                        text-align: center;
-                        font-size: 4rem;
-                    }
-
-                    .p-large {
-                        font-size: 1.25rem;
-                    }
-
-                    .credito-img {
-                        width: 90%;
-                        margin: auto;
-                        padding: 2rem;
-                    }
+                .title {
+                    font-size: 4rem;
                 }
+
+                .p-large {
+                    font-size: 1.25rem;
+                }
+
+                .credito-img {
+                    width: 90%;
+                    margin: auto;
+                    padding: 2rem;
+                }
+                
             }
 
             .cards {
+                height: auto;
                 .title {
                     font-size: 1.3rem;
                 }
