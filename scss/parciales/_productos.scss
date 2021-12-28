@@ -303,10 +303,14 @@
         height: auto;
         display: grid;
         place-content: center;
-        .title {
-            text-align: center;
+        text-align: center;
+        .section-title {
+            color: $clr-light-gray;
+            line-height: 1.1;
             font-weight: 700;
-            width: 100%;
+            width: 70%;
+            margin-inline-start: auto;
+            margin-inline-end: auto;
             padding-block-start: 3rem;
         }
 
