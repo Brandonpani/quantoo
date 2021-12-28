@@ -518,7 +518,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-modulos #clientes .info { height: -webkit-min-content; height: -moz-min-content; height: min-content; }
 
-#main-modulos #clientes .info .info-container { width: 90%; max-width: 1400px; margin: 0 auto; }
+#main-modulos #clientes .info .info-container { width: 90%; max-width: 1400px; margin: 0 auto; text-align: center; }
 
 #main-modulos #clientes .info .info-container .credito-img { padding: 1rem; width: 90%; }
 

@@ -9,7 +9,6 @@
 
         .modulos-intro__container {
             text-align: center;
-            // margin-top: 3rem;
 
             .section-title {
                 color: #f2f3f4;
@@ -86,7 +85,7 @@
             height: min-content;
             .info-container {
                 @include container;
-
+                text-align: center;
                 .credito-img {
                     padding: 1rem;
                     width: 90%;
@@ -174,16 +173,12 @@
         .cards {
             @include container;
         }
-
     }
-
-
 
     @media (min-width: $laptop) {
 
 
         #pldft {
-
             padding: 5rem 0;
             @include container;
             display: grid;
