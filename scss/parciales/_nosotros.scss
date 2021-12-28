@@ -38,10 +38,8 @@
                 
             .btn {
                 display: none
-            }
-                
+            }       
         }
-
     }
 
     @media only screen and (min-width: $laptop) {
@@ -55,9 +53,12 @@
     #adn {
         @include container;
         padding: 5rem 0 3rem;
-
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 3rem;
         .adn-title {
-            outline: 1px solid red;
+            place-self: center;
+            text-align: center;
         }
     }
 }
