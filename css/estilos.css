@@ -402,6 +402,8 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-productos .productos-intro .productos-intro__container .section-title { color: #f2f3f4; font-weight: 600; font-size: 3rem; line-height: 1.1; -webkit-margin-start: auto; margin-inline-start: auto; -webkit-margin-end: auto; margin-inline-end: auto; }
 
+#main-productos .productos-intro .productos-intro__container .p-large { color: #f2f2f2; }
+
 #main-productos .productos-intro .productos-intro__container .btn { margin: 1rem 0; padding: .5rem 1.5rem; }
 
 @media (min-width: 768px) { #main-productos .productos-intro { -webkit-margin-before: 2rem; margin-block-start: 2rem; min-height: 50vh; }
@@ -503,6 +505,8 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-modulos .modulos-intro .modulos-intro__container .section-title { color: #f2f3f4; font-size: 3rem; line-height: 1.1; }
 
+#main-modulos .modulos-intro .modulos-intro__container .p-large { color: #f2f2f2; }
+
 #main-modulos .modulos-intro .modulos-intro__container .btn { margin: 1rem 0; padding: .5rem 1.5rem; }
 
 @media (min-width: 768px) { #main-modulos .modulos-intro { -webkit-margin-before: 2rem; margin-block-start: 2rem; min-height: 50vh; }
@@ -555,7 +559,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 .scroll { height: 100vh; }
 
-#main-plataforma .plataforma-intro { width: 90%; max-width: 1400px; margin: auto; margin-top: 1.1rem; min-height: 85vh; padding: 2rem; color: #f2f3f4; background-size: cover; background-repeat: no-repeat; background-position: center; display: -ms-grid; display: grid; place-content: center; border-radius: 1rem; background-image: -webkit-gradient(linear, left bottom, left top, from(#202020cf), to(#33a2f279)), url(../../images/young-concentrated-businesswoman-glasses-striped-shirt-working-with-papers-home.jpg); background-image: linear-gradient(to top, #202020cf, #33a2f279), url(../../images/young-concentrated-businesswoman-glasses-striped-shirt-working-with-papers-home.jpg); }
+#main-plataforma .plataforma-intro { width: 90%; max-width: 1400px; margin: auto; margin-top: 1.1rem; min-height: 85vh; padding: 2rem; color: #f2f3f4; background-size: cover; background-repeat: no-repeat; background-position: center; display: -ms-grid; display: grid; place-content: center; border-radius: 1rem; background-image: -webkit-gradient(linear, left bottom, left top, from(#202020cf), to(#33a2f279)), url(../../images/data-center-with-server-racks-in-corridor-room-3d-render-of-digital-data-and-cloud-technology.jpg); background-image: linear-gradient(to top, #202020cf, #33a2f279), url(../../images/data-center-with-server-racks-in-corridor-room-3d-render-of-digital-data-and-cloud-technology.jpg); background-position: bottom; }
 
 #main-plataforma .plataforma-intro .plataforma-intro__container { text-align: center; }
 
@@ -687,6 +691,8 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 #main-nosotros .nosotros-intro .hero-info { height: 100%; width: 100%; text-align: center; color: #f2f2f2cd; }
 
 #main-nosotros .nosotros-intro .hero-info .section-title { color: #f2f2f2; }
+
+#main-nosotros .nosotros-intro .hero-info .p-large { color: #f2f2f2; }
 
 @media only screen and (min-width: 768px) { #main-nosotros .nosotros-intro { -webkit-margin-before: 2rem; margin-block-start: 2rem; min-height: 50vh; }
   #main-nosotros .nosotros-intro .section-title { font-size: clamp(2rem, 4vw, 5rem); }

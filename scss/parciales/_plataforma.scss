@@ -1,8 +1,9 @@
 #main-plataforma {
-
+    
     .plataforma-intro {
        @include intro-container;
-       background-image: linear-gradient(to top, #202020cf, #33a2f279), url(../../images/young-concentrated-businesswoman-glasses-striped-shirt-working-with-papers-home.jpg);
+       background-image: linear-gradient(to top, #202020cf, #33a2f279), url(../../images/data-center-with-server-racks-in-corridor-room-3d-render-of-digital-data-and-cloud-technology.jpg);
+        background-position: bottom;
         
 
         .plataforma-intro__container {
@@ -26,7 +27,7 @@
             }
         }
     }
-
+    
     @media (min-width: $tablet) {
         .plataforma-intro {
             margin-top: 2rem;
