@@ -180,7 +180,7 @@
             padding: 5rem 0 0;
             @include container;
             display: grid;
-            grid-template-rows: 1fr 1fr;
+            grid-template-rows: 1fr auto;
             grid-template-areas:
                 "img"
                 "info"
@@ -227,6 +227,7 @@
                 place-self: center;
 
                 .cards-container {
+                    padding-block-start: 3rem;
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     gap: 2rem;
