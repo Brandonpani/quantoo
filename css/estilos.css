@@ -561,6 +561,8 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-plataforma .plataforma-intro .plataforma-intro__container .section-title { color: #f2f3f4; font-weight: 600; font-size: 3rem; line-height: 1.1; -webkit-margin-start: auto; margin-inline-start: auto; -webkit-margin-end: auto; margin-inline-end: auto; }
 
+#main-plataforma .plataforma-intro .plataforma-intro__container .p-large { color: #f2f2f2; }
+
 #main-plataforma .plataforma-intro .plataforma-intro__container .btn { margin: 1rem 0; padding: .5rem 1.5rem; }
 
 @media (min-width: 768px) { #main-plataforma .plataforma-intro { margin-top: 2rem; min-height: 50vh; }
