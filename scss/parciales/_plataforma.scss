@@ -141,6 +141,14 @@
         }
     }
 }
+#main-plataforma {
+
+    .banner {
+     .p-large {
+         color: $clr-light-gray;
+     }   
+    }
+}
 
 #main-plataforma {
     #rendimiento {
@@ -250,10 +258,19 @@
 
             .info-container {
                 @include container;
-                text-align: center;
+                .section-title,
+                .p-large {
+                    text-align: center;
+                }
                 .credito-img {
                     margin-block-start: 2rem;
                     margin-block-end: 2rem;
+                    // outline: 1px solid red;
+                    
+                    .fig-cap {
+                        margin-block-start: .5rem;
+                        color: #6b6b6b;
+                    }
                 }
             }
         }
@@ -275,7 +292,7 @@
             gap: 3rem;
 
             .info {
-                place-self: center;
+                
 
                 .info-container {
                     width: 100%;
@@ -298,6 +315,7 @@
                         place-items: center;
                         padding: 0;
                         margin: 2rem auto;
+                       
 
                         .lap-credito {
                             width: 60%;
@@ -321,8 +339,4 @@
             }
         }
     }
-}
-
-.scroll {
-    height: 100vh;
 }

@@ -159,7 +159,9 @@ body { font-family: 'poppins', sans-serif; }
 
 .span-accnt-clr { color: #145ad2; }
 
-.p-large { font-weight: 400; font-size: 1.125rem; }
+.p-large { font-weight: 400; font-size: 1.125rem; color: #454558; }
+
+.p-large--color { color: #454558; }
 
 .p-normal { font-size: 1rem; font-weight: 300; -webkit-margin-after: 1rem; margin-block-end: 1rem; }
 
@@ -591,6 +593,8 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
   #main-plataforma #seguridad .info .info-container .credito-img .lap-credito { width: 100%; }
   #main-plataforma #seguridad .cards .subtitle { font-size: 1.3rem; } }
 
+#main-plataforma .banner .p-large { color: #f2f2f2; }
+
 #main-plataforma #rendimiento { padding-top: 5rem; }
 
 #main-plataforma #rendimiento .info .info-container { width: 90%; max-width: 1400px; margin: 0 auto; text-align: center; }
@@ -616,14 +620,17 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-plataforma #nube { padding-top: 5rem; padding-bottom: 5rem; }
 
-#main-plataforma #nube .info .info-container { width: 90%; max-width: 1400px; margin: 0 auto; text-align: center; }
+#main-plataforma #nube .info .info-container { width: 90%; max-width: 1400px; margin: 0 auto; }
+
+#main-plataforma #nube .info .info-container .section-title, #main-plataforma #nube .info .info-container .p-large { text-align: center; }
 
 #main-plataforma #nube .info .info-container .credito-img { -webkit-margin-before: 2rem; margin-block-start: 2rem; -webkit-margin-after: 2rem; margin-block-end: 2rem; }
+
+#main-plataforma #nube .info .info-container .credito-img .fig-cap { -webkit-margin-before: .5rem; margin-block-start: .5rem; color: #6b6b6b; }
 
 #main-plataforma #nube .cards { width: 90%; max-width: 1400px; margin: 0 auto; }
 
 @media (min-width: 1024px) { #main-plataforma #nube { padding: 5rem 0; width: 90%; max-width: 1400px; margin: 0 auto; display: -ms-grid; display: grid; gap: 3rem; }
-  #main-plataforma #nube .info { place-self: center; }
   #main-plataforma #nube .info .info-container { width: 100%; }
   #main-plataforma #nube .info .info-container .title { text-align: center; font-size: 4rem; }
   #main-plataforma #nube .info .info-container .p-large { font-size: 1.25rem; width: 60%; -webkit-margin-start: auto; margin-inline-start: auto; -webkit-margin-end: auto; margin-inline-end: auto; }
@@ -632,8 +639,6 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
   #main-plataforma #nube .cards { place-self: center; }
   #main-plataforma #nube .cards .cards-container { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 2rem; }
   #main-plataforma #nube .cards .subtitle { font-size: 1.3rem; } }
-
-.scroll { height: 100vh; }
 
 #main-regulacion .regulacion-intro { width: 90%; margin: auto; background-image: -webkit-gradient(linear, left bottom, left top, from(#202020cf), to(#33a2f279)), url(../../images/productos-intro.jpg); background-image: linear-gradient(to top, #202020cf, #33a2f279), url(../../images/productos-intro.jpg); margin-top: 1.1rem; min-height: 85vh; padding: 2rem; color: #f2f3f4; background-size: cover; background-repeat: no-repeat; background-position: center; display: -ms-grid; display: grid; place-content: center; }
 
