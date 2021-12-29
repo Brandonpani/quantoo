@@ -618,7 +618,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-plataforma #nube .info .info-container { width: 90%; max-width: 1400px; margin: 0 auto; text-align: center; }
 
-#main-plataforma #nube .info .info-container .credito-img { padding: 2rem; }
+#main-plataforma #nube .info .info-container .credito-img { -webkit-margin-before: 2rem; margin-block-start: 2rem; -webkit-margin-after: 2rem; margin-block-end: 2rem; }
 
 #main-plataforma #nube .cards { width: 90%; max-width: 1400px; margin: 0 auto; }
 

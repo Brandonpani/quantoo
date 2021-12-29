@@ -252,7 +252,8 @@
                 @include container;
                 text-align: center;
                 .credito-img {
-                    padding: 2rem
+                    margin-block-start: 2rem;
+                    margin-block-end: 2rem;
                 }
             }
         }
