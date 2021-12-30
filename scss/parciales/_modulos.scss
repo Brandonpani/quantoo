@@ -148,11 +148,14 @@
 
 #main-modulos {
     .banner {
+        text-align: centers;
         .section-title {
             width: 70%;
             padding-block-start: 3rem;
             line-height: 1.1;
             color: $clr-light-gray;
+            margin-inline-start: auto;
+            margin-inline-end: auto;
         }
     }
 }

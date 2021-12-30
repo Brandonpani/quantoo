@@ -1,13 +1,48 @@
-// .banner {
-//     .big-title {
-//         font-weight: 700;
-//         width: 70%;
-//         margin-inline-start: auto;
-//         margin-inline-end: auto;
-//         margin-block-end: 1rem;
-//     }
+.banner {
 
-//     .subtitle {
-//         width: 70%;
-//     }
-// }
+    min-height: 50vh;
+    width: 100vw;
+    display: grid;
+    place-content: center;
+    background-image: linear-gradient(to right, #2020208c, #33a2f25b),
+    url(../images/plataforma-intro-ofcina-quanto.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: #f2f3f4;
+    
+    .banner-content {
+        @include container;
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+
+        .banner-title {
+            width: 80%;
+            margin-inline-start: auto;
+            margin-inline-end: auto;
+            
+            .section-title {
+                margin-block-end: 2rem;
+                color: $clr-light-gray;
+            }
+            .p-large {
+                color: $clr-light-gray;
+                font-size: 1.4rem;
+            }
+        }
+
+        .banner-cta {
+
+            .call {
+                transition: all .3s ease-in-out;
+
+                &:focus .cta,
+                &:focus-within .cta,
+                &:hover .cta {
+                    margin-inline-end: 2rem;
+                }
+            }
+        }
+    }
+}
