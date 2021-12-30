@@ -559,7 +559,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 .scroll { height: 100vh; }
 
-#main-plataforma .plataforma-intro { width: 90%; max-width: 1400px; margin: auto; margin-top: 1.1rem; min-height: 85vh; padding: 2rem; color: #f2f3f4; background-size: cover; background-repeat: no-repeat; background-position: center; display: -ms-grid; display: grid; place-content: center; border-radius: 1rem; background-image: -webkit-gradient(linear, left bottom, left top, from(#20202071), to(#33a2f244)), url(../../images/plataforma-servidores-quanto-intro.jpg); background-image: linear-gradient(to top, #20202071, #33a2f244), url(../../images/plataforma-servidores-quanto-intro.jpg); background-position: center; background-size: cover; }
+#main-plataforma .plataforma-intro { width: 90%; max-width: 1400px; margin: auto; margin-top: 1.1rem; min-height: 85vh; padding: 2rem; color: #f2f3f4; background-size: cover; background-repeat: no-repeat; background-position: center; display: -ms-grid; display: grid; place-content: center; border-radius: 1rem; background-image: -webkit-gradient(linear, left bottom, left top, from(#20202071), to(#33a2f244)), url(../../images/plataforma_servidores_quanto_intro.jpg); background-image: linear-gradient(to top, #20202071, #33a2f244), url(../../images/plataforma_servidores_quanto_intro.jpg); background-position: center; background-size: cover; }
 
 #main-plataforma .plataforma-intro .plataforma-intro__container { text-align: center; }
 
