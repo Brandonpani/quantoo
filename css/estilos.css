@@ -686,7 +686,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-regulacion #cumplimiento .info .info-container { width: 90%; max-width: 1400px; margin: 0 auto; -webkit-padding-before: 3rem; padding-block-start: 3rem; -webkit-padding-after: 5rem; padding-block-end: 5rem; }
 
-#main-nosotros .nosotros-intro { width: 90%; max-width: 1400px; margin: auto; margin-top: 1.1rem; min-height: 85vh; padding: 2rem; color: #f2f3f4; background-size: cover; background-repeat: no-repeat; background-position: center; display: -ms-grid; display: grid; place-content: center; border-radius: 1rem; background-image: -webkit-gradient(linear, left bottom, left top, from(#202020cf), to(#33a2f279)), url(../../images/colleagues-giving-fist-bump.jpg); background-image: linear-gradient(to top, #202020cf, #33a2f279), url(../../images/colleagues-giving-fist-bump.jpg); }
+#main-nosotros .nosotros-intro { width: 90%; max-width: 1400px; margin: auto; margin-top: 1.1rem; min-height: 85vh; padding: 2rem; color: #f2f3f4; background-size: cover; background-repeat: no-repeat; background-position: center; display: -ms-grid; display: grid; place-content: center; border-radius: 1rem; background-image: -webkit-gradient(linear, left bottom, left top, from(#202020cf), to(#33a2f279)), url(../images/colleagues-giving-fist-bump.jpg); background-image: linear-gradient(to top, #202020cf, #33a2f279), url(../images/colleagues-giving-fist-bump.jpg); }
 
 #main-nosotros .nosotros-intro .hero-info { height: 100%; width: 100%; text-align: center; color: #f2f2f2cd; }
 
