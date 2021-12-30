@@ -319,6 +319,10 @@
 
         .subtitle {
             width: 70%;
+            margin-inline-start: auto;
+            margin-inline-end: auto;
+            padding-block-end: 3rem;
+            
         }
 
         @media only screen and (min-width: $tablet) {

@@ -474,7 +474,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-productos .banner .section-title { color: #f2f2f2; line-height: 1.1; font-weight: 700; width: 70%; -webkit-margin-start: auto; margin-inline-start: auto; -webkit-margin-end: auto; margin-inline-end: auto; -webkit-padding-before: 3rem; padding-block-start: 3rem; }
 
-#main-productos .banner .subtitle { width: 70%; }
+#main-productos .banner .subtitle { width: 70%; -webkit-margin-start: auto; margin-inline-start: auto; -webkit-margin-end: auto; margin-inline-end: auto; -webkit-padding-after: 3rem; padding-block-end: 3rem; }
 
 @media only screen and (min-width: 768px) { #main-productos .banner .title, #main-productos .banner .subtitle { width: 60%; -webkit-margin-start: auto; margin-inline-start: auto; -webkit-margin-end: auto; margin-inline-end: auto; }
   #main-productos .banner .title { font-size: clamp(2.5rem, 4vw, 5rem); } }
