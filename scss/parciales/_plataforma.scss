@@ -2,8 +2,9 @@
     
     .plataforma-intro {
        @include intro-container;
-       background-image: linear-gradient(to top, #20202071, #33a2f244), url(../../images/plataforma-sevidores-quanto.jpg);
+       background-image: linear-gradient(to top, #20202071, #33a2f244), url(../../images/plataforma-servidores-quanto-intro.jpg);
         background-position: center;
+        background-size: cover;
         // transform: translateY(30rem);
 
         .plataforma-intro__container {
