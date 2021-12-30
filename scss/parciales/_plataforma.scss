@@ -2,9 +2,9 @@
     
     .plataforma-intro {
        @include intro-container;
-       background-image: linear-gradient(to top, #202020cf, #33a2f279), url(../../images/server-plataforma.jpg);
+       background-image: linear-gradient(to top, #20202071, #33a2f244), url(../../images/stock-photo-server-room-data-center-rackmount-led-console-backup-mining-hosting-mainframe-farm-and-1925160131.jpg);
         background-position: center;
-        
+        // transform: translateY(30rem);
 
         .plataforma-intro__container {
             text-align: center;
