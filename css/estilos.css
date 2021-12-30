@@ -559,7 +559,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 .scroll { height: 100vh; }
 
-#main-plataforma .plataforma-intro { width: 90%; max-width: 1400px; margin: auto; margin-top: 1.1rem; min-height: 85vh; padding: 2rem; color: #f2f3f4; background-size: cover; background-repeat: no-repeat; background-position: center; display: -ms-grid; display: grid; place-content: center; border-radius: 1rem; background-image: -webkit-gradient(linear, left bottom, left top, from(#20202071), to(#33a2f244)), url(../../images/stock-photo-server-room-data-center-rackmount-led-console-backup-mining-hosting-mainframe-farm-and-1925160131.jpg); background-image: linear-gradient(to top, #20202071, #33a2f244), url(../../images/stock-photo-server-room-data-center-rackmount-led-console-backup-mining-hosting-mainframe-farm-and-1925160131.jpg); background-position: center; }
+#main-plataforma .plataforma-intro { width: 90%; max-width: 1400px; margin: auto; margin-top: 1.1rem; min-height: 85vh; padding: 2rem; color: #f2f3f4; background-size: cover; background-repeat: no-repeat; background-position: center; display: -ms-grid; display: grid; place-content: center; border-radius: 1rem; background-image: -webkit-gradient(linear, left bottom, left top, from(#20202071), to(#33a2f244)), url(../../images/plataforma-sevidores-quanto.jpg); background-image: linear-gradient(to top, #20202071, #33a2f244), url(../../images/plataforma-sevidores-quanto.jpg); background-position: center; }
 
 #main-plataforma .plataforma-intro .plataforma-intro__container { text-align: center; }
 
