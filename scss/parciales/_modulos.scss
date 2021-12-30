@@ -148,12 +148,17 @@
 
 #main-modulos {
     .banner {
-        text-align: centers;
+        text-align: center;
         .section-title {
             width: 70%;
             padding-block-start: 3rem;
             line-height: 1.1;
             color: $clr-light-gray;
+            margin-inline-start: auto;
+            margin-inline-end: auto;
+        }
+        .subtitle {
+            width: 70%;
             margin-inline-start: auto;
             margin-inline-end: auto;
         }
@@ -168,7 +173,7 @@
 
             .info-container {
                 @include container;
-
+                text-align: center;
                 .credito-img {
                     padding: 1rem;
                     width: 90%;
@@ -204,7 +209,7 @@
 
                 .info-container {
                     width: 100%;
-                    text-align: center;
+                    
 
                     .title {
                         font-size: 4rem;
