@@ -23,17 +23,17 @@
             margin-inline-end: auto;
             
             .section-title {
-                margin-block-end: 2rem;
+                margin-block-end: 1rem;
                 color: $clr-light-gray;
             }
             .p-large {
                 color: $clr-light-gray;
                 font-size: 1.4rem;
+                margin-block-end: 1rem;
             }
         }
 
         .banner-cta {
-
             .call {
                 transition: all .3s ease-in-out;
 
