@@ -269,7 +269,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-index #productos .productos__content .title-container { -webkit-margin-before: 1rem; margin-block-start: 1rem; text-align: center; }
 
-#main-index #productos .productos__content .title-container h3.section-title { color: #000; font-size: 2.5rem; }
+#main-index #productos .productos__content .title-container h3.section-title { color: #000; font-size: clamp(1.8rem, 3vw, 2.5rem); }
 
 #main-index #productos .productos__content .title-container .p-large { color: #000000bd; -webkit-margin-after: 2rem; margin-block-end: 2rem; }
 
@@ -277,19 +277,19 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-index #productos .cards-container { -webkit-margin-before: 3rem; margin-block-start: 3rem; -webkit-margin-after: 3rem; margin-block-end: 3rem; }
 
-#main-index #productos .cards-container .subtitle { text-align: center; font-size: 2rem; line-height: 1.2; font-weight: 600; color: #000; width: 100%; margin: 0 auto; -webkit-margin-after: 2rem; margin-block-end: 2rem; }
+#main-index #productos .cards-container .section-title { text-align: center; line-height: 1.1; color: #000; width: 80%; margin: 0 auto; -webkit-margin-after: 2rem; margin-block-end: 2rem; }
 
-#main-index #productos .cards-container .subtitle span { color: #145ad2; }
+#main-index #productos .cards-container .section-title span { color: #145ad2; }
 
 #main-index #productos .cards-container .cards-wrapper { width: 90%; max-width: 1400px; margin: 0 auto; border-radius: .3rem; display: -ms-grid; display: grid; gap: 1rem; }
 
 #main-index #productos .cards-container .cards-wrapper .img-cards { height: 100%; -o-object-fit: cover; object-fit: cover; -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); }
 
-#main-index #productos .cards-container .cards-wrapper .card { background-color: #1d1d1d; padding: 1.5rem; -webkit-box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2); box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2); color: #f2f2f2; }
+#main-index #productos .cards-container .cards-wrapper .card { padding: 1.5rem; -webkit-box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2); box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2); }
 
 #main-index #productos .cards-container .cards-wrapper .card .icon-container .clock, #main-index #productos .cards-container .cards-wrapper .card .icon-container .multi-icon { font-size: 2rem; margin-top: 1rem; margin-bottom: 1rem; color: #145ad2; }
 
-#main-index #productos .cards-container .cards-wrapper .card .card-title { font-size: 2rem; line-height: 1.2; color: #145ad2; -webkit-margin-after: 1rem; margin-block-end: 1rem; font-weight: 600; }
+#main-index #productos .cards-container .cards-wrapper .card .card-title { font-size: 2rem; line-height: 1.2; color: #000; -webkit-margin-after: 1rem; margin-block-end: 1rem; font-weight: 600; }
 
 #main-index #productos .cards-container .cards-wrapper .card .card-title .clock, #main-index #productos .cards-container .cards-wrapper .card .card-title .multi-icon { margin-right: 1rem; }
 
