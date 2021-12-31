@@ -263,7 +263,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-index #productos .productos__content { width: 90%; max-width: 1400px; margin: 0 auto; padding: 2rem 0; }
 
-#main-index #productos .productos__content .section-title { font-size: 5rem; color: #000; line-height: 1.1; -webkit-margin-after: 2rem; margin-block-end: 2rem; }
+#main-index #productos .productos__content .section-title { color: #000; line-height: 1.1; -webkit-margin-after: 2rem; margin-block-end: 2rem; }
 
 #main-index #productos .productos__content .productos__img img { aspect-ratio: 8/5; }
 
