@@ -54,13 +54,32 @@
 
     #adn {
         @include container;
-        padding: 5rem 0 3rem;
-        display: grid;
-        grid-template-columns: 2fr 3fr;
-        gap: 3rem;
+
         .adn-title {
-            place-self: center;
             text-align: center;
+            margin-block-start:3rem;
+            margin-block-end:3rem;
+        }
+        .adn-cards {
+
+            .card {
+                padding-block-end: 1.5rem;
+            }
+        }
+    }
+
+    @media only screen and (min-width:$tablet) {
+
+        #adn {
+            @include container;
+            padding: 5rem 0 3rem;
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            gap: 3rem;
+            .adn-title {
+                place-self: center;
+                text-align: center;
+            }
         }
     }
 }

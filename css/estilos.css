@@ -707,9 +707,14 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
   #main-nosotros .nosotros-intro .p-large { width: 70%; -webkit-margin-start: auto; margin-inline-start: auto; -webkit-margin-end: auto; margin-inline-end: auto; }
   #main-nosotros .nosotros-intro .btn { display: none; } }
 
-#main-nosotros #adn { width: 90%; max-width: 1400px; margin: 0 auto; padding: 5rem 0 3rem; display: -ms-grid; display: grid; -ms-grid-columns: 2fr 3fr; grid-template-columns: 2fr 3fr; gap: 3rem; }
+#main-nosotros #adn { width: 90%; max-width: 1400px; margin: 0 auto; }
 
-#main-nosotros #adn .adn-title { place-self: center; text-align: center; }
+#main-nosotros #adn .adn-title { text-align: center; -webkit-margin-before: 3rem; margin-block-start: 3rem; -webkit-margin-after: 3rem; margin-block-end: 3rem; }
+
+#main-nosotros #adn .adn-cards .card { -webkit-padding-after: 1.5rem; padding-block-end: 1.5rem; }
+
+@media only screen and (min-width: 768px) { #main-nosotros #adn { width: 90%; max-width: 1400px; margin: 0 auto; padding: 5rem 0 3rem; display: -ms-grid; display: grid; -ms-grid-columns: 2fr 3fr; grid-template-columns: 2fr 3fr; gap: 3rem; }
+  #main-nosotros #adn .adn-title { place-self: center; text-align: center; } }
 
 #main-contacto #contacto { width: 100vw; }
 
