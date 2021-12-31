@@ -160,13 +160,18 @@
             @include container;
 
             padding: 2rem 0;
-
+            .section-title {
+                font-size: 5rem;
+                color: $clr-dark-text;
+                line-height: 1.1;
+                margin-block-end: 2rem;
+            }
             .productos__img {
 
                 img {
-                    border-radius: .3rem;
+                    // border-radius: .3rem;
                     aspect-ratio: 8/5;
-                    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+                    // box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
                 }
             }
 
@@ -174,14 +179,17 @@
                 margin-block-start: 1rem;
                 text-align: center;
 
-                .title {
+                
+                h3.section-title {
                     color: $clr-dark-text;
-                    font-weight: 500;
+                    font-size: 2.5rem;
+
                 }
 
-                .p-normal {
+                .p-large {
                     color: #000000bd;
-                    font-weight: 400;
+                    // font-weight: 400;
+                    margin-block-end: 2rem;
                 }
 
                 .btn {
