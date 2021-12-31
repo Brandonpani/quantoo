@@ -426,7 +426,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-productos #credito .info .section-title { font-weight: 600; }
 
-#main-productos #credito .info .credito-img { padding: 1rem; width: 90%; margin: 2rem auto; }
+#main-productos #credito .info .credito-img { -webkit-padding-before: 2rem; padding-block-start: 2rem; -webkit-padding-after: 2rem; padding-block-end: 2rem; }
 
 #main-productos #credito .cards { width: 90%; max-width: 1400px; margin: 0 auto; }
 
@@ -489,7 +489,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-productos #factoraje .info .title { font-weight: 600; }
 
-#main-productos #factoraje .info .credito-img { padding: 1rem; width: 90%; margin: 2rem auto; }
+#main-productos #factoraje .info .credito-img { -webkit-padding-before: 2rem; padding-block-start: 2rem; -webkit-padding-after: 2rem; padding-block-end: 2rem; }
 
 #main-productos #factoraje .cards { width: 90%; max-width: 1400px; margin: 0 auto; }
 
