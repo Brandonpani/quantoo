@@ -236,7 +236,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #hero .hero-wrapper .hero__info { max-width: 30rem; text-align: center; -webkit-margin-end: auto; margin-inline-end: auto; -webkit-margin-start: auto; margin-inline-start: auto; }
 
-#hero .hero-wrapper .hero__info .main-title { -webkit-margin-after: 2rem; margin-block-end: 2rem; }
+#hero .hero-wrapper .hero__info .section-title { -webkit-margin-after: 1rem; margin-block-end: 1rem; color: #f2f2f2; line-height: 1.1; }
 
 #hero .hero-wrapper .hero__info .p-normal { font-weight: 100; }
 

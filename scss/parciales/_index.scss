@@ -22,8 +22,10 @@
             margin-inline-end: auto;
             margin-inline-start: auto;
 
-            .main-title {
-                margin-block-end: 2rem;
+            .section-title {
+                margin-block-end: 1rem;
+                color: $clr-light-gray;
+                line-height: 1.1;
             }
 
 
