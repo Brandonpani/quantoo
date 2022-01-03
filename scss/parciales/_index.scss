@@ -309,7 +309,7 @@
                     #ffffff 10%,
                     #e8ebf5de 30%,
                     #f2f2f200 40%),
-                url(../../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg);
+                url(../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg);
             background-size: cover;
             background-position: center center;
         }
@@ -350,7 +350,7 @@
                         #e8ebf58e 30%,
                         #d8dce811 50%,
                         #f2f2f200 60%),
-                    url(../../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg);
+                    url(../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg);
             }
 
             .automatizacion__content {
@@ -404,7 +404,7 @@
                 #e8ebf58e 30%,
                 #d8dce811 50%,
                 #f2f2f200 60%),
-                    url(../../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg);
+                    url(../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg);
                 background-position: top center;
             }
 
@@ -449,7 +449,7 @@
 
     #innovacion {
         min-height: 100vh;
-        margin-block-end: 3rem;
+        margin-block: 3rem;
         display: grid;
         grid-template-areas:
             "info"
@@ -498,6 +498,7 @@
 
         @media only screen and (min-width: $tablet) {
             @include container;
+            margin-block: 3rem;
 
             .top {
                 grid-area: info;
@@ -528,7 +529,7 @@
         }
         @media only screen and (min-width: 1400px) {
             @include container;
-
+            margin-block: 3rem;
             .top {
                 grid-area: info;
             }
