@@ -297,13 +297,14 @@
        
     
     // AUTOMATIZACION
-    .automatizacion {
+    #automatizacion {
         width: 100vw;
+
         position: relative;
         margin-block-start: 5rem;
 
         .automatizacion__img {
-            min-height: 32rem;
+            min-height: 50vh;
             background-image: linear-gradient(360deg,
                     #ffffff 10%,
                     #e8ebf5de 30%,
@@ -326,6 +327,7 @@
                 }
                 .p-large {
                     margin-bottom: 1rem;
+                    color: $clr-dark-text;
                 }
             }
         }
@@ -341,11 +343,8 @@
         }
 
         @media only screen and (min-width:$tablet) {
-            position: relative;
 
             .automatizacion__img {
-                // margin-top: 33rem;
-                min-height: 38rem;
                 background-image: linear-gradient(to right,
                         #ffffffbb 10%,
                         #e8ebf58e 30%,
@@ -364,6 +363,7 @@
                     width: 50%;
                     .setion-title {
                         font-size: $section-title;
+                        
                     }
                     .p-large {
                         font-size: clamp(1rem, 1.5vw, 1.6rem);
@@ -412,16 +412,16 @@
 
                 .title-container {
                     position: absolute;
-                    top: 30%;
+                    top: 23%;
                     left: 5%;
-                    width: 35%;
+                    width: 30%;
                 }
 
             }
 
             .cards-container {
-                background-color: #202020;
-                width: 100vw;
+                // background-color: #202020;
+                // width: 100vw;
 
                 .cards-wrapper {
                     width: 80%;
@@ -446,6 +446,10 @@
         @media only screen and (min-width:$desktop) {}
     }
 
+
+
+
+
     // INNOVACION
     .innovacion {
         width: 100vw;
@@ -454,21 +458,24 @@
             min-height: 30rem;
             background-image: linear-gradient(360deg,
                     #ffffff 10%,
-                    #e8ebf5de 30%,
-                    #d8dce885 50%,
+                    #e8ebf542 30%,
+                    #d8dce80c 50%,
                     #f2f2f200 60%),
-                url(../../images/handsome-business-man-working-computer.jpg);
+                url(../../images/close-up-male-hands-using-laptop-home.jpg);
             background-size: cover;
             background-position: center center;
         }
 
         .innovacion__content {
-            // margin-top: -10rem;
+            @include container;
+            margin-block-end: 3rem;
 
             .title-container {
                 top: 35%;
 
-
+                .section-title {
+                    text-align: left;
+                }
 
                 .p-large {
                     // margin-left: auto;
@@ -483,26 +490,20 @@
         }
 
         .cards-container {
-            background-color: $dark-bg;
-            color: #f2f2f2;
 
             .cards-wrapper {
                 @include container;
                 display: grid;
-                gap: 2rem;
-                padding-block-start: 3rem;
-                padding-block-end: 3rem;
-
+                // gap: 2rem;
+                margin-block-end: 3rem;
+            
                 .card {
                     display: block;
-                    background-color: $dark-md;
-                    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.05);
-                    padding: 2rem 1rem;
-                    border-radius: .25rem;
+
 
                     // margin-block-end: 1rem;
                     .card-title {
-                        margin-block-end: 1rem;
+                        // margin-block-end: 1rem;
                     }
 
                     .icon-card {
@@ -514,7 +515,7 @@
 
             // }
             .p-large {
-                color: #f2f2f2a3;
+                // color: #f2f2f2a3;
             }
         }
 
@@ -527,7 +528,7 @@
                         #e8ebf5fc 30%,
                         #d8dce89b 50%,
                         #f2f2f200 60%),
-                    url(../../images/handsome-business-man-working-computer.jpg);
+                    url(../../images/close-up-male-hands-using-laptop-home.jpg);
                 background-position: left top;
             }
 
@@ -541,7 +542,9 @@
                     top: 15%;
                     right: 5%;
 
-
+                    .section-title {
+                        text-align: right;
+                    }
                     .p-large {
                         width: 40%;
                         margin-left: auto;
@@ -558,11 +561,11 @@
                     // display: grid;
                     align-content: center;
                     grid-template-columns: 1fr 1fr 1fr;
-                    gap: 2rem;
-                    padding: 1.5rem 5rem;
+                    // gap: 2rem;
+                    // padding: 1.5rem 5rem;
 
                     .card {
-                        padding: 2rem 1rem;
+                        // padding: 2rem 1rem;
 
                         .card-title {
                             margin-bottom: 2rem;
@@ -573,13 +576,7 @@
                         }
                     }
 
-                    .card:nth-last-of-type(3) {
-                        border-right: 2px solid #f2f3f4;
-                    }
-
-                    .card:nth-last-of-type(2) {
-                        border-right: 2px solid #f2f3f4;
-                    }
+                    
                 }
             }
         }
@@ -591,7 +588,7 @@
                         #e8ebf5fc 30%,
                         #d8dce89b 50%,
                         #f2f2f200 60%),
-                    url(../../images/handsome-business-man-working-computer.jpg);
+                    url(../../images/close-up-male-hands-using-laptop-home.jpg);
                 background-position: left top;
             }
 
