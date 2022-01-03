@@ -298,7 +298,6 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 #main-index #productos .cards-container .p-large { color: #454558; }
 
 @media only screen and (min-width: 768px) { #main-index #productos .cards-container { padding: 3rem; -webkit-margin-after: 3rem; margin-block-end: 3rem; }
-  #main-index #productos .cards-container .subtitle { font-size: 4rem; line-height: 1; padding: 3rem 0; }
   #main-index #productos .cards-container .cards-wrapper { place-content: center; -ms-grid-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; -ms-grid-rows: auto auto; grid-template-rows: auto auto; grid-template-areas: "img img" "time multi"; }
   #main-index #productos .cards-container .cards-wrapper .img-cards { -ms-grid-row: 1; -ms-grid-column: 1; -ms-grid-column-span: 2; grid-area: img; }
   #main-index #productos .cards-container .cards-wrapper .time { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: time; }
