@@ -3,156 +3,156 @@
 }
 
 
+#main-index {
 
-#hero {
-    padding-block-start: 3rem;
-    padding-block-end: 3rem;
-    background-color: $dark-bg;
-    color: $clr-light-gray;
-
-
-    .hero-wrapper {
-        @include container;
-        display: grid;
-        gap: 2rem;
-
-        .hero__info {
-            max-width: 30rem;
-            text-align: center;
-            margin-inline-end: auto;
-            margin-inline-start: auto;
-
-            .section-title {
-                margin-block-end: 1rem;
-                color: $clr-light-gray;
-                line-height: 1.1;
-            }
+    #hero {
+        padding-block-start: 3rem;
+        padding-block-end: 3rem;
+        background-color: $dark-bg;
+        color: $clr-light-gray;
 
 
-
-            .p-normal {
-                font-weight: 100;
-            }
-        }
-
-        .hero__img {
-            .subtitle {
-                text-align: center;
-                color: $clr-light-gray;
-                margin-block-end: .5rem;
-                font-size: 1.3rem;
-                font-weight: 200;
-                text-transform: uppercase;
-
-
-                span {
-                    color: $blue;
-                    font-weight: 600;
-                }
-            }
-
-            max-width: 35rem;
-            justify-self: center;
-        }
-
-        .hero__cards {
-            // min-height: 50vh;
-            // background-color: $dark-md;
-            // padding: 2rem;
-            // border-radius: .25rem;
-            // box-shadow: inset 0px 2px 0px rgba(255, 255, 255, 0.05);
-            // display: grid;
-            // gap: 1rem;
-
-            .subtitle {
-                color: rgb(20, 90, 210);
-            }
-        }
-    }
-
-    @media only screen and (min-width: $tablet) {
         .hero-wrapper {
-            padding-block-start: 0;
-            padding-block-end: 0;
-            min-height: 40vh;
-            grid-template-columns: 3fr 2fr;
-            grid-template-rows: auto auto;
-            grid-template-areas:
-                "info img"
-                "cards cards"
-            ;
-            column-gap: 2rem;
-            row-gap: 0;
+            @include container;
+            display: grid;
+            gap: 2rem;
 
             .hero__info {
-                grid-row: 1;
-                grid-column: 1;
-                grid-area: info;
-                align-self: center;
-                justify-self: center;
+                max-width: 30rem;
+                text-align: center;
+                margin-inline-end: auto;
+                margin-inline-start: auto;
 
-                .title {
-                    font-size: clamp(3rem, 5vw, 5rem);
+                .section-title {
+                    margin-block-end: 1rem;
+                    color: $clr-light-gray;
+                    line-height: 1.1;
+                }
+
+
+
+                .p-normal {
+                    font-weight: 100;
                 }
             }
 
             .hero__img {
-                grid-row: 1;
-                grid-column: 1;
-                grid-area: img;
-                align-self: center;
-                width: 100%;
+                .subtitle {
+                    text-align: center;
+                    color: $clr-light-gray;
+                    margin-block-end: .5rem;
+                    font-size: 1.3rem;
+                    font-weight: 200;
+                    text-transform: uppercase;
 
-                .optimiza {
-                    display: none;
+
+                    span {
+                        color: $blue;
+                        font-weight: 600;
+                    }
                 }
 
+                max-width: 35rem;
+                justify-self: center;
             }
 
             .hero__cards {
-                grid-row: 2;
-                grid-column: 1;
-                grid-area: cards;
-                align-self: center;
-                display: flex;
-                gap: 2rem;
-                text-align: center;
+                // min-height: 50vh;
+                // background-color: $dark-md;
+                // padding: 2rem;
+                // border-radius: .25rem;
+                // box-shadow: inset 0px 2px 0px rgba(255, 255, 255, 0.05);
+                // display: grid;
+                // gap: 1rem;
 
+                .subtitle {
+                    color: rgb(20, 90, 210);
+                }
+            }
+        }
+
+        @media only screen and (min-width: $tablet) {
+            .hero-wrapper {
+                padding-block-start: 0;
+                padding-block-end: 0;
+                min-height: 40vh;
+                grid-template-columns: 3fr 2fr;
+                grid-template-rows: auto auto;
+                grid-template-areas:
+                    "info img"
+                    "cards cards"
+                ;
+                column-gap: 2rem;
+                row-gap: 0;
+
+                .hero__info {
+                    grid-row: 1;
+                    grid-column: 1;
+                    grid-area: info;
+                    align-self: center;
+                    justify-self: center;
+
+                    .title {
+                        font-size: clamp(3rem, 5vw, 5rem);
+                    }
+                }
+
+                .hero__img {
+                    grid-row: 1;
+                    grid-column: 1;
+                    grid-area: img;
+                    align-self: center;
+                    width: 100%;
+
+                    .optimiza {
+                        display: none;
+                    }
+
+                }
+
+                .hero__cards {
+                    grid-row: 2;
+                    grid-column: 1;
+                    grid-area: cards;
+                    align-self: center;
+                    display: flex;
+                    gap: 2rem;
+                    text-align: center;
+
+                }
+            }
+        }
+
+        @media only screen and (min-width: $laptop) {
+            .hero-wrapper {
+                min-height: 80vh;
+
+                .hero__info {
+                    justify-self: flex-start;
+                    width: 100%;
+                    max-width: 90%;
+
+                    .p-normal {
+                        font-size: clamp(1.125rem, 2vw, 2rem);
+                    }
+                }
+
+                // .hero__img {}
+
+                .hero__cards {
+                    width: 100%;
+                    justify-content: center;
+                    gap: 1rem;
+
+                    .hero-card {
+                        padding: 2rem;
+                    }
+                }
             }
         }
     }
 
-    @media only screen and (min-width: $laptop) {
-        .hero-wrapper {
-            min-height: 80vh;
 
-            .hero__info {
-                justify-self: flex-start;
-                width: 100%;
-                max-width: 90%;
-
-                .p-normal {
-                    font-size: clamp(1.125rem, 2vw, 2rem);
-                }
-            }
-
-            // .hero__img {}
-
-            .hero__cards {
-                width: 100%;
-                justify-content: center;
-                gap: 1rem;
-
-                .hero-card {
-                    padding: 2rem;
-                }
-            }
-        }
-    }
-}
-
-
-#main-index {
 
     #productos {
 
@@ -266,31 +266,31 @@
             }
 
         }
-    }
-
-    @media only screen and (min-width: $tablet) {
-        .productos__content {
-            
-            .section-title {
-                margin-block-start: 3rem;
+        
+        @media only screen and (min-width: $tablet) {
+            .productos__content {
+                
+                .section-title {
+                    margin-block-start: 3rem;
+                }
+                .productos__img {
+                    // aspect-ratio: 16/9;
+                }
+                .title-container {
+                    width: 70%;
+                    margin-inline: auto;
+                }
             }
-            .productos__img {
-                // aspect-ratio: 16/9;
-            }
-            .title-container {
-                width: 70%;
+            .cards-container {
+                // width: 70%;
                 margin-inline: auto;
-            }
-        }
-        .cards-container {
-            // width: 70%;
-            margin-inline: auto;
-            .section-title {
-                width: 80%;
-                font-size: $section-title;
-            }
-            .cards-wrapper {
-                grid-template-columns: 1fr 1fr;
+                .section-title {
+                    width: 80%;
+                    font-size: $section-title;
+                }
+                .cards-wrapper {
+                    grid-template-columns: 1fr 1fr;
+                }
             }
         }
     }
@@ -477,7 +477,7 @@
                 flex: 1;
                 height: 100%;
                 align-items: center;
-
+                text-align: center;
                 .section-title {
                     text-align: left;
                 }
