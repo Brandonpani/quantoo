@@ -295,7 +295,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-index #productos .cards-container .cards-wrapper .card .p-normal { margin-bottom: 1rem; }
 
-#main-index #productos .cards-container .p-large { color: #f2f2f2cd; }
+#main-index #productos .cards-container .p-large { color: #454558; }
 
 @media only screen and (min-width: 768px) { #main-index #productos .cards-container { padding: 3rem; background-color: #101010; -webkit-box-shadow: inset 2px 2px 15px rgba(0, 0, 0, 0.2); box-shadow: inset 2px 2px 15px rgba(0, 0, 0, 0.2); -webkit-margin-after: 3rem; margin-block-end: 3rem; }
   #main-index #productos .cards-container .subtitle { color: #f2f2f2; font-size: 4rem; line-height: 1; padding: 3rem 0; }
