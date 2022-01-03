@@ -346,7 +346,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-index #innovacion .top .innovacion__header .section-title { text-align: left; }
 
-#main-index #innovacion .top .innovacion__img { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: img; -webkit-box-flex: 2; -ms-flex: 2; flex: 2; }
+#main-index #innovacion .top .innovacion__img { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: img; }
 
 #main-index #innovacion .top .innovacion__img img { aspect-ratio: 16/7; -o-object-fit: cover; object-fit: cover; }
 
@@ -359,9 +359,9 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
   #main-index #innovacion .innovacion__cards .banca { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: banca; }
   #main-index #innovacion .innovacion__cards .api { -ms-grid-row: 2; -ms-grid-column: 2; grid-area: api; } }
 
-@media only screen and (min-width: 1024px) { #main-index #innovacion { width: 90%; max-width: 1400px; margin: 0 auto; }
+@media only screen and (min-width: 1400px) { #main-index #innovacion { width: 90%; max-width: 1400px; margin: 0 auto; }
   #main-index #innovacion .top { -ms-grid-row: 3; -ms-grid-column: 1; grid-area: info; }
-  #main-index #innovacion .innovacion__cards { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: cards; place-self: center; display: -ms-grid; display: grid; gap: 1rem; -ms-grid-columns: (1fr)[3]; grid-template-columns: repeat(3, 1fr); -ms-grid-rows: auto; grid-template-rows: auto; grid-template-areas: "saas banca api"; }
+  #main-index #innovacion .innovacion__cards { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: cards; place-self: center; display: -ms-grid; display: grid; gap: 2rem; -ms-grid-columns: (1fr)[3]; grid-template-columns: repeat(3, 1fr); -ms-grid-rows: auto; grid-template-rows: auto; grid-template-areas: "saas banca api"; }
   #main-index #innovacion .innovacion__cards .saas { -ms-grid-row: 1; -ms-grid-column: 1; grid-area: saas; }
   #main-index #innovacion .innovacion__cards .banca { -ms-grid-row: 1; -ms-grid-column: 2; grid-area: banca; }
   #main-index #innovacion .innovacion__cards .api { -ms-grid-row: 1; -ms-grid-column: 3; grid-area: api; } }

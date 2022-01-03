@@ -483,18 +483,17 @@
                 }
             }
             .innovacion__img {
+                grid-area: img;
                 img {
                     aspect-ratio: 16/7;
                     object-fit: cover;
                 }
-               
-                grid-area: img;
-                flex: 2;
             }
         }
         .innovacion__cards {
             grid-area: cards;
             @include container;
+
         }
 
         @media only screen and (min-width: $tablet) {
@@ -527,7 +526,7 @@
                 }
             }
         }
-        @media only screen and (min-width: $laptop) {
+        @media only screen and (min-width: 1400px) {
             @include container;
 
             .top {
@@ -538,7 +537,7 @@
                 place-self: center;
 
                 display: grid;
-                gap: 1rem;
+                gap: 2rem;
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-rows: auto;
                 grid-template-areas: 
