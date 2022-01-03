@@ -255,7 +255,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
   #hero .hero-wrapper .hero__info .title { font-size: clamp(3rem, 5vw, 5rem); }
   #hero .hero-wrapper .hero__img { grid-row: 1; grid-column: 1; -ms-grid-row: 2; -ms-grid-column: 1; grid-area: img; -ms-flex-item-align: center; align-self: center; width: 100%; }
   #hero .hero-wrapper .hero__img .optimiza { display: none; }
-  #hero .hero-wrapper .hero__cards { -ms-grid-row: 2; grid-row: 2; -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 2; -ms-grid-column: 1; -ms-grid-column-span: 2; grid-area: cards; -ms-flex-item-align: center; align-self: center; display: -webkit-box; display: -ms-flexbox; display: flex; gap: 2rem; text-align: center; } }
+  #hero .hero-wrapper .hero__cards { grid-row: 2; grid-column: 1; -ms-grid-row: 2; -ms-grid-column: 1; grid-area: cards; -ms-flex-item-align: center; align-self: center; display: -webkit-box; display: -ms-flexbox; display: flex; gap: 2rem; text-align: center; } }
 
 @media only screen and (min-width: 1024px) { #hero .hero-wrapper { min-height: 80vh; }
   #hero .hero-wrapper .hero__info { justify-self: flex-start; width: 100%; max-width: 90%; }
@@ -336,9 +336,9 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
   #main-index #automatizacion .cards-container .cards-wrapper { width: 80%; min-height: 35vh; -webkit-margin-start: auto; margin-inline-start: auto; -webkit-margin-end: auto; margin-inline-end: auto; display: -ms-grid; display: grid; place-items: center; -ms-grid-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; gap: 2rem; color: #f2f2f2; }
   #main-index #automatizacion .cards-container .cards-wrapper .card { padding: 2rem 1rem; } }
 
-#main-index #innovacion { min-height: 100vh; }
+#main-index #innovacion { min-height: 100vh; -webkit-margin-after: 3rem; margin-block-end: 3rem; display: -ms-grid; display: grid; grid-template-areas: "info" "cards"; }
 
-#main-index #innovacion .top { width: 90%; max-width: 1400px; margin: 0 auto; margin-block: 3rem; min-height: 50vh; display: -ms-grid; display: grid; gap: 2rem; grid-template-areas: "title" "img" "info"; }
+#main-index #innovacion .top { -ms-grid-row: 3; -ms-grid-column: 1; grid-area: info; width: 90%; max-width: 1400px; margin: 0 auto; margin-block: 3rem; min-height: 50vh; display: -ms-grid; display: grid; gap: 2rem; grid-template-areas: "title" "img" "info"; }
 
 #main-index #innovacion .top .section-title { -ms-grid-row: 1; -ms-grid-column: 1; grid-area: title; }
 
@@ -350,7 +350,21 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-index #innovacion .top .innovacion__img img { aspect-ratio: 16/7; -o-object-fit: cover; object-fit: cover; }
 
-#main-index #innovacion .innovacion__cards { width: 90%; max-width: 1400px; margin: 0 auto; }
+#main-index #innovacion .innovacion__cards { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: cards; width: 90%; max-width: 1400px; margin: 0 auto; }
+
+@media only screen and (min-width: 768px) { #main-index #innovacion { width: 90%; max-width: 1400px; margin: 0 auto; }
+  #main-index #innovacion .top { -ms-grid-row: 3; -ms-grid-column: 1; grid-area: info; }
+  #main-index #innovacion .innovacion__cards { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: cards; place-self: center; display: -ms-grid; display: grid; gap: 1rem; -ms-grid-columns: (1fr)[2]; grid-template-columns: repeat(2, 1fr); -ms-grid-rows: auto auto; grid-template-rows: auto auto; grid-template-areas: "saas saas" "banca api"; }
+  #main-index #innovacion .innovacion__cards .saas { -ms-grid-row: 1; -ms-grid-column: 1; -ms-grid-column-span: 2; grid-area: saas; }
+  #main-index #innovacion .innovacion__cards .banca { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: banca; }
+  #main-index #innovacion .innovacion__cards .api { -ms-grid-row: 2; -ms-grid-column: 2; grid-area: api; } }
+
+@media only screen and (min-width: 1024px) { #main-index #innovacion { width: 90%; max-width: 1400px; margin: 0 auto; }
+  #main-index #innovacion .top { -ms-grid-row: 3; -ms-grid-column: 1; grid-area: info; }
+  #main-index #innovacion .innovacion__cards { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: cards; place-self: center; display: -ms-grid; display: grid; gap: 1rem; -ms-grid-columns: (1fr)[3]; grid-template-columns: repeat(3, 1fr); -ms-grid-rows: auto; grid-template-rows: auto; grid-template-areas: "saas banca api"; }
+  #main-index #innovacion .innovacion__cards .saas { -ms-grid-row: 1; -ms-grid-column: 1; grid-area: saas; }
+  #main-index #innovacion .innovacion__cards .banca { -ms-grid-row: 1; -ms-grid-column: 2; grid-area: banca; }
+  #main-index #innovacion .innovacion__cards .api { -ms-grid-row: 1; -ms-grid-column: 3; grid-area: api; } }
 
 .banner { min-height: 50vh; width: 100vw; display: -ms-grid; display: grid; place-content: center; background-image: -webkit-gradient(linear, left top, right top, from(#2020208c), to(#33a2f25b)), url(../images/plataforma-intro-ofcina-quanto.jpg); background-image: linear-gradient(to right, #2020208c, #33a2f25b), url(../images/plataforma-intro-ofcina-quanto.jpg); background-size: cover; background-position: top; background-repeat: no-repeat; color: #f2f3f4; }
 

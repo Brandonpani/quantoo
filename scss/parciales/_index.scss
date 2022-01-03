@@ -449,7 +449,15 @@
 
     #innovacion {
         min-height: 100vh;
+        margin-block-end: 3rem;
+        display: grid;
+        grid-template-areas:
+            "info"
+            "cards"
+        ;
+
         .top {
+            grid-area: info;
             @include container;
             margin-block: 3rem;
             min-height: 50vh;
@@ -485,7 +493,68 @@
             }
         }
         .innovacion__cards {
+            grid-area: cards;
             @include container;
+        }
+
+        @media only screen and (min-width: $tablet) {
+            @include container;
+
+            .top {
+                grid-area: info;
+            }
+            .innovacion__cards {
+                grid-area: cards;
+                place-self: center;
+
+                display: grid;
+                gap: 1rem;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto auto;
+                grid-template-areas: 
+                    "saas saas"
+                    "banca api"
+                ;
+
+                .saas {
+                    grid-area: saas;
+                }  
+                .banca {
+                    grid-area: banca;
+                }
+                .api {
+                    grid-area: api;
+                }
+            }
+        }
+        @media only screen and (min-width: $laptop) {
+            @include container;
+
+            .top {
+                grid-area: info;
+            }
+            .innovacion__cards {
+                grid-area: cards;
+                place-self: center;
+
+                display: grid;
+                gap: 1rem;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: auto;
+                grid-template-areas: 
+                    "saas banca api"
+                ;
+
+                .saas {
+                    grid-area: saas;
+                }  
+                .banca {
+                    grid-area: banca;
+                }
+                .api {
+                    grid-area: api;
+                }
+            }
         }
     }
 }
