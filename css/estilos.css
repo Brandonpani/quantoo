@@ -334,40 +334,6 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
   #main-index #automatizacion .cards-container .cards-wrapper { width: 80%; min-height: 35vh; -webkit-margin-start: auto; margin-inline-start: auto; -webkit-margin-end: auto; margin-inline-end: auto; display: -ms-grid; display: grid; place-items: center; -ms-grid-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; gap: 2rem; color: #f2f2f2; }
   #main-index #automatizacion .cards-container .cards-wrapper .card { padding: 2rem 1rem; } }
 
-#main-index .innovacion { width: 100vw; }
-
-#main-index .innovacion .innovacion__img { min-height: 30rem; background-image: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #ffffff), color-stop(30%, #e8ebf542), color-stop(50%, #d8dce80c), color-stop(60%, #f2f2f200)), url(../../images/close-up-male-hands-using-laptop-home.jpg); background-image: linear-gradient(360deg, #ffffff 10%, #e8ebf542 30%, #d8dce80c 50%, #f2f2f200 60%), url(../../images/close-up-male-hands-using-laptop-home.jpg); background-size: cover; background-position: center center; }
-
-#main-index .innovacion .innovacion__content { width: 90%; max-width: 1400px; margin: 0 auto; -webkit-margin-after: 3rem; margin-block-end: 3rem; }
-
-#main-index .innovacion .innovacion__content .title-container { top: 35%; }
-
-#main-index .innovacion .innovacion__content .title-container .section-title { text-align: left; }
-
-#main-index .innovacion .innovacion__content .title-container .p-large { font-size: clamp(1rem, 1.5vw, 1.6rem); margin-bottom: 1rem; }
-
-#main-index .innovacion .innovacion__content .title-container .btn { margin-right: 0; }
-
-#main-index .innovacion .cards-container .cards-wrapper { width: 90%; max-width: 1400px; margin: 0 auto; display: -ms-grid; display: grid; -webkit-margin-after: 3rem; margin-block-end: 3rem; }
-
-#main-index .innovacion .cards-container .cards-wrapper .card { display: block; }
-
-#main-index .innovacion .cards-container .cards-wrapper .card .icon-card { width: 1.5rem; -webkit-margin-end: 1rem; margin-inline-end: 1rem; }
-
-@media only screen and (min-width: 768px) { #main-index .innovacion { position: relative; }
-  #main-index .innovacion .innovacion__img { min-height: 70vh; background-image: linear-gradient(300deg, #e8ebf5fc 30%, #d8dce89b 50%, #f2f2f200 60%), url(../../images/close-up-male-hands-using-laptop-home.jpg); background-position: left top; }
-  #main-index .innovacion .innovacion__content { margin-top: 0; }
-  #main-index .innovacion .innovacion__content .title-container { position: absolute; margin-left: auto; text-align: right; top: 15%; right: 5%; }
-  #main-index .innovacion .innovacion__content .title-container .section-title { text-align: right; }
-  #main-index .innovacion .innovacion__content .title-container .p-large { width: 40%; margin-left: auto; }
-  #main-index .innovacion .cards-container { color: #f2f2f2; }
-  #main-index .innovacion .cards-container .cards-wrapper { min-height: 35vh; -ms-flex-line-pack: center; align-content: center; -ms-grid-columns: 1fr 1fr 1fr; grid-template-columns: 1fr 1fr 1fr; }
-  #main-index .innovacion .cards-container .cards-wrapper .card .card-title { margin-bottom: 2rem; }
-  #main-index .innovacion .cards-container .cards-wrapper .card .p-large { color: #f2f2f2a3; } }
-
-@media only screen and (min-width: 1024px) { #main-index .innovacion .innovacion__img { min-height: 70vh; background-image: linear-gradient(300deg, #e8ebf5fc 30%, #d8dce89b 50%, #f2f2f200 60%), url(../../images/close-up-male-hands-using-laptop-home.jpg); background-position: left top; }
-  #main-index .innovacion .innovacion__content .title-container { top: 10%; right: 5%; } }
-
 .banner { min-height: 50vh; width: 100vw; display: -ms-grid; display: grid; place-content: center; background-image: -webkit-gradient(linear, left top, right top, from(#2020208c), to(#33a2f25b)), url(../images/plataforma-intro-ofcina-quanto.jpg); background-image: linear-gradient(to right, #2020208c, #33a2f25b), url(../images/plataforma-intro-ofcina-quanto.jpg); background-size: cover; background-position: top; background-repeat: no-repeat; color: #f2f3f4; }
 
 .banner .banner-content { width: 90%; max-width: 1400px; margin: 0 auto; text-align: center; padding: 2rem; width: 100%; }
