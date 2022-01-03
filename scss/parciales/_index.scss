@@ -446,4 +446,41 @@
         @media only screen and (min-width:$desktop) {}
     }
 
+
+    #innovacion {
+        min-height: 100vh;
+        .top {
+            @include container;
+            margin-block: 3rem;
+            min-height: 50vh;
+            display: grid;
+            gap: 2rem;
+            grid-template-areas:
+                "title"
+                "img"
+                "info"
+            ;
+
+            .section-title {
+                grid-area: title;
+            }
+            .innovacion__header {
+                grid-area: info;
+                flex: 1;
+                height: 100%;
+                align-items: center;
+
+                .section-title {
+                    text-align: left;
+                }
+            }
+            .innovacion__img {
+                grid-area: img;
+                flex: 2;
+            }
+        }
+        .innovacion__cards {
+            @include container;
+        }
+    }
 }
