@@ -265,7 +265,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-index #productos .productos__content .section-title { color: #000; line-height: 1.1; -webkit-margin-after: 2rem; margin-block-end: 2rem; }
 
-#main-index #productos .productos__content .productos__img img { aspect-ratio: 16/6; -o-object-fit: cover; object-fit: cover; background-position: center; }
+#main-index #productos .productos__content .productos__img img { aspect-ratio: 16/7; -o-object-fit: cover; object-fit: cover; background-position: top; }
 
 #main-index #productos .productos__content .title-container { -webkit-margin-before: 1rem; margin-block-start: 1rem; text-align: center; }
 
@@ -289,7 +289,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-index #productos .cards-container .cards-wrapper .card .icon-container .clock, #main-index #productos .cards-container .cards-wrapper .card .icon-container .multi-icon { font-size: 2rem; margin-top: 1rem; margin-bottom: 1rem; color: #145ad2; }
 
-#main-index #productos .cards-container .cards-wrapper .card .card-title { font-size: 2rem; line-height: 1.2; color: #000; -webkit-margin-after: 1rem; margin-block-end: 1rem; font-weight: 600; }
+#main-index #productos .cards-container .cards-wrapper .card .card-title { line-height: 1.2; color: #000; -webkit-margin-after: 1rem; margin-block-end: 1rem; font-weight: 600; }
 
 #main-index #productos .cards-container .cards-wrapper .card .card-title .clock, #main-index #productos .cards-container .cards-wrapper .card .card-title .multi-icon { margin-right: 1rem; }
 
@@ -297,15 +297,21 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-index #productos .cards-container .p-large { color: #454558; }
 
-@media only screen and (min-width: 768px) { #main-index .productos__content .productos__img { aspect-ratio: 16/9; } }
+@media only screen and (min-width: 768px) { #main-index .productos__content .section-title { -webkit-margin-before: 3rem; margin-block-start: 3rem; }
+  #main-index .productos__content .title-container { width: 70%; margin-inline: auto; }
+  #main-index .cards-container { margin-inline: auto; }
+  #main-index .cards-container .section-title { width: 80%; font-size: clamp(3rem, 5vw, 5rem); }
+  #main-index .cards-container .cards-wrapper { -ms-grid-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; } }
 
-#main-index .automatizacion { width: 100vw; position: relative; }
+#main-index .automatizacion { width: 100vw; position: relative; -webkit-margin-before: 5rem; margin-block-start: 5rem; }
 
 #main-index .automatizacion .automatizacion__img { min-height: 32rem; background-image: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #ffffff), color-stop(30%, #e8ebf5de), color-stop(40%, #f2f2f200)), url(../../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg); background-image: linear-gradient(360deg, #ffffff 10%, #e8ebf5de 30%, #f2f2f200 40%), url(../../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg); background-size: cover; background-position: center center; }
 
-#main-index .automatizacion .automatizacion__content { width: 90%; max-width: 1400px; margin: 0 auto; height: 100%; }
+#main-index .automatizacion .automatizacion__content { width: 90%; max-width: 1400px; margin: 0 auto; height: 100%; -webkit-margin-after: 3rem; margin-block-end: 3rem; }
 
-#main-index .automatizacion .automatizacion__content .title-container { margin-top: -5rem; }
+#main-index .automatizacion .automatizacion__content .title-container { margin-top: -10rem; }
+
+#main-index .automatizacion .automatizacion__content .title-container .section-title { font-size: 3rem; text-align: left; }
 
 #main-index .automatizacion .automatizacion__content .title-container .p-large { margin-bottom: 1rem; }
 
@@ -314,32 +320,27 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 #main-index .automatizacion .cards-container .p-large { color: #f2f2f2a3; }
 
 @media only screen and (min-width: 768px) { #main-index .automatizacion { position: relative; }
-  #main-index .automatizacion .automatizacion__img { min-height: 38rem; background-image: linear-gradient(75deg, #ffffff 10%, #e8ebf5de 30%, #d8dce885 50%, #f2f2f200 60%), url(../../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg); }
+  #main-index .automatizacion .automatizacion__img { min-height: 38rem; background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, #ffffffbb), color-stop(30%, #e8ebf58e), color-stop(50%, #d8dce811), color-stop(60%, #f2f2f200)), url(../../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg); background-image: linear-gradient(to right, #ffffffbb 10%, #e8ebf58e 30%, #d8dce811 50%, #f2f2f200 60%), url(../../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg); }
   #main-index .automatizacion .automatizacion__content { margin: 0; }
-  #main-index .automatizacion .automatizacion__content .title-container { position: absolute; top: 25%; left: 5%; width: 40%; }
+  #main-index .automatizacion .automatizacion__content .title-container { position: absolute; top: 30%; left: 5%; width: 50%; }
+  #main-index .automatizacion .automatizacion__content .title-container .setion-title { font-size: clamp(3rem, 5vw, 5rem); }
   #main-index .automatizacion .automatizacion__content .title-container .p-large { font-size: clamp(1rem, 1.5vw, 1.6rem); }
   #main-index .automatizacion .cards-container { background-color: #202020; min-height: 35vh; display: -ms-grid; display: grid; place-content: center; }
   #main-index .automatizacion .cards-container .cards-wrapper { height: 100%; display: -ms-grid; display: grid; margin: auto; -ms-grid-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; gap: 2rem; color: #f2f2f2; }
   #main-index .automatizacion .cards-container .cards-wrapper .card { padding: 2rem 1rem; }
-  #main-index .automatizacion .cards-container .cards-wrapper .card .card-title { margin-bottom: 2rem; }
-  #main-index .automatizacion .cards-container .cards-wrapper .card:nth-last-of-type(2) { border-right: 2px solid #f2f3f4; }
-  #main-index .automatizacion .cards-container .cards-wrapper .card:nth-last-of-type(2) .p-large { color: #f2f2f2a3; } }
+  #main-index .automatizacion .cards-container .cards-wrapper .card .card-title { margin-bottom: 2rem; } }
 
-@media only screen and (min-width: 1024px) { #main-index .automatizacion .automatizacion__img { min-height: 38rem; background-image: linear-gradient(75deg, #ffffff 10%, #e8ebf5de 30%, #d8dce885 50%, #f2f2f200 60%), url(../../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg); background-position: top center; }
-  #main-index .automatizacion .automatizacion__content .title-container { position: absolute; top: 20%; left: 5%; width: 35%; }
+@media only screen and (min-width: 1024px) { #main-index .automatizacion .automatizacion__img { min-height: 38rem; background-image: linear-gradient(75deg, #ffffffbb 10%, #e8ebf58e 30%, #d8dce811 50%, #f2f2f200 60%), url(../../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg); background-position: top center; }
+  #main-index .automatizacion .automatizacion__content .title-container { position: absolute; top: 30%; left: 5%; width: 35%; }
   #main-index .automatizacion .cards-container { background-color: #202020; width: 100vw; }
   #main-index .automatizacion .cards-container .cards-wrapper { width: 80%; min-height: 35vh; -webkit-margin-start: auto; margin-inline-start: auto; -webkit-margin-end: auto; margin-inline-end: auto; display: -ms-grid; display: grid; place-items: center; -ms-grid-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; gap: 2rem; color: #f2f2f2; }
-  #main-index .automatizacion .cards-container .cards-wrapper .card { padding: 2rem 1rem; }
-  #main-index .automatizacion .cards-container .cards-wrapper .card:nth-last-of-type(2) { border-right: 2px solid #f2f3f4; }
-  #main-index .automatizacion .cards-container .cards-wrapper .card:nth-last-of-type(2) .p-large { color: #f2f2f2a3; } }
+  #main-index .automatizacion .cards-container .cards-wrapper .card { padding: 2rem 1rem; } }
 
 #main-index .innovacion { width: 100vw; }
 
 #main-index .innovacion .innovacion__img { min-height: 30rem; background-image: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #ffffff), color-stop(30%, #e8ebf5de), color-stop(50%, #d8dce885), color-stop(60%, #f2f2f200)), url(../../images/handsome-business-man-working-computer.jpg); background-image: linear-gradient(360deg, #ffffff 10%, #e8ebf5de 30%, #d8dce885 50%, #f2f2f200 60%), url(../../images/handsome-business-man-working-computer.jpg); background-size: cover; background-position: center center; }
 
-#main-index .innovacion .innovacion__content { margin-top: -10rem; }
-
-#main-index .innovacion .innovacion__content .title-container { width: 90%; max-width: 1400px; margin: 0 auto; }
+#main-index .innovacion .innovacion__content .title-container { top: 35%; }
 
 #main-index .innovacion .innovacion__content .title-container .p-large { font-size: clamp(1rem, 1.5vw, 1.6rem); margin-bottom: 1rem; }
 

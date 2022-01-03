@@ -167,10 +167,12 @@
             }
 
             .productos__img {
+
                 img {
-                    aspect-ratio: 16/6;
+                    aspect-ratio: 16/7;
                     object-fit: cover;
-                    background-position: center;
+
+                    background-position: top;
                 }
             }
 
@@ -241,7 +243,7 @@
                     }
 
                     .card-title {
-                        font-size: 2rem;
+                        // font-size: 2rem;
                         line-height: 1.2;
                         color: $clr-dark-text;
                         margin-block-end: 1rem;
@@ -269,102 +271,36 @@
     @media only screen and (min-width: $tablet) {
         .productos__content {
             
-            .section-title {}
+            .section-title {
+                margin-block-start: 3rem;
+            }
             .productos__img {
-                aspect-ratio: 16/9;
+                // aspect-ratio: 16/9;
+            }
+            .title-container {
+                width: 70%;
+                margin-inline: auto;
+            }
+        }
+        .cards-container {
+            // width: 70%;
+            margin-inline: auto;
+            .section-title {
+                width: 80%;
+                font-size: $section-title;
+            }
+            .cards-wrapper {
+                grid-template-columns: 1fr 1fr;
             }
         }
     }
-        // @media only screen and (min-width: $tablet) {
-
-
-        //     .cards-container {
-        //         padding: 3rem;
-        //         // background-color: $dark-bg;
-        //         // box-shadow: inset 2px 2px 15px rgba(0, 0, 0, 0.2);
-        //         margin-block-end: 3rem;
-
-        //         // .subtitle {
-        //         //     font-size: 4rem;
-        //         //     line-height: 1;
-        //         //     padding: 3rem 0;
-        //         // }
-
-        //         .cards-wrapper {
-        //             place-content: center;
-        //             grid-template-columns: 1fr 1fr;
-        //             grid-template-rows: auto auto;
-        //             grid-template-areas:
-        //                 "img img"
-        //                 "time multi"
-        //             ;
-
-        //             .img-cards {
-        //                 grid-area: img;
-        //             }
-
-        //             .time {
-        //                 grid-area: time;
-        //             }
-
-        //             .multi {
-        //                 grid-area: multi;
-        //             }
-        //         }
-        //     }
-
-
-        // }
-
-        // @media only screen and (min-width: 1024px) {
-        //     .productos__content {
-        //         margin-block-start: 2rem;
-        //         display: grid;
-        //         grid-template-columns: 1fr 1fr;
-        //         gap: 2rem;
-        //         align-content: center;
-        //         grid-template-areas: "info img"
-        //         ;
-
-        //         .productos__img {
-        //             grid-row: 1;
-        //             grid-column: 2;
-        //             grid-area: img;
-        //             align-self: center;
-        //         }
-
-        //         .title-container {
-        //             grid-row: 1;
-        //             grid-column: 1;
-        //             grid-area: info;
-        //             margin-block-start: 1rem;
-
-        //             .p-normal {
-        //                 margin-bottom: 1rem;
-        //             }
-
-        //             .btn {
-        //                 font-size: .875rem;
-        //                 // min-width: 21rem;
-        //             }
-        //         }
-        //     }
-
-        //     .cards-container {
-        //         .section-title {
-        //             width: 50%;
-        //         }
-        //     }
-        // }
+       
     
-
-    // REGULACION
-
-
     // AUTOMATIZACION
     .automatizacion {
         width: 100vw;
         position: relative;
+        margin-block-start: 5rem;
 
         .automatizacion__img {
             min-height: 32rem;
@@ -380,11 +316,14 @@
         .automatizacion__content {
             @include container;
             height: 100%;
-
+            margin-block-end: 3rem;
             // display: grid;
             .title-container {
-                margin-top: -5rem;
-
+                margin-top: -10rem;
+                .section-title {
+                    font-size: 3rem;
+                    text-align: left;
+                }
                 .p-large {
                     margin-bottom: 1rem;
                 }
@@ -407,10 +346,10 @@
             .automatizacion__img {
                 // margin-top: 33rem;
                 min-height: 38rem;
-                background-image: linear-gradient(75deg,
-                        #ffffff 10%,
-                        #e8ebf5de 30%,
-                        #d8dce885 50%,
+                background-image: linear-gradient(to right,
+                        #ffffffbb 10%,
+                        #e8ebf58e 30%,
+                        #d8dce811 50%,
                         #f2f2f200 60%),
                     url(../../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg);
             }
@@ -420,10 +359,12 @@
 
                 .title-container {
                     position: absolute;
-                    top: 25%;
+                    top: 30%;
                     left: 5%;
-                    width: 40%;
-
+                    width: 50%;
+                    .setion-title {
+                        font-size: $section-title;
+                    }
                     .p-large {
                         font-size: clamp(1rem, 1.5vw, 1.6rem);
                     }
@@ -451,14 +392,6 @@
                             margin-bottom: 2rem;
                         }
                     }
-
-                    .card:nth-last-of-type(2) {
-                        border-right: 2px solid #f2f3f4;
-
-                        .p-large {
-                            color: #f2f2f2a3;
-                        }
-                    }
                 }
             }
         }
@@ -467,10 +400,10 @@
             .automatizacion__img {
                 min-height: 38rem;
                 background-image: linear-gradient(75deg,
-                        #ffffff 10%,
-                        #e8ebf5de 30%,
-                        #d8dce885 50%,
-                        #f2f2f200 60%),
+                #ffffffbb 10%,
+                #e8ebf58e 30%,
+                #d8dce811 50%,
+                #f2f2f200 60%),
                     url(../../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg);
                 background-position: top center;
             }
@@ -479,7 +412,7 @@
 
                 .title-container {
                     position: absolute;
-                    top: 20%;
+                    top: 30%;
                     left: 5%;
                     width: 35%;
                 }
@@ -505,13 +438,6 @@
                         padding: 2rem 1rem;
                     }
 
-                    .card:nth-last-of-type(2) {
-                        border-right: 2px solid #f2f3f4;
-
-                        .p-large {
-                            color: #f2f2f2a3;
-                        }
-                    }
                 }
             }
 
@@ -537,10 +463,10 @@
         }
 
         .innovacion__content {
-            margin-top: -10rem;
+            // margin-top: -10rem;
 
             .title-container {
-                @include container;
+                top: 35%;
 
 
 
