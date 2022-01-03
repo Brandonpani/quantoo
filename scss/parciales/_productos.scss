@@ -327,22 +327,22 @@
         }
 
         @media only screen and (min-width: $tablet) {
-            .title,
+            .section-title,
             .subtitle {
                 width: 60%;
-                margin-inline-start: auto;
-                margin-inline-end: auto;
+                // margin-inline-start: auto;
+                // margin-inline-end: auto;
             }
-            .title {
+            .section-title {
                 font-size: $banner-title--clamp;
             }
         }
         @media only screen and (min-width: $laptop) {
-            .title,
+            .section-title,
             .subtitle {
-                width: 70%;
-                margin-inline-start: auto;
-                margin-inline-end: auto;
+                width: 50%;
+                // margin-inline-start: auto;
+                // margin-inline-end: auto;
             }
             
         }

@@ -442,10 +442,10 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-productos .banner .subtitle { width: 70%; -webkit-margin-start: auto; margin-inline-start: auto; -webkit-margin-end: auto; margin-inline-end: auto; -webkit-padding-after: 3rem; padding-block-end: 3rem; }
 
-@media only screen and (min-width: 768px) { #main-productos .banner .title, #main-productos .banner .subtitle { width: 60%; -webkit-margin-start: auto; margin-inline-start: auto; -webkit-margin-end: auto; margin-inline-end: auto; }
-  #main-productos .banner .title { font-size: clamp(2.5rem, 4vw, 5rem); } }
+@media only screen and (min-width: 768px) { #main-productos .banner .section-title, #main-productos .banner .subtitle { width: 60%; }
+  #main-productos .banner .section-title { font-size: clamp(2.5rem, 4vw, 5rem); } }
 
-@media only screen and (min-width: 1024px) { #main-productos .banner .title, #main-productos .banner .subtitle { width: 70%; -webkit-margin-start: auto; margin-inline-start: auto; -webkit-margin-end: auto; margin-inline-end: auto; } }
+@media only screen and (min-width: 1024px) { #main-productos .banner .section-title, #main-productos .banner .subtitle { width: 50%; } }
 
 #main-productos #factoraje { padding: 5rem 0; }
 
