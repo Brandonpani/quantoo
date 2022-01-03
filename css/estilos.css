@@ -297,19 +297,6 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-index #productos .cards-container .p-large { color: #454558; }
 
-@media only screen and (min-width: 768px) { #main-index #productos .cards-container { padding: 3rem; -webkit-margin-after: 3rem; margin-block-end: 3rem; }
-  #main-index #productos .cards-container .cards-wrapper { place-content: center; -ms-grid-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; -ms-grid-rows: auto auto; grid-template-rows: auto auto; grid-template-areas: "img img" "time multi"; }
-  #main-index #productos .cards-container .cards-wrapper .img-cards { -ms-grid-row: 1; -ms-grid-column: 1; -ms-grid-column-span: 2; grid-area: img; }
-  #main-index #productos .cards-container .cards-wrapper .time { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: time; }
-  #main-index #productos .cards-container .cards-wrapper .multi { -ms-grid-row: 2; -ms-grid-column: 2; grid-area: multi; } }
-
-@media only screen and (min-width: 1024px) { #main-index #productos .productos__content { -webkit-margin-before: 2rem; margin-block-start: 2rem; display: -ms-grid; display: grid; -ms-grid-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; gap: 2rem; -ms-flex-line-pack: center; align-content: center; grid-template-areas: "info img"; }
-  #main-index #productos .productos__content .productos__img { -ms-grid-row: 1; grid-row: 1; -ms-grid-column: 2; grid-column: 2; -ms-grid-row: 1; -ms-grid-column: 2; grid-area: img; -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; }
-  #main-index #productos .productos__content .title-container { -ms-grid-row: 1; grid-row: 1; -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 1; -ms-grid-column: 1; grid-area: info; -webkit-margin-before: 1rem; margin-block-start: 1rem; }
-  #main-index #productos .productos__content .title-container .p-normal { margin-bottom: 1rem; }
-  #main-index #productos .productos__content .title-container .btn { font-size: .875rem; }
-  #main-index #productos .cards-container .section-title { width: 50%; } }
-
 #main-index .automatizacion { width: 100vw; position: relative; }
 
 #main-index .automatizacion .automatizacion__img { min-height: 32rem; background-image: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #ffffff), color-stop(30%, #e8ebf5de), color-stop(40%, #f2f2f200)), url(../../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg); background-image: linear-gradient(360deg, #ffffff 10%, #e8ebf5de 30%, #f2f2f200 40%), url(../../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg); background-size: cover; background-position: center center; }
