@@ -166,11 +166,8 @@
                 margin-block-end: 2rem;
             }
             .productos__img {
-
                 img {
-                    // border-radius: .3rem;
                     aspect-ratio: 8/5;
-                    // box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
                 }
             }
 
@@ -187,13 +184,11 @@
 
                 .p-large {
                     color: #000000bd;
-                    // font-weight: 400;
                     margin-block-end: 2rem;
                 }
 
                 .btn {
                     font-size: .875rem;
-                    // min-width: 21rem;
                 }
             }
         }
@@ -224,26 +219,15 @@
                 .img-cards {
                     height: 100%;
                     object-fit: cover;
-                    // border-radius: .3rem;
                     box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
                 }
 
                 .card {
-                    // background-color: $dark-md;
                     padding: 1.5rem;
                     box-shadow: inset 0 1px 0px rgba(255, 255, 255, .2);
 
-                    // color: $clr-light-gray;
-
                     .icon-container {
-                        // padding: 1.5rem;
-                        // width: 20%;
-                        // display: grid;
-                        // place-content: center;
-                        // aspect-ratio: 1;
-                        // background-color: $blue;
-                        // margin-bottom: 2rem;
-
+                        
                         .clock,
                         .multi-icon {
                             font-size: 2rem;
@@ -278,14 +262,11 @@
 
         }
 
-        // MEDIA QUERY PRODUCTOS
         @media only screen and (min-width: $tablet) {
 
 
             .cards-container {
-                // @include container;
                 padding: 3rem;
-                // border-radius: 1rem;
                 background-color: $dark-bg;
                 box-shadow: inset 2px 2px 15px rgba(0, 0, 0, 0.2);
                 margin-block-end: 3rem;
@@ -373,7 +354,7 @@
                     #ffffff 10%,
                     #e8ebf5de 30%,
                     #f2f2f200 40%),
-                url(../../images/top-view-businessman-suit-discussing-online-profit-with-manager-phone.jpg);
+                url(../../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg);
             background-size: cover;
             background-position: center center;
         }
@@ -413,7 +394,7 @@
                         #e8ebf5de 30%,
                         #d8dce885 50%,
                         #f2f2f200 60%),
-                    url(../../images/top-view-businessman-suit-discussing-online-profit-with-manager-phone.jpg);
+                        url(../../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg);
             }
 
             .automatizacion__content {
@@ -472,7 +453,7 @@
                         #e8ebf5de 30%,
                         #d8dce885 50%,
                         #f2f2f200 60%),
-                    url(../../images/top-view-businessman-suit-discussing-online-profit-with-manager-phone.jpg);
+                    url(../../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg);
                 background-position: top center;
             }
 

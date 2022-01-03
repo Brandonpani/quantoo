@@ -312,7 +312,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-index .automatizacion { width: 100vw; position: relative; }
 
-#main-index .automatizacion .automatizacion__img { min-height: 32rem; background-image: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #ffffff), color-stop(30%, #e8ebf5de), color-stop(40%, #f2f2f200)), url(../../images/top-view-businessman-suit-discussing-online-profit-with-manager-phone.jpg); background-image: linear-gradient(360deg, #ffffff 10%, #e8ebf5de 30%, #f2f2f200 40%), url(../../images/top-view-businessman-suit-discussing-online-profit-with-manager-phone.jpg); background-size: cover; background-position: center center; }
+#main-index .automatizacion .automatizacion__img { min-height: 32rem; background-image: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #ffffff), color-stop(30%, #e8ebf5de), color-stop(40%, #f2f2f200)), url(../../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg); background-image: linear-gradient(360deg, #ffffff 10%, #e8ebf5de 30%, #f2f2f200 40%), url(../../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg); background-size: cover; background-position: center center; }
 
 #main-index .automatizacion .automatizacion__content { width: 90%; max-width: 1400px; margin: 0 auto; height: 100%; }
 
@@ -325,7 +325,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 #main-index .automatizacion .cards-container .p-large { color: #f2f2f2a3; }
 
 @media only screen and (min-width: 768px) { #main-index .automatizacion { position: relative; }
-  #main-index .automatizacion .automatizacion__img { min-height: 38rem; background-image: linear-gradient(75deg, #ffffff 10%, #e8ebf5de 30%, #d8dce885 50%, #f2f2f200 60%), url(../../images/top-view-businessman-suit-discussing-online-profit-with-manager-phone.jpg); }
+  #main-index .automatizacion .automatizacion__img { min-height: 38rem; background-image: linear-gradient(75deg, #ffffff 10%, #e8ebf5de 30%, #d8dce885 50%, #f2f2f200 60%), url(../../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg); }
   #main-index .automatizacion .automatizacion__content { margin: 0; }
   #main-index .automatizacion .automatizacion__content .title-container { position: absolute; top: 25%; left: 5%; width: 40%; }
   #main-index .automatizacion .automatizacion__content .title-container .p-large { font-size: clamp(1rem, 1.5vw, 1.6rem); }
@@ -336,7 +336,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
   #main-index .automatizacion .cards-container .cards-wrapper .card:nth-last-of-type(2) { border-right: 2px solid #f2f3f4; }
   #main-index .automatizacion .cards-container .cards-wrapper .card:nth-last-of-type(2) .p-large { color: #f2f2f2a3; } }
 
-@media only screen and (min-width: 1024px) { #main-index .automatizacion .automatizacion__img { min-height: 38rem; background-image: linear-gradient(75deg, #ffffff 10%, #e8ebf5de 30%, #d8dce885 50%, #f2f2f200 60%), url(../../images/top-view-businessman-suit-discussing-online-profit-with-manager-phone.jpg); background-position: top center; }
+@media only screen and (min-width: 1024px) { #main-index .automatizacion .automatizacion__img { min-height: 38rem; background-image: linear-gradient(75deg, #ffffff 10%, #e8ebf5de 30%, #d8dce885 50%, #f2f2f200 60%), url(../../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg); background-position: top center; }
   #main-index .automatizacion .automatizacion__content .title-container { position: absolute; top: 20%; left: 5%; width: 35%; }
   #main-index .automatizacion .cards-container { background-color: #202020; width: 100vw; }
   #main-index .automatizacion .cards-container .cards-wrapper { width: 80%; min-height: 35vh; -webkit-margin-start: auto; margin-inline-start: auto; -webkit-margin-end: auto; margin-inline-end: auto; display: -ms-grid; display: grid; place-items: center; -ms-grid-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; gap: 2rem; color: #f2f2f2; }
