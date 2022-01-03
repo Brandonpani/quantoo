@@ -264,87 +264,88 @@
 
         }
 
-        @media only screen and (min-width: $tablet) {
+        
+        // @media only screen and (min-width: $tablet) {
 
 
-            .cards-container {
-                padding: 3rem;
-                // background-color: $dark-bg;
-                // box-shadow: inset 2px 2px 15px rgba(0, 0, 0, 0.2);
-                margin-block-end: 3rem;
+        //     .cards-container {
+        //         padding: 3rem;
+        //         // background-color: $dark-bg;
+        //         // box-shadow: inset 2px 2px 15px rgba(0, 0, 0, 0.2);
+        //         margin-block-end: 3rem;
 
-                // .subtitle {
-                //     font-size: 4rem;
-                //     line-height: 1;
-                //     padding: 3rem 0;
-                // }
+        //         // .subtitle {
+        //         //     font-size: 4rem;
+        //         //     line-height: 1;
+        //         //     padding: 3rem 0;
+        //         // }
 
-                .cards-wrapper {
-                    place-content: center;
-                    grid-template-columns: 1fr 1fr;
-                    grid-template-rows: auto auto;
-                    grid-template-areas:
-                        "img img"
-                        "time multi"
-                    ;
+        //         .cards-wrapper {
+        //             place-content: center;
+        //             grid-template-columns: 1fr 1fr;
+        //             grid-template-rows: auto auto;
+        //             grid-template-areas:
+        //                 "img img"
+        //                 "time multi"
+        //             ;
 
-                    .img-cards {
-                        grid-area: img;
-                    }
+        //             .img-cards {
+        //                 grid-area: img;
+        //             }
 
-                    .time {
-                        grid-area: time;
-                    }
+        //             .time {
+        //                 grid-area: time;
+        //             }
 
-                    .multi {
-                        grid-area: multi;
-                    }
-                }
-            }
+        //             .multi {
+        //                 grid-area: multi;
+        //             }
+        //         }
+        //     }
 
 
-        }
+        // }
 
-        @media only screen and (min-width: 1024px) {
-            .productos__content {
-                margin-block-start: 2rem;
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 2rem;
-                align-content: center;
-                grid-template-areas: "info img"
-                ;
+        // @media only screen and (min-width: 1024px) {
+        //     .productos__content {
+        //         margin-block-start: 2rem;
+        //         display: grid;
+        //         grid-template-columns: 1fr 1fr;
+        //         gap: 2rem;
+        //         align-content: center;
+        //         grid-template-areas: "info img"
+        //         ;
 
-                .productos__img {
-                    grid-row: 1;
-                    grid-column: 2;
-                    grid-area: img;
-                    align-self: center;
-                }
+        //         .productos__img {
+        //             grid-row: 1;
+        //             grid-column: 2;
+        //             grid-area: img;
+        //             align-self: center;
+        //         }
 
-                .title-container {
-                    grid-row: 1;
-                    grid-column: 1;
-                    grid-area: info;
-                    margin-block-start: 1rem;
+        //         .title-container {
+        //             grid-row: 1;
+        //             grid-column: 1;
+        //             grid-area: info;
+        //             margin-block-start: 1rem;
 
-                    .p-normal {
-                        margin-bottom: 1rem;
-                    }
+        //             .p-normal {
+        //                 margin-bottom: 1rem;
+        //             }
 
-                    .btn {
-                        font-size: .875rem;
-                        // min-width: 21rem;
-                    }
-                }
-            }
+        //             .btn {
+        //                 font-size: .875rem;
+        //                 // min-width: 21rem;
+        //             }
+        //         }
+        //     }
 
-            .cards-container {
-                .section-title {
-                    width: 50%;
-                }
-            }
-        }
+        //     .cards-container {
+        //         .section-title {
+        //             width: 50%;
+        //         }
+        //     }
+        // }
     }
 
     // REGULACION
