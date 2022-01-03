@@ -265,7 +265,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-index #productos .productos__content .section-title { color: #000; line-height: 1.1; -webkit-margin-after: 2rem; margin-block-end: 2rem; }
 
-#main-index #productos .productos__content .productos__img img { aspect-ratio: 8/5; }
+#main-index #productos .productos__content .productos__img img { aspect-ratio: 16/6; -o-object-fit: cover; object-fit: cover; background-position: center; }
 
 #main-index #productos .productos__content .title-container { -webkit-margin-before: 1rem; margin-block-start: 1rem; text-align: center; }
 
@@ -296,6 +296,8 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 #main-index #productos .cards-container .cards-wrapper .card .p-normal { margin-bottom: 1rem; }
 
 #main-index #productos .cards-container .p-large { color: #454558; }
+
+@media only screen and (min-width: 768px) { #main-index .productos__content .productos__img { aspect-ratio: 16/9; } }
 
 #main-index .automatizacion { width: 100vw; position: relative; }
 

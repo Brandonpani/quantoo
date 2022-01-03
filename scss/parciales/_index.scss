@@ -158,7 +158,6 @@
 
         .productos__content {
             @include container;
-
             padding: 2rem 0;
 
             .section-title {
@@ -169,7 +168,9 @@
 
             .productos__img {
                 img {
-                    aspect-ratio: 8/5;
+                    aspect-ratio: 16/6;
+                    object-fit: cover;
+                    background-position: center;
                 }
             }
 
@@ -263,8 +264,17 @@
             }
 
         }
+    }
 
-        
+    @media only screen and (min-width: $tablet) {
+        .productos__content {
+            
+            .section-title {}
+            .productos__img {
+                aspect-ratio: 16/9;
+            }
+        }
+    }
         // @media only screen and (min-width: $tablet) {
 
 
@@ -346,7 +356,7 @@
         //         }
         //     }
         // }
-    }
+    
 
     // REGULACION
 
