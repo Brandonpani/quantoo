@@ -296,7 +296,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-index #automatizacion .top .automatizacion__img { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: img; }
 
-#main-index #automatizacion .top .automatizacion__img img { aspect-ratio: 16/7; -o-object-fit: cover; object-fit: cover; }
+#main-index #automatizacion .top .automatizacion__img img { height: 20rem; -o-object-fit: cover; object-fit: cover; }
 
 #main-index #automatizacion .automatizacion__cards { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: cards; width: 90%; max-width: 1400px; margin: 0 auto; }
 

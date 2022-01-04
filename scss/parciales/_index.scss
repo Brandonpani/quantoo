@@ -263,7 +263,8 @@
             .automatizacion__img {
                 grid-area: img;
                 img {
-                    aspect-ratio: 16/7;
+                    // aspect-ratio: 16/7;
+                    height: 20rem;
                     object-fit: cover;
                 }
             }
