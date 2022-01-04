@@ -326,6 +326,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 #main-index #automatizacion .automatizacion__cards .eco { grid-area: eco; }
 
 @media only screen and (min-width: 768px) { #main-index #automatizacion { width: 90%; max-width: 1400px; margin: 0 auto; margin-block: 3rem; }
+  #main-index #automatizacion .top .section-title { font-size: clamp(3rem, 5vw, 5rem); }
   #main-index #automatizacion .top { -ms-grid-row: 3; -ms-grid-column: 1; grid-area: info; }
   #main-index #automatizacion .automatizacion__cards { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: cards; place-self: center; display: -ms-grid; display: grid; gap: 1rem; grid-template-columns: repeat(2, 1fr); grid-template-areas: "ciclo eco"; }
   #main-index #automatizacion .automatizacion__cards .ciclo { -ms-grid-row: 1; -ms-grid-column: 1; grid-area: ciclo; }
