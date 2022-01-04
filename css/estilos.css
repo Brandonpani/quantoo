@@ -315,11 +315,15 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-index #automatizacion .top .automatizacion__header .section-title { text-align: left; }
 
-#main-index #automatizacion .top .innovacion__img { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: img; }
+#main-index #automatizacion .top .automatizacion__img { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: img; }
 
-#main-index #automatizacion .top .innovacion__img img { aspect-ratio: 16/7; -o-object-fit: cover; object-fit: cover; }
+#main-index #automatizacion .top .automatizacion__img img { aspect-ratio: 16/7; -o-object-fit: cover; object-fit: cover; }
 
 #main-index #automatizacion .automatizacion__cards { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: cards; width: 90%; max-width: 1400px; margin: 0 auto; }
+
+#main-index #automatizacion .automatizacion__cards .ciclo { grid-area: ciclo; }
+
+#main-index #automatizacion .automatizacion__cards .eco { grid-area: eco; }
 
 @media only screen and (min-width: 768px) { #main-index #automatizacion { width: 90%; max-width: 1400px; margin: 0 auto; margin-block: 3rem; }
   #main-index #automatizacion .top { -ms-grid-row: 3; -ms-grid-column: 1; grid-area: info; }
@@ -329,10 +333,9 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 @media only screen and (min-width: 1400px) { #main-index #automatizacion { width: 90%; max-width: 1400px; margin: 0 auto; margin-block: 3rem; }
   #main-index #automatizacion .top { -ms-grid-row: 3; -ms-grid-column: 1; grid-area: info; }
-  #main-index #automatizacion .innovacion__cards { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: cards; place-self: center; display: -ms-grid; display: grid; gap: 2rem; grid-template-columns: repeat(3, 1fr); grid-template-rows: auto; grid-template-areas: "saas banca api"; }
-  #main-index #automatizacion .innovacion__cards .saas { -ms-grid-row: 1; -ms-grid-column: 1; grid-area: saas; }
-  #main-index #automatizacion .innovacion__cards .banca { -ms-grid-row: 1; -ms-grid-column: 2; grid-area: banca; }
-  #main-index #automatizacion .innovacion__cards .api { -ms-grid-row: 1; -ms-grid-column: 3; grid-area: api; } }
+  #main-index #automatizacion .automatizacion__cards { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: cards; place-self: center; display: -ms-grid; display: grid; gap: 2rem; grid-template-columns: repeat(3, 1fr); grid-template-rows: auto; grid-template-areas: "saas banca api"; }
+  #main-index #automatizacion .automatizacion__cards .ciclo { grid-area: ciclo; }
+  #main-index #automatizacion .automatizacion__cards .eco { grid-area: eco; } }
 
 #main-index #innovacion { min-height: 100vh; margin-block: 3rem; display: -ms-grid; display: grid; grid-template-areas: "info" "cards"; }
 
@@ -347,6 +350,12 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 #main-index #innovacion .top .innovacion__img img { aspect-ratio: 16/7; -o-object-fit: cover; object-fit: cover; }
 
 #main-index #innovacion .innovacion__cards { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: cards; width: 90%; max-width: 1400px; margin: 0 auto; }
+
+#main-index #innovacion .innovacion__cards .saas { grid-area: saas; }
+
+#main-index #innovacion .innovacion__cards .banca { grid-area: banca; }
+
+#main-index #innovacion .innovacion__cards .api { grid-area: api; }
 
 @media only screen and (min-width: 768px) { #main-index #innovacion { width: 90%; max-width: 1400px; margin: 0 auto; margin-block: 3rem; }
   #main-index #innovacion .top { -ms-grid-row: 3; -ms-grid-column: 1; grid-area: info; }

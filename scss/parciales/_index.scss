@@ -332,7 +332,7 @@
                     text-align: left;
                 }
             }
-            .innovacion__img {
+            .automatizacion__img {
                 grid-area: img;
                 img {
                     aspect-ratio: 16/7;
@@ -345,7 +345,10 @@
             @include container;
 
             .ciclo {
-                
+                grid-area: ciclo;
+            }
+            .eco {
+                grid-area: eco;
             }
         }
 
@@ -381,7 +384,7 @@
             .top {
                 grid-area: info;
             }
-            .innovacion__cards {
+            .automatizacion__cards {
                 grid-area: cards;
                 place-self: center;
 
@@ -392,16 +395,12 @@
                 grid-template-areas: 
                     "saas banca api"
                 ;
-
-                .saas {
-                    grid-area: saas;
-                }  
-                .banca {
-                    grid-area: banca;
+                .ciclo {
+                    grid-area: ciclo;
                 }
-                .api {
-                    grid-area: api;
-                }
+                .eco {
+                    grid-area: eco;
+                }   
             }
         }
     }
@@ -452,6 +451,15 @@
             grid-area: cards;
             @include container;
 
+            .saas {
+                grid-area: saas;
+            }  
+            .banca {
+                grid-area: banca;
+            }
+            .api {
+                grid-area: api;
+            }
         }
 
         @media only screen and (min-width: $tablet) {
