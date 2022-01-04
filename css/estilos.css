@@ -309,7 +309,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-index #automatizacion .top { -ms-grid-row: 3; -ms-grid-column: 1; grid-area: info; width: 90%; max-width: 1400px; margin: 0 auto; margin-block: 3rem; min-height: 50vh; display: -ms-grid; display: grid; gap: 2rem; grid-template-areas: "title" "img" "info"; }
 
-#main-index #automatizacion .top .section-title { -ms-grid-row: 1; -ms-grid-column: 1; grid-area: title; }
+#main-index #automatizacion .top .section-title { -ms-grid-row: 1; -ms-grid-column: 1; grid-area: title; font-size: 2.5rem; }
 
 #main-index #automatizacion .top .automatizacion__header { -ms-grid-row: 3; -ms-grid-column: 1; grid-area: info; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; height: 100%; -webkit-box-align: center; -ms-flex-align: center; align-items: center; text-align: center; }
 
