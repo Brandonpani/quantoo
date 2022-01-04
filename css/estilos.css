@@ -269,15 +269,19 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-index #productos .productos__content { background-image: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #ffffff), color-stop(30%, #f2f3f4), color-stop(50%, #5292d357)), url(../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg); background-image: linear-gradient(to top, #ffffff 20%, #f2f3f4 30%, #5292d357 50%), url(../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg); background-size: cover; background-position: center center; min-height: 70vh; z-index: -1; }
 
-#main-index #productos .title-container { bottom: -45%; width: 90%; max-width: 1400px; margin: 0 auto; text-align: center; height: 100%; -webkit-margin-start: 5%; margin-inline-start: 5%; -webkit-margin-before: -20rem; margin-block-start: -20rem; }
+#main-index #productos .title-container { width: 90%; max-width: 1400px; margin: 0 auto; text-align: center; height: 100%; -webkit-margin-start: 5%; margin-inline-start: 5%; -webkit-margin-before: -20rem; margin-block-start: -20rem; }
 
 #main-index #productos .title-container .p-large { -webkit-margin-after: 2rem; margin-block-end: 2rem; }
 
 #main-index #productos .title-container .cta-productos .btn { font-size: .875rem; }
 
+#main-index #productos .cards-container { width: 90%; max-width: 1400px; margin: 0 auto; -webkit-margin-before: 3rem; margin-block-start: 3rem; }
+
 @media only screen and (min-width: 768px) { #main-index #productos .title-container { -webkit-margin-before: -23rem; margin-block-start: -23rem; } }
 
-#main-index #productos .cards-container { width: 90%; max-width: 1400px; margin: 0 auto; }
+@media only screen and (min-width: 1024px) { #main-index #productos .productos__content { background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, #fffffff3), color-stop(30%, #f2f3f48e), color-stop(50%, #5292d357)), url(../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg); background-image: linear-gradient(to right, #fffffff3 10%, #f2f3f48e 30%, #5292d357 50%), url(../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg); background-position: left top; }
+  #main-index #productos .title-container { position: absolute; top: 60%; width: 45%; }
+  #main-index #productos .cards-container { width: 90%; max-width: 1400px; margin: 0 auto; -webkit-margin-before: 3rem; margin-block-start: 3rem; display: -webkit-box; display: -ms-flexbox; display: flex; } }
 
 #main-index #automatizacion { min-height: 100vh; margin-block: 3rem; display: -ms-grid; display: grid; grid-template-areas: "info" "cards"; }
 
