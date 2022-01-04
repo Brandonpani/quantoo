@@ -166,10 +166,11 @@
         .productos__content {
             background-image: linear-gradient(to top, #f2f2f2fa 20%, #f2f3f4 30%, #5292d357 50%,), url(../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg);
             background-size: cover;
-            background-position: left center;
+            background-position: center center;
             min-height: 70vh;
             z-index: -1;
         }
+
         .title-container {
             // position: absolute;
             bottom: -45%;
@@ -177,7 +178,7 @@
             text-align: center;
             height: 100%;
             margin-inline-start: 5%;
-            margin-block-start: -10rem;
+            margin-block-start: -20rem;
 
             .p-large {
                 margin-block-end: 2rem;
@@ -186,6 +187,12 @@
                 .btn {
                     font-size: .875rem;
                 }
+            }
+
+        }
+        @media only screen and (min-width: $tablet) {
+            .title-container {
+                margin-block-start: -23rem;
             }
         }
 

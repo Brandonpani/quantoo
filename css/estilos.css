@@ -267,13 +267,15 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-index #productos .section-title { -webkit-margin-after: 2rem; margin-block-end: 2rem; }
 
-#main-index #productos .productos__content { background-image: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #f2f2f2fa), color-stop(30%, #f2f3f4), color-stop(50%, #5292d357)), url(../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg); background-image: linear-gradient(to top, #f2f2f2fa 20%, #f2f3f4 30%, #5292d357 50%), url(../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg); background-size: cover; background-position: left center; min-height: 70vh; z-index: -1; }
+#main-index #productos .productos__content { background-image: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #f2f2f2fa), color-stop(30%, #f2f3f4), color-stop(50%, #5292d357)), url(../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg); background-image: linear-gradient(to top, #f2f2f2fa 20%, #f2f3f4 30%, #5292d357 50%), url(../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg); background-size: cover; background-position: center center; min-height: 70vh; z-index: -1; }
 
-#main-index #productos .title-container { bottom: -45%; width: 90%; max-width: 1400px; margin: 0 auto; text-align: center; height: 100%; -webkit-margin-start: 5%; margin-inline-start: 5%; -webkit-margin-before: -10rem; margin-block-start: -10rem; }
+#main-index #productos .title-container { bottom: -45%; width: 90%; max-width: 1400px; margin: 0 auto; text-align: center; height: 100%; -webkit-margin-start: 5%; margin-inline-start: 5%; -webkit-margin-before: -20rem; margin-block-start: -20rem; }
 
 #main-index #productos .title-container .p-large { -webkit-margin-after: 2rem; margin-block-end: 2rem; }
 
 #main-index #productos .title-container .cta-productos .btn { font-size: .875rem; }
+
+@media only screen and (min-width: 768px) { #main-index #productos .title-container { -webkit-margin-before: -23rem; margin-block-start: -23rem; } }
 
 #main-index #productos .cards-container { width: 90%; max-width: 1400px; margin: 0 auto; }
 
