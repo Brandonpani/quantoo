@@ -280,8 +280,9 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 @media only screen and (min-width: 768px) { #main-index #productos .title-container { -webkit-margin-before: -23rem; margin-block-start: -23rem; } }
 
 @media only screen and (min-width: 1024px) { #main-index #productos .productos__content { background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, #fffffff3), color-stop(30%, #f2f3f48e), color-stop(50%, #5292d357)), url(../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg); background-image: linear-gradient(to right, #fffffff3 10%, #f2f3f48e 30%, #5292d357 50%), url(../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg); background-position: left top; }
-  #main-index #productos .title-container { position: absolute; top: 60%; width: 45%; }
-  #main-index #productos .cards-container { width: 90%; max-width: 1400px; margin: 0 auto; -webkit-margin-before: 3rem; margin-block-start: 3rem; display: -webkit-box; display: -ms-flexbox; display: flex; } }
+  #main-index #productos .title-container { position: absolute; top: 65%; width: 45%; }
+  #main-index #productos .cards-container { width: 90%; max-width: 1400px; margin: 0 auto; -webkit-margin-before: 3rem; margin-block-start: 3rem; }
+  #main-index #productos .cards-container .cards-wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 2rem; } }
 
 #main-index #automatizacion { min-height: 100vh; margin-block: 3rem; display: -ms-grid; display: grid; grid-template-areas: "info" "cards"; }
 

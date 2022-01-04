@@ -204,13 +204,17 @@
             }
             .title-container {
                 position: absolute;
-                top: 60%;
+                top: 65%;
                 width: 45%
             }
             .cards-container {
                 @include container;
                 margin-block-start: 3rem;
-                display: flex;
+                .cards-wrapper {
+
+                    display: flex;
+                    gap: 2rem;
+                }
             }
         }
 
