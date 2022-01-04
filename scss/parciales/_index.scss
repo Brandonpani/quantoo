@@ -221,7 +221,116 @@
         
         
     }
-       
+  
+    #regulacion {
+
+        min-height: 100vh;
+        margin-block: 3rem;
+        display: grid;
+        grid-template-areas:
+            "info"
+            "cards"
+        ;
+
+        .top {
+            grid-area: info;
+            @include container;
+            margin-block: 3rem;
+            min-height: 50vh;
+            display: grid;
+            gap: 2rem;
+            grid-template-areas:
+                "title"
+                "img"
+                "info"
+            ;
+
+            .section-title {
+                grid-area: title;
+                font-size: 2.5rem;
+            }
+            .regulacion__header {
+                grid-area: info;
+                flex: 1;
+                height: 100%;
+                align-items: center;
+                text-align: center;
+                .section-title {
+                    text-align: left;
+                }
+            }
+            .regulacion__img {
+                grid-area: img;
+                img {
+                    // aspect-ratio: 16/7;
+                    height: 25vh;
+                    object-fit: cover;
+                    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+                }
+            }
+        }
+        .regulacion__cards {
+            grid-area: cards;
+            @include container;
+
+            .seguridad {
+                grid-area: seguridad;
+            }
+            .informacion {
+                grid-area: informacion;
+            }
+            .compliance {
+                grid-area: compliance;
+            }
+        }
+
+        @media only screen and (min-width: $tablet) {
+
+            .top {
+                .section-title {
+                    font-size: $section-title;
+                }
+                
+            }   
+
+            @include container;
+            margin-block: 3rem;
+
+            .top {
+                grid-area: info;
+            }
+            .regulacion__cards {
+                grid-area: cards;
+                place-self: center;
+
+                display: grid;
+                gap: 1rem;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-areas: 
+                    "seguridad informacion compliance"
+                ;
+
+                .seguridad {
+                    grid-area: seguridad;
+                }
+                .informacion {
+                    grid-area: informacion;
+                }
+                .compliance {
+                    grid-area: compliance;
+                }
+            }
+        }
+        @media only screen and (min-width: 1400px) {
+            @include container;
+            margin-block: 3rem;
+            .top {
+                grid-area: info;
+            }
+            
+        }
+        
+    }
     
     // AUTOMATIZACION
     #automatizacion {
