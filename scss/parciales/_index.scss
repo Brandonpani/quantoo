@@ -367,7 +367,7 @@
                 gap: 1rem;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-areas: 
-                    "ciclo banca"
+                    "ciclo eco"
                 ;
 
                 .ciclo {
@@ -384,24 +384,23 @@
             .top {
                 grid-area: info;
             }
-            .automatizacion__cards {
-                grid-area: cards;
-                place-self: center;
+            // .automatizacion__cards {
+            //     grid-area: cards;
+            //     place-self: center;
 
-                display: grid;
-                gap: 2rem;
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: auto;
-                grid-template-areas: 
-                    "saas banca api"
-                ;
-                .ciclo {
-                    grid-area: ciclo;
-                }
-                .eco {
-                    grid-area: eco;
-                }   
-            }
+            //     display: grid;
+            //     gap: 2rem;
+            //     grid-template-columns: repeat(2, 1fr);
+            //     grid-template-areas: 
+            //         "ciclo eco"
+            //     ;
+            //     .ciclo {
+            //         grid-area: ciclo;
+            //     }
+            //     .eco {
+            //         grid-area: eco;
+            //     }   
+            // }
         }
     }
 

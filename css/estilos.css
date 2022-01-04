@@ -327,15 +327,12 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 @media only screen and (min-width: 768px) { #main-index #automatizacion { width: 90%; max-width: 1400px; margin: 0 auto; margin-block: 3rem; }
   #main-index #automatizacion .top { -ms-grid-row: 3; -ms-grid-column: 1; grid-area: info; }
-  #main-index #automatizacion .automatizacion__cards { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: cards; place-self: center; display: -ms-grid; display: grid; gap: 1rem; grid-template-columns: repeat(2, 1fr); grid-template-areas: "ciclo banca"; }
+  #main-index #automatizacion .automatizacion__cards { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: cards; place-self: center; display: -ms-grid; display: grid; gap: 1rem; grid-template-columns: repeat(2, 1fr); grid-template-areas: "ciclo eco"; }
   #main-index #automatizacion .automatizacion__cards .ciclo { -ms-grid-row: 1; -ms-grid-column: 1; grid-area: ciclo; }
-  #main-index #automatizacion .automatizacion__cards .eco { grid-area: eco; } }
+  #main-index #automatizacion .automatizacion__cards .eco { -ms-grid-row: 1; -ms-grid-column: 2; grid-area: eco; } }
 
 @media only screen and (min-width: 1400px) { #main-index #automatizacion { width: 90%; max-width: 1400px; margin: 0 auto; margin-block: 3rem; }
-  #main-index #automatizacion .top { -ms-grid-row: 3; -ms-grid-column: 1; grid-area: info; }
-  #main-index #automatizacion .automatizacion__cards { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: cards; place-self: center; display: -ms-grid; display: grid; gap: 2rem; grid-template-columns: repeat(3, 1fr); grid-template-rows: auto; grid-template-areas: "saas banca api"; }
-  #main-index #automatizacion .automatizacion__cards .ciclo { grid-area: ciclo; }
-  #main-index #automatizacion .automatizacion__cards .eco { grid-area: eco; } }
+  #main-index #automatizacion .top { -ms-grid-row: 3; -ms-grid-column: 1; grid-area: info; } }
 
 #main-index #innovacion { min-height: 100vh; margin-block: 3rem; display: -ms-grid; display: grid; grid-template-areas: "info" "cards"; }
 
