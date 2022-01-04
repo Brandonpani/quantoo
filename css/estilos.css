@@ -296,7 +296,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-index #automatizacion .top .automatizacion__img { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: img; }
 
-#main-index #automatizacion .top .automatizacion__img img { height: 25rem; -o-object-fit: cover; object-fit: cover; -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); }
+#main-index #automatizacion .top .automatizacion__img img { height: 25vh; -o-object-fit: cover; object-fit: cover; -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); }
 
 #main-index #automatizacion .automatizacion__cards { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: cards; width: 90%; max-width: 1400px; margin: 0 auto; }
 

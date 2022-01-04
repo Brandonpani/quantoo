@@ -264,7 +264,7 @@
                 grid-area: img;
                 img {
                     // aspect-ratio: 16/7;
-                    height: 25rem;
+                    height: 25vh;
                     object-fit: cover;
                     box-shadow: 0 2px 8px rgba(0,0,0,0.4);
                 }
@@ -288,6 +288,7 @@
                 .section-title {
                     font-size: $section-title;
                 }
+                
             }   
 
             @include container;
