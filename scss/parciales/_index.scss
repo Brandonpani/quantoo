@@ -155,43 +155,30 @@
 
 
     #productos {
-
+        margin-block: 3rem;
+        min-height: 80vh;
+        position: relative;
+        outline: 1px solid red;
         .productos__content {
+            background-image: linear-gradient(to top, #f2f2f2d5 20%, #5292d357 30%,), url(../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg);
+            background-size: cover;
+            background-position: left center;
+            min-height: 70vh;
+            z-index: -1;
+        }
+        .title-container {
+            // position: absolute;
+            bottom: -45%;
             @include container;
-            padding: 2rem 0;
+            text-align: center;
+            height: 100%;
+            margin-inline-start: 5%;
+            margin-block-start: -10rem;
 
-            .section-title {
-                color: $clr-dark-text;
-                line-height: 1.1;
+            .p-large {
                 margin-block-end: 2rem;
             }
-
-            .productos__img {
-
-                img {
-                    aspect-ratio: 16/7;
-                    object-fit: cover;
-
-                    background-position: top;
-                }
-            }
-
-            .title-container {
-                margin-block-start: 1rem;
-                text-align: center;
-
-
-                h3.section-title {
-                    color: $clr-dark-text;
-                    font-size: clamp(1.8rem, 3vw, 2.5rem);
-
-                }
-
-                .p-large {
-                    color: #000000bd;
-                    margin-block-end: 2rem;
-                }
-
+            .cta-productos {
                 .btn {
                     font-size: .875rem;
                 }
@@ -199,100 +186,10 @@
         }
 
         .cards-container {
-            margin-block-start: 3rem;
-            margin-block-end: 3rem;
-
-            .section-title {
-                text-align: center;
-                line-height: 1.1;
-                color: $clr-dark-text;
-                width: 80%;
-                margin: 0 auto;
-                margin-block-end: 2rem;
-
-                span {
-                    color: $blue;
-                }
-            }
-
-            .cards-wrapper {
-                @include container;
-                border-radius: .3rem;
-                display: grid;
-                gap: 1rem;
-
-                .img-cards {
-                    height: 100%;
-                    object-fit: cover;
-                    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-                }
-
-                .card {
-                    padding: 1.5rem;
-                    box-shadow: inset 0 1px 0px rgba(255, 255, 255, .2);
-
-                    .icon-container {
-
-                        .clock,
-                        .multi-icon {
-                            font-size: 2rem;
-                            margin-top: 1rem;
-                            margin-bottom: 1rem;
-                            color: $blue;
-                        }
-                    }
-
-                    .card-title {
-                        // font-size: 2rem;
-                        line-height: 1.2;
-                        color: $clr-dark-text;
-                        margin-block-end: 1rem;
-                        font-weight: 600;
-
-                        .clock,
-                        .multi-icon {
-                            margin-right: 1rem;
-                        }
-                    }
-
-                    .p-normal {
-                        margin-bottom: 1rem;
-                    }
-                }
-            }
-
-            .p-large {
-                color: $clr-mid-gray;
-            }
-
+            @include container;
+            // margin-block-start: 20rem;
         }
         
-        @media only screen and (min-width: $tablet) {
-            .productos__content {
-                
-                .section-title {
-                    margin-block-start: 3rem;
-                }
-                .productos__img {
-                    // aspect-ratio: 16/9;
-                }
-                .title-container {
-                    width: 70%;
-                    margin-inline: auto;
-                }
-            }
-            .cards-container {
-                // width: 70%;
-                margin-inline: auto;
-                .section-title {
-                    width: 80%;
-                    font-size: $section-title;
-                }
-                .cards-wrapper {
-                    grid-template-columns: 1fr 1fr;
-                }
-            }
-        }
     }
        
     
