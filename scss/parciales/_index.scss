@@ -298,152 +298,112 @@
     
     // AUTOMATIZACION
     #automatizacion {
-        width: 100vw;
+        min-height: 100vh;
+        margin-block: 3rem;
+        display: grid;
+        grid-template-areas:
+            "info"
+            "cards"
+        ;
 
-        position: relative;
-        margin-block-start: 5rem;
-
-        .automatizacion__img {
-            min-height: 50vh;
-            background-image: linear-gradient(360deg,
-                    #ffffff 10%,
-                    #e8ebf5de 30%,
-                    #f2f2f200 40%),
-                url(../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg);
-            background-size: cover;
-            background-position: center center;
-        }
-
-        .automatizacion__content {
+        .top {
+            grid-area: info;
             @include container;
-            height: 100%;
-            margin-block-end: 3rem;
-            // display: grid;
-            .title-container {
-                margin-top: -10rem;
+            margin-block: 3rem;
+            min-height: 50vh;
+            display: grid;
+            gap: 2rem;
+            grid-template-areas:
+                "title"
+                "img"
+                "info"
+            ;
+
+            .section-title {
+                grid-area: title;
+            }
+            .automatizacion__header {
+                grid-area: info;
+                flex: 1;
+                height: 100%;
+                align-items: center;
+                text-align: center;
                 .section-title {
-                    font-size: 3rem;
                     text-align: left;
                 }
-                .p-large {
-                    margin-bottom: 1rem;
-                    color: $clr-dark-text;
+            }
+            .innovacion__img {
+                grid-area: img;
+                img {
+                    aspect-ratio: 16/7;
+                    object-fit: cover;
                 }
             }
         }
+        .automatizacion__cards {
+            grid-area: cards;
+            @include container;
 
-        .cards-container {
-            background-color: #202020;
-            padding: 2rem;
-            color: #f2f2f2;
-
-            .p-large {
-                color: #f2f2f2a3;
+            .ciclo {
+                
             }
         }
 
-        @media only screen and (min-width:$tablet) {
+        @media only screen and (min-width: $tablet) {
+            @include container;
+            margin-block: 3rem;
 
-            .automatizacion__img {
-                background-image: linear-gradient(to right,
-                        #ffffffbb 10%,
-                        #e8ebf58e 30%,
-                        #d8dce811 50%,
-                        #f2f2f200 60%),
-                    url(../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg);
+            .top {
+                grid-area: info;
             }
+            .automatizacion__cards {
+                grid-area: cards;
+                place-self: center;
 
-            .automatizacion__content {
-                margin: 0;
-
-                .title-container {
-                    position: absolute;
-                    top: 30%;
-                    left: 5%;
-                    width: 50%;
-                    .setion-title {
-                        font-size: $section-title;
-                        
-                    }
-                    .p-large {
-                        font-size: clamp(1rem, 1.5vw, 1.6rem);
-                    }
-                }
-            }
-
-            .cards-container {
-                background-color: #202020;
-                min-height: 35vh;
                 display: grid;
-                place-content: center;
+                gap: 1rem;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-areas: 
+                    "ciclo banca"
+                ;
 
-                .cards-wrapper {
-                    height: 100%;
-                    display: grid;
-                    margin: auto;
-                    grid-template-columns: 1fr 1fr;
-                    gap: 2rem;
-                    color: #f2f2f2;
-
-                    .card {
-                        padding: 2rem 1rem;
-
-                        .card-title {
-                            margin-bottom: 2rem;
-                        }
-                    }
+                .ciclo {
+                    grid-area: ciclo;
+                }
+                .eco {
+                    grid-area: eco;
                 }
             }
         }
-
-        @media only screen and (min-width:$laptop) {
-            .automatizacion__img {
-                min-height: 38rem;
-                background-image: linear-gradient(75deg,
-                #ffffffbb 10%,
-                #e8ebf58e 30%,
-                #d8dce811 50%,
-                #f2f2f200 60%),
-                    url(../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg);
-                background-position: top center;
+        @media only screen and (min-width: 1400px) {
+            @include container;
+            margin-block: 3rem;
+            .top {
+                grid-area: info;
             }
+            .innovacion__cards {
+                grid-area: cards;
+                place-self: center;
 
-            .automatizacion__content {
+                display: grid;
+                gap: 2rem;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: auto;
+                grid-template-areas: 
+                    "saas banca api"
+                ;
 
-                .title-container {
-                    position: absolute;
-                    top: 23%;
-                    left: 5%;
-                    width: 30%;
+                .saas {
+                    grid-area: saas;
+                }  
+                .banca {
+                    grid-area: banca;
                 }
-
-            }
-
-            .cards-container {
-                // background-color: #202020;
-                // width: 100vw;
-
-                .cards-wrapper {
-                    width: 80%;
-                    min-height: 35vh;
-                    margin-inline-start: auto;
-                    margin-inline-end: auto;
-                    display: grid;
-                    place-items: center;
-                    grid-template-columns: 1fr 1fr;
-                    gap: 2rem;
-                    color: #f2f2f2;
-
-                    .card {
-                        padding: 2rem 1rem;
-                    }
-
+                .api {
+                    grid-area: api;
                 }
             }
-
         }
-
-        @media only screen and (min-width:$desktop) {}
     }
 
 
@@ -478,9 +438,7 @@
                 height: 100%;
                 align-items: center;
                 text-align: center;
-                .section-title {
-                    text-align: left;
-                }
+                
             }
             .innovacion__img {
                 grid-area: img;
