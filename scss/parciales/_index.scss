@@ -156,7 +156,7 @@
 
     #productos {
         margin-block-end: 3rem;
-        min-height: 70vh;
+        // min-height: 70vh;
         position: relative;
 
         .section-title {
@@ -164,7 +164,7 @@
         }
 
         .productos__content {
-            background-image: linear-gradient(to top, #ffffff 20%, #f2f3f4 30%, #5292d357 50%,), url(../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg);
+            background-image: linear-gradient(to top, #ffffff 20%, #f2f3f4 30%, #5292d357 50%,), url(../images/stock);
             background-size: cover;
             background-position: center center;
             min-height: 70vh;
@@ -177,6 +177,7 @@
             height: 100%;
             margin-inline-start: 5%;
             margin-block-start: -20rem;
+            // padding-block: 10rem;
             
             .p-large {
                 margin-block-end: 2rem;
