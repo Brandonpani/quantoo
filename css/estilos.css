@@ -556,7 +556,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
   #main-modulos #pldft .info { -ms-grid-row: 1; grid-row: 1; -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 1; -ms-grid-column: 1; grid-area: img; place-self: center; }
   #main-modulos #pldft .info .info-container { width: 100%; }
   #main-modulos #pldft .info .info-container .title { font-size: 4rem; }
-  #main-modulos #pldft .info .info-container .p-large { font-size: 1.25rem; }
+  #main-modulos #pldft .info .info-container .p-large { font-size: 1.25rem; width: 70%; margin-inline: auto; }
   #main-modulos #pldft .info .info-container .credito-img { width: 40%; margin: auto; padding: 2rem; }
   #main-modulos #pldft .cards { -ms-grid-row: 2; grid-row: 2; -ms-grid-column: 1; grid-column: 1; -ms-grid-row: 2; -ms-grid-column: 1; grid-area: info; place-self: center; }
   #main-modulos #pldft .cards .cards-container { display: -ms-grid; display: grid; -ms-grid-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; gap: 2rem; }
