@@ -224,7 +224,112 @@
         
         
     }
-  
+    
+    #productos-1 {
+        min-height: 100vh;
+        margin-block: 3rem;
+        display: grid;
+        grid-template-areas:
+            "info"
+            "cards"
+        ;
+
+        .top {
+            grid-area: info;
+            @include container;
+            margin-block: 3rem;
+            min-height: 50vh;
+            display: grid;
+            gap: 2rem;
+            grid-template-areas:
+                "title"
+                "img"
+                "info"
+            ;
+
+            .section-title {
+                grid-area: title;
+                font-size: 2.5rem;
+            }
+            .productos-1__header {
+                grid-area: info;
+                flex: 1;
+                height: 100%;
+                align-items: center;
+                text-align: center;
+                .section-title {
+                    text-align: left;
+                }
+                .cta-productos {
+                    margin-block-start: 2rem;
+                }
+            }
+            .productos-1__img {
+                grid-area: img;
+                img {
+                    aspect-ratio: 16/7;
+                    // height: 25rem;
+                    object-fit: cover;
+                    // box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+                }
+            }
+        }
+        .productos-1__cards {
+            grid-area: cards;
+            @include container;
+
+            .time {
+                grid-area: time;
+            }
+            .multi {
+                grid-area: multi;
+            }
+        }
+
+        @media only screen and (min-width: $tablet) {
+
+            .top {
+                .section-title {
+                    font-size: $section-title;
+                }
+                
+            }   
+
+            @include container;
+            margin-block: 3rem;
+
+            .top {
+                grid-area: info;
+            }
+            .productos-1__cards {
+                grid-area: cards;
+                place-self: center;
+
+                display: grid;
+                gap: 1rem;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-areas: 
+                    "time multi"
+                ;
+
+                .time {
+                    grid-area: time;
+                }
+                .multi {
+                    grid-area: multi;
+                }
+            }
+        }
+        @media only screen and (min-width: 1400px) {
+            @include container;
+            margin-block: 3rem;
+            .top {
+                grid-area: info;
+            }
+            
+        }
+    }
+
     #regulacion {
 
         min-height: 100vh;
