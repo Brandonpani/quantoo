@@ -263,11 +263,11 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
   #main-index #hero .hero-wrapper .hero__cards { width: 100%; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; gap: 1rem; }
   #main-index #hero .hero-wrapper .hero__cards .hero-card { padding: 2rem; } }
 
-#main-index #productos { -webkit-margin-after: 3rem; margin-block-end: 3rem; min-height: 70vh; position: relative; }
+#main-index #productos { -webkit-margin-after: 3rem; margin-block-end: 3rem; position: relative; }
 
 #main-index #productos .section-title { -webkit-margin-after: 2rem; margin-block-end: 2rem; }
 
-#main-index #productos .productos__content { background-image: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #ffffff), color-stop(30%, #f2f3f4), color-stop(50%, #5292d357)), url(../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg); background-image: linear-gradient(to top, #ffffff 20%, #f2f3f4 30%, #5292d357 50%), url(../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg); background-size: cover; background-position: center center; min-height: 70vh; z-index: -1; }
+#main-index #productos .productos__content { background-image: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #ffffff), color-stop(30%, #f2f3f4), color-stop(50%, #5292d357)), url(../images/stock); background-image: linear-gradient(to top, #ffffff 20%, #f2f3f4 30%, #5292d357 50%), url(../images/stock); background-size: cover; background-position: center center; min-height: 70vh; z-index: -1; }
 
 #main-index #productos .title-container { width: 90%; max-width: 1400px; margin: 0 auto; text-align: center; height: 100%; -webkit-margin-start: 5%; margin-inline-start: 5%; -webkit-margin-before: -20rem; margin-block-start: -20rem; }
 
