@@ -263,7 +263,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
   #main-index #hero .hero-wrapper .hero__cards { width: 100%; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; gap: 1rem; }
   #main-index #hero .hero-wrapper .hero__cards .hero-card { padding: 2rem; } }
 
-#main-index #productos { margin-block: 3rem; min-height: 72rem; position: relative; }
+#main-index #productos { margin-block: 3rem; min-height: 70vh; position: relative; }
 
 #main-index #productos .section-title { -webkit-margin-after: 2rem; margin-block-end: 2rem; }
 
@@ -277,10 +277,10 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-index #productos .cards-container { width: 90%; max-width: 1400px; margin: 0 auto; -webkit-margin-before: 3rem; margin-block-start: 3rem; }
 
-@media only screen and (min-width: 768px) { #main-index #productos .title-container { -webkit-margin-before: -23rem; margin-block-start: -23rem; } }
+@media only screen and (min-width: 768px) { #main-index #productos .title-container { position: absolute; top: 60%; } }
 
 @media only screen and (min-width: 1024px) { #main-index #productos .productos__content { background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, #fffffff3), color-stop(40%, #f2f3f48e), color-stop(70%, #5292d357)), url(../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg); background-image: linear-gradient(to right, #fffffff3 10%, #f2f3f48e 40%, #5292d357 70%), url(../images/successful-businesswoman-working-on-laptop-computer-in-her-office-dressed-up-in-white-clothes.jpg); background-position: left top; }
-  #main-index #productos .title-container { position: absolute; top: 65%; width: 45%; }
+  #main-index #productos .title-container { position: absolute; top: 55%; width: 50%; }
   #main-index #productos .cards-container { width: 90%; max-width: 1400px; margin: 0 auto; -webkit-margin-before: 3rem; margin-block-start: 3rem; }
   #main-index #productos .cards-container .cards-wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 2rem; } }
 

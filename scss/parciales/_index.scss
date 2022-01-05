@@ -156,7 +156,7 @@
 
     #productos {
         margin-block: 3rem;
-        min-height: 72rem;
+        min-height: 70vh;
         position: relative;
 
         .section-title {
@@ -194,7 +194,9 @@
         }
         @media only screen and (min-width: $tablet) {
             .title-container {
-                margin-block-start: -23rem;
+                // margin-block-start: -23rem;
+                position: absolute;
+                top: 60%;
             }
         }
         @media only screen and (min-width: $laptop) {
@@ -204,8 +206,8 @@
             }
             .title-container {
                 position: absolute;
-                top: 65%;
-                width: 45%
+                top: 55%;
+                width: 50%
             }
             .cards-container {
                 @include container;
