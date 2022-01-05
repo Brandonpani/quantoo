@@ -325,6 +325,8 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-index #regulacion .top .regulacion__header .section-title { text-align: left; }
 
+#main-index #regulacion .top .regulacion__header .btn { -webkit-margin-before: 2rem; margin-block-start: 2rem; }
+
 #main-index #regulacion .top .regulacion__img { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: img; }
 
 #main-index #regulacion .top .regulacion__img img { aspect-ratio: 16/7; -o-object-fit: cover; object-fit: cover; }
