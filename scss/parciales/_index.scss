@@ -155,7 +155,7 @@
 
 
     #productos {
-        margin-block: 3rem;
+        margin-block-end: 3rem;
         min-height: 70vh;
         position: relative;
 
@@ -196,7 +196,7 @@
             .title-container {
                 // margin-block-start: -23rem;
                 position: absolute;
-                top: 60%;
+                top: 65%;
             }
         }
         @media only screen and (min-width: $laptop) {
