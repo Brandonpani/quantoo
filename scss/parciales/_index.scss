@@ -265,8 +265,8 @@
             .regulacion__img {
                 grid-area: img;
                 img {
-                    // aspect-ratio: 16/7;
-                    height: 25rem;
+                    aspect-ratio: 16/7;
+                    // height: 25rem;
                     object-fit: cover;
                     // box-shadow: 0 2px 8px rgba(0,0,0,0.4);
                 }
@@ -376,7 +376,8 @@
                 grid-area: img;
                 img {
                     // aspect-ratio: 16/7;
-                    height: 25rem;
+                    // height: 25rem;
+                    aspect-ratio: 16/7;
                     object-fit: cover;
                     // box-shadow: 0 2px 8px rgba(0,0,0,0.4);
                 }
