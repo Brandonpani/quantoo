@@ -263,7 +263,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
   #main-index #hero .hero-wrapper .hero__cards { width: 100%; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; gap: 1rem; }
   #main-index #hero .hero-wrapper .hero__cards .hero-card { padding: 2rem; } }
 
-#main-index #productos { margin-block: 3rem; min-height: 80vh; position: relative; }
+#main-index #productos { margin-block: 3rem; min-height: 72rem; position: relative; }
 
 #main-index #productos .section-title { -webkit-margin-after: 2rem; margin-block-end: 2rem; }
 
