@@ -267,7 +267,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-index #productos .section-title { -webkit-margin-after: 2rem; margin-block-end: 2rem; }
 
-#main-index #productos .productos__content { background-image: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #ffffff), color-stop(30%, #f2f3f4), color-stop(50%, #5292d357)), url(../images/stock); background-image: linear-gradient(to top, #ffffff 20%, #f2f3f4 30%, #5292d357 50%), url(../images/stock); background-size: cover; background-position: center center; min-height: 70vh; z-index: -1; }
+#main-index #productos .productos__content { background-image: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #ffffff), color-stop(30%, #f2f3f4), color-stop(50%, #5292d357)), url(../images/stock-photo-image-of-young-beautiful-joyful-woman-smiling-while-working-with-laptop-in-office-1786572482.jpg); background-image: linear-gradient(to top, #ffffff 20%, #f2f3f4 30%, #5292d357 50%), url(../images/stock-photo-image-of-young-beautiful-joyful-woman-smiling-while-working-with-laptop-in-office-1786572482.jpg); background-size: cover; background-position: center center; min-height: 70vh; z-index: -1; }
 
 #main-index #productos .title-container { width: 90%; max-width: 1400px; margin: 0 auto; text-align: center; height: 100%; -webkit-margin-start: 5%; margin-inline-start: 5%; -webkit-margin-before: -20rem; margin-block-start: -20rem; }
 
