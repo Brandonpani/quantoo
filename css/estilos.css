@@ -432,14 +432,12 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
   #prueba .top .top__container .top-info { width: 50%; }
   #prueba .top .top__container .top-info .p-large { -webkit-margin-after: 2rem; margin-block-end: 2rem; }
   #prueba .top .top__container .top-info .cta-productos { display: block; }
-  #prueba .bottom .cards-container { width: 90%; max-width: 1400px; margin-inline: auto; }
   #prueba .bottom .cards-container .cards-wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 2rem; }
   #prueba .bottom .cards-container .cta-productos { display: none; } }
 
 @media only screen and (min-width: 1025px) { #prueba .top { padding-block: 7rem; height: auto; background-image: -webkit-gradient(linear, right top, left top, color-stop(40%, #f2f2f225), color-stop(60%, #5681e675)), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg); background-image: linear-gradient(to left, #f2f2f225 40%, #5681e675 60%), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg); background-position: 70% 20%; }
   #prueba .top .top__wrapper { width: 50%; height: 70%; }
-  #prueba .bottom .cards-container { width: 90%; max-width: 1400px; margin-inline: auto; }
-  #prueba .bottom .cards-container .cards-wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 1rem; } }
+  #prueba .bottom .cards-container .cards-wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 2rem; } }
 
 .banner { min-height: 50vh; width: 100vw; display: -ms-grid; display: grid; place-content: center; background-image: -webkit-gradient(linear, left top, right top, from(#2020208c), to(#33a2f25b)), url(../images/plataforma-intro-ofcina-quanto.jpg); background-image: linear-gradient(to right, #2020208c, #33a2f25b), url(../images/plataforma-intro-ofcina-quanto.jpg); background-size: cover; background-position: top; background-repeat: no-repeat; color: #f2f3f4; }
 
