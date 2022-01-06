@@ -416,17 +416,20 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
   #main-index #innovacion .innovacion__cards .banca { -ms-grid-row: 1; -ms-grid-column: 2; grid-area: banca; }
   #main-index #innovacion .innovacion__cards .api { -ms-grid-row: 1; -ms-grid-column: 3; grid-area: api; } }
 
-#prueba .top { background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #f2f2f225), color-stop(60%, #5681e675)), url(../../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg); background-image: linear-gradient(#f2f2f225 40%, #5681e675 60%), url(../../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg); background-size: cover; background-position: 65% center; height: 90vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; margin-block: 2rem; }
+#prueba .top { background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #f2f2f225), color-stop(60%, #5681e675)), url(../../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg); background-image: linear-gradient(#f2f2f225 40%, #5681e675 60%), url(../../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg); background-size: cover; background-position: 65% center; height: 90vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
 
-#prueba .top .top__wrapper { width: 90%; max-width: 1400px; margin-inline: auto; -webkit-margin-after: 3rem; margin-block-end: 3rem; }
+#prueba .top .top__wrapper { width: 100%; width: 90%; max-width: 1400px; margin-inline: auto; -webkit-margin-after: 3rem; margin-block-end: 3rem; }
 
 #prueba .top .top__wrapper .section-subtitle { color: whitesmoke; }
 
 #prueba .top .top__wrapper .p-large { color: whitesmoke; }
 
-#prueba .bottom { width: 90%; max-width: 1400px; margin-inline: auto; }
+#prueba .bottom { width: 90%; max-width: 1400px; margin-inline: auto; margin-block: 3rem; }
 
-@media only screen and (min-width: 768px) { #prueba .top .top__wrapper { margin: 0; -webkit-margin-after: 5rem; margin-block-end: 5rem; width: 40%; } }
+@media only screen and (min-width: 768px) { #prueba .top { padding-block: 7rem; height: auto; }
+  #prueba .top .top__wrapper { width: 50%; height: 70%; -webkit-margin-end: auto; margin-inline-end: auto; -webkit-margin-start: 5%; margin-inline-start: 5%; }
+  #prueba .bottom .cards-container { display: -webkit-box; display: -ms-flexbox; display: flex; }
+  #prueba .bottom .cards-container .cta-productos { width: 90%; max-width: 1400px; margin-inline: auto; } }
 
 .banner { min-height: 50vh; width: 100vw; display: -ms-grid; display: grid; place-content: center; background-image: -webkit-gradient(linear, left top, right top, from(#2020208c), to(#33a2f25b)), url(../images/plataforma-intro-ofcina-quanto.jpg); background-image: linear-gradient(to right, #2020208c, #33a2f25b), url(../images/plataforma-intro-ofcina-quanto.jpg); background-size: cover; background-position: top; background-repeat: no-repeat; color: #f2f3f4; }
 
