@@ -56,7 +56,7 @@
 
         .bottom {
             .cards-container {
-                @include container;
+                // @include container;
                 .cards-wrapper {
                     display: flex;
                     gap: 2rem;
@@ -83,10 +83,10 @@
         .bottom {
 
             .cards-container {
-                @include container;
+
                 .cards-wrapper {
                     display: flex;
-                    gap: 1rem;
+                    gap: 2rem;
                 }
 
                 .cta-productos {
