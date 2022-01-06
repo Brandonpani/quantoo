@@ -40,8 +40,7 @@
             height: auto;
             background-image: linear-gradient(to left,#f2f2f225 40%, #5681e675 60%,), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg);
             .top__container {
-
-                            
+          
                 .top-info {
                     width: 50%;
 
@@ -76,16 +75,12 @@
             height: auto;
             background-image: linear-gradient(to left,#f2f2f225 40%, #5681e675 60%,), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg);
             .top__wrapper {
-                // margin-block-end: 5rem;s
                 width: 50%;
                 height: 70%;
-                // align-items: center;
-                // margin-inline-end: auto;
-                // margin-inline-start: 15rem;
             }
         }
-
         .bottom {
+
             .cards-container {
                 @include container;
                 .cards-wrapper {
@@ -94,6 +89,7 @@
                 }
 
                 .cta-productos {
+                    
                 }
             }
         }
