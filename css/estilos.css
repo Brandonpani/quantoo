@@ -416,7 +416,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
   #main-index #innovacion .innovacion__cards .banca { -ms-grid-row: 1; -ms-grid-column: 2; grid-area: banca; }
   #main-index #innovacion .innovacion__cards .api { -ms-grid-row: 1; -ms-grid-column: 3; grid-area: api; } }
 
-#prueba .top { background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #f2f2f225), color-stop(60%, #5681e675)), url(../../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg); background-image: linear-gradient(#f2f2f225 40%, #5681e675 60%), url(../../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg); background-size: cover; background-position: 65% center; height: 90vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
+#prueba .top { background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #f2f2f225), color-stop(60%, #5681e675)), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg); background-image: linear-gradient(#f2f2f225 40%, #5681e675 60%), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg); background-size: cover; background-position: 65% center; height: 90vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
 
 #prueba .top .top__wrapper { width: 100%; width: 90%; max-width: 1400px; margin-inline: auto; -webkit-margin-after: 3rem; margin-block-end: 3rem; }
 
