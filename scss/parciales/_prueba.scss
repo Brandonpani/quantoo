@@ -21,18 +21,22 @@
                 .p-large{
                     color: whitesmoke;
                 }
+
+                .cta-productos {
+                    display: none;
+                }
             }
         }
     }
 
     .bottom {
-        // @include container;
+        @include container;
         margin-block: 3rem;
     }
 
     @media only screen and (min-width: $tablet) {
         .top {
-            padding-block: 7rem;
+            padding-block-start: 7rem;
             height: auto;
             background-image: linear-gradient(to left,#f2f2f225 40%, #5681e675 60%,), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg);
             .top__container {
@@ -40,6 +44,13 @@
                             
                 .top-info {
                     width: 50%;
+
+                    .p-large {
+                        margin-block-end: 2rem;
+                    }
+                    .cta-productos {
+                        display: block;
+                    }
                 }
             }
         }
@@ -49,10 +60,11 @@
                 @include container;
                 .cards-wrapper {
                     display: flex;
-                    gap: 1rem;
+                    gap: 2rem;
                 }
 
                 .cta-productos {
+                    display: none;
                 }
             }
         }
