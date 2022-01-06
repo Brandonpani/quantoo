@@ -1,78 +1,38 @@
 #prueba {
 
     .top {
-        height: 93vh;
-
-        .top__img {
-            height: 100%;
-            background-image: linear-gradient(180deg, #f2f2f217 20%, #3a8ada86 60%, #3a8adaa8 80% ) , url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg);
-            background-size: cover;
-            background-position:65% center;
-            display: grid;
-            place-content: end center;
-            .top__content {
-                @include container;
-                height: 100%;
-                text-align: center;
-                padding-block-end: 5rem;
-                .section-subtitle {
-                    font-size: 2rem;
-                    color: $clr-light-gray;
-
-                }
-                .p-large {
-                    color: $clr-light-gray;
-                    margin-block-end: 2rem;
-                }
+        background-image: linear-gradient(#f2f2f225 40%, #5681e675 60%,), url(../../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg);
+        background-size: cover;
+        background-position: 65% center;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        .top__wrapper {
+            @include container;
+            margin-block-end: 3rem;
+            
+            .section-subtitle {
+                color: whitesmoke;
             }
-        }
+            .p-large{
+                color: whitesmoke;
+            }
+        }margin-block: 2rem
     }
-    
+
     .bottom {
         @include container;
-        margin-block: 3rem;
+
     }
 
     @media only screen and (min-width: $tablet) {
-
         .top {
 
-            .top__img {
-                display: grid;
-                place-content: end center;
-                
-                .top__content {
-                    width: 80%;
-                    padding-block-end: 3rem;
-
-                    .section-subtitle {
-                        line-height: 1.1;
-                        font-size: 3.5rem;
-                    }
-                }
-            }
-        }
-    }
-    @media only screen and (min-width: $laptop) {
-
-        .top {
-
-            .top__img {
-                width: 100vw;
-                outline: 1px solid red;
-                min-height: 60vh;
-                .top__content {
-                    place-self: center start;
-                    width: 100%;
-                    margin-inline-end: auto;
-                    width: 50%;
-                    padding-block-end: 3rem;
-
-                    .section-subtitle {
-                        line-height: 1.1;
-                        font-size: 3.5rem;
-                    }
-                }
+            .top__wrapper {
+                margin: 0;
+                margin-block-end: 5rem;
+                width: 40%;
             }
         }
     }
