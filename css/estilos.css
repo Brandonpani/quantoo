@@ -414,11 +414,15 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
   #main-index #innovacion .innovacion__cards .banca { -ms-grid-row: 1; -ms-grid-column: 2; grid-area: banca; }
   #main-index #innovacion .innovacion__cards .api { -ms-grid-row: 1; -ms-grid-column: 3; grid-area: api; } }
 
-#prueba .top .top__img { height: 100vh; background-image: url(../../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg); background-size: cover; background-position: 65% center; display: -ms-grid; display: grid; place-content: end center; }
+#prueba .top .top__img { min-height: 100vh; background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #f2f2f255), color-stop(30%, #3a8ada49), color-stop(70%, #3a8ada88)), url(../../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg); background-image: linear-gradient(180deg, #f2f2f255 20%, #3a8ada49 30%, #3a8ada88 70%), url(../../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg); background-size: cover; background-position: 65% center; display: -ms-grid; display: grid; place-content: end center; }
 
-#prueba .top .top__img .top__content { width: 90%; max-width: 1400px; margin: 0 auto; height: 100%; color: #f2f2f2; }
+#prueba .top .top__img .top__content { width: 90%; max-width: 1400px; margin: 0 auto; height: 100%; color: #f2f2f2; -webkit-margin-before: 10rem; margin-block-start: 10rem; }
 
-#prueba .top .top__img .top__content .p-large { color: #f2f2f2; }
+#prueba .top .top__img .top__content .section-subtitle { color: #f2f2f2; }
+
+#prueba .top .top__img .top__content .p-large { color: #f2f2f2; -webkit-margin-after: 2rem; margin-block-end: 2rem; }
+
+#prueba .bottom { width: 90%; max-width: 1400px; margin: 0 auto; margin-block: 3rem; }
 
 .banner { min-height: 50vh; width: 100vw; display: -ms-grid; display: grid; place-content: center; background-image: -webkit-gradient(linear, left top, right top, from(#2020208c), to(#33a2f25b)), url(../images/plataforma-intro-ofcina-quanto.jpg); background-image: linear-gradient(to right, #2020208c, #33a2f25b), url(../images/plataforma-intro-ofcina-quanto.jpg); background-size: cover; background-position: top; background-repeat: no-repeat; color: #f2f3f4; }
 
