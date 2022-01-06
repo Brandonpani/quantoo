@@ -9,6 +9,7 @@
         justify-content: center;
         align-items: flex-end;
         .top__wrapper {
+            width: 100%;
             @include container;
             margin-block-end: 3rem;
             
@@ -18,21 +19,35 @@
             .p-large{
                 color: whitesmoke;
             }
-        }margin-block: 2rem
+        }
     }
 
     .bottom {
         @include container;
-
+        margin-block: 3rem;
     }
 
     @media only screen and (min-width: $tablet) {
         .top {
-
+            padding-block: 7rem;
+            height: auto;
             .top__wrapper {
-                margin: 0;
-                margin-block-end: 5rem;
-                width: 40%;
+                // margin-block-end: 5rem;s
+                width: 50%;
+                height: 70%;
+                // align-items: center;
+                margin-inline-end: auto;
+                margin-inline-start: 5%;
+            }
+        }
+
+        .bottom {
+            .cards-container {
+                display: flex;
+
+                .cta-productos {
+                    @include container;
+                }
             }
         }
     }
