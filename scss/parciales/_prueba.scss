@@ -43,10 +43,12 @@
 
         .bottom {
             .cards-container {
-                display: flex;
+                @include container;
+                .cards-wrapper {
+                    display: flex;
+                }
 
                 .cta-productos {
-                    @include container;
                 }
             }
         }
