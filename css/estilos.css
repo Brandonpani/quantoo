@@ -429,7 +429,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 @media only screen and (min-width: 768px) { #prueba .top { padding-block: 7rem; height: auto; }
   #prueba .top .top__wrapper { width: 50%; height: 70%; -webkit-margin-end: auto; margin-inline-end: auto; -webkit-margin-start: 5%; margin-inline-start: 5%; }
   #prueba .bottom .cards-container { width: 90%; max-width: 1400px; margin-inline: auto; }
-  #prueba .bottom .cards-container .cards-wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; } }
+  #prueba .bottom .cards-container .cards-wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 1rem; } }
 
 .banner { min-height: 50vh; width: 100vw; display: -ms-grid; display: grid; place-content: center; background-image: -webkit-gradient(linear, left top, right top, from(#2020208c), to(#33a2f25b)), url(../images/plataforma-intro-ofcina-quanto.jpg); background-image: linear-gradient(to right, #2020208c, #33a2f25b), url(../images/plataforma-intro-ofcina-quanto.jpg); background-size: cover; background-position: top; background-repeat: no-repeat; color: #f2f3f4; }
 

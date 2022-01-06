@@ -46,6 +46,7 @@
                 @include container;
                 .cards-wrapper {
                     display: flex;
+                    gap: 1rem;
                 }
 
                 .cta-productos {
