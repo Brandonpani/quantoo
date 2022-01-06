@@ -1,0 +1,24 @@
+#prueba {
+
+    .top {
+        // min-height: 100vh;
+        .top__img {
+            height: 100vh;
+            background-image: url(../../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg);
+            background-size: cover;
+            background-position:65% center;
+            display: grid;
+            place-content: end center;
+            .top__content {
+                @include container;
+                height: 100%;
+                color: #f2f2f2;
+
+                .p-large {
+                    color: $clr-light-gray;
+                }
+            }
+        }
+    }
+
+}
