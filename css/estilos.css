@@ -327,7 +327,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-index #automatizacion .bottom { width: 90%; max-width: 1400px; margin-inline: auto; margin-block: 3rem; }
 
-@media only screen and (min-width: 768px) { #main-index #automatizacion .top { -webkit-padding-before: 7rem; padding-block-start: 7rem; height: auto; background-image: -webkit-gradient(linear, right top, left top, color-stop(40%, #f2f2f225), color-stop(60%, #5681e675)), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg); background-image: linear-gradient(to left, #f2f2f225 40%, #5681e675 60%), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg); }
+@media only screen and (min-width: 768px) { #main-index #automatizacion .top { -webkit-padding-before: 7rem; padding-block-start: 7rem; height: auto; background-image: -webkit-gradient(linear, right top, left top, color-stop(40%, #f2f2f225), color-stop(60%, #5681e675)), url(../images/close-up-male-hands-using-laptop-home.jpg); background-image: linear-gradient(to left, #f2f2f225 40%, #5681e675 60%), url(../images/close-up-male-hands-using-laptop-home.jpg); }
   #main-index #automatizacion .top .top__container .top-info { width: 50%; }
   #main-index #automatizacion .top .top__container .top-info .p-large { -webkit-margin-after: 2rem; margin-block-end: 2rem; }
   #main-index #automatizacion .top .top__container .top-info .cta-productos { display: block; }
