@@ -85,9 +85,7 @@
             display: flex;
             flex-direction: column;
             gap: 2rem;
-            .info-container {
-                text-align: justify;
-            }
+            
             .notificacion-img {
                 padding: 2rem;
                 
@@ -114,5 +112,78 @@
         }
     }
 
+    #trabajo {
+        // padding-top: 3rem;
+        padding-bottom: 5rem;
+
+        .info {
+            @include container;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            .notificacion-img {
+                padding: 2rem;
+            }
+        }
+
+        @media only screen and (min-width: $tablet) {
+
+            .info {
+                @include container;
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                .trabajo-container {
+                    width: 70%;
+                    text-align: center;
+                }
+                .trabajo-img {
+                    width: 45%;
+                    // padding: 2rem;
+                }
+            }
+        }
+    }
+
+    #personalizacion {
+        // padding-top: 3rem;
+        padding-bottom: 5rem;
+
+        .info {
+            @include container;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            .personalizacion-img {
+                padding: 2rem;
+            }
+        }
+
+        @media only screen and (min-width: $tablet) {
+
+            .info {
+                @include container;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 2rem;
+                .personalizacion-container {
+                    width: 70%;
+                    text-align: center;
+                    order: 2;
+                }
+                .personalizacion-img {
+                    width: 45%;
+                    order: 1;
+                    // padding: 2rem;
+                }
+            }
+        }
+    }
    
+
 }
