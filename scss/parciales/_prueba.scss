@@ -488,4 +488,158 @@
             }
         }
     }
+
+    #innovacion {
+
+        .top {
+            background-image: linear-gradient(#f2f2f225 40%, #5681e675 60%,), url(../images/quanto-innovacion-hombre-trabajando-laptop.jpg);
+            background-size: cover;
+            background-position: 65% center;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            .top__container {
+                width: 100%;
+                @include container;
+                margin-block-end: 3rem;
+                
+                .top-info {
+                    
+                    .section-subtitle {
+                        color: whitesmoke;
+                        font-size: 2.3rem;
+                    }
+                    .p-large{
+                        color: whitesmoke;
+                    }
+                    
+                    .cta-productos {
+                        display: none;
+                    }
+                }
+            }
+        }
+        
+        .bottom {
+            @include container;
+            margin-block: 3rem;
+
+            .cards-container {
+
+                .cards-wrapper {
+
+                    .saas {
+                        grid-area: saas;
+                    }
+                    .banca {
+                        grid-area: banca;
+                    }
+                    .api {
+                        grid-area: api;
+                    }
+                }
+            }
+        }
+        
+    }
+    @media only screen and (min-width: $tablet) {
+        #innovacion {
+
+            .top {
+                padding-block-start: 7rem;
+                height: auto;
+                background-image: linear-gradient(to left,#f2f2f225 40%, #5681e675 60%,), url(../images/quanto-innovacion-hombre-trabajando-laptop.jpg);
+                .top__container {
+                    
+                    .top-info {
+                        width: 50%;
+                        
+                        .p-large {
+                            margin-block-end: 2rem;
+                        }
+                        .cta-productos {
+                            display: block;
+                        }
+                    }
+                }
+            }
+            
+            .bottom {
+                .cards-container {
+                    // @include container;
+                    .cards-wrapper {
+                        display: grid;
+                        grid-template-columns: auto auto;
+                        grid-template-rows: auto auto;
+                        grid-template-areas:
+                            "saas saas"
+                            "banca api"
+                        ;
+                        gap: 2rem;
+
+                        .saas {
+                            grid-area: saas;
+                        }
+                        .banca {
+                            grid-area: banca;
+                        }
+                        .api {
+                            grid-area: api;
+                        }
+
+                    }
+                    
+                    .cta-productos {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: $laptop) {
+        #innovacion {
+
+            .top {
+                padding-block: 7rem;
+                height: auto;
+                background-image: linear-gradient(to left,#f2f2f225 40%, #5681e675 60%,), url(../images/quanto-innovacion-hombre-trabajando-laptop.jpg);
+                background-position: 70% 40%;
+                .top__wrapper {
+                    width: 50%;
+                    height: 70%;
+                }
+            }
+            .bottom {
+                
+                .cards-container {
+                    
+                    .cards-wrapper {
+                        grid-template-columns: repeat(3 auto);
+
+                        grid-template-areas:
+                        "saas banca api";
+                        gap: 2rem;
+
+                        .saas {
+                            grid-area: saas;
+                        }
+                        .banca {
+                            grid-area: banca;
+                        }
+                        .api {
+                            grid-area: api;
+                        }
+                    }
+                    
+                    .cta-productos {
+                        
+                    }
+                }
+            }
+        }
+    }
+
+
 }

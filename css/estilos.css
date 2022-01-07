@@ -155,7 +155,9 @@ body { font-family: 'poppins', sans-serif; }
 
 .title { font-size: 2.5rem; line-height: 1.3; margin-bottom: 1rem; font-weight: 400; }
 
-.section-title { font-size: clamp(3rem, 5vw, 5rem); font-weight: 600; color: #101010; line-height: 1.3; -webkit-margin-after: 1rem; margin-block-end: 1rem; }
+.section-title { font-size: clamp(3rem, 5vw, 4rem); font-weight: 600; color: #101010; line-height: 1.1; -webkit-margin-after: 1rem; margin-block-end: 1rem; }
+
+.section-title--white { color: whitesmoke; }
 
 .section-subtitle { font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 600; color: #101010; line-height: 1.3; -webkit-margin-after: 1rem; margin-block-end: 1rem; }
 
@@ -170,8 +172,6 @@ body { font-family: 'poppins', sans-serif; }
 .p-large--color { color: #454558; }
 
 .p-normal { font-size: 1rem; font-weight: 300; -webkit-margin-after: 1rem; margin-block-end: 1rem; }
-
-.section-title { font-size: 3.5rem; text-align: center; }
 
 html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
@@ -289,7 +289,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 @media only screen and (min-width: 1025px) { #main-index #productos .top { padding-block: 7rem; height: auto; background-image: -webkit-gradient(linear, right top, left top, color-stop(40%, #f2f2f225), color-stop(60%, #5681e675)), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg); background-image: linear-gradient(to left, #f2f2f225 40%, #5681e675 60%), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg); background-position: 70% 20%; }
   #main-index #productos .top .top__container { height: 70%; }
   #main-index #productos .top .top__container .top-info { width: 60%; }
-  #main-index #productos .top .top__container .top-info .section-subtitle { font-size: clamp(3rem, 5vw, 5rem); line-height: 1.1; }
+  #main-index #productos .top .top__container .top-info .section-subtitle { font-size: clamp(3rem, 5vw, 4rem); line-height: 1.1; }
   #main-index #productos .bottom .cards-container .cards-wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 2rem; } }
 
 #main-index #regulacion .top { background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #f2f2f225), color-stop(60%, #5681e675)), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg); background-image: linear-gradient(#f2f2f225 40%, #5681e675 60%), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg); background-size: cover; background-position: 65% center; height: 90vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
@@ -338,6 +338,41 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
   #main-index #automatizacion .top .top__wrapper { width: 50%; height: 70%; }
   #main-index #automatizacion .bottom .cards-container .cards-wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 2rem; } }
 
+#main-index #innovacion .top { background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #f2f2f225), color-stop(60%, #5681e675)), url(../images/quanto-innovacion-hombre-trabajando-laptop.jpg); background-image: linear-gradient(#f2f2f225 40%, #5681e675 60%), url(../images/quanto-innovacion-hombre-trabajando-laptop.jpg); background-size: cover; background-position: 65% center; height: 90vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
+
+#main-index #innovacion .top .top__container { width: 100%; width: 90%; max-width: 1400px; margin-inline: auto; -webkit-margin-after: 3rem; margin-block-end: 3rem; }
+
+#main-index #innovacion .top .top__container .top-info .section-subtitle { color: whitesmoke; font-size: 2.3rem; }
+
+#main-index #innovacion .top .top__container .top-info .p-large { color: whitesmoke; }
+
+#main-index #innovacion .top .top__container .top-info .cta-productos { display: none; }
+
+#main-index #innovacion .bottom { width: 90%; max-width: 1400px; margin-inline: auto; margin-block: 3rem; }
+
+#main-index #innovacion .bottom .cards-container .cards-wrapper .saas { grid-area: saas; }
+
+#main-index #innovacion .bottom .cards-container .cards-wrapper .banca { grid-area: banca; }
+
+#main-index #innovacion .bottom .cards-container .cards-wrapper .api { grid-area: api; }
+
+@media only screen and (min-width: 768px) { #main-index #innovacion .top { -webkit-padding-before: 7rem; padding-block-start: 7rem; height: auto; background-image: -webkit-gradient(linear, right top, left top, color-stop(40%, #f2f2f225), color-stop(60%, #5681e675)), url(../images/quanto-innovacion-hombre-trabajando-laptop.jpg); background-image: linear-gradient(to left, #f2f2f225 40%, #5681e675 60%), url(../images/quanto-innovacion-hombre-trabajando-laptop.jpg); }
+  #main-index #innovacion .top .top__container .top-info { width: 50%; }
+  #main-index #innovacion .top .top__container .top-info .p-large { -webkit-margin-after: 2rem; margin-block-end: 2rem; }
+  #main-index #innovacion .top .top__container .top-info .cta-productos { display: block; }
+  #main-index #innovacion .bottom .cards-container .cards-wrapper { display: -ms-grid; display: grid; -ms-grid-columns: auto auto; grid-template-columns: auto auto; -ms-grid-rows: auto auto; grid-template-rows: auto auto; grid-template-areas: "saas saas" "banca api"; gap: 2rem; }
+  #main-index #innovacion .bottom .cards-container .cards-wrapper .saas { -ms-grid-row: 1; -ms-grid-column: 1; -ms-grid-column-span: 2; grid-area: saas; }
+  #main-index #innovacion .bottom .cards-container .cards-wrapper .banca { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: banca; }
+  #main-index #innovacion .bottom .cards-container .cards-wrapper .api { -ms-grid-row: 2; -ms-grid-column: 2; grid-area: api; }
+  #main-index #innovacion .bottom .cards-container .cta-productos { display: none; } }
+
+@media only screen and (min-width: 1025px) { #main-index #innovacion .top { padding-block: 7rem; height: auto; background-image: -webkit-gradient(linear, right top, left top, color-stop(40%, #f2f2f225), color-stop(60%, #5681e675)), url(../images/quanto-innovacion-hombre-trabajando-laptop.jpg); background-image: linear-gradient(to left, #f2f2f225 40%, #5681e675 60%), url(../images/quanto-innovacion-hombre-trabajando-laptop.jpg); background-position: 70% 40%; }
+  #main-index #innovacion .top .top__wrapper { width: 50%; height: 70%; }
+  #main-index #innovacion .bottom .cards-container .cards-wrapper { -ms-grid-columns: (auto)[3]; grid-template-columns: repeat(3 auto); grid-template-areas: "saas banca api"; gap: 2rem; }
+  #main-index #innovacion .bottom .cards-container .cards-wrapper .saas { -ms-grid-row: 1; -ms-grid-column: 1; grid-area: saas; }
+  #main-index #innovacion .bottom .cards-container .cards-wrapper .banca { -ms-grid-row: 1; -ms-grid-column: 2; grid-area: banca; }
+  #main-index #innovacion .bottom .cards-container .cards-wrapper .api { -ms-grid-row: 1; -ms-grid-column: 3; grid-area: api; } }
+
 .banner { min-height: 50vh; width: 100vw; display: -ms-grid; display: grid; place-content: center; background-image: -webkit-gradient(linear, left top, right top, from(#2020208c), to(#33a2f25b)), url(../images/plataforma-intro-ofcina-quanto.jpg); background-image: linear-gradient(to right, #2020208c, #33a2f25b), url(../images/plataforma-intro-ofcina-quanto.jpg); background-size: cover; background-position: top; background-repeat: no-repeat; color: #f2f3f4; }
 
 .banner .banner-content { width: 90%; max-width: 1400px; margin-inline: auto; text-align: center; padding: 2rem; width: 100%; }
@@ -346,7 +381,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 .banner .banner-content .banner-title .section-title { -webkit-margin-after: 1rem; margin-block-end: 1rem; color: #f2f2f2; font-size: 2.5rem; }
 
-@media only screen and (min-width: 768px) { .banner .banner-content .banner-title .section-title { font-size: clamp(3rem, 5vw, 5rem); } }
+@media only screen and (min-width: 768px) { .banner .banner-content .banner-title .section-title { font-size: clamp(3rem, 5vw, 4rem); } }
 
 .banner .banner-content .banner-title .p-large { color: #f2f2f2; font-size: 1.4rem; -webkit-margin-after: 1rem; margin-block-end: 1rem; }
 
@@ -411,7 +446,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-productos #arrendamiento .cards .cards-container .card .subtitle { font-weight: 600; }
 
-@media (min-width: 768px) { #main-productos #arrendamiento .info .info-container .section-title { font-size: clamp(3rem, 5vw, 5rem); }
+@media (min-width: 768px) { #main-productos #arrendamiento .info .info-container .section-title { font-size: clamp(3rem, 5vw, 4rem); }
   #main-productos #arrendamiento .info .info-container .container-img { display: -ms-grid; display: grid; place-items: center; width: 100%; margin: 2rem auto; }
   #main-productos #arrendamiento .info .info-container .container-img .lap-credito { width: 70%; -webkit-transform: translateX(0); transform: translateX(0); } }
 

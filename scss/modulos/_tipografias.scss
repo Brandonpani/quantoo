@@ -7,7 +7,7 @@ body {
 $big-title-desktop: 3.5rem;
 $big-title: 2.5rem;
 $subtitle: 1.25rem;
-$section-title: clamp(3rem, 5vw, 5rem);
+$section-title: clamp(3rem, 5vw, 4rem);
 $section-subtitle: clamp(1.8rem, 3vw, 2.5rem);
 $banner-title--clamp: clamp(2.5rem, 4vw, 5rem);
 
@@ -45,8 +45,12 @@ $big-info: 2.5rem;
     font-size: $section-title;
     font-weight: 600;
     color: $dark-bg;
-    line-height: 1.3;
+    line-height: 1.1;
     margin-block-end: 1rem;
+}
+
+.section-title--white {
+    color: whitesmoke;
 }
 .section-subtitle {
     font-size: $section-subtitle;
@@ -90,9 +94,4 @@ $big-info: 2.5rem;
     font-size: 1rem;
     font-weight: 300;
     margin-block-end: 1rem;
-}
-
-.section-title {
-    font-size: 3.5rem;
-    text-align: center;
 }
