@@ -18,6 +18,7 @@
                     
                     .section-subtitle {
                         color: whitesmoke;
+                        font-size: 2.3rem;
                     }
                     .p-large{
                         color: whitesmoke;
@@ -95,9 +96,16 @@
                 height: auto;
                 background-image: linear-gradient(to left,#f2f2f225 40%, #5681e675 60%,), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg);
                 background-position: 70% 20%;
-                .top__wrapper {
-                    width: 50%;
+                .top__container {
                     height: 70%;
+                    .top-info {
+   
+                        width: 60%;
+                        .section-subtitle {
+                            font-size: $section-title;
+                            line-height: 1.1;
+                        }
+                    }
                 }
             }
             .bottom {
