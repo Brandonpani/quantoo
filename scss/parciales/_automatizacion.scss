@@ -17,6 +17,7 @@
                     line-height: 1.1;
                     margin-inline-start: auto;
                     margin-inline-end: auto;
+                    font-size: clamp(2rem, 4vh, 4rem);
                 }
                 .p-large {
                     color: $clr-light-gray;
