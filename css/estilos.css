@@ -487,7 +487,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
   #prueba #automatizacion .bottom .cards-container .cards-wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 2rem; }
   #prueba #automatizacion .bottom .cards-container .cta-productos { display: none; } }
 
-@media only screen and (min-width: 1025px) { #prueba #automatizacion .top { padding-block: 7rem; height: auto; background-image: -webkit-gradient(linear, right top, left top, color-stop(40%, #f2f2f225), color-stop(60%, #5681e675)), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg); background-image: linear-gradient(to left, #f2f2f225 40%, #5681e675 60%), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg); background-position: 70% 20%; }
+@media only screen and (min-width: 1025px) { #prueba #automatizacion .top { padding-block: 7rem; height: auto; background-image: -webkit-gradient(linear, right top, left top, color-stop(40%, #f2f2f225), color-stop(60%, #5681e675)), url(../images/close-up-male-hands-using-laptop-home.jpg); background-image: linear-gradient(to left, #f2f2f225 40%, #5681e675 60%), url(../images/close-up-male-hands-using-laptop-home.jpg); background-position: 70% 40%; }
   #prueba #automatizacion .top .top__wrapper { width: 50%; height: 70%; }
   #prueba #automatizacion .bottom .cards-container .cards-wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 2rem; } }
 
