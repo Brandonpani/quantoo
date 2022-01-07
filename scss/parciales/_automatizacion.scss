@@ -80,71 +80,39 @@
         padding-bottom: 5rem;
 
         .info {
+            @include container;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
             .info-container {
-                @include container;
-
-                .credito-img {
-                    display: grid;
-                    place-items: center;
-                    margin: 2rem auto;
-
-                    .lap-credito {
-                        width: 80%;
-                    }
-                }
+                text-align: justify;
+            }
+            .notificacion-img {
+                padding: 2rem;
+                
             }
         }
 
-        .cards {
-            @include container;
-        }
-    }
-
-    @media (min-width: $laptop) {
-
-        #notificaciones {
-            padding: 5rem 0;
-            @include container;
-            display: grid;
-            grid-template-columns: 2fr 3fr;
-            gap: 3rem;
+        @media only screen and (min-width: $tablet) {
 
             .info {
-                place-self: center;
-
+                @include container;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 2rem;
                 .info-container {
-                    width: 100%;
-
-                    .title {
-                        text-align: center;
-                        font-size: 4rem;
-                    }
-
-                    .p-large {
-                        font-size: 1.25rem;
-                    }
-
-                    .credito-img {
-                        width: 100%;
-                        display: grid;
-                        place-content: center;
-
-                        .lap-credito {
-                            width: 100%;
-                        }
-                    }
+                    width: 45%;
+                    text-align: left;
                 }
-            }
-
-            .cards {
-
-                .subtitle {
-                    font-size: 1.3rem;
+                .notificacion-img {
+                    width: 45%;
+                    padding: 2rem;
                 }
             }
         }
     }
 
-
+   
 }

@@ -662,24 +662,15 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-automatizacion #notificaciones { padding-top: 5rem; padding-bottom: 5rem; }
 
-#main-automatizacion #notificaciones .info { text-align: center; }
+#main-automatizacion #notificaciones .info { width: 90%; max-width: 1400px; margin-inline: auto; text-align: center; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; gap: 2rem; }
 
-#main-automatizacion #notificaciones .info .info-container { width: 90%; max-width: 1400px; margin-inline: auto; }
+#main-automatizacion #notificaciones .info .info-container { text-align: justify; }
 
-#main-automatizacion #notificaciones .info .info-container .credito-img { display: -ms-grid; display: grid; place-items: center; margin: 2rem auto; }
+#main-automatizacion #notificaciones .info .notificacion-img { padding: 2rem; }
 
-#main-automatizacion #notificaciones .info .info-container .credito-img .lap-credito { width: 80%; }
-
-#main-automatizacion #notificaciones .cards { width: 90%; max-width: 1400px; margin-inline: auto; }
-
-@media (min-width: 1025px) { #main-automatizacion #notificaciones { padding: 5rem 0; width: 90%; max-width: 1400px; margin-inline: auto; display: -ms-grid; display: grid; -ms-grid-columns: 2fr 3fr; grid-template-columns: 2fr 3fr; gap: 3rem; }
-  #main-automatizacion #notificaciones .info { place-self: center; }
-  #main-automatizacion #notificaciones .info .info-container { width: 100%; }
-  #main-automatizacion #notificaciones .info .info-container .title { text-align: center; font-size: 4rem; }
-  #main-automatizacion #notificaciones .info .info-container .p-large { font-size: 1.25rem; }
-  #main-automatizacion #notificaciones .info .info-container .credito-img { width: 100%; display: -ms-grid; display: grid; place-content: center; }
-  #main-automatizacion #notificaciones .info .info-container .credito-img .lap-credito { width: 100%; }
-  #main-automatizacion #notificaciones .cards .subtitle { font-size: 1.3rem; } }
+@media only screen and (min-width: 768px) { #main-automatizacion #notificaciones .info { width: 90%; max-width: 1400px; margin-inline: auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 2rem; }
+  #main-automatizacion #notificaciones .info .info-container { width: 45%; text-align: left; }
+  #main-automatizacion #notificaciones .info .notificacion-img { width: 45%; padding: 2rem; } }
 
 #main-regulacion .regulacion-intro { width: 90%; margin: auto; background-image: -webkit-gradient(linear, left bottom, left top, from(#202020cf), to(#33a2f279)), url(../../images/productos-intro.jpg); background-image: linear-gradient(to top, #202020cf, #33a2f279), url(../../images/productos-intro.jpg); margin-top: 1.1rem; min-height: 85vh; padding: 2rem; color: #f2f3f4; background-size: cover; background-repeat: no-repeat; background-position: center; display: -ms-grid; display: grid; place-content: center; }
 
