@@ -200,8 +200,6 @@ nav .wrapper { width: 90%; max-width: 1400px; margin-inline: auto; display: -web
 
 nav .wrapper .logo, nav .wrapper .drop-menu { font-size: 1.5rem; font-weight: 600; letter-spacing: 2px; color: #f2f2f2; line-height: 2; }
 
-nav .wrapper .logo { width: 1.9rem; }
-
 nav .wrapper .nav-links { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; line-height: 2.5rem; margin-left: auto; margin-right: auto; z-index: 10; }
 
 nav .wrapper .nav-links li { display: block; }
