@@ -292,7 +292,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
   #main-index #productos .top .top__container .top-info .section-subtitle { font-size: clamp(3rem, 5vw, 4rem); line-height: 1.1; }
   #main-index #productos .bottom .cards-container .cards-wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 2rem; } }
 
-#main-index #regulacion .top { background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #f2f2f225), color-stop(60%, #5681e675)), url(../images/stock-photo-businesspeople-analyzing-statistics-financial-concept-1931238260.jpg); background-image: linear-gradient(#f2f2f225 40%, #5681e675 60%), url(../images/stock-photo-businesspeople-analyzing-statistics-financial-concept-1931238260.jpg); background-size: cover; background-position: 65% center; height: 90vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
+#main-index #regulacion .top { background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #f2f2f225), color-stop(60%, #5681e675)), url(../images/quanto-regulacion-mujer-firmando-documentos.jpg); background-image: linear-gradient(#f2f2f225 40%, #5681e675 60%), url(../images/quanto-regulacion-mujer-firmando-documentos.jpg); background-size: cover; background-position: 65% center; height: 90vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
 
 #main-index #regulacion .top .top__container { width: 100%; width: 90%; max-width: 1400px; margin-inline: auto; -webkit-margin-after: 3rem; margin-block-end: 3rem; }
 
@@ -304,14 +304,14 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-index #regulacion .bottom { width: 90%; max-width: 1400px; margin-inline: auto; margin-block: 3rem; }
 
-@media only screen and (min-width: 768px) { #main-index #regulacion .top { -webkit-padding-before: 7rem; padding-block-start: 7rem; height: auto; background-image: -webkit-gradient(linear, right top, left top, color-stop(40%, #f2f2f225), color-stop(60%, #5681e675)), url(../images/stock-photo-businesspeople-analyzing-statistics-financial-concept-1931238260.jpg); background-image: linear-gradient(to left, #f2f2f225 40%, #5681e675 60%), url(../images/stock-photo-businesspeople-analyzing-statistics-financial-concept-1931238260.jpg); }
+@media only screen and (min-width: 768px) { #main-index #regulacion .top { -webkit-padding-before: 7rem; padding-block-start: 7rem; height: auto; background-image: -webkit-gradient(linear, right top, left top, color-stop(40%, #f2f2f225), color-stop(60%, #5681e675)), url(../images/quanto-regulacion-mujer-firmando-documentos.jpg); background-image: linear-gradient(to left, #f2f2f225 40%, #5681e675 60%), url(../images/quanto-regulacion-mujer-firmando-documentos.jpg); }
   #main-index #regulacion .top .top__container .top-info { width: 50%; }
   #main-index #regulacion .top .top__container .top-info .p-large { -webkit-margin-after: 2rem; margin-block-end: 2rem; }
   #main-index #regulacion .top .top__container .top-info .cta-productos { display: block; }
   #main-index #regulacion .bottom .cards-container .cards-wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 2rem; }
   #main-index #regulacion .bottom .cards-container .cta-productos { display: none; } }
 
-@media only screen and (min-width: 1025px) { #main-index #regulacion .top { padding-block: 7rem; height: auto; background-image: -webkit-gradient(linear, right top, left top, color-stop(40%, #f2f2f225), color-stop(60%, #5681e675)), url(../../images/quanto-regulacion-mujer-firmando-documentos.jpg); background-image: linear-gradient(to left, #f2f2f225 40%, #5681e675 60%), url(../../images/quanto-regulacion-mujer-firmando-documentos.jpg); background-position: 70% 50%; }
+@media only screen and (min-width: 1025px) { #main-index #regulacion .top { padding-block: 7rem; height: auto; background-image: -webkit-gradient(linear, right top, left top, color-stop(40%, #f2f2f225), color-stop(60%, #5681e675)), url(../images/quanto-regulacion-mujer-firmando-documentos.jpg); background-image: linear-gradient(to left, #f2f2f225 40%, #5681e675 60%), url(../images/quanto-regulacion-mujer-firmando-documentos.jpg); background-position: 70% 50%; }
   #main-index #regulacion .top .top__container { height: 70%; }
   #main-index #regulacion .bottom .cards-container .cards-wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 2rem; } }
 
