@@ -1078,6 +1078,8 @@ nav .wrapper .menu-ham {
 
 @media only screen and (min-width: 768px) {
   #main-index #regulacion .top {
+    -webkit-padding-before: 7rem;
+            padding-block-start: 7rem;
     height: auto;
     background-image: -webkit-gradient(linear, right top, left top, color-stop(40%, #f2f2f225), color-stop(60%, #5681e675)), url(../images/quanto-regulacion-mujer-firmando-documentos.jpg);
     background-image: linear-gradient(to left, #f2f2f225 40%, #5681e675 60%), url(../images/quanto-regulacion-mujer-firmando-documentos.jpg);

@@ -1,184 +1,186 @@
 #main-index {
 
     #hero {
-                padding-block-start: 3rem;
-                padding-block-end: 3rem;
-                background-color: $dark-bg;
-                color: $clr-light-gray;
-        
-        
-                .hero-wrapper {
-                    @include container;
-                    display: grid;
+        padding-block-start: 3rem;
+        padding-block-end: 3rem;
+        background-color: $dark-bg;
+        color: $clr-light-gray;
+
+
+        .hero-wrapper {
+            @include container;
+            display: grid;
+            gap: 2rem;
+
+            .hero__info {
+                max-width: 30rem;
+                text-align: center;
+                margin-inline-end: auto;
+                margin-inline-start: auto;
+
+                .section-title {
+                    margin-block-end: 1rem;
+                    color: $clr-light-gray;
+                    line-height: 1.1;
+                }
+
+
+
+                .p-normal {
+                    font-weight: 100;
+                }
+            }
+
+            .hero__img {
+                .subtitle {
+                    text-align: center;
+                    color: $clr-light-gray;
+                    margin-block-end: .5rem;
+                    font-size: 1.3rem;
+                    font-weight: 200;
+                    text-transform: uppercase;
+
+
+                    span {
+                        color: $blue;
+                        font-weight: 600;
+                    }
+                }
+
+                max-width: 35rem;
+                justify-self: center;
+            }
+
+            .hero__cards {
+                // min-height: 50vh;
+                // background-color: $dark-md;
+                // padding: 2rem;
+                // border-radius: .25rem;
+                // box-shadow: inset 0px 2px 0px rgba(255, 255, 255, 0.05);
+                // display: grid;
+                // gap: 1rem;
+
+                .subtitle {
+                    color: rgb(20, 90, 210);
+                }
+            }
+        }
+
+        @media only screen and (min-width: $tablet) {
+            .hero-wrapper {
+                padding-block-start: 0;
+                padding-block-end: 0;
+                min-height: 40vh;
+                grid-template-columns: 3fr 2fr;
+                grid-template-rows: auto auto;
+                grid-template-areas:
+                    "info img"
+                    "cards cards"
+                ;
+                column-gap: 2rem;
+                row-gap: 0;
+
+                .hero__info {
+                    grid-row: 1;
+                    grid-column: 1;
+                    grid-area: info;
+                    align-self: center;
+                    justify-self: center;
+
+                    .title {
+                        font-size: clamp(3rem, 5vw, 5rem);
+                    }
+                }
+
+                .hero__img {
+                    grid-row: 1;
+                    grid-column: 1;
+                    grid-area: img;
+                    align-self: center;
+                    width: 100%;
+
+                    .optimiza {
+                        display: none;
+                    }
+
+                }
+
+                .hero__cards {
+                    grid-row: 2;
+                    grid-column: 1;
+                    grid-area: cards;
+                    align-self: center;
+                    display: flex;
                     gap: 2rem;
-        
-                    .hero__info {
-                        max-width: 30rem;
-                        text-align: center;
-                        margin-inline-end: auto;
-                        margin-inline-start: auto;
-        
-                        .section-title {
-                            margin-block-end: 1rem;
-                            color: $clr-light-gray;
-                            line-height: 1.1;
-                        }
-        
-        
-        
-                        .p-normal {
-                            font-weight: 100;
-                        }
-                    }
-        
-                    .hero__img {
-                        .subtitle {
-                            text-align: center;
-                            color: $clr-light-gray;
-                            margin-block-end: .5rem;
-                            font-size: 1.3rem;
-                            font-weight: 200;
-                            text-transform: uppercase;
-        
-        
-                            span {
-                                color: $blue;
-                                font-weight: 600;
-                            }
-                        }
-        
-                        max-width: 35rem;
-                        justify-self: center;
-                    }
-        
-                    .hero__cards {
-                        // min-height: 50vh;
-                        // background-color: $dark-md;
-                        // padding: 2rem;
-                        // border-radius: .25rem;
-                        // box-shadow: inset 0px 2px 0px rgba(255, 255, 255, 0.05);
-                        // display: grid;
-                        // gap: 1rem;
-        
-                        .subtitle {
-                            color: rgb(20, 90, 210);
-                        }
+                    text-align: center;
+
+                }
+            }
+        }
+
+        @media only screen and (min-width: $laptop) {
+            .hero-wrapper {
+                min-height: 60vh;
+
+                .hero__info {
+                    justify-self: flex-start;
+                    width: 100%;
+                    max-width: 90%;
+
+                    .p-normal {
+                        font-size: clamp(1.125rem, 2vw, 2rem);
                     }
                 }
-        
-                @media only screen and (min-width: $tablet) {
-                    .hero-wrapper {
-                        padding-block-start: 0;
-                        padding-block-end: 0;
-                        min-height: 40vh;
-                        grid-template-columns: 3fr 2fr;
-                        grid-template-rows: auto auto;
-                        grid-template-areas:
-                            "info img"
-                            "cards cards"
-                        ;
-                        column-gap: 2rem;
-                        row-gap: 0;
-        
-                        .hero__info {
-                            grid-row: 1;
-                            grid-column: 1;
-                            grid-area: info;
-                            align-self: center;
-                            justify-self: center;
-        
-                            .title {
-                                font-size: clamp(3rem, 5vw, 5rem);
-                            }
-                        }
-        
-                        .hero__img {
-                            grid-row: 1;
-                            grid-column: 1;
-                            grid-area: img;
-                            align-self: center;
-                            width: 100%;
-        
-                            .optimiza {
-                                display: none;
-                            }
-        
-                        }
-        
-                        .hero__cards {
-                            grid-row: 2;
-                            grid-column: 1;
-                            grid-area: cards;
-                            align-self: center;
-                            display: flex;
-                            gap: 2rem;
-                            text-align: center;
-        
-                        }
-                    }
-                }
-        
-                @media only screen and (min-width: $laptop) {
-                    .hero-wrapper {
-                        min-height: 60vh;
-        
-                        .hero__info {
-                            justify-self: flex-start;
-                            width: 100%;
-                            max-width: 90%;
-        
-                            .p-normal {
-                                font-size: clamp(1.125rem, 2vw, 2rem);
-                            }
-                        }
-        
-                        // .hero__img {}
-        
-                        .hero__cards {
-                            width: 100%;
-                            justify-content: center;
-                            gap: 1rem;
-        
-                            .hero-card {
-                                padding: 2rem;
-                            }
-                        }
+
+                // .hero__img {}
+
+                .hero__cards {
+                    width: 100%;
+                    justify-content: center;
+                    gap: 1rem;
+
+                    .hero-card {
+                        padding: 2rem;
                     }
                 }
             }
+        }
+    }
 
     #productos {
 
         .top {
-            background-image: linear-gradient(#f2f2f225 40%, #5681e675 60%,), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg);
+            background-image: linear-gradient(#f2f2f225 40%, #5681e675 60%, ), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg);
             background-size: cover;
             background-position: 65% center;
             height: 90vh;
             display: flex;
             justify-content: center;
             align-items: flex-end;
+
             .top__container {
                 width: 100%;
                 @include container;
                 margin-block-end: 3rem;
-                
+
                 .top-info {
-                    
+
                     .section-subtitle {
                         color: whitesmoke;
                         font-size: 2.3rem;
                     }
-                    .p-large{
+
+                    .p-large {
                         color: whitesmoke;
                     }
-                    
+
                     .cta-productos {
                         display: none;
                     }
                 }
             }
         }
-        
+
         .bottom {
             @include container;
             margin-block: 3rem;
@@ -196,38 +198,42 @@
                 }
             }
         }
-        
+
     }
+
     @media only screen and (min-width: $tablet) {
         #productos {
 
             .top {
                 padding-block-start: 7rem;
                 height: auto;
-                background-image: linear-gradient(to left,#f2f2f225 40%, #5681e675 60%,), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg);
+                background-image: linear-gradient(to left, #f2f2f225 40%, #5681e675 60%, ), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg);
+
                 .top__container {
-                    
+
                     .top-info {
                         width: 50%;
-                        
+
                         .p-large {
                             margin-block-end: 2rem;
                         }
+
                         .cta-productos {
                             display: block;
                         }
                     }
                 }
             }
-            
+
             .bottom {
                 .cards-container {
+
                     // @include container;
                     .cards-wrapper {
                         display: flex;
                         gap: 2rem;
                     }
-                    
+
                     .cta-productos {
                         display: none;
                     }
@@ -242,13 +248,16 @@
             .top {
                 padding-block: 7rem;
                 height: auto;
-                background-image: linear-gradient(to left,#f2f2f225 40%, #5681e675 60%,), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg);
+                background-image: linear-gradient(to left, #f2f2f225 40%, #5681e675 60%, ), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg);
                 background-position: 70% 20%;
+
                 .top__container {
                     height: 70%;
+
                     .top-info {
-   
+
                         width: 60%;
+
                         .section-subtitle {
                             font-size: $section-title;
                             line-height: 1.1;
@@ -256,18 +265,17 @@
                     }
                 }
             }
+
             .bottom {
-                
+
                 .cards-container {
-                    
+
                     .cards-wrapper {
                         display: flex;
                         gap: 2rem;
                     }
-                    
-                    .cta-productos {
-                        
-                    }
+
+                    .cta-productos {}
                 }
             }
         }
@@ -276,70 +284,77 @@
     #regulacion {
 
         .top {
-            background-image: linear-gradient(#f2f2f225 40%, #5681e675 60%,), url(../images/quanto-regulacion-mujer-firmando-documentos.jpg);
+            background-image: linear-gradient(#f2f2f225 40%, #5681e675 60%, ), url(../images/quanto-regulacion-mujer-firmando-documentos.jpg);
             background-size: cover;
             background-position: 50% 60%;
             height: 90vh;
             display: flex;
             justify-content: center;
             align-items: flex-end;
+
             .top__container {
                 width: 100%;
                 @include container;
                 margin-block-end: 3rem;
-                
+
                 .top-info {
-                    
+
                     .section-subtitle {
                         color: whitesmoke;
                         font-size: 2.3rem;
                     }
-                    .p-large{
+
+                    .p-large {
                         color: whitesmoke;
                     }
-                    
+
                     .cta-productos {
                         display: none;
                     }
                 }
             }
         }
-        
+
         .bottom {
             @include container;
             margin-block: 3rem;
         }
-        
+
     }
+
     @media only screen and (min-width: $tablet) {
         #regulacion {
 
             .top {
+                padding-block-start: 7rem;
                 height: auto;
-                background-image: linear-gradient(to left,#f2f2f225 40%, #5681e675 60%,), url(../images/quanto-regulacion-mujer-firmando-documentos.jpg);
+                background-image: linear-gradient(to left, #f2f2f225 40%, #5681e675 60%, ), url(../images/quanto-regulacion-mujer-firmando-documentos.jpg);
+
                 .top__container {
-                    
+
                     .top-info {
                         width: 50%;
-                        
+
                         .p-large {
                             margin-block-end: 2rem;
                         }
+
                         .cta-productos {
                             display: block;
                         }
                     }
                 }
             }
-            
+
             .bottom {
                 .cards-container {
+
                     // @include container;
                     .cards-wrapper {
                         display: flex;
                         gap: 2rem;
                     }
-                    
+
                     .cta-productos {
                         display: none;
                     }
@@ -354,26 +369,25 @@
             .top {
                 padding-block: 7rem;
                 height: auto;
-                background-image: linear-gradient(to left,#f2f2f225 40%, #5681e675 60%,), url(../images/quanto-regulacion-mujer-firmando-documentos.jpg);
+                background-image: linear-gradient(to left, #f2f2f225 40%, #5681e675 60%, ), url(../images/quanto-regulacion-mujer-firmando-documentos.jpg);
                 background-position: 70% 50%;
-               
+
                 .top__container {
                     // width: 50%;
                     height: 70%;
                 }
             }
+
             .bottom {
-                
+
                 .cards-container {
-                    
+
                     .cards-wrapper {
                         display: flex;
                         gap: 2rem;
                     }
-                    
-                    .cta-productos {
-                        
-                    }
+
+                    .cta-productos {}
                 }
             }
         }
@@ -382,7 +396,7 @@
     #automatizacion {
 
         .top {
-            background-image: linear-gradient(#f2f2f225 40%, #5681e675 60%,), url(../images/close-up-male-hands-using-laptop-home.jpg);
+            background-image: linear-gradient(#f2f2f225 40%, #5681e675 60%, ), url(../images/close-up-male-hands-using-laptop-home.jpg);
             background-size: cover;
             background-position: 35% center;
 
@@ -390,64 +404,70 @@
             display: flex;
             justify-content: center;
             align-items: flex-end;
+
             .top__container {
                 width: 100%;
                 @include container;
                 margin-block-end: 3rem;
-                
+
                 .top-info {
-                    
+
                     .section-subtitle {
                         color: whitesmoke;
                         font-size: 2.3rem;
                     }
-                    .p-large{
+
+                    .p-large {
                         color: whitesmoke;
                     }
-                    
+
                     .cta-productos {
                         display: none;
                     }
                 }
             }
         }
-        
+
         .bottom {
             @include container;
             margin-block: 3rem;
         }
-        
+
     }
+
     @media only screen and (min-width: $tablet) {
         #automatizacion {
 
             .top {
                 padding-block-start: 7rem;
                 height: auto;
-                background-image: linear-gradient(to left,#f2f2f225 40%, #5681e675 60%,), url(../images/close-up-male-hands-using-laptop-home.jpg);
+                background-image: linear-gradient(to left, #f2f2f225 40%, #5681e675 60%, ), url(../images/close-up-male-hands-using-laptop-home.jpg);
+
                 .top__container {
-                    
+
                     .top-info {
                         width: 50%;
-                        
+
                         .p-large {
                             margin-block-end: 2rem;
                         }
+
                         .cta-productos {
                             display: block;
                         }
                     }
                 }
             }
-            
+
             .bottom {
                 .cards-container {
+
                     // @include container;
                     .cards-wrapper {
                         display: flex;
                         gap: 2rem;
                     }
-                    
+
                     .cta-productos {
                         display: none;
                     }
@@ -462,17 +482,19 @@
             .top {
                 padding-block: 7rem;
                 height: auto;
-                background-image: linear-gradient(to left,#f2f2f225 40%, #5681e675 60%,), url(../images/close-up-male-hands-using-laptop-home.jpg);
+                background-image: linear-gradient(to left, #f2f2f225 40%, #5681e675 60%, ), url(../images/close-up-male-hands-using-laptop-home.jpg);
                 background-position: 70% 40%;
+
                 .top__wrapper {
                     width: 50%;
                     height: 70%;
                 }
             }
+
             .bottom {
-                
+
                 .cards-container {
-                    
+
                     .cards-wrapper {
                         display: flex;
                         gap: 2rem;
@@ -485,35 +507,37 @@
     #innovacion {
 
         .top {
-            background-image: linear-gradient(#f2f2f225 40%, #5681e675 60%,), url(../images/quanto-innovacion-hombre-trabajando-laptop.jpg);
+            background-image: linear-gradient(#f2f2f225 40%, #5681e675 60%, ), url(../images/quanto-innovacion-hombre-trabajando-laptop.jpg);
             background-size: cover;
             background-position: 65% center;
             height: 90vh;
             display: flex;
             justify-content: center;
             align-items: flex-end;
+
             .top__container {
                 width: 100%;
                 @include container;
                 margin-block-end: 3rem;
-                
+
                 .top-info {
-                    
+
                     .section-subtitle {
                         color: whitesmoke;
                         font-size: 2.3rem;
                     }
-                    .p-large{
+
+                    .p-large {
                         color: whitesmoke;
                     }
-                    
+
                     .cta-productos {
                         display: none;
                     }
                 }
             }
         }
-        
+
         .bottom {
             @include container;
             margin-block: 3rem;
@@ -525,41 +549,47 @@
                     .saas {
                         grid-area: saas;
                     }
+
                     .banca {
                         grid-area: banca;
                     }
+
                     .api {
                         grid-area: api;
                     }
                 }
             }
         }
-        
+
     }
+
     @media only screen and (min-width: $tablet) {
         #innovacion {
 
             .top {
                 padding-block-start: 7rem;
                 height: auto;
-                background-image: linear-gradient(to left,#f2f2f225 40%, #5681e675 60%,), url(../images/quanto-innovacion-hombre-trabajando-laptop.jpg);
+                background-image: linear-gradient(to left, #f2f2f225 40%, #5681e675 60%, ), url(../images/quanto-innovacion-hombre-trabajando-laptop.jpg);
+
                 .top__container {
-                    
+
                     .top-info {
                         width: 50%;
-                        
+
                         .p-large {
                             margin-block-end: 2rem;
                         }
+
                         .cta-productos {
                             display: block;
                         }
                     }
                 }
             }
-            
+
             .bottom {
                 .cards-container {
+
                     // @include container;
                     .cards-wrapper {
                         display: grid;
@@ -574,15 +604,17 @@
                         .saas {
                             grid-area: saas;
                         }
+
                         .banca {
                             grid-area: banca;
                         }
+
                         .api {
                             grid-area: api;
                         }
 
                     }
-                    
+
                     .cta-productos {
                         display: none;
                     }
@@ -597,35 +629,39 @@
             .top {
                 padding-block: 7rem;
                 height: auto;
-                background-image: linear-gradient(to left,#f2f2f225 40%, #5681e675 60%,), url(../images/quanto-innovacion-hombre-trabajando-laptop.jpg);
+                background-image: linear-gradient(to left, #f2f2f225 40%, #5681e675 60%, ), url(../images/quanto-innovacion-hombre-trabajando-laptop.jpg);
                 background-position: 70% 40%;
+
                 .top__wrapper {
                     width: 50%;
                     height: 70%;
                 }
             }
+
             .bottom {
-                
+
                 .cards-container {
-                    
+
                     .cards-wrapper {
                         grid-template-columns: repeat(3 auto);
 
                         grid-template-areas:
-                        "saas banca api";
+                            "saas banca api";
                         gap: 2rem;
 
                         .saas {
                             grid-area: saas;
                         }
+
                         .banca {
                             grid-area: banca;
                         }
+
                         .api {
                             grid-area: api;
                         }
                     }
-                    
+
                 }
             }
         }
