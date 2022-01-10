@@ -19,15 +19,18 @@ nav {
     // height: 8vh;    
 
     .wrapper {
-        @include container;
+        // @include container;
+        width: 90%;
+        max-width: 1400px;
+        margin-inline: auto;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
+        
 
 
-        .logo,
-        .drop-menu {
+        .logo {
             font-size: 1.5rem;
             font-weight: 600;
             letter-spacing: 2px;
@@ -37,6 +40,7 @@ nav {
 
 
         .nav-links {
+
             position: relative;
             display: flex;
             line-height: 2.5rem;
@@ -44,7 +48,7 @@ nav {
             margin-right: auto;
             z-index: 10;
             li {
-                display: block;
+                // display: block;
 
                 .nav-link {
                     padding: .75rem 1.75rem;
@@ -77,21 +81,6 @@ nav {
                     background-color: rgb(20, 90, 210);
                 }
 
-                .drop-menu {
-                    background-color: #202020;
-                    width: 20rem;
-                    position: absolute;
-                    top: 5rem;
-                    line-height: 3rem;
-                    opacity: 0;
-                    visibility: hidden;
-
-                    .nav-link {
-                        display: block;
-
-
-                    }
-                }
             }
 
         }
@@ -119,7 +108,7 @@ nav {
                 right: -100%;
                 width: 40%;
                 background-color: #202020;
-                transition: all 0.3s ease;
+
             }
 
             .btn {
@@ -141,6 +130,7 @@ nav {
         .wrapper.open {
             .nav-links {
                 right: -6%;
+                width: 50%;
             }
 
             .menu__ham {

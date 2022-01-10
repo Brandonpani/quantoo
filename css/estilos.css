@@ -198,11 +198,9 @@ nav { background-color: #1d1d1d; }
 
 nav .wrapper { width: 90%; max-width: 1400px; margin-inline: auto; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-nav .wrapper .logo, nav .wrapper .drop-menu { font-size: 1.5rem; font-weight: 600; letter-spacing: 2px; color: #f2f2f2; line-height: 2; }
+nav .wrapper .logo { font-size: 1.5rem; font-weight: 600; letter-spacing: 2px; color: #f2f2f2; line-height: 2; }
 
 nav .wrapper .nav-links { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; line-height: 2.5rem; margin-left: auto; margin-right: auto; z-index: 10; }
-
-nav .wrapper .nav-links li { display: block; }
 
 nav .wrapper .nav-links li .nav-link { padding: .75rem 1.75rem; color: #f2f2f2; }
 
@@ -214,20 +212,16 @@ nav .wrapper .nav-links li .nav-link:hover { background-color: #303030; }
 
 nav .wrapper .nav-links li .nav-link.active { background-color: #145ad2; }
 
-nav .wrapper .nav-links li .drop-menu { background-color: #202020; width: 20rem; position: absolute; top: 5rem; line-height: 3rem; opacity: 0; visibility: hidden; }
-
-nav .wrapper .nav-links li .drop-menu .nav-link { display: block; }
-
 nav .wrapper .btn { margin: 0; }
 
 nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 @media only screen and (max-width: 1024px) { nav .wrapper { position: relative; }
-  nav .wrapper .nav-links { display: block; position: absolute; top: 100%; right: -100%; width: 40%; background-color: #202020; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
+  nav .wrapper .nav-links { display: block; position: absolute; top: 100%; right: -100%; width: 40%; background-color: #202020; }
   nav .wrapper .btn { display: none; }
   nav .wrapper .menu-ham { font-size: 3rem; display: block; }
   nav .wrapper .menu-ham:hover .nav-links, nav .wrapper .menu-ham:focus .nav-links { display: -webkit-box; display: -ms-flexbox; display: flex; }
-  nav .wrapper.open .nav-links { right: -6%; }
+  nav .wrapper.open .nav-links { right: -6%; width: 50%; }
   nav .wrapper.open .menu__ham { padding: .25rem; } }
 
 @media only screen and (max-width: 768px) { nav .wrapper .nav-links { width: 50%; } }
