@@ -158,6 +158,11 @@
             flex-direction: column;
             gap: 2rem;
 
+            .personalizacion-container {
+                .section-title {
+                    font-size: 2.5rem;
+                }
+            }
             .personalizacion-img {
                 padding: 2rem;
             }
@@ -175,6 +180,9 @@
                     width: 45%;
                     text-align: center;
                     order: 2;
+                    .section-title {
+                        font-size: $section-title;
+                    }
                 }
                 .personalizacion-img {
                     width: 45%;

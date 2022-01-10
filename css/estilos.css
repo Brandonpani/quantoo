@@ -678,10 +678,13 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-automatizacion #personalizacion .info { width: 90%; max-width: 1400px; margin-inline: auto; text-align: center; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; gap: 2rem; }
 
+#main-automatizacion #personalizacion .info .personalizacion-container .section-title { font-size: 2.5rem; }
+
 #main-automatizacion #personalizacion .info .personalizacion-img { padding: 2rem; }
 
 @media only screen and (min-width: 768px) { #main-automatizacion #personalizacion .info { width: 90%; max-width: 1400px; margin-inline: auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 2rem; }
   #main-automatizacion #personalizacion .info .personalizacion-container { width: 45%; text-align: center; -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; }
+  #main-automatizacion #personalizacion .info .personalizacion-container .section-title { font-size: clamp(3rem, 5vw, 4rem); }
   #main-automatizacion #personalizacion .info .personalizacion-img { width: 45%; -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; padding: 2rem; } }
 
 #main-regulacion .regulacion-intro { width: 90%; margin: auto; background-image: -webkit-gradient(linear, left bottom, left top, from(#202020cf), to(#33a2f279)), url(../../images/productos-intro.jpg); background-image: linear-gradient(to top, #202020cf, #33a2f279), url(../../images/productos-intro.jpg); margin-top: 1.1rem; min-height: 85vh; padding: 2rem; color: #f2f3f4; background-size: cover; background-repeat: no-repeat; background-position: center; display: -ms-grid; display: grid; place-content: center; }
