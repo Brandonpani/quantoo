@@ -26,14 +26,9 @@
       
       .contact-form {
         background-color: $dark-bg;
-        position: relative;
+        // position: relative;
       }
       
-      .circle {
-        border-radius: 50%;
-        background: linear-gradient(135deg, transparent 20%, #353535);
-        position: absolute;
-      }
       
       .circle.one {
         width: 130px;
