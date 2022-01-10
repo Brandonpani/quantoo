@@ -222,10 +222,11 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
   nav .wrapper .menu-ham { font-size: 3rem; display: block; }
   nav .wrapper .menu-ham:hover .nav-links, nav .wrapper .menu-ham:focus .nav-links { display: -webkit-box; display: -ms-flexbox; display: flex; }
   nav .wrapper.open .nav-links { right: -6%; width: 50%; }
-  nav .wrapper.open .nav-links .nav-link { font-size: .875rem; }
+  nav .wrapper.open .nav-links .nav-link { font-size: .875rem; line-height: 3.5; }
   nav .wrapper.open .menu__ham { padding: .25rem; } }
 
-@media only screen and (max-width: 768px) { nav .wrapper .nav-links { width: 50%; } }
+@media only screen and (max-width: 768px) { nav .wrapper .nav-links { width: 50%; }
+  nav .wrapper .nav-links .nav-link { line-height: 3.5; } }
 
 #main-index #hero { -webkit-padding-before: 3rem; padding-block-start: 3rem; -webkit-padding-after: 3rem; padding-block-end: 3rem; background-color: #101010; color: #f2f2f2; }
 

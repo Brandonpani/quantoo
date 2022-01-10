@@ -135,6 +135,7 @@ nav {
 
                 .nav-link {
                     font-size: .875rem;
+                    line-height: 3.5;
                 }
             }
 
@@ -148,6 +149,10 @@ nav {
         .wrapper {
             .nav-links {
                 width: 50%;
+
+                .nav-link {
+                    line-height: 3.5;
+                }
             }
         }
     }
