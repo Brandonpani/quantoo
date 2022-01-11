@@ -854,7 +854,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 .error-page .content { width: 90%; max-width: 1400px; margin-inline: auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background-image: radial-gradient(circle at 17% 77%, rgba(17, 17, 17, 0.04) 0%, rgba(17, 17, 17, 0.04) 50%, rgba(197, 197, 197, 0.04) 50%, rgba(197, 197, 197, 0.04) 100%), radial-gradient(circle at 26% 17%, rgba(64, 64, 64, 0.04) 0%, rgba(64, 64, 64, 0.04) 50%, rgba(244, 244, 244, 0.04) 50%, rgba(244, 244, 244, 0.04) 100%), radial-gradient(circle at 44% 60%, rgba(177, 177, 177, 0.04) 0%, rgba(177, 177, 177, 0.04) 50%, rgba(187, 187, 187, 0.04) 50%, rgba(187, 187, 187, 0.04) 100%), linear-gradient(19deg, #1c75fa, #22029f); background-size: 300% 300%; -webkit-animation: gradient-animation 32s ease infinite; animation: gradient-animation 32s ease infinite; border-radius: .5rem; min-height: 90vh; justify-content: center; padding: 3rem 2rem; }
 
-.error-page .content .logo { font-size: 3rem; }
+.error-page .content .logo { width: 50%; }
 
 .error-page .content h1 { font-size: 7rem; margin-bottom: 2rem; }
 
@@ -870,9 +870,10 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 @media only screen and (min-width: 768px) { .error-page .content .logo { font-size: 4rem; }
   .error-page .content h1 { font-size: 23vw; } }
 
-@media only screen and (min-width: 1025px) { .error-page .content .logo { font-size: 4rem; }
-  .error-page .content h1 { font-size: 10vw; }
-  .error-page .content h3 { font-size: 5rem; } }
+@media only screen and (min-width: 1025px) { .error-page { padding-block: 3rem; }
+  .error-page .content .logo { -webkit-margin-before: 3rem; margin-block-start: 3rem; width: 30%; }
+  .error-page .content h1 { font-size: 10vw; -webkit-margin-after: 0; margin-block-end: 0; }
+  .error-page .content h3 { font-size: 4rem; line-height: 1.1; } }
 
 @-webkit-keyframes gradient-animation { 0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
