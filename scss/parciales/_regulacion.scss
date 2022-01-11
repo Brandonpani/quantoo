@@ -92,8 +92,8 @@
 
             .info-container {
                 @include container;
-                padding-block-start: 3rem;
-                padding-block-end: 5rem;
+                padding-block: 10rem;
+                
                 margin-inline: auto;
                 text-align: center;
                 .seguridad-title {
@@ -175,9 +175,7 @@
 
             .info-container {
                 @include container;
-                padding-block-start: 3rem;
-                padding-block-end: 5rem;
-
+                padding-block: 10rem;
                 text-align: center;
             }
         }

@@ -663,7 +663,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 #main-automatizacion #notificaciones .info .notificacion-img { padding: 2rem; }
 
 @media only screen and (min-width: 768px) { #main-automatizacion #notificaciones .info { width: 90%; max-width: 1400px; margin-inline: auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 2rem; }
-  #main-automatizacion #notificaciones .info .info-container { width: 45%; text-align: left; }
+  #main-automatizacion #notificaciones .info .info-container { width: 45%; text-align: left; -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; }
   #main-automatizacion #notificaciones .info .notificacion-img { width: 45%; padding: 2rem; } }
 
 #main-automatizacion #trabajo { padding-bottom: 5rem; }
@@ -709,7 +709,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
   #main-regulacion .regulacion-intro .regulacion-intro__container .info .title { font-size: clamp(2rem, 4vw, 5rem); }
   #main-regulacion .regulacion-intro .regulacion-intro__container .info .p-large { font-size: 1.4rem; } }
 
-#main-regulacion #seguridad .info .info-container { width: 90%; max-width: 1400px; margin-inline: auto; -webkit-padding-before: 3rem; padding-block-start: 3rem; -webkit-padding-after: 5rem; padding-block-end: 5rem; margin-inline: auto; text-align: center; }
+#main-regulacion #seguridad .info .info-container { width: 90%; max-width: 1400px; margin-inline: auto; padding-block: 10rem; margin-inline: auto; text-align: center; }
 
 #main-regulacion #seguridad .info .info-container .seguridad-title .p-large { -webkit-margin-after: 1rem; margin-block-end: 1rem; }
 
@@ -725,7 +725,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-regulacion .banner .subtitle { width: 70%; -webkit-margin-start: auto; margin-inline-start: auto; -webkit-margin-end: auto; margin-inline-end: auto; -webkit-padding-after: 3rem; padding-block-end: 3rem; }
 
-#main-regulacion #cumplimiento .info .info-container { width: 90%; max-width: 1400px; margin-inline: auto; -webkit-padding-before: 3rem; padding-block-start: 3rem; -webkit-padding-after: 5rem; padding-block-end: 5rem; text-align: center; }
+#main-regulacion #cumplimiento .info .info-container { width: 90%; max-width: 1400px; margin-inline: auto; padding-block: 10rem; text-align: center; }
 
 #main-nosotros .nosotros-intro { width: 90%; max-width: 1400px; margin: auto; margin-top: 1.1rem; min-height: 85vh; padding: 2rem; color: #f2f3f4; background-size: cover; background-repeat: no-repeat; background-position: center; display: -ms-grid; display: grid; place-content: center; border-radius: 1rem; background-image: -webkit-gradient(linear, left bottom, left top, from(#202020cf), to(#33a2f279)), url(../images/colleagues-giving-fist-bump.jpg); background-image: linear-gradient(to top, #202020cf, #33a2f279), url(../images/colleagues-giving-fist-bump.jpg); }
 
