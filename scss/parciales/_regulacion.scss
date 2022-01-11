@@ -1,36 +1,31 @@
 #main-regulacion {
 
-    .regulacion-intro {
-        width: 90%;
-        margin: auto;
-        background-image: linear-gradient(to top, #202020cf, #33a2f279), url(../../images/productos-intro.jpg);
-        margin-top: 1.1rem;
-        min-height: 85vh;
-        padding: 2rem;
-        color: #f2f3f4;
-        background-size: cover;
-        background-repeat: no-repeat;
+    .regulacion-intro {  
+        @include intro-container;
+        background-image: linear-gradient(to top, #20202042, #33a2f27e), url(../images/quanto-automatizacion-plataforma.jpg);
         background-position: center;
-        display: grid;
-        place-content: center;
+        background-size: cover;
 
         .regulacion-intro__container {
-            height: 100%;
+            text-align: center;
 
-            .info {
-                color: #f2f3f4cd;
-
-                .title {
-                    color: #f2f2f2;
-                }
-
-                .p-large {
-                    margin-block-end: 1rem;
-                }
+            .section-title {
+                color: #f2f3f4;
+                font-weight: 600;
+                font-size: 3rem;
+                line-height: 1.1;
+                margin-inline-start: auto;
+                margin-inline-end: auto;
+                font-size: clamp(2rem, 4vh, 4rem);
+            }
+            .p-large {
+                color: $clr-light-gray;
             }
 
-
-
+            .btn {
+                margin: 1rem 0;
+                padding: .5rem 1.5rem;
+            }
         }
     }
 
@@ -182,6 +177,26 @@
         }
     }
 
+}
+
+#main-regulacion {
+    .banner {
+        text-align: center;
+        .section-title {
+            width: 70%;
+            padding-block-start: 3rem;
+            line-height: 1.1;
+            color: $clr-light-gray;
+            margin-inline-start: auto;
+            margin-inline-end: auto;
+        }
+        .subtitle {
+            width: 70%;
+            margin-inline-start: auto;
+            margin-inline-end: auto;
+            padding-block-end: 3rem;
+        }
+    }
 }
 
 #main-regulacion {

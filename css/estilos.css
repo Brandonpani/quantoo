@@ -689,15 +689,15 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
   #main-automatizacion #personalizacion .info .personalizacion-container .section-title { font-size: clamp(3rem, 5vw, 4rem); }
   #main-automatizacion #personalizacion .info .personalizacion-img { width: 45%; -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; padding: 2rem; } }
 
-#main-regulacion .regulacion-intro { width: 90%; margin: auto; background-image: -webkit-gradient(linear, left bottom, left top, from(#202020cf), to(#33a2f279)), url(../../images/productos-intro.jpg); background-image: linear-gradient(to top, #202020cf, #33a2f279), url(../../images/productos-intro.jpg); margin-top: 1.1rem; min-height: 85vh; padding: 2rem; color: #f2f3f4; background-size: cover; background-repeat: no-repeat; background-position: center; display: -ms-grid; display: grid; place-content: center; }
+#main-regulacion .regulacion-intro { width: 90%; max-width: 1400px; margin: auto; margin-top: 1.1rem; min-height: 85vh; padding: 2rem; color: #f2f3f4; background-size: cover; background-repeat: no-repeat; background-position: center; display: -ms-grid; display: grid; place-content: center; border-radius: 1rem; background-image: -webkit-gradient(linear, left bottom, left top, from(#20202042), to(#33a2f27e)), url(../images/quanto-automatizacion-plataforma.jpg); background-image: linear-gradient(to top, #20202042, #33a2f27e), url(../images/quanto-automatizacion-plataforma.jpg); background-position: center; background-size: cover; }
 
-#main-regulacion .regulacion-intro .regulacion-intro__container { height: 100%; }
+#main-regulacion .regulacion-intro .regulacion-intro__container { text-align: center; }
 
-#main-regulacion .regulacion-intro .regulacion-intro__container .info { color: #f2f3f4cd; }
+#main-regulacion .regulacion-intro .regulacion-intro__container .section-title { color: #f2f3f4; font-weight: 600; font-size: 3rem; line-height: 1.1; -webkit-margin-start: auto; margin-inline-start: auto; -webkit-margin-end: auto; margin-inline-end: auto; font-size: clamp(2rem, 4vh, 4rem); }
 
-#main-regulacion .regulacion-intro .regulacion-intro__container .info .title { color: #f2f2f2; }
+#main-regulacion .regulacion-intro .regulacion-intro__container .p-large { color: #f2f2f2; }
 
-#main-regulacion .regulacion-intro .regulacion-intro__container .info .p-large { -webkit-margin-after: 1rem; margin-block-end: 1rem; }
+#main-regulacion .regulacion-intro .regulacion-intro__container .btn { margin: 1rem 0; padding: .5rem 1.5rem; }
 
 @media (min-width: 768px) { #main-regulacion .regulacion-intro { width: 95%; min-height: 40vh; }
   #main-regulacion .regulacion-intro .regulacion-intro__container { width: 70%; }
@@ -726,6 +726,12 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 @media (min-width: 1025px) { #main-regulacion #seguridad .info .info-container { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 2rem; }
   #main-regulacion #seguridad .info .info-container .seguridad-title { text-align: start; margin: auto; }
   #main-regulacion #seguridad .info .info-container .seguridad-title .p-large { width: 85%; } }
+
+#main-regulacion .banner { text-align: center; }
+
+#main-regulacion .banner .section-title { width: 70%; -webkit-padding-before: 3rem; padding-block-start: 3rem; line-height: 1.1; color: #f2f2f2; -webkit-margin-start: auto; margin-inline-start: auto; -webkit-margin-end: auto; margin-inline-end: auto; }
+
+#main-regulacion .banner .subtitle { width: 70%; -webkit-margin-start: auto; margin-inline-start: auto; -webkit-margin-end: auto; margin-inline-end: auto; -webkit-padding-after: 3rem; padding-block-end: 3rem; }
 
 #main-regulacion #cumplimiento .info .info-container { width: 90%; max-width: 1400px; margin-inline: auto; -webkit-padding-before: 3rem; padding-block-start: 3rem; -webkit-padding-after: 5rem; padding-block-end: 5rem; }
 
