@@ -149,8 +149,7 @@
     }
 
     #personalizacion {
-        // padding-top: 3rem;
-        padding-bottom: 5rem;
+        padding-block-start: 5rem;
 
         .info {
             @include container;
