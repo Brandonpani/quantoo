@@ -121,25 +121,25 @@
           <span class="circle one"></span>
           <span class="circle two"></span>
 
-          <form action="index.html" autocomplete="off">
+          <form action="/mail.php" method="POST" autocomplete="off">
             <h3 class="title">Solicita tu Demo</h3>
             <div class="input-container">
-              <input type="text" name="name" class="input" />
+              <input type="text" name="name" id="name" class="input" />
               <label for="">Nombre</label>
               <span>Nombre</span>
             </div>
             <div class="input-container">
-              <input type="text" name="name" class="input" />
+              <input required type="text" name="empresa" id="empresa" class="input" />
               <label for="">Empresa</label>
               <span>Empresa</span>
             </div>
             <div class="input-container">
-              <input type="email" name="email" class="input" />
+              <input required type="email" name="email" id="email" class="input" />
               <label for="">Email</label>
               <span>Email</span>
             </div>
             <div class="input-container">
-              <input type="tel" name="phone" class="input" />
+              <input required type="phone" name="Telefono" id="phone" class="input" />
               <label for="">Télefono</label>
               <span>télefono</span>
             </div>
