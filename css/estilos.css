@@ -729,9 +729,7 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-regulacion .banner { text-align: center; }
 
-#main-regulacion .banner .section-title { width: 70%; -webkit-padding-before: 3rem; padding-block-start: 3rem; line-height: 1.1; color: #f2f2f2; -webkit-margin-start: auto; margin-inline-start: auto; -webkit-margin-end: auto; margin-inline-end: auto; }
-
-#main-regulacion .banner .subtitle { width: 70%; -webkit-margin-start: auto; margin-inline-start: auto; -webkit-margin-end: auto; margin-inline-end: auto; -webkit-padding-after: 3rem; padding-block-end: 3rem; }
+#main-regulacion .banner .banner-content .banner-title { width: 70%; line-height: 1.1; color: #f2f2f2; margin-inline: auto; }
 
 #main-regulacion #cumplimiento .info .info-container { width: 90%; max-width: 1400px; margin-inline: auto; padding-block: 10rem; text-align: center; }
 

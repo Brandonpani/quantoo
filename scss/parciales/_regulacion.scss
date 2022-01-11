@@ -150,20 +150,18 @@
 #main-regulacion {
     .banner {
         text-align: center;
-        .section-title {
-            width: 70%;
-            padding-block-start: 3rem;
-            line-height: 1.1;
-            color: $clr-light-gray;
-            margin-inline-start: auto;
-            margin-inline-end: auto;
+
+        .banner-content {
+
+            .banner-title {
+                width: 70%;
+                // padding-block-start: 3rem;
+                line-height: 1.1;
+                color: $clr-light-gray;
+                margin-inline: auto;
+            }
         }
-        .subtitle {
-            width: 70%;
-            margin-inline-start: auto;
-            margin-inline-end: auto;
-            padding-block-end: 3rem;
-        }
+           
     }
 }
 
