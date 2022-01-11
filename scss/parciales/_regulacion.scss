@@ -159,6 +159,10 @@
                 line-height: 1.1;
                 color: $clr-light-gray;
                 margin-inline: auto;
+
+                .p-large {
+                    line-height: 1.5;
+                }
             }
         }
            
