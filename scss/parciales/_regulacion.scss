@@ -3,7 +3,7 @@
     .regulacion-intro {  
         @include intro-container;
         background-image: linear-gradient(to top, #20202042, #33a2f27e), url(../images/quanto-regulacion-intro-mujer-hablando-por-telefono.jpg);
-        background-position: center;
+        background-position:50% 30%;
         background-size: cover;
 
         .regulacion-intro__container {
