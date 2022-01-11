@@ -147,6 +147,29 @@
         }
     }
 
+    .banner-principal {
+        
+        @include container;
+        background-image: url(../../images/quanto-credito-plataforma-core-financiero.png);
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+        min-height: 80vh;
+        display: grid;
+        place-content: center;
+        .banner-contenido{
+            text-align: center;
+            max-width: 60%;
+            margin-inline: auto;
+
+        }
+    }
+
+    @keyframes animation {
+        
+    }
+
+
     #productos {
 
         .top {
