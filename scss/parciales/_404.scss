@@ -1,0 +1,100 @@
+.error-page {
+    width: 100vw;
+    height: 100vh;
+    color: #f2f3f4;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    background-color: $dark-bg;
+    
+    
+    
+    .content {
+        @include container;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: radial-gradient(circle at 17% 77%, rgba(17, 17, 17,0.04) 0%, rgba(17, 17, 17,0.04) 50%,rgba(197, 197, 197,0.04) 50%, rgba(197, 197, 197,0.04) 100%),radial-gradient(circle at 26% 17%, rgba(64, 64, 64,0.04) 0%, rgba(64, 64, 64,0.04) 50%,rgba(244, 244, 244,0.04) 50%, rgba(244, 244, 244,0.04) 100%),radial-gradient(circle at 44% 60%, rgba(177, 177, 177,0.04) 0%, rgba(177, 177, 177,0.04) 50%,rgba(187, 187, 187,0.04) 50%, rgba(187, 187, 187,0.04) 100%),linear-gradient(19deg, rgb(28, 117, 250),rgb(34, 2, 159));    background-size: 300% 300%;
+        -webkit-animation: gradient-animation 32s ease infinite;
+        -moz-animation: gradient-animation 32s ease infinite;
+        animation: gradient-animation 32s ease infinite;
+        border-radius: .5rem;
+        min-height: 90vh;
+        justify-content: center;
+        padding: 3rem 2rem;
+        // display: none;
+        .logo {
+            font-size: 3rem;
+        }
+        h1 {
+            font-size: 7rem;
+            margin-bottom: 2rem;
+        }   
+        h3 {
+            font-size: 3rem;
+            padding-bottom: 1rem;
+        }
+        p {
+            padding-bottom: 2rem;
+            font-weight: 400;
+        }
+        .btn {
+            background-color: $dark-bg;
+            margin-bottom: 1rem;
+            color: #f2f2f2c4;
+        }
+
+    }
+    @media only screen and (min-width: 600px) {
+        .content {
+            .logo {
+                font-size: 3vw;
+            }
+
+            h1 {
+                font-size: 4rem;
+            }
+        }
+    }
+    @media only screen and (min-width: $tablet) {
+        .content {
+            .logo {
+                font-size: 4rem;
+            }
+            h1 {
+                font-size: 23vw;
+            }
+            
+        }
+    }
+    @media only screen and (min-width: $laptop) {
+        .content {
+            .logo {
+                font-size: 4rem;
+            }
+            h1 {
+                font-size: 10vw;
+            }
+            h3 {
+                font-size: 5rem;
+            }
+        }
+    }
+
+    @-webkit-keyframes gradient-animation {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-moz-keyframes gradient-animation {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes gradient-animation {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+}

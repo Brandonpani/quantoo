@@ -850,6 +850,38 @@ nav .wrapper .menu-ham { display: none; cursor: pointer; pointer-events: all; }
 
 #main-contacto .mensaje.remove { display: none; pointer-events: none; }
 
+.error-page { width: 100vw; height: 100vh; color: #f2f3f4; display: -ms-grid; display: grid; place-content: center; text-align: center; background-color: #101010; }
+
+.error-page .content { width: 90%; max-width: 1400px; margin-inline: auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background-image: radial-gradient(circle at 17% 77%, rgba(17, 17, 17, 0.04) 0%, rgba(17, 17, 17, 0.04) 50%, rgba(197, 197, 197, 0.04) 50%, rgba(197, 197, 197, 0.04) 100%), radial-gradient(circle at 26% 17%, rgba(64, 64, 64, 0.04) 0%, rgba(64, 64, 64, 0.04) 50%, rgba(244, 244, 244, 0.04) 50%, rgba(244, 244, 244, 0.04) 100%), radial-gradient(circle at 44% 60%, rgba(177, 177, 177, 0.04) 0%, rgba(177, 177, 177, 0.04) 50%, rgba(187, 187, 187, 0.04) 50%, rgba(187, 187, 187, 0.04) 100%), linear-gradient(19deg, #1c75fa, #22029f); background-size: 300% 300%; -webkit-animation: gradient-animation 32s ease infinite; animation: gradient-animation 32s ease infinite; border-radius: .5rem; min-height: 90vh; justify-content: center; padding: 3rem 2rem; }
+
+.error-page .content .logo { font-size: 3rem; }
+
+.error-page .content h1 { font-size: 7rem; margin-bottom: 2rem; }
+
+.error-page .content h3 { font-size: 3rem; padding-bottom: 1rem; }
+
+.error-page .content p { padding-bottom: 2rem; font-weight: 400; }
+
+.error-page .content .btn { background-color: #101010; margin-bottom: 1rem; color: #f2f2f2c4; }
+
+@media only screen and (min-width: 600px) { .error-page .content .logo { font-size: 3vw; }
+  .error-page .content h1 { font-size: 4rem; } }
+
+@media only screen and (min-width: 768px) { .error-page .content .logo { font-size: 4rem; }
+  .error-page .content h1 { font-size: 23vw; } }
+
+@media only screen and (min-width: 1025px) { .error-page .content .logo { font-size: 4rem; }
+  .error-page .content h1 { font-size: 10vw; }
+  .error-page .content h3 { font-size: 5rem; } }
+
+@-webkit-keyframes gradient-animation { 0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; } }
+
+@keyframes gradient-animation { 0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; } }
+
 #footer { padding-top: 2.5rem; background-color: #101010; color: #f2f3f4; }
 
 #footer .container .leyenda { font-size: .875rem; color: #b7b7b7; font-weight: 600; text-align: center; padding: 1rem 0 1.5rem; }
