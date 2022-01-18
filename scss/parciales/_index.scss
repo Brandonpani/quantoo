@@ -3,7 +3,15 @@
     #hero {
         width: 100vw;
         .hero-container {
+            @include container;
+            .hero-left {
 
+                .hero-content {
+                    margin-bottom: 1rem;
+                }
+            }
+
+            
         }
 
     }
