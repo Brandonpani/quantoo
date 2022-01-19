@@ -13,7 +13,7 @@
                 .hero-title {
                     font-size: $mobile-title;
                     line-height: 1.3;
-                    width: 90%;
+                    width: 100%;
                     margin-block-end: $size-1;
                     .texto-dinamico {
                         animation: dinamic-text 15s ease infinite;
@@ -31,11 +31,14 @@
                     
                 
                 .hero-content {
-                    margin-bottom: 1rem;
+                    margin-block-end: $size-1;
+                    font-weight: $font-weight-2;
+                    line-height: 1.7;
                 }
             }
             .hero-right {
-                text-align: center;
+                margin-block-start: $size-2;
+                // text-align: center;
                 .logo-hero {
                     margin-bottom: 3rem;
                     width: 50%;
@@ -46,6 +49,9 @@
                     margin-bottom: 1rem;
                     .icon-check-hero {
                         margin-right: 1rem;
+                    }
+                    .ventajas-content {
+                        font-size: $mobile-content;
                     }
                 }
             }
