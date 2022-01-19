@@ -11,22 +11,20 @@
             .hero-left {
         
                 .hero-title {
-                    font-size: 2rem;
-                    background: -webkit-linear-gradient(#00a99d, #0747a6);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    display: block;
+                    font-size: $mobile-title;
+                    width: 80%;
+                    margin-block-end: $size-1;
                     .texto-dinamico {
-                        animation: dinamic-text 3s ease infinite;
+                        animation: dinamic-text 15s ease infinite;
                     }
-                    .texto-dinamico::affter {
-                        // background: -webkit-linear-gradient(#00a99d, #0747a6);
-                        // -webkit-background-clip: text;
-                        // -webkit-text-fill-color: transparent;
-                        font-size: 2rem;
+                    .texto-dinamico::after {
+                        background: -webkit-linear-gradient(#00a99d, #0747a6);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        font-size: $mobile-title;
                         content: '';
                         color: #f8f8f8;
-                        animation: dinamic-text 5s ease-in-out infinite;
+                        animation: dinamic-text 5s ease-in-out 3s infinite;
                     }
                 }
                     
@@ -63,11 +61,11 @@
         content: "Optima"
     }
 
-    25% {
+    33% {
         content: "Innovadora"
     }
 
-    50% {
+    66% {
         content: "Segura"
     }
 
