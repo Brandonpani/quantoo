@@ -15,9 +15,11 @@
                     line-height: 1.3;
                     width: 100%;
                     margin-block-end: $size-1;
+
                     .texto-dinamico {
-                        animation: dinamic-text 15s ease infinite;
+                    // animation: dinamic-text 20s ease infinite;
                     }
+
                     .texto-dinamico::after {
                         background: -webkit-linear-gradient(#00a99d, #0747a6);
                         -webkit-background-clip: text;
@@ -25,7 +27,7 @@
                         font-size: $mobile-title;
                         content: '';
                         color: #f8f8f8;
-                        animation: dinamic-text 5s ease-in-out 3s infinite;
+                        animation: dinamic-text 7s ease-in-out infinite;
                     }
                 }
                     
@@ -64,19 +66,19 @@
 
 @keyframes dinamic-text {
 
-    0% {
+    0%, 20% {
         content: "Optima"
     }
 
-    33% {
+    25%, 45% {
         content: "Innovadora"
     }
 
-    66% {
+    50%,70% {
         content: "Segura"
     }
 
-    100% {
+    75%, 100% {
         content: "Eficiente"
     }
     
