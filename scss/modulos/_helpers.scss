@@ -10,7 +10,7 @@ body {
     border: $border-size-2 solid $blue;
     border-radius: $border-radius-3;
     color: #f2f3f4;
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-in-out;
     &:hover {
         cursor: pointer;
         background-color: $blue;

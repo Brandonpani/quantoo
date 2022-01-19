@@ -58,14 +58,6 @@ nav {
                     // background-color: aqua;
                 }
 
-                &:hover .drop-menu,
-                &:focus .drop-menu {
-                    opacity: 1;
-                    visibility: visible;
-                    transition: all 0.3s ease;
-                    top: 4rem;
-                    z-index: 999;
-                }
 
                 .nav-link {
                     // font-size: 1.1rem;
@@ -117,7 +109,7 @@ nav {
             }
 
             .menu-ham {
-                font-size: 3rem;
+                // font-size: 3rem;
                 display: block;
 
                 &:hover .nav-links,
