@@ -4,17 +4,75 @@
     .hero {
         background-color: #000;
         width: 100vw;
+        padding-top: 5rem;
         .hero-container {
             @include container;
+            color: white;
             .hero-left {
+        
+                .hero-title {
+                    font-size: 2rem;
+                    background: -webkit-linear-gradient(#00a99d, #0747a6);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    display: block;
+                    .texto-dinamico {
+                        animation: dinamic-text 3s ease infinite;
+                    }
+                    .texto-dinamico::affter {
+                        // background: -webkit-linear-gradient(#00a99d, #0747a6);
+                        // -webkit-background-clip: text;
+                        // -webkit-text-fill-color: transparent;
+                        font-size: 2rem;
+                        content: '';
+                        color: #f8f8f8;
+                        animation: dinamic-text 5s ease-in-out infinite;
+                    }
+                }
+                    
                 
                 .hero-content {
                     margin-bottom: 1rem;
                 }
             }
-            
-        }
-        
+            .hero-right {
+                text-align: center;
+                .logo-hero {
+                    margin-bottom: 3rem;
+                    width: 50%;
+                    margin: 0 auto;
+                }
+                .ventajas-quanto-hero {
+                    align-items: center;
+                    margin-bottom: 1rem;
+                    .icon-check-hero {
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }   
+    }
+}
+
+
+
+
+@keyframes dinamic-text {
+
+    0% {
+        content: "Optima"
     }
 
+    25% {
+        content: "Innovadora"
+    }
+
+    50% {
+        content: "Segura"
+    }
+
+    100% {
+        content: "Eficiente"
+    }
+    
 }
