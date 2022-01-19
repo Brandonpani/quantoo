@@ -3,7 +3,19 @@ body {
     scroll-behavior: smooth;
 }
 
-
+.btn-outline {
+    padding: .75rem 1.75rem;
+    display: inline-flex;
+    background-color: transparent;
+    border: $border-size-2 solid $blue;
+    border-radius: $border-radius-3;
+    color: #f2f3f4;
+    transition: color 2s ease-in-out;
+    &:hover {
+        cursor: pointer;
+        background-color: $blue;
+    }
+}
 
 .btn {
     padding: .75rem 1.75rem;
@@ -11,8 +23,8 @@ body {
     font-size: 1rem;
     text-align: center;
     display: inline-block;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
+    margin-inline-end: $size-1;
+    margin-block-end: $size-1;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     transition: all .6s ease-in-out;
 
