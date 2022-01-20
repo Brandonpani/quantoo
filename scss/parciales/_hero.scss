@@ -44,8 +44,9 @@
                 // text-align: center;
                 .logo-hero {
                     margin-bottom: 3rem;
-                    width: 45%;
-                    background: -webkit-linear-gradient(180deg, #00a99d, #0747a6);;
+                    width: 13rem;
+                    // background: -webkit-linear-gradient(180deg, #00a99d, #0747a6);;
+                    filter: brightness(0) saturate(100%);
                     margin-inline: auto;
                     transition: all .3s ease;
                     padding: $size-2;
