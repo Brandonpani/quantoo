@@ -46,7 +46,7 @@
                     margin-bottom: 3rem;
                     width: 13rem;
                     // background: -webkit-linear-gradient(180deg, #00a99d, #0747a6);;
-                    filter: brightness(0) saturate(100%);
+                    filter: brightness(100%) saturate(100%);
                     margin-inline: auto;
                     transition: all .3s ease;
                     padding: $size-2;
@@ -95,6 +95,7 @@
     }
     
 }
+
 @keyframes dinamic-text {
 
     0%, 20% {
