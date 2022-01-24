@@ -110,7 +110,8 @@ nav {
 
             .menu-ham {
                 // font-size: 3rem;
-                display: block;
+                display: flex;
+                align-items: center;
 
                 &:hover .nav-links,
                 &:focus .nav-links {
