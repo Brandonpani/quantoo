@@ -65,6 +65,9 @@
                 }
                 
                 .ventajas-quanto-hero {
+                    background-color: rgb(34, 34, 34);
+                    padding: 1rem 2rem;
+                    border-radius: $border-radius-3;
                     align-items: center;
                     margin-bottom: 1rem;
                     .icon-check-hero {
@@ -111,22 +114,25 @@
                     margin-inline: auto;
                     gap: 2rem;
                     flex: 40%;
-                    padding:0 5rem;
+                    padding:0 3rem;
                     .hero-info {
+
                         .hero-title {
                             width: 100%;
-                            // width: 100%;
-                            font-size: $mobile-title;
+                            font-size: 2rem;
                             .texto-dinamico::after{
-                                font-size: 3.5rem;
+                                font-size: 2rem;
                             }
+                        }
+                        .hero-content {
+                            font-size: 1.2rem;
                         }
                     }
                 }
                 .hero-right {
                     flex: 40%;
                     .logo-container {
-                        text-align: center;
+                        // text-align: center;
                         .logo-hero {
                             width: 12rem;
                             height: inherit;
@@ -134,7 +140,7 @@
                         .ventajas-quanto-hero {
                             width: 100%;
                             .ventajas-content {
-                                margin-inline-start: 5rem;
+                                // margin-inline-start: 5rem;
                             }
                         }
                     }
