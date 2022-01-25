@@ -5,6 +5,7 @@
         background-color: #000;
         width: 100vw;
         padding-top: 8rem;
+        padding-bottom: 8rem;
         .hero-container {
             @include container;
             color: white;
@@ -45,15 +46,14 @@
 
             .hero-right {
                 margin-block-start: $size-2;
-                padding-block-end: $size-5;
+                // padding-block-end: $size-5;
                 display: flex;
                 flex-direction: column;
                 .logo-container {
-                    
+                    text-align: center;
                     .logo-hero {
                         width: 8rem;
                         filter: brightness(100%) saturate(100%);
-                        margin-inline: auto;
                         transition: all .3s ease;
                         padding-block-end: $size-2;  
                         
@@ -111,6 +111,7 @@
                     margin-inline: auto;
                     gap: 2rem;
                     flex: 40%;
+                    padding:0 5rem;
                     .hero-info {
                         .hero-title {
                             width: 100%;
@@ -129,12 +130,11 @@
                         .logo-hero {
                             width: 12rem;
                             height: inherit;
-                            margin-inline: auto;
                         }
                         .ventajas-quanto-hero {
                             width: 100%;
                             .ventajas-content {
-                                margin-inline-start: 7rem;
+                                margin-inline-start: 5rem;
                             }
                         }
                     }
