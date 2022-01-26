@@ -4,11 +4,11 @@
     .hero {
         @include intro-container;
         background-image: linear-gradient(to top, #202020cf, #33a2f279), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg);
-        margin-block-end: $size-1;
-        
+        margin-block-end: $size-2;
+        background-position: 65% center;
 
         .hero-info {
-
+            padding-block-start: 15rem;
             .hero-title {
                 line-height: 1.1;
                 margin-block-end: $size-1;
@@ -26,48 +26,48 @@
             }
         }
        
-        @media (min-width: $tablet) {
-            .hero {
-                // width: 95%;
-                margin-block-start: 2rem;
-                min-height: 50vh;
-    
-                .hero-container {
-                    width: 70%;
-                    margin-inline-start: auto;
-                    margin-inline-end: auto;
-                    
-                    .hero-title {
-                        font-size: clamp(2rem, 4vw, 5rem);
-                    }
-    
-                    
-    
+    }
+    @media (min-width: $tablet) {
+        .hero {
+            // width: 95%;
+            margin-block-start: 2rem;
+            min-height: 50vh;
+
+            .hero-container {
+                width: 70%;
+                margin-inline-start: auto;
+                margin-inline-end: auto;
+                
+                .hero-title {
+                    font-size: clamp(2rem, 4vw, 5rem);
                 }
+
+                
+
             }
         }
-    
-        @media (min-width: $laptop) {
-    
-            .hero {
-                width: 95%;
-                min-height: 50vh;
-                margin-top: 2rem;
-    
-                .productos-intro__container {
-                    text-align: center;
-                    width: 60%;
-                    margin: auto;
-    
-                    .p-large {
-                        font-size: 1.4rem;
-                    }
-                }
-    
-                .btn {
-                    display: none;
+    }
+
+    @media (min-width: $laptop) {
+
+        .hero {
+            width: 95%;
+            min-height: 70vh;
+            margin-top: 2rem;
+            background-position: 65% top;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .hero-info {
+                text-align: center;
+                padding-block-start: 0;
+                margin: auto;
+
+                .hero-title {
+                    font-size: $section-title;
                 }
             }
+
+            
         }
     }
 
