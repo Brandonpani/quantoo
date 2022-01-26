@@ -2,41 +2,53 @@
 
     
     .hero {
-        @include intro-container;
+        // @include intro-container;
         background-image: linear-gradient(to top, #202020cf, #33a2f279), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
         margin-block-end: $size-2;
-        background-position: 65% center;
+        background-position: 65% top;
+        min-height: 90vh;
+        display: grid;
+        
 
-        .hero-info {
-            padding-block-start: 15rem;
-            .hero-title {
-                line-height: 1.1;
-                margin-block-end: $size-1;
-                .texto-dinamico::after {
-                    animation: dinamic-text 7s ease-in-out infinite;
-                    // background: -webkit-linear-gradient(180deg, #00a99d, #0747a6);
-                    // background-clip: text;
-                    // -webkit-background-clip: text;
-                    // -webkit-text-fill-color: transparent;
-                    content: '';
+        .hero-container {
+            @include container;
+            place-self: flex-end;
+
+            .hero-info {
+                color: #f2f3f4;
+                margin-block-end: 5rem;
+                // padding-block-start: 15rem;
+                .hero-title {
+                    line-height: 1.1;
+                    margin-block-end: $size-1;
+                    
+                    .texto-dinamico::after {
+                        animation: dinamic-text 7s ease-in-out infinite;
+                        // background: -webkit-linear-gradient(180deg, #00a99d, #0747a6);
+                        // background-clip: text;
+                        // -webkit-background-clip: text;
+                        // -webkit-text-fill-color: transparent;
+                        content: '';
+                    }
+                }
+                .hero-content {
+                    margin-block-end: $size-1;
+                    color: #f2f3f49d;
+                    
                 }
             }
-            .hero-content {
-                margin-block-end: $size-1;
-            }
+            
         }
-       
     }
     @media (min-width: $tablet) {
         .hero {
-            // width: 95%;
             margin-block-start: 2rem;
             min-height: 50vh;
 
             .hero-container {
-                width: 70%;
-                margin-inline-start: auto;
-                margin-inline-end: auto;
+                place-self: center;
                 
                 .hero-title {
                     font-size: clamp(2rem, 4vw, 5rem);
@@ -51,22 +63,25 @@
     @media (min-width: $laptop) {
 
         .hero {
-            width: 95%;
+            // width: 95%;
             min-height: 70vh;
             margin-top: 2rem;
             background-position: 65% top;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            .hero-info {
-                text-align: center;
-                padding-block-start: 0;
-                margin: auto;
+            .hero-container {
+                @include container;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
 
-                .hero-title {
-                    font-size: $section-title;
+                .hero-info {
+                    text-align: center;
+                    margin: auto;
+                    
+                    .hero-title {
+                        font-size: $section-title;
+                    }
                 }
+                
             }
-
             
         }
     }
