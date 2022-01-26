@@ -3,7 +3,7 @@
     
     .hero {
         // @include intro-container;
-        background-image: linear-gradient(to left, #f2f2f225 40%, #5681e675 60%), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg);
+        background-image: linear-gradient(to bottom, #f2f2f225 40%, #5681e675 60%), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         margin-block-end: $size-2;
@@ -63,7 +63,7 @@
     @media (min-width: $laptop) {
 
         .hero {
-            // width: 95%;
+            background-image: linear-gradient(to left, #f2f2f225 40%, #5681e675 60%);
             min-height: 70vh;
             margin-top: 2rem;
             background-position: 65% top;
