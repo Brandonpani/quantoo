@@ -3,7 +3,7 @@
     
     .hero {
         // @include intro-container;
-        background-image: linear-gradient(to top, #202020cf, #33a2f279), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg);
+        background-image: linear-gradient(to left, #f2f2f225 40%, #5681e675 60%), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         margin-block-end: $size-2;
@@ -73,11 +73,14 @@
                 grid-template-columns: 1fr 1fr;
 
                 .hero-info {
-                    text-align: center;
+                    // text-align: center;
                     margin: auto;
                     
                     .hero-title {
                         font-size: $section-title;
+                    }
+                    .hero-content {
+                        width: 50ch;
                     }
                 }
                 
