@@ -31,17 +31,17 @@
                     margin-block-end: $size-1;
                     
                     .texto-dinamico::after {
+                        content: '';
                         -webkit-animation-name: dinamic-text;
                         -webkit-animation-duration: 7s;
                         -webkit-animation-iteration-count: infinite;
                         -webkit-animation-timing-function: ease-in-out;
-                        
+
                         animation: dinamic-text 7s ease-in-out infinite;
                         background: -webkit-linear-gradient(180deg, #00a99d, #0747a6);
                         background-clip: text;
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
-                        content: '';
                     }
                 }
                 .hero-content {
