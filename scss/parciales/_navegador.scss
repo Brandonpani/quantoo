@@ -16,6 +16,7 @@
 // NAVEGADOR
 nav {
     background-color: $dark-md;
+    position: relative;
     // height: 8vh;    
 
     .wrapper {
@@ -127,7 +128,7 @@ nav {
                 width: 112%;
                 opacity: 95%;
                 padding-block-end: 2rem;
-
+                text-align: center;
                 .nav-link {
                     font-size: .875rem;
                     line-height: 3.5;
@@ -145,9 +146,17 @@ nav {
         .wrapper {
             .nav-links {
                 width: 50%;
-
                 .nav-link {
                     line-height: 3.5;
+                }
+            }
+        }
+        .wrapper.open {
+            .nav-links {
+                text-align: end;
+                
+                .nav-link {
+                    padding-inline-end: 4rem;
                 }
             }
         }

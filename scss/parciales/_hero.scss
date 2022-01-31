@@ -51,13 +51,12 @@
             min-height: 80vh;
 
             .hero-container {
-                height: auto;
+                height: 100%;
                 place-self: center;
+                display: grid;
                 
                 .hero-info {
-                    height: auto;
-                    width: 80%;
-                    margin-inline: auto;
+                    margin-block: auto;
                 }
                 .hero-title {
                     font-size: clamp(2rem, 4vw, 5rem);
@@ -80,11 +79,11 @@
                 @include container;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+                height: 100%;
 
                 .hero-info {
-                    // text-align: center;
-                    margin: auto;
-                    
+                    margin-block: auto;
+                    width: 100%;
                     .hero-title {
                         font-size: $section-title;
                     }
