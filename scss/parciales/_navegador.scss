@@ -15,9 +15,10 @@
 
 // NAVEGADOR
 nav {
-    background-color: $dark-md;
-    position: relative;
-    // height: 8vh;    
+    background-color: $clr-dark-gray;
+    min-height: 8vh;
+    display: flex;
+    align-items: center;
 
     .wrapper {
         // @include container;
@@ -31,12 +32,8 @@ nav {
         
 
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 600;
-            letter-spacing: 2px;
-            color: #f2f2f2;
-            line-height: 2;
+        .logo-menu {
+            width: 10rem;
         }
 
 
@@ -91,18 +88,17 @@ nav {
         }
     }
 
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 1205px) {
         .wrapper {
             position: relative;
 
             .nav-links {
                 display: block;
                 position: absolute;
-                top: 100%;
+                top: 173%;
                 right: -100%;
                 width: 40%;
                 background-color: #202020;
-
             }
 
             .btn {
@@ -113,7 +109,7 @@ nav {
                 // font-size: 3rem;
                 display: flex;
                 align-items: center;
-
+                width: 1.7rem;
                 &:hover .nav-links,
                 &:focus .nav-links {
                     display: flex;
