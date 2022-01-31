@@ -18,18 +18,21 @@
 
             .hero-info {
                 color: #f2f3f4;
-                margin-block-end: 5rem;
-                // padding-block-start: 15rem;
+                margin-block-end: 15rem;
                 .hero-title {
+                    font-size: 2.5rem;
+                    display: block;
                     line-height: 1.1;
                     margin-block-end: $size-1;
+                    background-color: #2020209a;
+                    padding: .5rem 1rem;
                     
                     .texto-dinamico::after {
                         animation: dinamic-text 7s ease-in-out infinite;
-                        // background: -webkit-linear-gradient(180deg, #00a99d, #0747a6);
-                        // background-clip: text;
-                        // -webkit-background-clip: text;
-                        // -webkit-text-fill-color: transparent;
+                        background: -webkit-linear-gradient(180deg, #00a99d, #0747a6);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
                         content: '';
                     }
                 }
@@ -45,11 +48,17 @@
     @media (min-width: $tablet) {
         .hero {
             // margin-block-start: 2rem;
-            min-height: 50vh;
+            min-height: 80vh;
 
             .hero-container {
+                height: auto;
                 place-self: center;
                 
+                .hero-info {
+                    height: auto;
+                    width: 80%;
+                    margin-inline: auto;
+                }
                 .hero-title {
                     font-size: clamp(2rem, 4vw, 5rem);
                 }

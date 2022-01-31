@@ -124,13 +124,16 @@ nav {
         .wrapper.open {
             .nav-links {
                 right: -6%;
-                width: 50%;
+                width: 112%;
+                opacity: 95%;
+                padding-block-end: 2rem;
 
                 .nav-link {
                     font-size: .875rem;
                     line-height: 3.5;
                 }
             }
+            
 
             .menu__ham {
                 padding: .25rem;
