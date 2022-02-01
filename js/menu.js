@@ -15,3 +15,10 @@ document.getElementsByTagName("body")[0].addEventListener("click",function(evt){
     }
 
 })
+
+// textoCambiantin = ["Optima", "Segura", "Eficiente", "Chingonsota"];
+// textoCambiantin.forEach(elemento => {
+//     console.log(elemento)    
+// });
+
+
