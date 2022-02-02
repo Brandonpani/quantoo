@@ -1,6 +1,6 @@
 .languages {
     // outline: 1px solid red;
-    display: block;
+    display: flex;
     // align-items: center;
     // margin-inline: .5rem;
 }
@@ -14,13 +14,12 @@
 }
 .check {
     -webkit-appearance: none;
-    background-image: url(../../images/assets/800px-Flag_of_Mexico.svg.png);
-    background-size: cover;
     position: relative;
     width: 3rem;
     outline: none;
     margin-block-end: 1.1rem;
     transition:all .9s;
+    
 }
 
 .check:before {
@@ -28,7 +27,7 @@
     position: absolute;
     width: 3rem;
     height: 1.5rem;
-    background: #333;
+    background-color: #333;
     border-radius: 1.5rem;
 }
 .check:after {
