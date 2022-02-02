@@ -17,5 +17,5 @@ function loop() {
 }
 loop()
 
-const check = document.querySelector(".check");
-check.addEventListener()
+// const check = document.querySelector(".check");
+// check.addEventListener()
