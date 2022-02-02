@@ -16,3 +16,6 @@ function loop() {
     setTimeout(loop, 1500)
 }
 loop()
+
+const check = document.querySelector(".check");
+check.addEventListener()

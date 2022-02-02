@@ -1,0 +1,46 @@
+.languages {
+    outline: 1px solid red;
+    display: flex;
+    align-items: center;
+    margin-inline: .5rem;
+}
+.en {
+    margin-inline: .5rem;
+    color: #f2f2f2;
+}
+.es {
+    margin-inline: .5rem;
+    color: #f2f2f2;
+}
+.check {
+    margin-block-end: .7rem;
+    position: relative;
+    width: 3rem;
+}
+
+.check:before {
+    content: '';
+    position: absolute;
+    width: 3rem;
+    height: 1.5rem;
+    background: #333;
+    border-radius: 1.5rem;
+}
+.check:after {
+    content: '';
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #fff;
+    border-radius: 1.5rem;
+    transition: .3s;
+    border: 2px solid #333;
+
+}
+.check:checked:after {
+    left: 1.5rem;
+    border: 2px solid #00a1ff;
+}
+.check:checked:before {
+    background: #00a1ff;
+}
