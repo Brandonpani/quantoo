@@ -15,7 +15,21 @@ function loop() {
     }
     setTimeout(loop, 1500)
 }
-loop()
+if (textDispay!=null) {
+
+    loop()
+}
+
+const checkLang = document.getElementById('lang');
+checkLang.addEventListener('click', clickLang);
+
+function clickLang(e) {
+    if(this.checked){
+        window.location.href="/index.html";
+    }else {
+        window.location.href="/en/index.html";
+    }
+}
 
 // function loop () {
 //     textDispay.innerHTML = currentFrase.join('')
