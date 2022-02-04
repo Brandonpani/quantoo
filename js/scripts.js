@@ -39,11 +39,11 @@ const contenidoSelect = document.querySelector('#contenidoSelect');
 document.querySelectorAll('#idiomas > .option').forEach((option) => {
     option.addEventListener('click', (e) => {
         e.preventDefault();
-        console.log('e.currentTarget.innerHTML');
+        // console.log('e.currentTarget.innerHTML');
         contenidoSelect.innerHTML = e.currentTarget.innerHTML;
         idiomas.classList.toggle('active');
         select.classList.toggle('active');
-    })
+    });
 });
 
 select.addEventListener('click', () => {
