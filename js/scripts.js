@@ -20,8 +20,22 @@ if (textDispay!=null) {
     loop()
 };
 
-// const checkLang = document.getElementById('lang');
-// checkLang.addEventListener('click', clickLang);
+const checkLang = document.getElementById('lang');
+checkLang.addEventListener('click', clickLang);
+
+function clickLang(e) {
+    if(this.checked){
+        window.location.href="/index.html";
+    }else {
+        window.location.href="/en/index.html";
+    }
+};
+
+
+const select = document.querySelector('#select');
+const idiomas = document.querySelector('#idiomas');
+const contenidoSelect = document.querySelector('#contenidoSelect');
+
 
 // function clickLang(e) {
 //     if(this.checked){
@@ -31,13 +45,6 @@ if (textDispay!=null) {
 //     }
 // };
 
-
-const select = document.querySelector('#select');
-const idiomas = document.querySelector('#idiomas');
-const contenidoSelect = document.querySelector('#contenidoSelect');
-
-
-
 document.querySelectorAll('#idiomas > .option').forEach((option) => {
     option.addEventListener('click', (e) => {
         e.preventDefault();
@@ -45,7 +52,7 @@ document.querySelectorAll('#idiomas > .option').forEach((option) => {
         contenidoSelect.innerHTML = e.currentTarget.innerHTML;
         idiomas.classList.toggle('active');
         select.classList.toggle('active');
-        
+        console.log(e.currentTarget.querySelector('.titulo').innerText);
     });
 });
 
