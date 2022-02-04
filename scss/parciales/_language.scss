@@ -52,105 +52,128 @@
     transition: all .9s;
 }
 
-
 // prueba botones cambio de idioma
-
-.lang-1 {
+form {
     margin-inline-start: auto;
     margin-inline-end: 2rem;
-    .lang {
-        display: flex;
-        align-items: center;
-        color: #f2f2f2;
-        .flag {
-            padding-inline: .5rem;
-            .flagLang--en {
-                display:none;
-            }
-        }
-        .langSelect {
-            display: inline-flex;
-            width: 7rem;
-            position: relative;
-            transition: all .3s ease-in-out;
-            cursor: pointer;
+
+    .selectBox {
+        position: relative;
+        // width: 4rem;
+        .select {
+            outline: 1px solid rgb(22, 22, 22);
+            background-color: #333;
             padding: .5rem 1.5rem;
-            background-color: #333;
-            .subLang--en {
-                width: 100%;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                padding: .5rem 1.5rem;
-                background-color: #333;
-                display: none;
-            }
-            .subLang--en {
-                width: 100%;
-                display: none;
-            }
-        }
-        .langSelect:hover .subLang--en {
-            display: inline-flex;
-        }
-        
-        .subLang--en:hover,
-        .sublang--es:hover  {
-            background-color: rgb(49, 129, 235);
-        }
-         
-    }
-}
-
-.lang-2 {
-    margin-inline-start: auto;
-    margin-inline-end: 2rem;
-    
-    .langSelector {
-        display: flex;
-        .lang {
-            color: #f2f2f2;
-            margin-inline: .5rem;
-            &:hover {
-                color: #f2f2f296;
-            }
-        }
-        .lang.active {
-            color: $blue;
-            font-weight: 700;
-        }
-    }
-}
-.lang-3 {
-    margin-inline-start: auto;
-    margin-inline-end: 2rem;
-    
-    .langSelector {
-
-        display: flex;
-        align-items: center;
-        // margin-inline: auto;
-        .lang {
-            display: inline-block;
-            width: 3rem;
-            padding: .75rem;
-            background-color: #333;
-            border-radius: 100%;
+            border-radius: .3rem;
             display: flex;
-            justify-content: center;
             align-items: center;
             color: #f2f2f2;
-            margin-inline: .5rem;
-            &:hover {
-                color: #f2f2f296;
+            transition: .3s ease all;
+            
+            .contenido-select {
+                
+                .titulo {
+                    font-size: .75rem;
+                    font-weight: 300;
+                }
             }
-        }
-        .lang.active {
-            color: $blue;
-            font-weight: 700;
+            .arrow {
+                margin-inline-start: 1rem;
+            }
         }
     }
 }
+
+
+
+// .lang-1 {
+//     margin-inline-start: auto;
+//     margin-inline-end: 2rem;
+//     .lang {
+//         display: flex;
+//         align-items: center;
+//         color: #f2f2f2;
+//         .flag {
+//             padding-inline: .5rem;
+//             .flagLang--en {
+//                 display:none;
+//             }
+//         }
+//         .langSelect {
+//             display: inline-flex;
+//             width: 7rem;
+//             position: relative;
+//             transition: all .3s ease-in-out;
+//             cursor: pointer;
+//             padding: .5rem 1.5rem;
+//             background-color: #333;
+
+            
+//             .langSelected__wrapper {
+
+//                 .dropDown-lang {
+//                     position: absolute;
+//                     top: 100%;
+//                     left: 0;
+//                     display:none;
+
+                    
+//                 }
+                
+//             }
+//         }
+//     }
+// }
+
+// .lang-2 {
+//     margin-inline-start: auto;
+//     margin-inline-end: 2rem;
+    
+//     .langSelector {
+//         display: flex;
+//         .lang {
+//             color: #f2f2f2;
+//             margin-inline: .5rem;
+//             &:hover {
+//                 color: #f2f2f296;
+//             }
+//         }
+//         .lang.active {
+//             color: $blue;
+//             font-weight: 700;
+//         }
+//     }
+// }
+// .lang-3 {
+//     margin-inline-start: auto;
+//     margin-inline-end: 2rem;
+    
+//     .langSelector {
+
+//         display: flex;
+//         align-items: center;
+//         margin-inline: auto;
+//         .lang {
+//             display: inline-block;
+//             width: 3rem;
+//             padding: .75rem;
+//             background-color: #333;
+//             border-radius: 100%;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             color: #f2f2f2;
+//             margin-inline: .5rem;
+//             &:hover {
+//                 color: #f2f2f296;
+//             }
+//         }
+//         .lang.active {
+//             color: $blue;
+//             font-weight: 700;
+//         }
+//     }
+// }
 
 .flex {
     display: flex;
