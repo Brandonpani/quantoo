@@ -36,6 +36,8 @@ const select = document.querySelector('#select');
 const idiomas = document.querySelector('#idiomas');
 const contenidoSelect = document.querySelector('#contenidoSelect');
 
+
+
 document.querySelectorAll('#idiomas > .option').forEach((option) => {
     option.addEventListener('click', (e) => {
         e.preventDefault();
@@ -43,6 +45,7 @@ document.querySelectorAll('#idiomas > .option').forEach((option) => {
         contenidoSelect.innerHTML = e.currentTarget.innerHTML;
         idiomas.classList.toggle('active');
         select.classList.toggle('active');
+        
     });
 });
 
