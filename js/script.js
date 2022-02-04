@@ -42,12 +42,12 @@ document.querySelectorAll('#idiomas > .option').forEach((option) => {
         select.classList.toggle('active');
 
         if(e.currentTarget.querySelector('.titulo').innerText == 'Español') {
-                    window.location.href="/index.html";
+                    window.location.href="../index.html";
                 }else {
                     window.location.href="/en/index.html";
                 }
 
-        console.log(e.currentTarget.querySelector('.titulo').innerText);
+        // console.log(e.currentTarget.querySelector('.titulo').innerText);
     });
 });
 
