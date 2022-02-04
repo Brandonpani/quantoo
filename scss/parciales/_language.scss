@@ -55,7 +55,7 @@
 // prueba botones cambio de idioma
 form {
     margin-inline-start: auto;
-    margin-inline-end: 2rem;
+    margin-inline-end: 1rem;
 
     .selectBox {
         cursor: pointer;
@@ -79,8 +79,16 @@ form {
                 }
             }
             .arrow {
-                margin-inline-start: 1rem;
+                margin-inline-start: .5rem;
             }
+        }
+        .select:hover {
+            outline: 2px solid rgb(34, 114, 243);
+        
+        }
+        .select.active,
+        .select:focus {
+            outline: 2px solid rgb(34, 114, 243);
         }
         .idiomas {
             position: absolute;
@@ -96,7 +104,7 @@ form {
             transition: .3s ease all;
             display: none;
             .option {
-                overflow: auto;
+                // overflow: auto;
                 
                 justify-content: center;
                 width: 100%;
@@ -115,7 +123,8 @@ form {
                 }
             }
         }
-        .contenido-opcion:hover {
+        .contenido-opcion:hover,
+        .contenido-opcion:focus {
             background-color: $blue;
         }
         .idiomas.active {
@@ -127,6 +136,8 @@ form {
         display: block;
     }
 }
+
+
 
 
 
