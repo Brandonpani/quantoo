@@ -56,7 +56,7 @@ document.querySelectorAll('#idiomas > .option').forEach((option) => {
         if(e.currentTarget.querySelector('.titulo').innerText == 'Español') {
                     window.location.href="/index.html";
                 }else {
-                    window.location.href="/en/index.html";
+                    window.location.href="en/index.html";
                 }
 
         // console.log(e.currentTarget.querySelector('.titulo').innerText);
