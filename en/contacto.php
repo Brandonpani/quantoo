@@ -114,7 +114,7 @@
           
             <div class="information">
              <i class=" info-icn fas fa-envelope"></i>
-              <p>contacto@quanto.mx</p>
+              <p>contact@quanto.mx</p>
             </div>
             <div class="information">
               <i class=" info-icn fas fa-phone"></i>
