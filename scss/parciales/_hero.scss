@@ -2,7 +2,6 @@
 
     
     .hero {
-        // @include intro-container;
         background-image: linear-gradient(to bottom, #f2f2f225 40%, #5681e675 60%), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -28,7 +27,7 @@
                     font-size: 2.5rem;
                     display: block;
                     line-height: 1.1;
-                    width: 90%;
+                    width: 15ch; 
                     margin: auto;
                     margin-block-end: $size-1;
 
@@ -39,20 +38,6 @@
                         -webkit-text-fill-color: transparent;
                     }
                     
-                    // .texto-dinamico::after {
-                    //     content: '';
-                    //     display: block;
-                    //     -webkit-animation-name: dinamic-text;
-                    //     -webkit-animation-duration: 7s;
-                    //     -webkit-animation-iteration-count: infinite;
-                    //     -webkit-animation-timing-function: ease-in-out;
-
-                    //     animation: dinamic-text 7s ease-in-out infinite;
-                    //     background: -webkit-linear-gradient(180deg, #00a99d, #0747a6);
-                    //     background-clip: text;
-                    //     -webkit-background-clip: text;
-                    //     -webkit-text-fill-color: transparent;
-                    // }
                 }
                 .hero-content {
                     color: whitesmoke;
@@ -122,45 +107,3 @@
 
 }
 
-
-
-
-// @-webkit-keyframes dinamic-text {
-
-//     0%, 20% {
-//         content: "Optima"
-//     }
-
-//     25%, 45% {
-//         content: "Innovadora"
-//     }
-
-//     50%,70% {
-//         content: "Segura"
-//     }
-
-//     75%, 100% {
-//         content: "Eficiente"
-//     }
-    
-// }
-
-// @keyframes dinamic-text {
-
-//     0%, 20% {
-//         content: "Optima"
-//     }
-
-//     25%, 45% {
-//         content: "Innovadora"
-//     }
-
-//     50%,70% {
-//         content: "Segura"
-//     }
-
-//     75%, 100% {
-//         content: "Eficiente"
-//     }
-    
-// }
