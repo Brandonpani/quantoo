@@ -51,7 +51,13 @@ document.querySelectorAll('#idiomas > .option').forEach((option) => {
     });
 });
 
-select.addEventListener('click', () => {
-    select.classList.toggle('active');
-    idiomas.classList.toggle('active');
+select.addEventListener('click', (e) => {
+    select.classList.add('active');
+    idiomas.classList.add('active');
+    e.stopPropagation();
+});
+
+document.body.addEventListener('click', () => {
+    select.classList.remove('active');
+    idiomas.classList.remove('active');
 });
