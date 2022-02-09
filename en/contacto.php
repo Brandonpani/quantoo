@@ -61,13 +61,13 @@
 
           <ul class="nav-links">
               
-              <li><a class="nav-link" href="productos.html">Productos</a></li>
-              <li><a class="nav-link" href="modulos.html">Modulos</a></li>
-              <li><a class="nav-link" href="automatizacion.html">Automatización</a></li>
-              <li><a class="nav-link" href="regulacion.html">Regulación</a></li>
-              <li><a class="nav-link" href="plataforma.html">Plataforma</a></li>
-              <li><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-              <li><a class="active nav-link" href="contacto.html">Contacto</a></li>
+              <li><a class="nav-link" href="productos.html">Products</a></li>
+              <li><a class="nav-link" href="modulos.html">Modules</a></li>
+              <li><a class="nav-link" href="automatizacion.html">Automatization</a></li>
+              <li><a class="nav-link" href="regulacion.html">Regulation</a></li>
+              <li><a class="nav-link" href="plataforma.html">Platform</a></li>
+              <li><a class="nav-link" href="nosotros.html">About Us</a></li>
+              <li><a class="nav-link active" href="contacto.html">Contact</a></li>
           </ul>
 
           <form action="">
@@ -199,11 +199,11 @@
               
 
               <div class="footer-col">
-                  <h4>Contacto</h4>
+                  <h4>Contact</h4>
                   <ul>
 
                       <li class="footer-link"><a href="mailto:contacto@quanto.mx">contacto@quanto.mx</a></li>
-                      <li class="footer-link"><a href="tel:+528141612470" class="tel">Llama a un asesor</a></li>
+                      <li class="footer-link"><a href="tel:+528141612470" class="tel">Call an Advisor</a></li>
                   </ul>
               </div>
 
@@ -222,7 +222,7 @@
 
 
               <div class="footer-col">
-                  <h4>Síguenos</h4>
+                  <h4>Follow Us</h4>
                   <div class="social-links">
                       <a href="#"><i class="fab fa-facebook-f"></i></a>
                       <a href="#"><i class="fab fa-twitter"></i></a>
