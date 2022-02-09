@@ -146,17 +146,17 @@
           <form action="/mail.php" method="POST" autocomplete="off">
             <h3 class="title">Request your Demo</h3>
             <div class="input-container">
-              <input type="text" name="name" id="name" class="input" />
+              <input type="text" name="Nombre" id="name" class="input" />
               <label for="">Name</label>
               <span>Name</span>
             </div>
             <div class="input-container">
-              <input required type="text" name="empresa" id="empresa" class="input" />
+              <input required type="text" name="NombreEmpresa" id="empresa" class="input" />
               <label for="">Company</label>
               <span>Company</span>
             </div>
             <div class="input-container">
-              <input required type="email" name="email" id="email" class="input" />
+              <input required type="email" name="Correo" id="email" class="input" />
               <label for="">Email</label>
               <span>Email</span>
             </div>
@@ -166,7 +166,7 @@
               <span>Phone</span>
             </div>
             <div class="input-container textarea">
-              <textarea name="message" class="input"></textarea>
+              <textarea name="Mensaje" class="input"></textarea>
               <label for="">Message</label>
               <span>Message</span>
             </div>
