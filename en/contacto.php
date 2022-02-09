@@ -70,7 +70,7 @@
               <li><a class="nav-link active" href="contacto.html">Contact</a></li>
           </ul>
 
-          <form action="">
+          <form action="/en/mail.php" method="POST" autocomplete="off">
                 <div class="selectBox">
                     <div class="select" id="select">
                         <div class="contenido-select" id="contenidoSelect">
