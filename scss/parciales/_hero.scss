@@ -28,6 +28,8 @@
                     font-size: 2.5rem;
                     display: block;
                     line-height: 1.1;
+                    width: 90%;
+                    margin: auto;
                     margin-block-end: $size-1;
 
                     .texto-dinamico {
@@ -75,7 +77,10 @@
                     margin-block: auto;
                 }
                 .hero-title {
+                    width: 100%;
+                    margin: 0;
                     font-size: clamp(2rem, 4vw, 5rem);
+                    padding-inline: 2rem;
                 }
 
                 
