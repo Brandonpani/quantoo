@@ -41,12 +41,6 @@
         .banner-cta {
             .call {
                 transition: all .3s ease-in-out;
-
-                &:focus .cta,
-                &:focus-within .cta,
-                &:hover .cta {
-                    margin-inline-end: 2rem;
-                }
             }
         }
     }
