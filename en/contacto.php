@@ -237,6 +237,10 @@
       </div>
     </footer>
 
+    
+    <script src="../js/menu.js"></script>
+    <script src="../js/contact.js"></script>
+    
     <script type="text/javascript">
         if(document.getElementById('mensaje')){
             document.getElementById('close').addEventListener('click', function(){
@@ -247,7 +251,5 @@
             }, 3000);
         }
     </script>
-    <script src="../js/menu.js"></script>
-    <script src="../js/contact.js"></script>
   </body>
 </html>
