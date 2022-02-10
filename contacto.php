@@ -71,7 +71,7 @@
           </ul>
 
 
-          <a href="contacto.html" class="btn btn--fill">Solicitar Demo</a>
+          <!-- <a href="contacto.html" class="btn btn--fill">Solicitar Demo</a> -->
 
           <div class="menu-ham">
               <img src="images/assets/menu-alt-right.svg" data-src="images/assets/close.svg" alt="menu" class="menu__ham">
