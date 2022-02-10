@@ -41,13 +41,21 @@ document.querySelectorAll('#idiomas > .option').forEach((option) => {
         idiomas.classList.toggle('active');
         select.classList.toggle('active');
 
+        let currentPage = window.location.href;
+        let currentPagePaths = currentPage.split('/');
         if(e.currentTarget.querySelector('.titulo').innerText == 'Español') {
-                    window.location.href="../index.html";
-                }else {
-                    window.location.href="/en/index.html";
-                }
-
-        // console.log(e.currentTarget.querySelector('.titulo').innerText);
+            if(currentPagePaths[currentPagePaths.length - 2] == 'en') {
+                currentPagePaths.splice(currentPagePaths.length - 2,1);
+                currentPage = currentPagePaths.join('/')
+            }
+            window.location.href=currentPage;
+        }else {
+            if(currentPagePaths[currentPagePaths.length - 2] != 'en') {
+                currentPagePaths.splice(currentPagePaths.length - 1,0,'en');
+                currentPage = currentPagePaths.join('/')
+            }
+            window.location.href=currentPage;
+        }
     });
 });
 
@@ -61,3 +69,5 @@ document.body.addEventListener('click', () => {
     select.classList.remove('active');
     idiomas.classList.remove('active');
 });
+
+

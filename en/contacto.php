@@ -143,7 +143,7 @@
           <span class="circle one"></span>
           <span class="circle two"></span>
 
-          <form action="/mail.php" method="POST" autocomplete="off">
+          <form action="/en/mail.php" method="POST" autocomplete="off">
             <h3 class="title">Request your Demo</h3>
             <div class="input-container">
               <input type="text" name="Nombre" id="name" class="input" />
@@ -240,6 +240,8 @@
     
     <script src="../js/menu.js"></script>
     <script src="../js/contact.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/scripts.js"></script>
     
     <script type="text/javascript">
         if(document.getElementById('mensaje')){
