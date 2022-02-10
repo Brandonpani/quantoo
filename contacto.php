@@ -218,6 +218,9 @@
 
     <script src="js/menu.js"></script>
     <script src="js/contact.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/scripts.js"></script>
+
     <script type="text/javascript">
         if(document.getElementById('mensaje')){
             document.getElementById('close').addEventListener('click', function(){
