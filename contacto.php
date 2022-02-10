@@ -215,6 +215,17 @@
       </div>
     </footer>
 
+    <script type="text/javascript">
+        if(document.getElementById('mensaje')){
+            document.getElementById('close').addEventListener('click', function(){
+                document.getElementById('mensaje').style.display = 'none';
+            });
+            setTimeout(function(){
+                document.getElementById('mensaje').style.display = 'none';
+            }, 3000);
+        }
+    </script>
+
     <script src="js/menu.js"></script>
     <script src="js/contact.js"></script>
   </body>
