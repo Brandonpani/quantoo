@@ -57,7 +57,7 @@
       <div class="wrapper">
 
 
-        <a href="index.html" class="logo"><img class="logo-menu" src="images/assets/quanto-logo-imagotipo.png" alt=""></a>
+        <a href="index.html" class="logo"><img class="logo-menu" src="../images/assets/quanto-logo-imagotipo.png" alt=""></a>
 
           <ul class="nav-links">
               
