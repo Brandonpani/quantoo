@@ -49,7 +49,7 @@
     />
 
     <!-- estilos css -->
-    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="../css/estilos.css" />
   </head>
   <body>
 
@@ -98,7 +98,7 @@
           <!-- <a href="contacto.html" class="btn btn--fill">Solicitar Demo</a> -->
 
           <div class="menu-ham">
-              <img src="images/assets/menu-alt-right.svg" data-src="images/assets/close.svg" alt="menu" class="menu__ham">
+              <img src="../images/assets/menu-alt-right.svg" data-src="../images/assets/close.svg" alt="menu" class="menu__ham">
           </div>
       </div>
     </nav>
@@ -237,7 +237,7 @@
       </div>
     </footer>
 
-    <script src="js/menu.js"></script>
-    <script src="js/contact.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/contact.js"></script>
   </body>
 </html>
