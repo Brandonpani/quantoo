@@ -177,7 +177,7 @@ if ( !session_id() ) {
               <label for="">Message</label>
               <span>Message</span>
             </div>
-            <input type="submit" value="Enviar" class="btn" />
+            <input type="submit" value="Send" class="btn" />
           </form>
         </div>
       </div>
