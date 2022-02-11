@@ -162,9 +162,7 @@ if ( !session_id() ) {
 
 
     <?php
-        if ( ! session_id() ) {
-            session_start();
-        }
+        
         if($_SESSION['message']){ ?>
             <div class="mensaje" id="mensaje">
                 <div class="mensaje-header" >
