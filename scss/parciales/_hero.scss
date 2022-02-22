@@ -2,7 +2,7 @@
 
     
     .hero {
-        background-image: linear-gradient(to bottom, #f2f2f225 40%, #5681e675 60%), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg);
+        background-image: linear-gradient(to bottom, #44444470 40%, #3f3f3fdc 60%), url(../images/quanto-productos-imagen-mujer-sonriendo-trabajando-con-su-computadora.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         margin-block-end: $size-2;
@@ -14,22 +14,25 @@
         .hero-container {
             @include container;
             place-self: flex-end;
+            margin-block-end: 3rem;
 
             .hero-info {
                 color: #f2f3f4;
-                margin-block-end: 3rem;
-                background-color: #2020209a;
-                backdrop-filter:blur(.5rem);
-                padding: 2rem 1rem;
-                text-align: center;
-                border-radius: $size-2;
+                // margin-block-end: 3rem;
+                // background-color: #2020209a;
+                // backdrop-filter:blur(.5rem);
+                // padding: 2rem 1rem;
+                // text-align: center;
+                // border-radius: $size-2;
                 .hero-title {
                     font-size: clamp(2rem, 9vw, 2.5rem);
                     display: block;
                     line-height: 1.2;
                     width: 14ch; //more innovative
-                    margin: auto;
+                    // margin: auto;
                     margin-block-end: $size-1;
+
+
 
                     .texto-dinamico {
                         background: -webkit-linear-gradient(180deg, #00a99d, #0747a6);
@@ -41,7 +44,7 @@
                 }
                 .hero-content {
                     color: whitesmoke;
-                    margin: auto;
+                    // margin: auto;
                     margin-block-end: $size-1;
                     
                 }
