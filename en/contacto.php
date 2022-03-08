@@ -125,7 +125,7 @@ if ( !session_id() ) {
             </div>
             <div class="information">
               <i class=" info-icn fas fa-phone"></i>
-              <p>+52 814-161-2470</p>
+              <p>+52 818 526 4543</p>
             </div>
           </div>
 
