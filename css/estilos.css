@@ -551,6 +551,24 @@ form .selectBox .idiomas.active { display: block; }
   #main-modulos .modulos-intro .modulos-intro__container .p-large { font-size: 1.4rem; }
   #main-modulos .modulos-intro .btn { display: none; } }
 
+#main-modulos .modulos { width: 90%; max-width: 1400px; margin-inline: auto; -webkit-margin-before: 3rem; margin-block-start: 3rem; padding: 3rem 0; background-color: #f2f2f2; border-radius: 6px; width: 100%; }
+
+#main-modulos .modulos .title { text-align: center; }
+
+#main-modulos .modulos .modulos__inner { padding: 0 2rem; }
+
+#main-modulos .modulos .modulos__inner .nav-menu__modulos { overflow: auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-transition: color .3s ease-out; transition: color .3s ease-out; }
+
+#main-modulos .modulos .modulos__inner .nav-menu__modulos li { padding: .75rem 1rem; }
+
+#main-modulos .modulos .modulos__inner .nav-menu__modulos li:hover { background-color: #1e36a4; }
+
+#main-modulos .modulos .modulos__inner .nav-menu__modulos li:hover a { color: #f2f2f2; }
+
+#main-modulos .box-modulos { width: 90%; max-width: 1400px; margin-inline: auto; padding: 3rem; height: 30rem; width: 100%; background-color: #1e36a4; color: #f2f2f2; }
+
+@media (min-width: 768px) { #main-modulos .modulos .modulos__inner .nav-menu__modulos { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; } }
+
 #main-modulos #clientes { padding-top: 5rem; padding-bottom: 5rem; }
 
 #main-modulos #clientes .info { height: -webkit-min-content; height: -moz-min-content; height: min-content; }
