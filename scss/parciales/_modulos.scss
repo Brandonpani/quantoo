@@ -94,33 +94,34 @@
         
         .modulos__inner {
             padding: 0 2rem;
-            // width: 100%;
             
             .nav-menu__modulos {
                 overflow: auto;
                 display: flex;
 
-                // justify-content: center; solo para tablet y desktop
-                transition: color .3s ease-out;
                 // overflow: scroll;
-
+                
                 li {
+                    transition: background-color .3s ease-in-out;
                     
-                    a {
-                        padding: .75rem 1rem;
-                        // border-radius: $border-radius-6;
+
+                    
+                    // &:hover {
+                    //     background-color: $clr-dark-gray;
+                    // }
+                    // &:hover a {
+                    //     color: $clr-light-gray;
+                    // }
+
+
+                    .nav-link {
+                        padding: .75rem 1.5rem;
+                        color: $clr-dark-gray;
                     }
 
-                    &:hover {
-                        background-color: $clr-blue;
-                    }
-                    &:hover a {
-                        color: $clr-light-gray;
-                    }
 
-                    a.active {
-                        background-color: $clr-blue;
-                        color: $clr-light-gray;
+                    .nav-link.active {
+                        border-bottom: 5px solid $clr-blue;
                     }
                 }
             }
@@ -132,8 +133,8 @@
         @include container;
         padding: 3rem;
         height: 30rem;
-        background-color: $clr-blue;
-        color: $clr-light-gray;
+        // background-color: $clr-blue;
+        // color: $clr-light-gray;
         border-radius: 0 0 1rem 1rem;
     }
 
@@ -142,10 +143,10 @@
 
 
             .modulos__inner {
+                justify-content: center;
 
                 .nav-menu__modulos {
-                    // overflow: initial;
-                    justify-content: center;
+
                 }
             }
         }

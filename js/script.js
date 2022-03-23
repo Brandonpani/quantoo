@@ -72,8 +72,10 @@ document.body.addEventListener('click', () => {
 
 
 
-const subMenu = document.querySelectorAll('nav-link');
+const subMenu = document.getElementByClassName('nav-link');
 
 subMenu.addEventListener('click', (e) => {
     subMenu.classList.toggle('active');
 });
+
+
