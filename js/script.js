@@ -71,3 +71,9 @@ document.body.addEventListener('click', () => {
 });
 
 
+
+const subMenu = document.querySelectorAll('nav-link');
+
+subMenu.addEventListener('click', (e) => {
+    subMenu.classList.toggle('active');
+});

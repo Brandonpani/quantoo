@@ -60,7 +60,7 @@ if ( !session_id() ) {
   </head>
   <body>
 
-    <nav>
+    <nav class="main-nav">
       <div class="wrapper">
 
 
