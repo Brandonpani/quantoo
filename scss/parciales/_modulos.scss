@@ -84,11 +84,11 @@
         @include container;
         margin-block-start: 3rem;
         padding: 3rem 0;
-        background-color: $clr-light-gray;
-        border-radius: $border-radius-6;
-        width: 100%;
+        // background-color: $clr-light-gray;
+        border-radius: 1rem 1rem 0 0;
+        // width: 100%;
 
-        .title {
+        .section-title {
             text-align: center;
         }
         
@@ -105,12 +105,21 @@
                 // overflow: scroll;
 
                 li {
-                    padding: .75rem 1rem;
+                    
+                    a {
+                        padding: .75rem 1rem;
+                        // border-radius: $border-radius-6;
+                    }
 
                     &:hover {
                         background-color: $clr-blue;
                     }
                     &:hover a {
+                        color: $clr-light-gray;
+                    }
+
+                    a.active {
+                        background-color: $clr-blue;
                         color: $clr-light-gray;
                     }
                 }
@@ -123,9 +132,9 @@
         @include container;
         padding: 3rem;
         height: 30rem;
-        width: 100%;
         background-color: $clr-blue;
         color: $clr-light-gray;
+        border-radius: 0 0 1rem 1rem;
     }
 
     @media (min-width: $tablet) {
