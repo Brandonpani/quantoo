@@ -14,8 +14,13 @@
 
 
 // NAVEGADOR
-nav {
+
+.main-nav {
     background-color: $clr-dark-gray;
+}
+
+nav {
+    
     min-height: 8vh;
     display: flex;
     align-items: center;
