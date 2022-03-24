@@ -1,3 +1,5 @@
+
+
 #main-modulos {
 
     .modulos-intro {
@@ -145,9 +147,9 @@
             .modulos__inner {
                 justify-content: center;
 
-                .nav-menu__modulos {
+                // .nav-menu__modulos {
 
-                }
+                // }
             }
         }
     }
@@ -198,10 +200,6 @@
                     width: 90%;
                     text-align: center;
 
-                    .title {
-                        // font-size: 4rem;
-                    }
-
                     .p-large {
                         font-size: 1.25rem;
                     }
@@ -209,7 +207,6 @@
                     .credito-img {
                         width: 100%;
                         margin: 0;
-                        
                     }
                 }
             }
