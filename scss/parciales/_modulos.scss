@@ -153,6 +153,7 @@
                 .cliente {
                     flex: 1;
                     padding: 3rem;
+                    align-self: flex-start;
                 }
 
 
@@ -160,9 +161,9 @@
                     flex: 1;
                     padding:  0 3rem;
 
-                    display: flex;
-                    flex-direction: column;
-                    justify-items: space-between;
+                    // display: flex;
+                    // flex-direction: column;
+                    // justify-items: space-between;
 
                     .caracteristicas__title {
                         margin-block-end: 1rem;
