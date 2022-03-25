@@ -178,9 +178,24 @@
 
             }
         }
-
-
     }
+
+    #formas {
+        display: none;
+    }
+    #digitalizacion {
+        display: none;
+    }
+    #facturacion {
+        display: none;
+    }
+    #configuracion {
+        display: none;
+    }
+    #seguridad {
+        display: none;
+    }
+
 
     @media (min-width: $tablet) {
         .modulos{ 
