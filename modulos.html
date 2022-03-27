@@ -107,13 +107,13 @@
             <h2 class="section-title ">Módulos Básicos</h2>
             <nav class="modulos__inner">
                 <ul class="nav-menu__modulos">
-                    <li><a class="active nav-link" href="#cliente">Cliente</a></li>
-                    <li><a class="nav-link" href="#">Actividades</a></li>
-                    <li><a class="nav-link" href="#">Formas</a></li>
-                    <li><a class="nav-link" href="#">Digitalización</a></li>
-                    <li><a class="nav-link" href="#">Facturación</a></li>
-                    <li><a class="nav-link" href="#">Configuración</a></li>
-                    <li><a class="nav-link" href="#">Seguridad</a></li>
+                    <li><a class="active nav-link" href="#cliente" data-modulo="cliente">Cliente</a></li>
+                    <!-- <li><a class="nav-link" href="#" data-modulos="">Actividades</a></li> -->
+                    <li><a class="nav-link" href="#" data-modulo="formas">Formas</a></li>
+                    <li><a class="nav-link" href="#" data-modulo="digitalizacion">Digitalización</a></li>
+                    <li><a class="nav-link" href="#" data-modulo="facturacion">Facturación</a></li>
+                    <li><a class="nav-link" href="#" data-modulo="configuracion">Configuración</a></li>
+                    <li><a class="nav-link" href="#" data-modulo="seguridad">Seguridad</a></li>
                 </ul>
             </nav>
         </div>
@@ -122,7 +122,7 @@
 
             <div class="modulo__wrapper">
 
-                <div class="modulo" id="cliente">
+                <div class="modulo active" id="cliente">
                     <div class="cliente">
                         <h3 class="section-title">Cliente</h3>
                         <p class="main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus repellendus vitae iusto, culpa ea placeat quas optio, a error eveniet reprehenderit alias officiis deleniti. Beatae animi totam enim non quos!</p>
@@ -474,6 +474,25 @@
   
         </div>
     </footer>
+    <script type="text/javascript">
+        const buttons = document.querySelectorAll(".modulos .nav-menu__modulos .nav-link")
+        for (const button of buttons) {
+        button.addEventListener('click', function(event) {
+            event.preventDefault()
+            const modulo = event.target.dataset.modulo
+            const modulos = document.querySelectorAll(".modulos .nav-menu__modulos .nav-link")
+            for (const modulo of modulos) {
+            modulo.classList.remove('active')
+            }
+            event.target.classList.add('active')
+            const modulosContent = document.querySelectorAll(".box-modulos .modulo__wrapper .modulo")
+            for (const moduloContent of modulosContent) {
+            moduloContent.classList.remove('active')
+            }
+            document.querySelector(`.box-modulos .modulo__wrapper .modulo[id="${modulo}"]`).classList.add('active')
+        })
+        }
+    </script>
 
     <script src="js/menu.js"></script>
     <script src="js/script.js"></script>
