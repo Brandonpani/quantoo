@@ -107,13 +107,13 @@
             <h2 class="section-title ">Módulos Básicos</h2>
             <nav class="modulos__inner">
                 <ul class="nav-menu__modulos">
-                    <li><a class="active nav-link" href="#cliente" data-modulo="cliente">Cliente</a></li>
+                    <li><a class="active nav-link" href="#cliente" data-modulo="cliente" data-paquete="basico">Cliente</a></li>
                     <!-- <li><a class="nav-link" href="#" data-modulos="">Actividades</a></li> -->
-                    <li><a class="nav-link" href="#" data-modulo="formas">Formas</a></li>
-                    <li><a class="nav-link" href="#" data-modulo="digitalizacion">Digitalización</a></li>
-                    <li><a class="nav-link" href="#" data-modulo="facturacion">Facturación</a></li>
-                    <li><a class="nav-link" href="#" data-modulo="configuracion">Configuración</a></li>
-                    <li><a class="nav-link" href="#" data-modulo="seguridad">Seguridad</a></li>
+                    <li><a class="nav-link" href="#" data-modulo="formas" data-paquete="basico">Formas</a></li>
+                    <li><a class="nav-link" href="#" data-modulo="digitalizacion" data-paquete="basico">Digitalización</a></li>
+                    <li><a class="nav-link" href="#" data-modulo="facturacion" data-paquete="basico">Facturación</a></li>
+                    <li><a class="nav-link" href="#" data-modulo="configuracion" data-paquete="basico">Configuración</a></li>
+                    <li><a class="nav-link" href="#" data-modulo="seguridad" data-paquete="basico">Seguridad</a></li>
                 </ul>
             </nav>
         </div>
@@ -334,29 +334,34 @@
 
             <nav class="modulos__inner">
                 <ul class="nav-menu__modulos">
-                    <li><a class=" active nav-link" href="#">PLDFT</a></li>
-                    <li><a class="nav-link" href="#">Riesgos</a></li>
-                    <li><a class="nav-link" href="#">Garantias</a></li>
-                    <li><a class="nav-link" href="#">Activos</a></li>
-                    <li><a class="nav-link" href="#">Contabilidad</a></li>
-                    <li><a class="nav-link" href="#">Prospección</a></li>
+                    <li><a class=" active nav-link" href="#" data-modulo="PLDFT" data-paquete="estandar">PLDFT</a></li>
+                    <li><a class="nav-link" href="#" data-modulo="Riesgos" data-paquete="estandar">Riesgos</a></li>
+                    <li><a class="nav-link" href="#" data-modulo="Garantias" data-paquete="estandar">Garantias</a></li>
+                    <li><a class="nav-link" href="#" data-modulo="Activos" data-paquete="estandar">Activos</a></li>
+                    <li><a class="nav-link" href="#" data-modulo="Contabilidad" data-paquete="estandar">Contabilidad</a></li>
+                    <li><a class="nav-link" href="#" data-modulo="Prospección" data-paquete="estandar">Prospección</a></li>
                 </ul>
             </nav>
 
         </div>
-            <div class="modulos">
-                <h2 class="section-title ">Módulos Premium</h2>
 
-                <nav class="modulos__inner">
-                    <ul class="nav-menu__modulos">
-                        <li><a class=" active nav-link" href="#">Cobranza</a></li>
-                        <li><a class="nav-link" href="#">Tesorería</a></li>
-                        <li><a class="nav-link" href="#">Metas</a></li>
-                        <li><a class="nav-link" href="#">Calificación</a></li>
-                    </ul>
-                </nav>
+        <div class="modulos premium">
+            <h2 class="section-title ">Módulos Premium</h2>
 
-            </div>
+            <nav class="modulos__inner">
+                <ul class="nav-menu__modulos">
+                    <li><a class=" active nav-link" href="#" data-modulo="Cobranza" data-paquete="premium">Cobranza</a></li>
+                    <li><a class="nav-link" href="#" data-modulo="Tesorería" data-paquete="premium">Tesorería</a></li>
+                    <li><a class="nav-link" href="#" data-modulo="Metas" data-paquete="premium">Metas</a></li>
+                    <li><a class="nav-link" href="#" data-modulo="Calificación" data-paquete="premium">Calificación</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+
+
+
         <div class="scroll"></div>
                 
         <section id="clientes">
@@ -480,16 +485,17 @@
         button.addEventListener('click', function(event) {
             event.preventDefault()
             const modulo = event.target.dataset.modulo
-            const modulos = document.querySelectorAll(".modulos .nav-menu__modulos .nav-link")
+            const paquete = event.target.dataset.paquete;
+            const modulos = document.querySelectorAll(`.modulos.${paquete} .nav-menu__modulos .nav-link`)
             for (const modulo of modulos) {
             modulo.classList.remove('active')
             }
             event.target.classList.add('active')
-            const modulosContent = document.querySelectorAll(".box-modulos .modulo__wrapper .modulo")
+            const modulosContent = document.querySelectorAll(`.box-modulos.${paquete} .modulo__wrapper .modulo`)
             for (const moduloContent of modulosContent) {
             moduloContent.classList.remove('active')
             }
-            document.querySelector(`.box-modulos .modulo__wrapper .modulo[id="${modulo}"]`).classList.add('active')
+            document.querySelector(`.box-modulos.${paquete} .modulo__wrapper .modulo[id="${modulo}"]`).classList.add('active')
         })
         }
     </script>
