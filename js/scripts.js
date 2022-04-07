@@ -1,5 +1,5 @@
 const textDispay = document.querySelector('.texto-dinamico')
-const frases = ['Óptima', 'Eficiente', 'Segura', 'Innovadora']
+const frases = ['Dinámica', 'Eficiente', 'Segura', 'Innovadora']
 let i = 0
 let k = 0
 let currentFrase = []
