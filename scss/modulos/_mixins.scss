@@ -3,6 +3,11 @@
     max-width: 1400px;
     margin-inline: auto;
 }
+@mixin container-sm {
+    width: 90%;
+    max-width: 1100px;
+    margin-inline: auto;
+}
 
 @mixin intro-container {
     width: 90%;

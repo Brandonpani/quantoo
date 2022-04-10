@@ -1,4 +1,8 @@
 .avisoMain {
-    @include container;
+    @include container-sm;
     padding: 3rem 0;
+}
+
+.deco {
+    list-style: disc
 }
