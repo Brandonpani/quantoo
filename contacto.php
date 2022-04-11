@@ -186,6 +186,7 @@ if ( !session_id() ) {
 
                       <li class="footer-link"><a href="mailto:contacto@quanto.mx">contacto@quanto.mx</a></li>
                       <li class="footer-link"><a href="tel:+528185264543" class="tel">Llama a un asesor</a></li>
+                      <li class="footer-link"><a href="avisodeprivacidad.html" >Aviso de privacidad</a></li>
                   </ul>
               </div>
 
