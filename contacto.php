@@ -55,7 +55,7 @@ if ( !session_id() ) {
     />
 
     <!-- estilos css -->
-    <link rel="stylesheet" href="css/estilos.css?v=1.2" />
+    <link rel="stylesheet" href="css/estilos.css?v=1.3" />
   </head>
   <body>
 

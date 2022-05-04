@@ -3042,7 +3042,7 @@ form .selectBox .idiomas.active {
   text-align: center;
   margin-right: 1rem;
 }
-#footer .container .row .footer-col .social-links a:hover {
+#footer .container .row .footer-col .social-links a:hover:not(:first-child) {
   color: rgb(246, 246, 246);
   background-color: #1079e2;
 }

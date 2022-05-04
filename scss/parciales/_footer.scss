@@ -93,11 +93,12 @@
                     text-align: center;
                     margin-right: 1rem;
 
-                    &:hover {
+                    &:hover:not(:first-child) {
                         color: rgb(246, 246, 246);
                         background-color: #1079e2;
                     }
                 }
+                
 
             }
         }
