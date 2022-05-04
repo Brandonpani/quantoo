@@ -25,6 +25,7 @@ body {
     display: inline-block;
     margin-inline-end: $size-1;
     margin-block-end: $size-1;
+    border-radius: 3px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     transition: all .6s ease-in-out;
 

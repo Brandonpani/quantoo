@@ -207,7 +207,7 @@ if ( !session_id() ) {
               <div class="footer-col">
                   <h4>Síguenos</h4>
                   <div class="social-links">
-                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
                       <a href="#"><i class="fab fa-twitter"></i></a>
                       <a href="#"><i class="fab fa-linkedin-in"></i></a>
                       
