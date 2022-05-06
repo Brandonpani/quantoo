@@ -18,29 +18,140 @@ body {
 }
 
 .botono {
+    position: relative;
     padding: .65rem 1.95rem;
     color: #f2f2f2;
     background-color: rgb(37, 93, 189);
     display: inline;
     border-radius: 4px;
-    width: 100%;
-    transition: all .6s ease-out;
+    // width: 100%;
+    z-index: 1;
+    overflow: hidden;
+    transition: all .3s ease-out;
+
+    &:before {
+        content: '';
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 100%;
+        background-color: #3674e0ab;
+        border-radius: 4px;
+        z-index: -1;
+        position: absolute;
+        transition: all .3s ease-out;
+        // mix-blend-mode: hue;
+    }
+    &:hover:before {
+        background-color: #36e0ddab;
+        width: 100%;
+    }
+
+    &:after {
+        position: absolute;
+        content: '';
+        right: 0;
+        top: 0;
+        width: 0;
+        height: 100%;
+        background-color: #22c6efb6;
+        transition: all .3s ease-in-out;
+        z-index: -1;
+    }
+    &:hover:after {
+        background-color: #22c6efb6;
+        width: 100%;
+    }
+
 }
 
-.botono:before {
-    content: '';
-    left: 0;
-    top: 0;
-    width: 0;
-    height: 100%;
-    background-color: #bb36e0;
-    z-index: 10;
-    // mix-blend-mode: hue;
-}
+.botono1 {
+    position: relative;
+    padding: .65rem 1.95rem;
+    color: #f2f2f2;
+    background-color: rgb(37, 93, 189);
+    display: inline-flex;
+    border-radius: 4px;
+    width: 50%;
+    z-index: 1;
+    overflow: hidden;
+    transition: all .3s ease-out;
+    justify-content: space-between;
+    outline: none;
+    border: none;
+    
+    .btn-icon {
+        a {
+            display: block;
+            color: #f2f2f2;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .icono {
+        color: #f2f2f2;
+    }
 
-.botono:hover ::before {
-    background-color: #bb36e0;
-    width: 100%;
+    &:before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        // transform: rotate(45deg);
+        top: 50%;
+        left: 50%;
+        transition: all .3s ease-in-out;
+        border-radius: 100%;
+        z-index: -1;
+    }
+    &:hover::before {
+        transform: scale(400);
+        background-color: #22c6efb6;
+    }
+}
+.botono2 {
+    position: relative;
+    padding: .65rem 1.95rem;
+    color: #f2f2f2;
+    background-color: rgb(37, 93, 189);
+    display: inline-flex;
+    border-radius: 4px;
+    width: 50%;
+    z-index: 1;
+    overflow: hidden;
+    transition: all .3s ease-out;
+    justify-content: space-between;
+    outline: none;
+    border: none;
+    
+    .btn-icon {
+        a {
+            display: block;
+            color: #f2f2f2;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .icono {
+        color: #f2f2f2;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        transform: rotate(45deg);
+        top: 50%;
+        left: 50%;
+        transition: all .3s ease-in-out;
+        // border-radius: 100%;
+        z-index: -1;
+    }
+    &:hover::before {
+        transform: scale(400);
+        background-color: #22c6efb6;
+    }
 }
 
 // .botono::affter {
