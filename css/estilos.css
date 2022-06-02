@@ -851,7 +851,7 @@ nav .wrapper .menu-ham {
 }
 
 .scroll-up nav {
-  filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
+  filter: drop-shadow(0 -10px 20px rgba(0, 0, 0, 0.4));
 }
 
 .languages {
