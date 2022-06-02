@@ -406,7 +406,10 @@ body {
   display: inline-block;
   margin-inline-end: 1rem;
   margin-block-end: 1rem;
+<<<<<<< HEAD
   border-radius: 3px;
+=======
+>>>>>>> 1c08619 (navegador reveal on scroll)
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   transition: all 0.6s ease-in-out;
 }
@@ -740,9 +743,22 @@ img {
 
 nav {
   background-color: #232323;
+<<<<<<< HEAD
   min-height: 8vh;
   display: flex;
   align-items: center;
+=======
+  width: 100vw;
+  min-height: 8vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.7);
+  transition: all 300ms ease-in-out;
+>>>>>>> 1c08619 (navegador reveal on scroll)
 }
 nav .wrapper {
   width: 90%;
@@ -838,6 +854,14 @@ nav .wrapper .menu-ham {
   nav .wrapper.open .nav-links .nav-link {
     padding-inline-end: 4rem;
   }
+}
+
+.scroll-down nav {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up nav {
+  filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
 }
 
 .languages {
@@ -3042,9 +3066,15 @@ form .selectBox .idiomas.active {
   text-align: center;
   margin-right: 1rem;
 }
+<<<<<<< HEAD
 #footer .container .row .footer-col .social-links a:hover:not(:first-child) {
   color: rgb(246, 246, 246);
   background-color: #1079e2;
+=======
+#footer .container .row .footer-col .social-links a:hover {
+  color: gray;
+  background-color: #f2f3f4;
+>>>>>>> 1c08619 (navegador reveal on scroll)
 }
 
 @media (max-width: 70rem) {

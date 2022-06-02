@@ -16,9 +16,17 @@
 // NAVEGADOR
 nav {
     background-color: $clr-dark-gray;
+    width: 100vw;
     min-height: 8vh;
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     align-items: center;
+    z-index: 2;
+    box-shadow: 5px 0 15px rgba(0,0,0,0.7);
+    transition: all 300ms ease-in-out;
+
 
     .wrapper {
         // @include container;
@@ -158,4 +166,16 @@ nav {
             }
         }
     }
+}
+
+.scroll-down {
+	nav {
+		transform: translate3d(0, -100%, 0);
+	}
+}
+
+.scroll-up {
+	nav {
+		filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
+	}
 }
