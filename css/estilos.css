@@ -745,7 +745,7 @@ img {
 nav {
   background-color: #232323;
   width: 100vw;
-  min-height: 8vh;
+  min-height: 4rem;
   position: fixed;
   top: 0;
   left: 0;
