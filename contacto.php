@@ -221,7 +221,7 @@ if ( !session_id() ) {
     </footer>
 
 
-    <script src="js/menu.js"></script>
+    <script src="js/menu.js?v=1.4"></script>
     <script src="js/contact.js"></script>
     <script src="js/script.js"></script>
     <script src="js/scripts.js"></script>
