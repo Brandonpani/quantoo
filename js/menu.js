@@ -19,7 +19,8 @@ window.addEventListener("scroll", () => {
 
   const currentScroll = window.pageYOffset;
   if (currentScroll <= 0) {
-    body.classList.remove("scroll-up");
+    body.classList.remove("scroll-down");
+    body.classList.add("scroll-up");
     return;
   }
 
