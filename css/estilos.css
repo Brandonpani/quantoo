@@ -672,7 +672,7 @@ img {
   margin-block-end: 1rem;
 }
 #main-index .hero .hero-container .hero-info .hero-title .texto-dinamico {
-  background: -webkit-linear-gradient(180deg, #00a99d, #0747a6);
+  background: -webkit-linear-gradient(111deg, #37bcaa, #1a73e8);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -743,7 +743,7 @@ img {
 }
 
 nav {
-  background-color: #232323;
+  background-color: #24262a;
   width: 100vw;
   min-height: 4rem;
   position: fixed;
