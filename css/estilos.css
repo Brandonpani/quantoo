@@ -725,7 +725,7 @@ img {
   }
   #main-index .hero .hero-container .hero-info .hero-content {
     width: 50ch;
-    font-size: 1.125rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -991,6 +991,20 @@ form .selectBox .idiomas.active {
   justify-content: center;
 }
 
+#main-index .leyenda {
+  width: 90%;
+  max-width: 1400px;
+  margin-inline: auto;
+  height: 30vh;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin-block: 3rem;
+  border-radius: 0.75rem;
+  color: #24262a;
+}
 #main-index #productos .top {
   background-image: linear-gradient(rgba(242, 242, 242, 0.1450980392) 40%, rgba(86, 129, 230, 0.4588235294) 60%), url(../images/quanto-productos-woman-working-on-a-laptop.jpg);
   background-size: cover;

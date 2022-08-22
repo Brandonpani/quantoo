@@ -1,7 +1,18 @@
 #main-index {
 
-    
-    
+    .leyenda {
+        @include container;
+        height: 30vh;
+        display: grid;
+        place-items: center;
+        font-size: 1.5rem;
+        padding: 2rem;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        margin-block: 3rem;
+        border-radius: .75rem;
+        color: $clr-dark-gray;
+    }
+
 
     #productos {
 
