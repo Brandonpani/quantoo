@@ -98,7 +98,7 @@
                         background-color: #1079e2;
                     }
                 }
-                
+
 
             }
         }
@@ -139,6 +139,16 @@
 @media (max-width: 32rem) {
 
     #footer {
+        position: relative;
+        overflow: hidden;
+
+        .logoFooter {
+            position: absolute;
+            top: -10%;
+            left: -40%;
+            width: 40rem;
+            opacity: 30%;
+        }
 
         .container {
 
@@ -166,4 +176,4 @@
     }
 }
 
-// el footer si creo desktop first. 
+// el footer se creo desktop first. 

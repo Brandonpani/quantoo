@@ -381,6 +381,7 @@ img {
 }
 
 body {
+  position: relative;
   scroll-behavior: smooth;
 }
 
@@ -506,6 +507,26 @@ body {
 
 .bold {
   font-weight: bold;
+}
+
+.arrowUp-container {
+  position: fixed;
+  width: 56PX;
+  aspect-ratio: 1;
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.3));
+  display: grid;
+  place-items: center;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  z-index: 5;
+  right: 1rem;
+  bottom: 1rem;
+}
+.arrowUp-container .arrowUp {
+  color: #f5f5f5;
+  font-size: 3rem;
+  cursor: pointer;
+  color: #1e36a4;
 }
 
 body {
@@ -995,6 +1016,9 @@ form .selectBox .idiomas.active {
   justify-content: center;
 }
 
+#main-index {
+  position: relative;
+}
 #main-index .leyenda {
   width: 90%;
   max-width: 1400px;
@@ -1003,7 +1027,7 @@ form .selectBox .idiomas.active {
   min-height: 30vh;
   display: grid;
   font-size: 1.25rem;
-  padding: 4rem 2rem;
+  padding: 4rem 2rem 6rem;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   margin-block: 3rem;
   color: #24262a;
@@ -1018,7 +1042,19 @@ form .selectBox .idiomas.active {
   position: absolute;
   background-color: #1a73e8;
   right: 0;
-  top: 40%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  padding-inline-start: 1.5rem;
+  padding-block: 1rem;
+  color: #f5f5f5;
+}
+#main-index .leyenda .labelDos {
+  position: absolute;
+  background-color: #1a73e8;
+  left: 0;
+  bottom: 70%;
   z-index: 2;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   padding-inline-start: 1.5rem;
@@ -1057,7 +1093,6 @@ form .selectBox .idiomas.active {
   margin-inline: auto;
   display: grid;
   place-items: center;
-  min-height: 30vh;
   margin-block: 5rem;
 }
 #main-index #productos .bottom .cards-container .cards-wrapper .card .card-title {
@@ -3120,6 +3155,17 @@ form .selectBox .idiomas.active {
   }
 }
 @media (max-width: 32rem) {
+  #footer {
+    position: relative;
+    overflow: hidden;
+  }
+  #footer .logoFooter {
+    position: absolute;
+    top: -10%;
+    left: -40%;
+    width: 40rem;
+    opacity: 30%;
+  }
   #footer .container .row .footer-col {
     width: 100%;
   }
