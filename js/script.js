@@ -1,21 +1,21 @@
 const textDispay = document.querySelector('.texto-dinamico')
-const frases = ['optimal', 'Efficient', 'Safe', 'innovative']
+let frases = ['optimal', 'Efficient', 'Safe', 'innovative']
 let i = 0
 let k = 0
 let currentFrase = []
 
 
 function loop() {
-    
+
     textDispay.innerHTML = frases[i]
-    if (i < frases.length -1) {
+    if (i < frases.length - 1) {
         i++
     } else {
         i = 0
     }
     setTimeout(loop, 1500)
 }
-if (textDispay!=null) {
+if (textDispay != null) {
 
     loop()
 }
@@ -23,15 +23,6 @@ if (textDispay!=null) {
 const select = document.querySelector('#select');
 const idiomas = document.querySelector('#idiomas');
 const contenidoSelect = document.querySelector('#contenidoSelect');
-
-
-// function clickLang(e) {
-//     if(this.checked){
-//         window.location.href="/index.html";
-//     }else {
-//         window.location.href="/en/index.html";
-//     }
-// };
 
 document.querySelectorAll('#idiomas > .option').forEach((option) => {
     option.addEventListener('click', (e) => {
@@ -43,18 +34,18 @@ document.querySelectorAll('#idiomas > .option').forEach((option) => {
 
         let currentPage = window.location.href;
         let currentPagePaths = currentPage.split('/');
-        if(e.currentTarget.querySelector('.titulo').innerText == 'Español') {
-            if(currentPagePaths[currentPagePaths.length - 2] == 'en') {
-                currentPagePaths.splice(currentPagePaths.length - 2,1);
+        if (e.currentTarget.querySelector('.titulo').innerText == 'Español') {
+            if (currentPagePaths[currentPagePaths.length - 2] == 'en') {
+                currentPagePaths.splice(currentPagePaths.length - 2, 1);
                 currentPage = currentPagePaths.join('/')
             }
-            window.location.href=currentPage;
-        }else {
-            if(currentPagePaths[currentPagePaths.length - 2] != 'en') {
-                currentPagePaths.splice(currentPagePaths.length - 1,0,'en');
+            window.location.href = currentPage;
+        } else {
+            if (currentPagePaths[currentPagePaths.length - 2] != 'en') {
+                currentPagePaths.splice(currentPagePaths.length - 1, 0, 'en');
                 currentPage = currentPagePaths.join('/')
             }
-            window.location.href=currentPage;
+            window.location.href = currentPage;
         }
     });
 });
@@ -72,10 +63,60 @@ document.body.addEventListener('click', () => {
 
 
 
-const subMenu = document.getElementByClassName('nav-link');
 
-subMenu.addEventListener('click', (e) => {
-    subMenu.classList.toggle('active');
+
+const subMenu = document.querySelectorAll('.nav-link').forEach((menu) => {
+    menu.addEventListener('click', (e) => {
+        menu.classList.toggle('active');
+    });
+
 });
 
+// modulos
 
+const selectMenu = document.querySelector('.selectMenu');
+
+function activateMenu() {
+    selectMenu.addEventListener("click", () => {
+        const modulos = document.querySelector('.modulos');
+        const selected = document.querySelector('.selected');
+        const menu = document.querySelector('.menu');
+        const arrow = document.querySelector('.arrow');
+
+
+        console.log('selectMenu');
+        console.log('modulos');
+        console.log('selected');
+        console.log('menu');
+        console.log('arrow');
+        console.log('modulo');
+
+        selectMenu.nextElementSibling.classList.toggle("active");
+        selectMenu.lastElementChild.classList.toggle("rotate")
+    })
+    modulos()
+}
+activateMenu();
+
+function modulos() {
+    document.querySelectorAll(".modulo").forEach((modulo) => {
+        modulo.addEventListener("click", () => {
+            let moduloToActivate = modulo.dataset.modulo;
+            let moduloContenido = modulo.innerHTML;
+
+
+            let SelectedMenu = document.querySelector('.selectMenu .selected');
+            SelectedMenu.innerHTML = moduloContenido;
+            SelectedMenu.dataset.forModulo = moduloToActivate;
+
+            document.querySelectorAll(".modulo").forEach((m) => {
+                m.classList.remove('active');
+            })
+            modulo.classList.add('active');
+
+            selectMenu.nextElementSibling.classList.remove("active");
+            selectMenu.lastElementChild.classList.remove("rotate");
+
+        })
+    })
+}
