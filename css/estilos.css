@@ -1820,80 +1820,8 @@ form .selectBox .idiomas.active {
   width: 90%;
   max-width: 1400px;
   margin-inline: auto;
-  margin-block-start: 3rem;
-  margin-block-end: 9rem;
-  padding: 3rem 1rem;
-  background-color: #f2f2f2;
-  display: grid;
-  grid-template-areas: "titulo" "dropdown" "contenido" "descripcion";
-}
-.modulos .t-center {
-  grid-area: titulo;
-  text-align: center;
-  font-size: 2rem;
-}
-.modulos .modulos__dropdown {
-  position: relative;
-  grid-area: dropdown;
-  width: 100%;
-  min-height: 3rem;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-}
-.modulos .modulos__dropdown h3 {
-  display: inline-block;
-  width: 100%;
-  padding: 0.75rem 1.75rem;
-  background-color: #1e36a4;
-  margin: 0;
-  font-size: 1rem;
-  color: #f2f2f2;
-}
-.modulos .modulos__dropdown .button__wrapper {
-  inset: 0;
-  cursor: pointer;
-  background-color: lightgray;
-  width: 100%;
-  text-align: center;
-  margin: 0;
-  height: 0;
-  opacity: 0;
-  transition: all 0.3s ease-in;
-}
-.modulos .modulos__dropdown:hover .button__wrapper {
-  transition: all 0.3s ease-in;
-  height: auto;
-  opacity: 1;
-}
-.modulos .modulos__button {
-  color: aliceblue;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.modulos .modulos__button:hover {
-  display: block;
-  background-color: #1e36a4;
-}
-.modulos .modulos__button.btn {
-  margin: 0;
-}
-.modulos .modulos__content {
-  grid-area: contenido;
-  background-color: lightblue;
-  min-height: 30vh;
-  padding: 1rem;
-}
-.modulos .modulos__description {
-  grid-area: descripcion;
-  background-color: lightcoral;
-  min-height: 5vh;
-  padding: 1rem;
-}
-
-.modulos {
   padding: 0;
+  margin-block-start: 3rem;
 }
 .modulos .selectMenu {
   background-color: #232323;
@@ -1912,7 +1840,7 @@ form .selectBox .idiomas.active {
   background-color: #323741;
 }
 .modulos .select.clicked {
-  border: 2px solid #26489a;
+  border: 2px solid #3b3b3b;
   box-shadow: 0, 0, 0, 0.8rem #26489a;
 }
 .modulos .arrow {
@@ -1928,7 +1856,7 @@ form .selectBox .idiomas.active {
 }
 .modulos .menu {
   margin-block-start: 0.5rem;
-  padding: 0.25rem 0.5rem;
+  padding: 0.5rem 0.5rem;
   background-color: #323741;
   border: 1px solid #363a43;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
@@ -1957,28 +1885,60 @@ form .selectBox .idiomas.active {
   display: block;
   opacity: 1;
 }
+
 .modulos .contenido {
+  margin-block-start: 0.5rem;
+  border-radius: 0.5rem;
   padding: 2rem 0.5rem;
 }
+.modulos .contenido h2 {
+  font-weight: 400;
+}
 
-#main-modulos #clientes {
+.modulos .info__modulos > * {
+  display: none;
+}
+.modulos .info__modulos .active {
+  display: block;
+}
+.modulos .descripcionModulo,
+.modulos .contenido {
+  cursor: pointer;
+  margin-block-start: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 2rem 0.5rem;
+  background-color: #232323;
+  color: #f2f3f4;
+  transition: 0.2s ease-in;
+}
+.modulos .collapsed {
+  padding: 0.5rem 0.5rem;
+}
+.modulos .collapsed .main {
+  display: none;
+}
+.modulos .collapsed .car {
+  display: none;
+}
+
+#main-modulos #cliente {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
-#main-modulos #clientes .info {
+#main-modulos #cliente .info {
   height: min-content;
 }
-#main-modulos #clientes .info .info-container {
+#main-modulos #cliente .info .info-container {
   width: 90%;
   max-width: 1400px;
   margin-inline: auto;
   text-align: center;
 }
-#main-modulos #clientes .info .info-container .credito-img {
+#main-modulos #cliente .info .info-container .credito-img {
   padding: 1rem;
   width: 90%;
 }
-#main-modulos #clientes .cards {
+#main-modulos #cliente .cards {
   width: 90%;
   max-width: 1400px;
   margin-inline: auto;

@@ -78,19 +78,6 @@ const selectMenu = document.querySelector('.selectMenu');
 
 function activateMenu() {
     selectMenu.addEventListener("click", () => {
-        const modulos = document.querySelector('.modulos');
-        const selected = document.querySelector('.selected');
-        const menu = document.querySelector('.menu');
-        const arrow = document.querySelector('.arrow');
-
-
-        console.log('selectMenu');
-        console.log('modulos');
-        console.log('selected');
-        console.log('menu');
-        console.log('arrow');
-        console.log('modulo');
-
         selectMenu.nextElementSibling.classList.toggle("active");
         selectMenu.lastElementChild.classList.toggle("rotate")
     })
@@ -114,9 +101,19 @@ function modulos() {
             })
             modulo.classList.add('active');
 
+
+
             selectMenu.nextElementSibling.classList.remove("active");
             selectMenu.lastElementChild.classList.remove("rotate");
 
+            document.querySelectorAll('.info__modulos > div').forEach((m) => {
+                m.classList.remove('active');
+            })
+            let infoModuloActivado = document.querySelector('.info__modulos > [data-contenido="' + moduloToActivate + '"]')
+            infoModuloActivado.classList.add('active');
+            document.addEventListener('clik', (n) => {
+                selectMenu.nextElementSibling.classList.remove("active");
+            })
         })
     })
 }

@@ -118,7 +118,7 @@
             </div>
             <ul class="menu">
                 <li class="modulo active" data-modulo="m1">Cliente</li>
-                <li class="modulo" data-modulo="m2">Modulo 2</li>
+                <li class="modulo" data-modulo="m2">Digitalización</li>
                 <li class="modulo" data-modulo="m3">Modulo 3</li>
                 <li class="modulo" data-modulo="m4">Modulo 4</li>
                 <li class="modulo" data-modulo="m5">Modulo 5</li>
@@ -128,19 +128,85 @@
                 <li class="modulo" data-modulo="m9">Modulo 9</li>
             </ul>
             <div class="info__modulos">
-                <div class="contenido">
-                    <h2>cliente</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis harum, quod facilis neque sed
-                        soluta suscipit molestiae laboriosam officia quam dolor provident labore nostrum eum consectetur
-                        at
-                        incidunt asperiores nemo.</p>
+                <div class="cliente active" data-contenido="m1">
+                    <div class="contenido">
+                        <h2>cliente</h2>
+                        <p class="main">Quanto® es una solución orientada a personas y no a clientes, es decir permite
+                            registrar una persona y para cada operación asignarle el rol que corresponda ya sea
+                            prospecto, cliente, aval, garante u obligado solidario. Además, solicita todos los datos
+                            indicados por la normativa vigente de PLDFT.</p>
+                    </div>
+                    <div class="descripcionModulo collapsed">
+                        <h2>Descripcion cliente</h2>
+                        <div class="car car-1">
+                            <h3>Búsquedas en listas</h3>
+                            <ul>
+                                <li>Búsqueda en listas de personas vinculadas a PLDFT o PEPS en:<br>
+                                    <b>OFAC</b>, <b>Quien es quien</b>, <b>Lexis Nexis</b>, <b>Worldcheck</b>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="car car-2">
+                            <h3>Genera formatos</h3>
+                            <ul>
+                                <li>Aviso de privacidad</li>
+                                <li>Autorización en sociedades de información crediticia</li>
+                                <li>Expediente de personas físisca.</li>
+                                <li>Expediente de personas moral.</li>
+                                <li>Se pueden agregar más mediante configuración</li>
+                            </ul>
+                        </div>
+                        <div class="car car-3">
+                            <h3>Digitalizar documentos</h3>
+                            <ul>
+                                <li>Aviso de privacidad</li>
+                                <li>Autorización en sociedades de información crediticia</li>
+                                <li>Expediente de personas físisca.</li>
+                                <li>Expediente de personas moral.</li>
+                                <li>Se pueden agregar más mediante configuración</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="descripcion">
-                    <h2>Descripcion cliente</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis harum, quod facilis neque sed
-                        soluta suscipit molestiae laboriosam officia quam dolor provident labore nostrum eum consectetur
-                        at
-                        incidunt asperiores nemo.</p>
+                <div class="digitalizacion" data-contenido="m2">
+                    <div class="contenido">
+                        <h2>Digitalización</h2>
+                        <p class="main">Quanto® es una solución orientada a personas y no a clientes, es decir permite
+                            registrar una persona y para cada operación asignarle el rol que corresponda ya sea
+                            prospecto, cliente, aval, garante u obligado solidario. Además, solicita todos los datos
+                            indicados por la normativa vigente de PLDFT.</p>
+                    </div>
+                    <div class="descripcionModulo collapsed">
+                        <h2>Descripcion Digitalización</h2>
+                        <div class="car car-1">
+                            <h3>Búsquedas en listas</h3>
+                            <ul>
+                                <li>Búsqueda en listas de personas vinculadas a PLDFT o PEPS en:<br>
+                                    <b>OFAC</b>, <b>Quien es quien</b>, <b>Lexis Nexis</b>, <b>Worldcheck</b>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="car car-2">
+                            <h3>Genera formatos</h3>
+                            <ul>
+                                <li>Aviso de privacidad</li>
+                                <li>Autorización en sociedades de información crediticia</li>
+                                <li>Expediente de personas físisca.</li>
+                                <li>Expediente de personas moral.</li>
+                                <li>Se pueden agregar más mediante configuración</li>
+                            </ul>
+                        </div>
+                        <div class="car car-3">
+                            <h3>Digitalizar documentos</h3>
+                            <ul>
+                                <li>Aviso de privacidad</li>
+                                <li>Autorización en sociedades de información crediticia</li>
+                                <li>Expediente de personas físisca.</li>
+                                <li>Expediente de personas moral.</li>
+                                <li>Se pueden agregar más mediante configuración</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -726,7 +792,7 @@
 
         </div>
     </footer>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         const buttons = document.querySelectorAll(".modulos .nav-menu__modulos .nav-link")
         for (const button of buttons) {
             button.addEventListener('click', function (event) {
@@ -745,7 +811,7 @@
                 document.querySelector(`.box-modulos.${paquete} .modulo__wrapper .modulo[id="${modulo}"]`).classList.add('active')
             })
         }
-    </script>
+    </script> -->
 
     <script src="js/menu.js"></script>
     <script src="js/script.js"></script>
