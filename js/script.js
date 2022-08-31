@@ -75,12 +75,18 @@ const subMenu = document.querySelectorAll('.nav-link').forEach((menu) => {
 // modulos
 
 const selectMenu = document.querySelector('.selectMenu');
+const menu = document.querySelector('.menuWrapper');
 
 function activateMenu() {
     selectMenu.addEventListener("click", () => {
         selectMenu.nextElementSibling.classList.toggle("active");
         selectMenu.lastElementChild.classList.toggle("rotate")
     })
+    // document.body.addEventListener('click', () => {
+    //     selectMenu.nextElementSibling.classList.remove("active");
+    //     selectMenu.lastElementChild.classList.remove("rotate")
+    //     console.log(selectMenu);
+    // });
     modulos()
 }
 activateMenu();
@@ -115,13 +121,22 @@ function modulos() {
                 selectMenu.nextElementSibling.classList.remove("active");
             })
 
-            window.onresize = function () {
-                if (window.innerWidth >= 1025) {
-                    selectMenu.nextElementSibling.classList.add('active');
-                } else {
-                    selectMenu.nextElementSibling.classList.remove('active');
-                }
-            }
         })
     })
+    resize();
 }
+function resize() {
+    if (window.innerWidth >= 1025) {
+        menu.classList.add('active');
+    } else {
+        menu.classList.remove('active');
+    }
+}
+window.onresize = resize;
+
+
+document.querySelectorAll('.descripcionModulo').forEach((descripcionModulo) => {
+    descripcionModulo.addEventListener('click', () => {
+        descripcionModulo.classList.toggle('collapsed');
+    })
+});

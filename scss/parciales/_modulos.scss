@@ -319,20 +319,33 @@
 
     .selectMenu {
         grid-area: selMenu;
-        background-color: $clr-dark-gray;
-        color: #f2f3f4;
+        // background: linear-gradient(145deg, #f0f0f0, #cacaca);
+        background-color: #f0f0f0;
+        color: $clr-dark-gray;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border: 2px #2a2e3f solid;
+        border: 2px $clr-blue solid;
         border-radius: .5rem;
         padding: 1rem;
         font-size: 1rem;
         cursor: pointer;
-        transition: background-color .3s;
+        transition: all .3s;
 
         &:hover {
-            background-color: #323741;
+            background: $clr-blue;
+            color: #f2f2f2;
+        }
+
+        &:hover .arrow {
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 6px solid #f2f2f2;
+        }
+
+        .icono {
+            margin-inline-start: .5rem;
+            margin-inline-end: 1rem;
         }
     }
 
@@ -346,7 +359,7 @@
         height: 0;
         border-left: 5px solid transparent;
         border-right: 5px solid transparent;
-        border-top: 6px solid #fff;
+        border-top: 6px solid $clr-blue;
         transition: .3s;
     }
 
@@ -369,12 +382,19 @@
             margin-block-start: .5rem;
             padding: .5rem .5rem;
             border-radius: .5rem;
-            background: linear-gradient(145deg, #f0f0f0, #cacaca);
+            background: #e0e0e0;
             box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+            // box-shadow: 6px 6px 12px #bebebe,
+            //     -6px -6px 12px #ffffff;
             width: 100%;
 
+            .icono {
+                margin-inline-start: .5rem;
+                margin-inline-end: 1rem;
+            }
 
             .modulo {
+                margin-inline-start: .5rem;
                 padding: .75rem .5rem;
                 color: $clr-dark-gray;
                 border-radius: .5rem;
@@ -382,13 +402,13 @@
                 transition: .2s;
 
                 &:hover {
-                    background-color: #2a2d3585;
+                    background-color: #1a73e87e;
                     color: #f2f2f2;
                 }
             }
 
             .modulo.active {
-                background-color: #23242a;
+                background-color: $clr-blue;
                 color: #f2f2f2;
             }
 
@@ -446,7 +466,7 @@
     .contenido {
         margin-block-start: .5rem;
         border-radius: .5rem;
-        padding: 2rem 1rem;
+        padding: 2rem 2rem;
         border-radius: 13px;
         background: linear-gradient(145deg, #f0f0f0, #cacaca);
         color: $clr-dark-gray;

@@ -1764,7 +1764,7 @@ form .selectBox .idiomas.active {
   color: #232323;
 }
 #main-modulos .modulos .modulos__inner .nav-menu__modulos li .nav-link.active {
-  border-bottom: 5px solid #1e36a4;
+  border-bottom: 5px solid #1a73e8;
 }
 #main-modulos .box-modulos {
   width: 90%;
@@ -1829,20 +1829,30 @@ form .selectBox .idiomas.active {
 }
 .modulos .selectMenu {
   grid-area: selMenu;
-  background-color: #232323;
-  color: #f2f3f4;
+  background-color: #f0f0f0;
+  color: #232323;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px #2a2e3f solid;
+  border: 2px #1a73e8 solid;
   border-radius: 0.5rem;
   padding: 1rem;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: all 0.3s;
 }
 .modulos .selectMenu:hover {
-  background-color: #323741;
+  background: #1a73e8;
+  color: #f2f2f2;
+}
+.modulos .selectMenu:hover .arrow {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #f2f2f2;
+}
+.modulos .selectMenu .icono {
+  margin-inline-start: 0.5rem;
+  margin-inline-end: 1rem;
 }
 .modulos .select.clicked {
   border: 2px solid #3b3b3b;
@@ -1853,7 +1863,7 @@ form .selectBox .idiomas.active {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 6px solid #fff;
+  border-top: 6px solid #1a73e8;
   transition: 0.3s;
 }
 .modulos .arrow.rotate {
@@ -1873,11 +1883,16 @@ form .selectBox .idiomas.active {
   margin-block-start: 0.5rem;
   padding: 0.5rem 0.5rem;
   border-radius: 0.5rem;
-  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  background: #e0e0e0;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
   width: 100%;
 }
+.modulos .menuWrapper .menu .icono {
+  margin-inline-start: 0.5rem;
+  margin-inline-end: 1rem;
+}
 .modulos .menuWrapper .menu .modulo {
+  margin-inline-start: 0.5rem;
   padding: 0.75rem 0.5rem;
   color: #232323;
   border-radius: 0.5rem;
@@ -1885,11 +1900,11 @@ form .selectBox .idiomas.active {
   transition: 0.2s;
 }
 .modulos .menuWrapper .menu .modulo:hover {
-  background-color: rgba(42, 45, 53, 0.5215686275);
+  background-color: rgba(26, 115, 232, 0.4941176471);
   color: #f2f2f2;
 }
 .modulos .menuWrapper .menu .modulo.active {
-  background-color: #23242a;
+  background-color: #1a73e8;
   color: #f2f2f2;
 }
 .modulos .menuWrapper.active {
@@ -1929,7 +1944,7 @@ form .selectBox .idiomas.active {
 .modulos .contenido {
   margin-block-start: 0.5rem;
   border-radius: 0.5rem;
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
   border-radius: 13px;
   background: linear-gradient(145deg, #f0f0f0, #cacaca);
   color: #232323;
@@ -3018,7 +3033,7 @@ form .selectBox .idiomas.active {
   width: 35px;
   height: 35px;
   border-radius: 5px;
-  background: linear-gradient(45deg, #1e36a4, #145ad2);
+  background: linear-gradient(45deg, #1a73e8, #145ad2);
   color: #fff;
   text-align: center;
   line-height: 35px;
