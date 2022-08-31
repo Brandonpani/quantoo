@@ -1874,6 +1874,7 @@ form .selectBox .idiomas.active {
   padding: 0.5rem 0.5rem;
   border-radius: 0.5rem;
   background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
   width: 100%;
 }
 .modulos .menuWrapper .menu .modulo {
@@ -1932,6 +1933,7 @@ form .selectBox .idiomas.active {
   border-radius: 13px;
   background: linear-gradient(145deg, #f0f0f0, #cacaca);
   color: #232323;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
   transition: 0.2s ease-in;
 }
 .modulos .descripcionModulo h2 {
