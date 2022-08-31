@@ -1884,7 +1884,7 @@ form .selectBox .idiomas.active {
   transition: 0.2s;
 }
 .modulos .menuWrapper .menu .modulo:hover {
-  background-color: #2a2d35;
+  background-color: rgba(42, 45, 53, 0.5215686275);
   color: #f2f2f2;
 }
 .modulos .menuWrapper .menu .modulo.active {
@@ -1934,6 +1934,17 @@ form .selectBox .idiomas.active {
   color: #232323;
   transition: 0.2s ease-in;
 }
+.modulos .descripcionModulo h2 {
+  font-weight: 500;
+}
+.modulos .descripcionModulo h3 {
+  margin-block-start: 1rem;
+  font-weight: 500;
+}
+.modulos .descripcionModulo .car li {
+  list-style-type: disc;
+  margin-inline-start: 1.5rem;
+}
 
 @media (min-width: 1025px) {
   .modulos {
@@ -1957,7 +1968,7 @@ form .selectBox .idiomas.active {
     top: -100%;
   }
   .modulos .menuWrapper .menu {
-    height: 100%;
+    height: 99%;
     border-radius: 13px;
     background: linear-gradient(145deg, #f0f0f0, #cacaca);
   }

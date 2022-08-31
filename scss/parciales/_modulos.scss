@@ -382,7 +382,7 @@
                 transition: .2s;
 
                 &:hover {
-                    background-color: #2a2d35;
+                    background-color: #2a2d3585;
                     color: #f2f2f2;
                 }
             }
@@ -452,7 +452,24 @@
         color: $clr-dark-gray;
         // color: #f2f3f4;
         transition: .2s ease-in;
+    }
 
+    .descripcionModulo {
+        h2 {
+            font-weight: 500;
+        }
+
+        h3 {
+            margin-block-start: 1rem;
+            font-weight: 500;
+        }
+
+        .car {
+            li {
+                list-style-type: disc;
+                margin-inline-start: 1.5rem;
+            }
+        }
     }
 
 }
@@ -491,7 +508,7 @@
 
 
             .menu {
-                height: 100%;
+                height: 99%;
                 border-radius: 13px;
                 background: linear-gradient(145deg, #f0f0f0, #cacaca);
 

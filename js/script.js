@@ -114,6 +114,14 @@ function modulos() {
             document.addEventListener('clik', (n) => {
                 selectMenu.nextElementSibling.classList.remove("active");
             })
+
+            window.onresize = function () {
+                if (window.innerWidth >= 1025) {
+                    selectMenu.nextElementSibling.classList.add('active');
+                } else {
+                    selectMenu.nextElementSibling.classList.remove('active');
+                }
+            }
         })
     })
 }
