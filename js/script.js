@@ -102,14 +102,14 @@ function modulos() {
             modulo.classList.add('active');
 
 
-
-            selectMenu.nextElementSibling.classList.remove("active");
-            selectMenu.lastElementChild.classList.remove("rotate");
-
-            document.querySelectorAll('.info__modulos > div').forEach((m) => {
+            if (window.innerWidth <= 1025) {
+                selectMenu.nextElementSibling.classList.remove("active");
+                selectMenu.lastElementChild.classList.remove("rotate");
+            }
+            document.querySelectorAll('.modulosContainer > div').forEach((m) => {
                 m.classList.remove('active');
             })
-            let infoModuloActivado = document.querySelector('.info__modulos > [data-contenido="' + moduloToActivate + '"]')
+            let infoModuloActivado = document.querySelector('.modulosContainer > [data-contenido="' + moduloToActivate + '"]')
             infoModuloActivado.classList.add('active');
             document.addEventListener('clik', (n) => {
                 selectMenu.nextElementSibling.classList.remove("active");

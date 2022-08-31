@@ -310,8 +310,15 @@
     @include container;
     padding: 0;
     margin-block-start: 3rem;
+    margin-block-end: 3rem;
+
+
+    .modulosTitulo {
+        grid-area: titulo;
+    }
 
     .selectMenu {
+        grid-area: selMenu;
         background-color: $clr-dark-gray;
         color: #f2f3f4;
         display: flex;
@@ -348,267 +355,455 @@
         transform: rotate(180deg);
     }
 
-    .menu {
-        margin-block-start: .5rem;
-        padding: .5rem .5rem;
-        background-color: #323741;
-        border: 1px solid #363a43;
-        box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
-        border-radius: .5rem;
+    .menuWrapper {
+        grid-area: menu;
+        position: relative;
         opacity: 0;
         display: none;
         transition: .3s;
 
-
-
-        .modulo {
-            padding: .75rem .5rem;
-            color: #f2f3f4;
+        .menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            margin-block-start: .5rem;
+            padding: .5rem .5rem;
             border-radius: .5rem;
-            cursor: pointer;
+            background: linear-gradient(145deg, #f0f0f0, #cacaca);
 
-            &:hover {
-                background-color: #2a2d35;
+            width: 100%;
+
+
+            .modulo {
+                padding: .75rem .5rem;
+                color: $clr-dark-gray;
+                border-radius: .5rem;
+                cursor: pointer;
+                transition: .2s;
+
+                &:hover {
+                    background-color: #2a2d35;
+                    color: #f2f2f2;
+                }
+            }
+
+            .modulo.active {
+                background-color: #23242a;
+                color: #f2f2f2;
+            }
+
+        }
+
+        &.active {
+            opacity: 1;
+            display: block;
+        }
+
+        .menuWrapper.open {
+            display: block;
+            opacity: 1;
+        }
+    }
+
+
+
+}
+
+.contenido {
+    margin-block-start: .5rem;
+    border-radius: .5rem;
+    padding: 2rem .5rem;
+
+    h2 {
+        font-weight: 400;
+    }
+}
+
+.modulos {
+
+    .modulosContainer {
+        grid-area: modulos;
+
+        .descripcionModulo .collapsed {
+            padding: .5rem 1rem;
+
+            .main {
+                display: none;
             }
         }
-
-        .modulo.active {
-            background-color: #23242a;
-        }
     }
 
-    .active {
-        opacity: 1;
-        display: block;
-    }
-
-    .manu.open {
-        display: block;
-        opacity: 1;
-    }
-}
-
-.modulos {
-
-    .contenido {
-        margin-block-start: .5rem;
-        border-radius: .5rem;
-        padding: 2rem .5rem;
-
-        // background-color: $clr-dark-gray;
-        h2 {
-            font-weight: 400;
-        }
-    }
-}
-
-.modulos {
-
-    .info__modulos>* {
+    .modulosContainer>* {
         display: none;
     }
 
-    .info__modulos .active {
+    .modulosContainer .active {
         display: block;
     }
 
+
     .descripcionModulo,
     .contenido {
-        cursor: pointer;
         margin-block-start: .5rem;
         border-radius: .5rem;
-        padding: 2rem .5rem;
-        background-color: $clr-dark-gray;
-        color: #f2f3f4;
+        padding: 2rem 1rem;
+        border-radius: 13px;
+        background: linear-gradient(145deg, #f0f0f0, #cacaca);
+        color: $clr-dark-gray;
+        // color: #f2f3f4;
         transition: .2s ease-in;
 
     }
 
-    .collapsed {
-        padding: .5rem .5rem;
-
-        .main {
-            display: none;
-        }
-
-        .car {
-            display: none;
-        }
-    }
 }
 
-#main-modulos {
-    #cliente {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
+@media (min-width: $laptop) {
+    .modulos {
+        @include container;
+        // width: 100%;
 
-        .info {
-            height: min-content;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas:
+            "title title title title title title title title"
+            "menu menu modulos modulos modulos modulos modulos modulos"
+            "menu menu modulos modulos modulos modulos modulos modulos"
+            "menu menu modulos modulos modulos modulos modulos modulos"
+            "menu menu modulos modulos modulos modulos modulos modulos"
+            "menu menu modulos modulos modulos modulos modulos modulos"
+            "menu menu modulos modulos modulos modulos modulos modulos"
+            "menu menu modulos modulos modulos modulos modulos modulos"
+        ;
 
-            .info-container {
-                @include container;
-                text-align: center;
+        .modulosTitulo {
+            grid-area: title;
+        }
 
-                .credito-img {
-                    padding: 1rem;
-                    width: 90%;
-                    // margin: 2rem auto;
-                }
+        .selectMenu {
+            grid-area: irrelevant;
+            display: none;
+        }
+
+        .menuWrapper {
+            top: -100%;
+
+
+            .menu {
+                height: 100%;
+                border-radius: 13px;
+                background: linear-gradient(145deg, #f0f0f0, #cacaca);
+
             }
         }
 
-        .cards {
-            @include container;
-        }
+        .modulosContainer {
 
+            .infoContainer {
+                display: flex;
+            }
+
+        }
     }
 
-    @media (min-width: $laptop) {
+    .mgrid {
+        @include container;
+        margin-block: 3rem;
+        min-height: 50vh;
+        display: grid;
+        grid-template-columns: repeat(8 1fr);
+        grid-template-rows: repeat(8 1fr);
+        grid-template-areas:
+            "t t t t t t t t"
+            "m m c c c c c c"
+            "m m c c c c c c"
+            "m m c c c c c c"
+            "m m c c c c c c"
+            "m m c c c c c c"
+            "m m c c c c c c"
+            "m m c c c c c c"
+        ;
 
-        // media dasktop
-        #clientes {
-            padding: 5rem 0;
-            @include container;
+        .titlem {
+            grid-area: t;
             display: grid;
-            grid-template-columns: 2fr 3fr;
-            gap: 3rem;
+            place-items: center;
+            background-color: lightpink;
+        }
+
+        .smenu {
+            display: none;
+        }
+
+        .menu {
+            grid-area: m;
+            background-color: lightblue;
+            display: grid;
+            place-items: center;
+            // width: 3rem;
+            display: block;
+            border-radius: 13px;
+            background: linear-gradient(145deg, #f0f0f0, #cacaca);
+            box-shadow: 14px 14px 28px #bebebe,
+                -14px -14px 28px #ffffff;
+        }
+
+        .desc {
+            grid-area: c;
+            background-color: lightgreen;
+            display: grid;
+            place-items: center;
+
+            .infoModulos {
+                display: flex;
+                align-items: center;
+
+                .contenido {}
+
+                .descripcion {
+                    height: 100%;
+                    width: 100%;
+                    background-color: lightblue;
+                }
+            }
+        }
+    }
+
+
+
+    // @media (min-width: $laptop) {
+    //     min-height: 60vh;
+    //     background-color: $clr-dark-gray;
+    //     padding: 2rem 3rem;
+    //     border-radius: .5rem;
+    //     display: grid;
+    //     grid-template-columns: auto auto 2fr 2fr;
+    //     grid-template-rows: repeat(4 1fr);
+    //     grid-template-areas:
+    //         "t t t t"
+    //         "m m m m"
+    //         "im im im im"
+    //         "im im im im"
+    //     ;
+
+    //     .modulosTitulo {
+    //         grid-area: t;
+    //         place-self: center;
+    //         color: #f2f3f4;
+    //     }
+
+    //     .selectMenu {
+    //         display: none;
+    //     }
+
+    //     .menu {
+    //         grid-area: m;
+    //         display: flex;
+    //         height: 4rem;
+    //         justify-content: space-evenly;
+    //         opacity: 1;
+    //     }
+    // }
+
+
+    // .modulos {
+    //     .info__modulos>* {
+    //         display: none;
+    //     }
+
+    //     .info__modulos {
+    //         grid-area: im;
+    //         margin-top: 1rem;
+
+    //         .mod-grid {
+    //             display: grid;
+    //             grid-template-columns: 1fr 1fr;
+    //             gap: 1rem;
+
+    //             .contenido {
+    //                 // height: 100%;
+    //                 align-self: center;
+
+    //             }
+
+    //         }
+    //     }
+    // }
+
+    #main-modulos {
+        #clientes {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
 
             .info {
-                place-self: center;
+                height: min-content;
 
                 .info-container {
-                    width: 90%;
+                    @include container;
                     text-align: center;
 
-                    .p-large {
-                        font-size: 1.25rem;
-                    }
-
                     .credito-img {
-                        width: 100%;
-                        margin: 0;
+                        padding: 1rem;
+                        width: 90%;
+                        // margin: 2rem auto;
                     }
                 }
             }
 
             .cards {
-
-                .subtitle {
-                    font-size: 1.3rem;
-                }
-            }
-        }
-    }
-}
-
-#main-modulos {
-    .banner {
-        text-align: center;
-
-        .section-title {
-            width: 70%;
-            padding-block-start: 3rem;
-            line-height: 1.1;
-            color: $clr-light-gray;
-            margin-inline-start: auto;
-            margin-inline-end: auto;
-        }
-
-        .subtitle {
-            width: 70%;
-            margin-inline-start: auto;
-            margin-inline-end: auto;
-            padding-block-end: 3rem;
-        }
-    }
-}
-
-#main-modulos {
-    #pldft {
-        padding-top: 5rem;
-
-        .info {
-
-            .info-container {
                 @include container;
-                text-align: center;
+            }
 
-                .credito-img {
-                    padding: 1rem;
-                    width: 90%;
-                    margin: 2rem auto;
+        }
+
+        @media (min-width: $laptop) {
+
+            // media dasktop
+            #clientes {
+                padding: 5rem 0;
+                @include container;
+                display: grid;
+                grid-template-columns: 2fr 3fr;
+                gap: 3rem;
+
+                .info {
+                    place-self: center;
+
+                    .info-container {
+                        width: 90%;
+                        text-align: center;
+
+                        .p-large {
+                            font-size: 1.25rem;
+                        }
+
+                        .credito-img {
+                            width: 100%;
+                            margin: 0;
+                        }
+                    }
+                }
+
+                .cards {
+
+                    .subtitle {
+                        font-size: 1.3rem;
+                    }
                 }
             }
         }
+    }
 
-        .cards {
-            @include container;
+    #main-modulos {
+        .banner {
+            text-align: center;
+
+            .section-title {
+                width: 70%;
+                padding-block-start: 3rem;
+                line-height: 1.1;
+                color: $clr-light-gray;
+                margin-inline-start: auto;
+                margin-inline-end: auto;
+            }
+
+            .subtitle {
+                width: 70%;
+                margin-inline-start: auto;
+                margin-inline-end: auto;
+                padding-block-end: 3rem;
+            }
         }
     }
 
-    @media (min-width: $laptop) {
-
-
+    #main-modulos {
         #pldft {
-            padding: 5rem 0;
-            @include container;
-            display: grid;
-            grid-template-rows: 2fr 2fr;
-            grid-template-areas:
-                "img"
-                "info"
-            ;
+            padding-top: 5rem;
 
             .info {
-                grid-row: 1;
-                grid-column: 1;
-                grid-area: img;
-                place-self: center;
 
                 .info-container {
-                    width: 100%;
-
-
-                    .title {
-                        font-size: 4rem;
-                    }
-
-                    .p-large {
-                        font-size: 1.25rem;
-                        width: 70%;
-                        margin-inline: auto;
-                    }
+                    @include container;
+                    text-align: center;
 
                     .credito-img {
-                        width: 40%;
-                        margin: auto;
-                        padding: 2rem;
+                        padding: 1rem;
+                        width: 90%;
+                        margin: 2rem auto;
                     }
                 }
             }
 
             .cards {
-                grid-row: 2;
-                grid-column: 1;
-                grid-area: info;
-                place-self: center;
+                @include container;
+            }
+        }
 
-                .cards-container {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    gap: 2rem;
+        @media (min-width: $laptop) {
 
+
+            #pldft {
+                padding: 5rem 0;
+                @include container;
+                display: grid;
+                grid-template-rows: 2fr 2fr;
+                grid-template-areas:
+                    "img"
+                    "info"
+                ;
+
+                .info {
+                    grid-row: 1;
+                    grid-column: 1;
+                    grid-area: img;
+                    place-self: center;
+
+                    .info-container {
+                        width: 100%;
+
+
+                        .title {
+                            font-size: 4rem;
+                        }
+
+                        .p-large {
+                            font-size: 1.25rem;
+                            width: 70%;
+                            margin-inline: auto;
+                        }
+
+                        .credito-img {
+                            width: 40%;
+                            margin: auto;
+                            padding: 2rem;
+                        }
+                    }
                 }
 
-                .title {
-                    font-size: 1.3rem;
+                .cards {
+                    grid-row: 2;
+                    grid-column: 1;
+                    grid-area: info;
+                    place-self: center;
+
+                    .cards-container {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        gap: 2rem;
+
+                    }
+
+                    .title {
+                        font-size: 1.3rem;
+                    }
                 }
             }
         }
     }
-}
 
 
-.scroll {
-    height: 100vh;
+    .scroll {
+        height: 100vh;
+    }
 }
