@@ -5,12 +5,12 @@
     display: grid;
     place-content: center;
     background-image: linear-gradient(to right, #2020208c, #33a2f25b),
-    url(../images/plataforma-intro-ofcina-quanto.jpg);
+        url(../images/plataforma-intro-ofcina-quanto.jpg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
     color: #f2f3f4;
-    
+
     .banner-content {
         @include container;
         text-align: center;
@@ -21,7 +21,8 @@
             width: 80%;
             margin-inline-start: auto;
             margin-inline-end: auto;
-            
+            color: #f2f3f4;
+
             .section-title {
                 margin-block-end: 1rem;
                 color: $clr-light-gray;
@@ -31,6 +32,7 @@
                     font-size: $section-title;
                 }
             }
+
             .p-large {
                 color: $clr-light-gray;
                 font-size: 1.4rem;

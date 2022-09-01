@@ -1304,6 +1304,7 @@ form .selectBox .idiomas.active {
   width: 80%;
   margin-inline-start: auto;
   margin-inline-end: auto;
+  color: #f2f3f4;
 }
 .banner .banner-content .banner-title .section-title {
   margin-block-end: 1rem;

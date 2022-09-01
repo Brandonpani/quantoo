@@ -3,6 +3,7 @@
 body {
     font-family: 'poppins', sans-serif;
 }
+
 $mobile-title: clamp(2.3rem, 4.5vw, 3.5rem);
 $mobile-content: .875rem;
 $big-title-desktop: 3.5rem;
@@ -63,6 +64,7 @@ $big-info: 2.5rem;
 .section-title--white {
     color: whitesmoke;
 }
+
 .section-subtitle {
     font-size: $section-subtitle;
     font-weight: 600;
