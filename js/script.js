@@ -1,4 +1,4 @@
-const textDispay = document.querySelector('.texto-dinamico')
+// const textDisplay = document.querySelector('.texto-dinamico');
 let frases = ['optimal', 'Efficient', 'Safe', 'innovative']
 let i = 0
 let k = 0
@@ -7,7 +7,7 @@ let currentFrase = []
 
 function loop() {
 
-    textDispay.innerHTML = frases[i]
+    textDisplay.innerHTML = frases[i]
     if (i < frases.length - 1) {
         i++
     } else {
@@ -15,7 +15,7 @@ function loop() {
     }
     setTimeout(loop, 1500)
 }
-if (textDispay != null) {
+if (textDisplay != null) {
 
     loop()
 }
@@ -82,11 +82,11 @@ function activateMenu() {
         selectMenu.nextElementSibling.classList.toggle("active");
         selectMenu.lastElementChild.classList.toggle("rotate")
     })
-    // document.body.addEventListener('click', () => {
-    //     selectMenu.nextElementSibling.classList.remove("active");
-    //     selectMenu.lastElementChild.classList.remove("rotate")
-    //     console.log(selectMenu);
-    // });
+    document.body.addEventListener('click', () => {
+        selectMenu.nextElementSibling.classList.remove("active");
+        selectMenu.lastElementChild.classList.remove("rotate")
+        console.log(selectMenu);
+    });
     modulos()
 }
 activateMenu();
