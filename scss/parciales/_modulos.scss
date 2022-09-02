@@ -86,6 +86,7 @@
 
     .modulosTitulo {
         grid-area: titulo;
+        text-align: center;
     }
 
     .selectMenu {
@@ -238,10 +239,9 @@
             }
         }
     }
-}
 
-@media screen and (min-width: $laptop) {
-    .modulos {
+    @media screen and (min-width: $laptop) {
+
         @include container;
         // width: 100%;
 
@@ -262,7 +262,6 @@
 
         .modulosTitulo {
             grid-area: title;
-            text-align: center;
         }
 
         .selectMenu {
@@ -289,8 +288,10 @@
             }
 
         }
+
     }
 }
+
 
 #main-modulos {
 

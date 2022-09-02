@@ -1756,6 +1756,7 @@ form .selectBox .idiomas.active {
 }
 .modulos .modulosTitulo {
   grid-area: titulo;
+  text-align: center;
 }
 .modulos .selectMenu {
   grid-area: selMenu;
@@ -1878,7 +1879,6 @@ form .selectBox .idiomas.active {
   list-style-type: disc;
   margin-inline-start: 1.5rem;
 }
-
 @media screen and (min-width: 1025px) {
   .modulos {
     width: 90%;
@@ -1892,7 +1892,6 @@ form .selectBox .idiomas.active {
   }
   .modulos .modulosTitulo {
     grid-area: title;
-    text-align: center;
   }
   .modulos .selectMenu {
     grid-area: irrelevant;
@@ -1910,6 +1909,7 @@ form .selectBox .idiomas.active {
     display: flex;
   }
 }
+
 #main-modulos #clientes {
   padding-top: 5rem;
   padding-bottom: 5rem;
