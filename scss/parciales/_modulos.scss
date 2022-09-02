@@ -89,7 +89,6 @@
         padding: 3rem 0;
         background-color: $clr-light-gray;
         border-radius: 1rem 1rem 0 0;
-        width: 100%;
 
         .section-title {
             text-align: center;
@@ -452,182 +451,179 @@
 
         }
     }
+}
 
-    #main-modulos {
+#main-modulos {
+
+    #clientes {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+
+        .info {
+            height: min-content;
+
+            .info-container {
+                @include container;
+                text-align: center;
+
+                .credito-img {
+                    padding: 1rem;
+                    width: 90%;
+                    // margin: 2rem auto;
+                }
+            }
+        }
+
+        .cards {
+            @include container;
+        }
+
+    }
+
+    @media (min-width: $laptop) {
+
+        // media dasktop
         #clientes {
-            padding-top: 5rem;
-            padding-bottom: 5rem;
+            padding: 5rem 0;
+            @include container;
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            gap: 3rem;
 
             .info {
-                height: min-content;
+                place-self: center;
 
                 .info-container {
-                    @include container;
+                    width: 90%;
                     text-align: center;
 
-                    .credito-img {
-                        padding: 1rem;
-                        width: 90%;
-                        // margin: 2rem auto;
+                    .p-large {
+                        font-size: 1.25rem;
                     }
-                }
-            }
-
-            .cards {
-                @include container;
-            }
-
-        }
-
-        @media (min-width: $laptop) {
-
-            // media dasktop
-            #clientes {
-                padding: 5rem 0;
-                @include container;
-                display: grid;
-                grid-template-columns: 2fr 3fr;
-                gap: 3rem;
-
-                .info {
-                    place-self: center;
-
-                    .info-container {
-                        width: 90%;
-                        text-align: center;
-
-                        .p-large {
-                            font-size: 1.25rem;
-                        }
-
-                        .credito-img {
-                            width: 100%;
-                            margin: 0;
-                        }
-                    }
-                }
-
-                .cards {
-
-                    .subtitle {
-                        font-size: 1.3rem;
-                    }
-                }
-            }
-        }
-    }
-
-    #main-modulos {
-        .banner {
-            text-align: center;
-
-
-
-            .section-title {
-                width: 70%;
-                padding-block-start: 3rem;
-                line-height: 1.1;
-                color: #f2f2f2;
-                margin-inline-start: auto;
-                margin-inline-end: auto;
-            }
-
-            .subtitle {
-                width: 70%;
-                margin-inline-start: auto;
-                margin-inline-end: auto;
-                padding-block-end: 3rem;
-            }
-
-        }
-    }
-
-    #main-modulos {
-        #pldft {
-            padding-top: 5rem;
-
-            .info {
-
-                .info-container {
-                    @include container;
-                    text-align: center;
 
                     .credito-img {
-                        padding: 1rem;
-                        width: 90%;
-                        margin: 2rem auto;
-                    }
-                }
-            }
-
-            .cards {
-                @include container;
-            }
-        }
-
-        @media (min-width: $laptop) {
-
-
-            #pldft {
-                padding: 5rem 0;
-                @include container;
-                display: grid;
-                grid-template-rows: 2fr 2fr;
-                grid-template-areas:
-                    "img"
-                    "info"
-                ;
-
-                .info {
-                    grid-row: 1;
-                    grid-column: 1;
-                    grid-area: img;
-                    place-self: center;
-
-                    .info-container {
                         width: 100%;
-
-
-                        .title {
-                            font-size: 4rem;
-                        }
-
-                        .p-large {
-                            font-size: 1.25rem;
-                            width: 70%;
-                            margin-inline: auto;
-                        }
-
-                        .credito-img {
-                            width: 40%;
-                            margin: auto;
-                            padding: 2rem;
-                        }
+                        margin: 0;
                     }
                 }
+            }
 
-                .cards {
-                    grid-row: 2;
-                    grid-column: 1;
-                    grid-area: info;
-                    place-self: center;
+            .cards {
 
-                    .cards-container {
-                        display: grid;
-                        grid-template-columns: 1fr 1fr;
-                        gap: 2rem;
+                .subtitle {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
 
-                    }
+#main-modulos {
+    .banner {
+        text-align: center;
+
+
+
+        .section-title {
+            width: 70%;
+            padding-block-start: 3rem;
+            line-height: 1.1;
+            color: #f2f2f2;
+            margin-inline-start: auto;
+            margin-inline-end: auto;
+        }
+
+        .subtitle {
+            width: 70%;
+            margin-inline-start: auto;
+            margin-inline-end: auto;
+            padding-block-end: 3rem;
+        }
+
+    }
+}
+
+#main-modulos {
+    #pldft {
+        padding-top: 5rem;
+
+        .info {
+
+            .info-container {
+                @include container;
+                text-align: center;
+
+                .credito-img {
+                    padding: 1rem;
+                    width: 90%;
+                    margin: 2rem auto;
+                }
+            }
+        }
+
+        .cards {
+            @include container;
+        }
+    }
+
+    @media (min-width: $laptop) {
+
+
+        #pldft {
+            padding: 5rem 0;
+            @include container;
+            display: grid;
+            grid-template-rows: 2fr 2fr;
+            grid-template-areas:
+                "img"
+                "info"
+            ;
+
+            .info {
+                grid-row: 1;
+                grid-column: 1;
+                grid-area: img;
+                place-self: center;
+
+                .info-container {
+                    width: 100%;
+
 
                     .title {
-                        font-size: 1.3rem;
+                        font-size: 4rem;
+                    }
+
+                    .p-large {
+                        font-size: 1.25rem;
+                        width: 70%;
+                        margin-inline: auto;
+                    }
+
+                    .credito-img {
+                        width: 40%;
+                        margin: auto;
+                        padding: 2rem;
                     }
                 }
             }
-        }
-    }
 
-    .scroll {
-        height: 100vh;
+            .cards {
+                grid-row: 2;
+                grid-column: 1;
+                grid-area: info;
+                place-self: center;
+
+                .cards-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 2rem;
+
+                }
+
+                .title {
+                    font-size: 1.3rem;
+                }
+            }
+        }
     }
 }
