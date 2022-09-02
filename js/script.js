@@ -1,4 +1,4 @@
-// const textDisplay = document.querySelector('.texto-dinamico');
+const textDisplay = document.querySelector('.texto-dinamico');
 let frases = ['optimal', 'Efficient', 'Safe', 'innovative']
 let i = 0
 let k = 0
@@ -80,13 +80,11 @@ const menu = document.querySelector('.menuWrapper');
 function activateMenu() {
     selectMenu.addEventListener("click", () => {
         selectMenu.nextElementSibling.classList.toggle("active");
-        selectMenu.lastElementChild.classList.toggle("rotate")
-    })
-    document.body.addEventListener('click', () => {
-        selectMenu.nextElementSibling.classList.remove("active");
-        selectMenu.lastElementChild.classList.remove("rotate")
+        selectMenu.lastElementChild.classList.toggle("rotate");
         console.log(selectMenu);
+
     });
+
     modulos()
 }
 activateMenu();
@@ -115,11 +113,11 @@ function modulos() {
             document.querySelectorAll('.modulosContainer > div').forEach((m) => {
                 m.classList.remove('active');
             })
-            let infoModuloActivado = document.querySelector('.modulosContainer > [data-contenido="' + moduloToActivate + '"]')
+            let infoModuloActivado = document.querySelector('.modulosContainer > [data-contenido="' + moduloToActivate + '"]');
             infoModuloActivado.classList.add('active');
-            document.addEventListener('clik', (n) => {
-                selectMenu.nextElementSibling.classList.remove("active");
-            })
+            // document.addEventListener('click', (n) => {
+            // selectMenu.nextElementSibling.classList.remove("active");
+            // })
 
         })
     })
