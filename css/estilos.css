@@ -1912,10 +1912,6 @@ form .selectBox .idiomas.active {
   opacity: 1;
   display: block;
 }
-.modulos .menuWrapper .menuWrapper.open {
-  display: block;
-  opacity: 1;
-}
 
 .contenido {
   margin-block-start: 0.5rem;
@@ -1992,52 +1988,6 @@ form .selectBox .idiomas.active {
   }
   .modulos .modulosContainer .infoContainer {
     display: flex;
-  }
-
-  .mgrid {
-    width: 90%;
-    max-width: 1400px;
-    margin-inline: auto;
-    margin-block: 3rem;
-    min-height: 50vh;
-    display: grid;
-    grid-template-columns: repeat(8 1fr);
-    grid-template-rows: repeat(8 1fr);
-    grid-template-areas: "t t t t t t t t" "m m c c c c c c" "m m c c c c c c" "m m c c c c c c" "m m c c c c c c" "m m c c c c c c" "m m c c c c c c" "m m c c c c c c";
-  }
-  .mgrid .titlem {
-    grid-area: t;
-    display: grid;
-    place-items: center;
-    background-color: lightpink;
-  }
-  .mgrid .smenu {
-    display: none;
-  }
-  .mgrid .menu {
-    grid-area: m;
-    background-color: lightblue;
-    display: grid;
-    place-items: center;
-    display: block;
-    border-radius: 13px;
-    background: linear-gradient(145deg, #f0f0f0, #cacaca);
-    box-shadow: 14px 14px 28px #bebebe, -14px -14px 28px #ffffff;
-  }
-  .mgrid .desc {
-    grid-area: c;
-    background-color: lightgreen;
-    display: grid;
-    place-items: center;
-  }
-  .mgrid .desc .infoModulos {
-    display: flex;
-    align-items: center;
-  }
-  .mgrid .desc .infoModulos .descripcion {
-    height: 100%;
-    width: 100%;
-    background-color: lightblue;
   }
 
   #main-modulos #clientes {

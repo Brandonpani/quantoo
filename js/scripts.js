@@ -1,4 +1,4 @@
-const textDisplay = document.querySelector('.texto-dinamico');
+// const textDisplay = document.querySelector('.texto-dinamico');
 frases = ['Óptima', 'Eficiente', 'Segura', 'Innovadora']
 i = 0
 k = 0
@@ -45,80 +45,15 @@ document.querySelectorAll('#idiomas > .option').forEach((option) => {
     });
 });
 
-select.addEventListener('click', (e) => {
-    select.classList.add('active');
-    idiomas.classList.add('active');
-    e.stopPropagation();
-});
+// select.addEventListener('click', (e) => {
+//     select.classList.add('active');
+//     idiomas.classList.add('active');
+//     e.stopPropagation();
+// });
 
-document.body.addEventListener('click', () => {
-    select.classList.remove('active');
-    idiomas.classList.remove('active');
-});
-
-const selectMenu = document.querySelector('.selectMenu');
-const menu = document.querySelector('.menuWrapper');
-
-function activateMenu() {
-    selectMenu.addEventListener("click", () => {
-        selectMenu.nextElementSibling.classList.toggle("active");
-        selectMenu.lastElementChild.classList.toggle("rotate")
-    })
-    document.body.addEventListener('click', () => {
-        selectMenu.nextElementSibling.classList.remove("active");
-        selectMenu.lastElementChild.classList.remove("rotate")
-        console.log(selectMenu);
-    });
-    modulos()
-}
-activateMenu();
-
-function modulos() {
-    document.querySelectorAll(".modulo").forEach((modulo) => {
-        modulo.addEventListener("click", () => {
-            let moduloToActivate = modulo.dataset.modulo;
-            let moduloContenido = modulo.innerHTML;
+// document.body.addEventListener('click', () => {
+//     select.classList.remove('active');
+//     idiomas.classList.remove('active');
+// });
 
 
-            let SelectedMenu = document.querySelector('.selectMenu .selected');
-            SelectedMenu.innerHTML = moduloContenido;
-            SelectedMenu.dataset.forModulo = moduloToActivate;
-
-            document.querySelectorAll(".modulo").forEach((m) => {
-                m.classList.remove('active');
-            })
-            modulo.classList.add('active');
-
-
-            if (window.innerWidth <= 1025) {
-                selectMenu.nextElementSibling.classList.remove("active");
-                selectMenu.lastElementChild.classList.remove("rotate");
-            }
-            document.querySelectorAll('.modulosContainer > div').forEach((m) => {
-                m.classList.remove('active');
-            })
-            let infoModuloActivado = document.querySelector('.modulosContainer > [data-contenido="' + moduloToActivate + '"]')
-            infoModuloActivado.classList.add('active');
-            document.addEventListener('clik', (n) => {
-                selectMenu.nextElementSibling.classList.remove("active");
-            })
-
-        })
-    })
-    resize();
-}
-function resize() {
-    if (window.innerWidth >= 1025) {
-        menu.classList.add('active');
-    } else {
-        menu.classList.remove('active');
-    }
-}
-window.onresize = resize;
-
-
-document.querySelectorAll('.descripcionModulo').forEach((descripcionModulo) => {
-    descripcionModulo.addEventListener('click', () => {
-        descripcionModulo.classList.toggle('collapsed');
-    })
-});
