@@ -84,12 +84,12 @@
 
 #main-modulos {
     .modulos {
-        // @include container;
-        // margin-block-start: 3rem;
-        // padding: 3rem 0;
-        // background-color: $clr-light-gray;
-        // border-radius: 1rem 1rem 0 0;
-        // width: 100%;
+        @include container;
+        margin-block-start: 3rem;
+        padding: 3rem 0;
+        background-color: $clr-light-gray;
+        border-radius: 1rem 1rem 0 0;
+        width: 100%;
 
         .section-title {
             text-align: center;
@@ -213,7 +213,8 @@
 
 
 .modulos {
-    @include container;
+    width: 90%;
+    max-width: 1200px;
     padding: 0;
     margin-block-start: 3rem;
     margin-block-end: 3rem;
@@ -347,6 +348,7 @@
 }
 
 .modulos {
+    @include container;
 
     .modulosContainer {
         grid-area: modulos;
@@ -401,7 +403,7 @@
 
 }
 
-@media (min-width: $laptop) {
+@media screen and (min-width: $laptop) {
     .modulos {
         @include container;
         // width: 100%;
@@ -450,10 +452,6 @@
 
         }
     }
-
-
-
-
 
     #main-modulos {
         #clientes {
@@ -523,6 +521,8 @@
         .banner {
             text-align: center;
 
+
+
             .section-title {
                 width: 70%;
                 padding-block-start: 3rem;
@@ -538,6 +538,7 @@
                 margin-inline-end: auto;
                 padding-block-end: 3rem;
             }
+
         }
     }
 
@@ -625,7 +626,6 @@
             }
         }
     }
-
 
     .scroll {
         height: 100vh;
