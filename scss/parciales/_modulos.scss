@@ -51,8 +51,6 @@
     }
 
     @media (min-width: $laptop) {
-
-
         .modulos-intro {
             @include intro-container;
             background-image: linear-gradient(to top, #202020cf, #33a2f279), url(../images/young-concentrated-businesswoman-glasses-striped-shirt-working-with-papers-home.jpg);
@@ -81,143 +79,10 @@
     }
 }
 
-
-#main-modulos {
-    .modulos {
-        @include container;
-        margin-block-start: 3rem;
-        padding: 3rem 0;
-        // background-color: $clr-light-gray;
-        border-radius: 1rem 1rem 0 0;
-
-        .section-title {
-            text-align: center;
-        }
-
-        .modulos__inner {
-            padding: 0 2rem;
-
-            .nav-menu__modulos {
-                overflow: auto;
-                display: flex;
-
-                // overflow: scroll;
-
-                li {
-                    transition: background-color .3s ease-in-out;
-
-
-
-                    // &:hover {
-                    //     background-color: $clr-dark-gray;
-                    // }
-                    // &:hover a {
-                    //     color: $clr-light-gray;
-                    // }
-
-
-                    .nav-link {
-                        padding: .75rem 1.5rem;
-                        color: $clr-dark-gray;
-                    }
-
-
-                    .nav-link.active {
-                        border-bottom: 5px solid $clr-blue;
-                    }
-                }
-            }
-        }
-
-
-    }
-
-    .box-modulos {
-        @include container;
-        background-color: lightgray;
-        padding: 0 3rem;
-        height: 40rem;
-        // background-color: $clr-blue;
-        // color: $clr-light-gray;
-        border-radius: 0 0 1rem 1rem;
-
-        .modulo__wrapper {
-            position: relative;
-            width: 100%;
-            height: 100%;
-
-            .modulo {
-                position: absolute;
-                inset: 0;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-
-                .cliente {
-                    flex: 1;
-                    padding: 3rem;
-                    align-self: center;
-                }
-
-
-                .caractersticas {
-                    flex: 1;
-                    padding: 0 3rem;
-                    height: auto;
-                    // display: flex;
-                    // flex-direction: column;
-                    // justify-items: space-between;
-
-                    .caracteristicas__title {
-                        margin-block-end: 1rem;
-                    }
-
-                    .car {
-                        // display: flex;
-                        justify-content: space-between;
-                        margin-block-end: 1rem;
-                    }
-                }
-
-            }
-
-            .modulo:not(.active) {
-                display: none;
-            }
-
-            .modulo.active {
-                display: flex;
-            }
-        }
-    }
-
-
-    @media (min-width: $tablet) {
-        .modulos {
-
-
-            .modulos__inner {
-                justify-content: center;
-
-                // .nav-menu__modulos {
-
-                // }
-            }
-        }
-    }
-}
-
-
-
-
-
 .modulos {
-    width: 90%;
-    max-width: 1200px;
-    padding: 0;
+    @include container;
     margin-block-start: 3rem;
     margin-block-end: 3rem;
-
 
     .modulosTitulo {
         grid-area: titulo;
@@ -269,29 +134,23 @@
         transition: .3s;
     }
 
-
     .arrow.rotate {
         transform: rotate(180deg);
     }
 
     .menuWrapper {
         grid-area: menu;
-        position: relative;
+        // position: relative;
         opacity: 0;
         display: none;
         transition: .3s;
 
         .menu {
-            position: absolute;
-            top: 100%;
-            left: 0;
             margin-block-start: .5rem;
             padding: .5rem .5rem;
             border-radius: .5rem;
             background: #e0e0e0;
             box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
-            // box-shadow: 6px 6px 12px #bebebe,
-            //     -6px -6px 12px #ffffff;
             width: 100%;
 
             .icono {
@@ -320,34 +179,11 @@
             }
         }
 
-
         &.active {
             opacity: 1;
             display: block;
         }
-
-        // .menuWrapper.open {
-        //     display: block;
-        //     opacity: 1;
-        // }
     }
-
-
-
-}
-
-.contenido {
-    margin-block-start: .5rem;
-    border-radius: .5rem;
-    padding: 2rem .5rem;
-
-    h2 {
-        font-weight: 400;
-    }
-}
-
-.modulos {
-    @include container;
 
     .modulosContainer {
         grid-area: modulos;
@@ -369,7 +205,6 @@
         display: block;
     }
 
-
     .descripcionModulo,
     .contenido {
         margin-block-start: .5rem;
@@ -380,6 +215,10 @@
         color: $clr-dark-gray;
         box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
         transition: .2s ease-in;
+
+        h2 {
+            font-weight: 400;
+        }
     }
 
     .descripcionModulo {
@@ -399,7 +238,6 @@
             }
         }
     }
-
 }
 
 @media screen and (min-width: $laptop) {
@@ -424,6 +262,7 @@
 
         .modulosTitulo {
             grid-area: title;
+            text-align: center;
         }
 
         .selectMenu {

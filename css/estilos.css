@@ -1747,88 +1747,10 @@ form .selectBox .idiomas.active {
   }
 }
 
-#main-modulos .modulos {
-  width: 90%;
-  max-width: 1400px;
-  margin-inline: auto;
-  margin-block-start: 3rem;
-  padding: 3rem 0;
-  border-radius: 1rem 1rem 0 0;
-}
-#main-modulos .modulos .section-title {
-  text-align: center;
-}
-#main-modulos .modulos .modulos__inner {
-  padding: 0 2rem;
-}
-#main-modulos .modulos .modulos__inner .nav-menu__modulos {
-  overflow: auto;
-  display: flex;
-}
-#main-modulos .modulos .modulos__inner .nav-menu__modulos li {
-  transition: background-color 0.3s ease-in-out;
-}
-#main-modulos .modulos .modulos__inner .nav-menu__modulos li .nav-link {
-  padding: 0.75rem 1.5rem;
-  color: #232323;
-}
-#main-modulos .modulos .modulos__inner .nav-menu__modulos li .nav-link.active {
-  border-bottom: 5px solid #1a73e8;
-}
-#main-modulos .box-modulos {
-  width: 90%;
-  max-width: 1400px;
-  margin-inline: auto;
-  background-color: lightgray;
-  padding: 0 3rem;
-  height: 40rem;
-  border-radius: 0 0 1rem 1rem;
-}
-#main-modulos .box-modulos .modulo__wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-#main-modulos .box-modulos .modulo__wrapper .modulo {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-#main-modulos .box-modulos .modulo__wrapper .modulo .cliente {
-  flex: 1;
-  padding: 3rem;
-  align-self: center;
-}
-#main-modulos .box-modulos .modulo__wrapper .modulo .caractersticas {
-  flex: 1;
-  padding: 0 3rem;
-  height: auto;
-}
-#main-modulos .box-modulos .modulo__wrapper .modulo .caractersticas .caracteristicas__title {
-  margin-block-end: 1rem;
-}
-#main-modulos .box-modulos .modulo__wrapper .modulo .caractersticas .car {
-  justify-content: space-between;
-  margin-block-end: 1rem;
-}
-#main-modulos .box-modulos .modulo__wrapper .modulo:not(.active) {
-  display: none;
-}
-#main-modulos .box-modulos .modulo__wrapper .modulo.active {
-  display: flex;
-}
-@media (min-width: 768px) {
-  #main-modulos .modulos .modulos__inner {
-    justify-content: center;
-  }
-}
-
 .modulos {
   width: 90%;
-  max-width: 1200px;
-  padding: 0;
+  max-width: 1400px;
+  margin-inline: auto;
   margin-block-start: 3rem;
   margin-block-end: 3rem;
 }
@@ -1879,15 +1801,11 @@ form .selectBox .idiomas.active {
 }
 .modulos .menuWrapper {
   grid-area: menu;
-  position: relative;
   opacity: 0;
   display: none;
   transition: 0.3s;
 }
 .modulos .menuWrapper .menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
   margin-block-start: 0.5rem;
   padding: 0.5rem 0.5rem;
   border-radius: 0.5rem;
@@ -1919,21 +1837,6 @@ form .selectBox .idiomas.active {
   opacity: 1;
   display: block;
 }
-
-.contenido {
-  margin-block-start: 0.5rem;
-  border-radius: 0.5rem;
-  padding: 2rem 0.5rem;
-}
-.contenido h2 {
-  font-weight: 400;
-}
-
-.modulos {
-  width: 90%;
-  max-width: 1400px;
-  margin-inline: auto;
-}
 .modulos .modulosContainer {
   grid-area: modulos;
 }
@@ -1960,6 +1863,10 @@ form .selectBox .idiomas.active {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
   transition: 0.2s ease-in;
 }
+.modulos .descripcionModulo h2,
+.modulos .contenido h2 {
+  font-weight: 400;
+}
 .modulos .descripcionModulo h2 {
   font-weight: 500;
 }
@@ -1985,6 +1892,7 @@ form .selectBox .idiomas.active {
   }
   .modulos .modulosTitulo {
     grid-area: title;
+    text-align: center;
   }
   .modulos .selectMenu {
     grid-area: irrelevant;

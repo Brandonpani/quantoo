@@ -1,4 +1,4 @@
-const textDisplay = document.querySelector('.texto-dinamico');
+// const textDisplay = document.querySelector('.texto-dinamico');
 frases = ['Óptima', 'Eficiente', 'Segura', 'Innovadora']
 i = 0
 k = 0
