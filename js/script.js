@@ -81,7 +81,6 @@ function activateMenu() {
     selectMenu.addEventListener("click", () => {
         selectMenu.nextElementSibling.classList.toggle("active");
         selectMenu.lastElementChild.classList.toggle("rotate");
-        console.log(selectMenu);
 
     });
 
