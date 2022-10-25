@@ -164,19 +164,6 @@ if ( !session_id() ) {
 
 
     <?php
-
-        $ip = $_SERVER['REMOTE_ADDR'];
-        $captcha = $_POST['g-captcha-response'];
-        $secretkey = "6LerdSQfAAAAADJ1FbWZ0TjJVAUlsjWSXJwL5FhP";
-
-        $respuesta = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretkey&response=$$captcha&remoteip=$ip");
-        $atributos = json_decode($respuesta, TRUE);
-
-        // if(!$atributos['success']) {
-        //   print('error');
-          // $errors[] = "validar captcha"
-        // }
-        
         if (isset($errors)) {
           if(count($errors) > 0 ) {
             foreach ($errors as $error) {
@@ -194,14 +181,12 @@ if ( !session_id() ) {
                 <p>¡Tu mensaje ha sido enviado satisfactoriamente!</p>
             </div>
         <?php } ?>
-
    </main>
 
     <footer id="footer">
       <div class="container">
           <div class="row">
               
-
               <div class="footer-col">
                   <h4>Contacto</h4>
                   <ul>
