@@ -123,6 +123,8 @@ if ( !session_id() ) {
           </div> -->
         </div>
 
+        
+
         <div class="contact-form">
           <span class="circle one"></span>
           <span class="circle two"></span>
@@ -162,6 +164,25 @@ if ( !session_id() ) {
 
 
     <?php
+
+        $ip = $_SERVER['REMOTE_ADDR'];
+        $captcha = $_POST['g-captcha-response'];
+        $secretkey = "";
+
+        $respuesta = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretkey&response=$$captcha&remoteip=$ip");
+        $atributos = json_decode($respuesta, TRUE);
+
+        if(!$atributos['success']) {
+          $errors[] = "validar captcha"
+        }
+        
+        if (isset($errors)) {
+          if(count($errors) > 0 ) {
+            foreach ($errors as $error) {
+              echo $error . '<br>';
+            }
+          }
+        }
         
         if($_SESSION['message']){ ?>
             <div class="mensaje" id="mensaje">

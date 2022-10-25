@@ -18,5 +18,5 @@ inputs.forEach((input) => {
 });
 
 var onloadCallback = function () {
-  alert("grecaptcha is ready!");
+  // alert("grecaptcha is ready!");
 };
