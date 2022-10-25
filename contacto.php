@@ -164,13 +164,6 @@ if ( !session_id() ) {
 
 
     <?php
-        if (isset($errors)) {
-          if(count($errors) > 0 ) {
-            foreach ($errors as $error) {
-              echo $error . '<br>';
-            }
-          }
-        }
         
         if($_SESSION['message']){ ?>
             <div class="mensaje" id="mensaje">
@@ -178,7 +171,7 @@ if ( !session_id() ) {
                     <h3 class="subtitle">Quanto®</h3>
                     <i class="far fa-times-circle mensaje-close" id="close"></i>
                 </div>
-                <p>¡Tu mensaje ha sido enviado satisfactoriamente!</p>
+                <p><?= $_SESSION['message']?></p>
             </div>
         <?php } ?>
    </main>

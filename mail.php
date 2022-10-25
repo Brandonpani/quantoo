@@ -15,14 +15,14 @@ if(!empty($_POST['Nombre']) && !empty($_POST['NombreEmpresa']) && !empty($_POST[
     if ( !session_id() ) {
         session_start();
     }
-    $_SESSION['message'] = "Tu solicitud ha sido enviado satisfactoriamente, pronto nos pondremos en contacto contigo.";
+    $_SESSION['message'] = "¡Tu mensaje ha sido enviado satisfactoriamente!";
     $file = fopen($_SERVER['DOCUMENT_ROOT'] . "\solicituddemoempresa.txt","a+");
     fwrite($file, "Nombre de la empresa: {$_POST['NombreEmpresa']}\t\tNombre del contacto: {$_POST['Nombre']}\t\tCorreo electronico: {$_POST['Correo']}\t\tTelefono: {$_POST['Telefono']}\t\tMensaje: {$_POST['Mensaje']}\r\n");
     fclose($file);
     header('Location: /contacto.php',TRUE,303);
 }else{
     if(!$atributos['success']) {
-        $errors[] = 'verificar captcha'; 
+        $_SESSION['message'] = 'verificar captcha'; 
     }
     header('Location: /contacto.html',TRUE,303);
 
