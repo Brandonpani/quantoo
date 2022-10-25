@@ -16,3 +16,7 @@ inputs.forEach((input) => {
   input.addEventListener("focus", focusFunc);
   input.addEventListener("blur", blurFunc);
 });
+
+var onloadCallback = function () {
+  alert("grecaptcha is ready!");
+};

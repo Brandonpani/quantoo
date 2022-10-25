@@ -1,0 +1,18 @@
+<?php
+if(!empty($_POST['Nombre']) && !empty($_POST['NombreEmpresa']) && !empty($_POST['Correo']) && !empty($_POST['Telefono'])){
+    $cabeceras = 'From: demo@quanto.mx' . "\r\n" .
+        'Reply-To: demo@quanto.mx' . "\r\n" .
+        'X-Mailer: PHP/' . phpversion();
+    $message = "Nombre de la empresa: {$_POST['NombreEmpresa']}\r\nNombre del contacto: {$_POST['Nombre']}\r\nCorreo electronico: {$_POST['Correo']}\r\nTelefono: {$_POST['Telefono']}\r\nMensaje: {$_POST['Mensaje']}";
+    $send = mail("contacto@quanto.mx","Solicitud de Demo",$message,$cabeceras);
+    if ( !session_id() ) {
+        session_start();
+    }
+    $_SESSION['message'] = "Tu solicitud ha sido enviado satisfactoriamente, pronto nos pondremos en contacto contigo.";
+    $file = fopen($_SERVER['DOCUMENT_ROOT'] . "\solicituddemoempresa.txt","a+");
+    fwrite($file, "Nombre de la empresa: {$_POST['NombreEmpresa']}\t\tNombre del contacto: {$_POST['Nombre']}\t\tCorreo electronico: {$_POST['Correo']}\t\tTelefono: {$_POST['Telefono']}\t\tMensaje: {$_POST['Mensaje']}\r\n");
+    fclose($file);
+    header('Location: /contacto.php',TRUE,303);
+}else{
+    header('Location: /contacto.html',TRUE,303);
+}
