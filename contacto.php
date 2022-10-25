@@ -167,13 +167,14 @@ if ( !session_id() ) {
 
         $ip = $_SERVER['REMOTE_ADDR'];
         $captcha = $_POST['g-captcha-response'];
-        $secretkey = "";
+        $secretkey = "6LerdSQfAAAAADJ1FbWZ0TjJVAUlsjWSXJwL5FhP";
 
         $respuesta = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretkey&response=$$captcha&remoteip=$ip");
         $atributos = json_decode($respuesta, TRUE);
 
         if(!$atributos['success']) {
-          $errors[] = "validar captcha"
+          print('error');
+          // $errors[] = "validar captcha"
         }
         
         if (isset($errors)) {
