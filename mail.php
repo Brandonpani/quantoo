@@ -4,8 +4,6 @@
  $secretkey = "6LerdSQfAAAAADJ1FbWZ0TjJVAUlsjWSXJwL5FhP"; 
  $respuesta = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretkey&response=$captcha&remoteip=$ip");
  $atributos = json_decode($respuesta, TRUE);
- var_dump ($atributos);
- exit();
 
 if(!empty($_POST['Nombre']) && !empty($_POST['NombreEmpresa']) && !empty($_POST['Correo']) && !empty($_POST['Telefono']) && $atributos['success'] ){
     $cabeceras = 'From: bpaniagua@quanto.mx' . "\r\n" .
