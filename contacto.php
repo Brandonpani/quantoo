@@ -147,7 +147,7 @@ if ( !session_id() ) {
               <span>Email</span>
             </div>
             <div class="input-container">
-              <input required type="phone" name="Telefono" id="phone" class="input" />
+              <input required type="phone" name="Telefono" id="phone" class="input" maxlength="10" minlength="10"/>
               <label for="">Télefono</label>
               <span>télefono</span>
             </div>
@@ -156,6 +156,7 @@ if ( !session_id() ) {
               <label for="">Mensaje</label>
               <span>Mensaje</span>
             </div>
+            <div class="g-recaptcha input-container" data-sitekey="6LerdSQfAAAAADOqw-OVpwUniG68R93BRZRHZxhj"></div>
             <input type="submit" value="Enviar" class="btn" />
           </form>
         </div>
@@ -220,7 +221,7 @@ if ( !session_id() ) {
       </div>
     </footer>
 
-
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="js/menu.js?v=1.4"></script>
     <script src="js/contact.js"></script>
     <script src="js/script.js"></script>
