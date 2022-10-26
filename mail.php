@@ -1,17 +1,18 @@
 <?php
- $ip = $_SERVER['REMOTE_ADDR'];
- $captcha = $_POST['g-captcha-response'];
- $secretkey = "6LerdSQfAAAAADJ1FbWZ0TjJVAUlsjWSXJwL5FhP";
-
- $respuesta = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretkey&response=$$captcha&remoteip=$ip");
+ ip = $_SERVER['REMOTE_ADDR'];
+ $captcha = $_POST['g-recaptcha-response'];
+ $secretkey = "6LerdSQfAAAAADJ1FbWZ0TjJVAUlsjWSXJwL5FhP"; 
+ $respuesta = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretkey&response=$captcha&remoteip=$ip");
  $atributos = json_decode($respuesta, TRUE);
+ var_dump ($atributos);
+ exit();
 
 if(!empty($_POST['Nombre']) && !empty($_POST['NombreEmpresa']) && !empty($_POST['Correo']) && !empty($_POST['Telefono']) && $atributos['success'] ){
-    $cabeceras = 'From: demo@quanto.mx' . "\r\n" .
-        'Reply-To: demo@quanto.mx' . "\r\n" .
+    $cabeceras = 'From: bpaniagua@quanto.mx' . "\r\n" .
+        'Reply-To: bpaniagua@quanto.mx' . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
     $message = "Nombre de la empresa: {$_POST['NombreEmpresa']}\r\nNombre del contacto: {$_POST['Nombre']}\r\nCorreo electronico: {$_POST['Correo']}\r\nTelefono: {$_POST['Telefono']}\r\nMensaje: {$_POST['Mensaje']}";
-    $send = mail("contacto@quanto.mx","Solicitud de Demo",$message,$cabeceras);
+    $send = mail("bpaniagua@quanto.mx","Solicitud de Demo",$message,$cabeceras);
     if ( !session_id() ) {
         session_start();
     }
