@@ -132,27 +132,28 @@ if ( !session_id() ) {
           <form action="/mail.php" method="POST" autocomplete="off">
             <h3 class="title">Solicita tu Demo</h3>
             <div class="input-container">
-              <input type="text" name="Nombre" id="name" class="input" />
+              <input type="text" name="Nombre" id="name" class="input" value="<?=$_SESSION['Nombre']?>"/>
               <label for="">Nombre</label>
               <span>Nombre</span>
             </div>
             <div class="input-container">
-              <input required type="text" name="NombreEmpresa" id="empresa" class="input" />
+              <input required type="text" name="NombreEmpresa" id="empresa" class="input" value="<?=$_SESSION['NombreEmpresa']?>"/>
+
               <label for="">Empresa</label>
               <span>Empresa</span>
             </div>
             <div class="input-container">
-              <input required type="email" name="Correo" id="email" class="input" />
+              <input required type="email" name="Correo" id="email" class="input" value="<?=$_SESSION['Correo']?>"/>
               <label for="">Email</label>
               <span>Email</span>
             </div>
             <div class="input-container">
-              <input required type="phone" name="Telefono" id="phone" class="input" maxlength="10" minlength="10"/>
+              <input required type="phone" name="Telefono" id="phone" class="input" maxlength="10" minlength="10" value="<?=$_SESSION['Telefono']?>"/>
               <label for="">Télefono</label>
               <span>télefono</span>
             </div>
             <div class="input-container textarea">
-              <textarea name="Mensaje" class="input"></textarea>
+              <textarea name="Mensaje" class="input" ><?=$_SESSION['Mensaje']?></textarea>
               <label for="">Mensaje</label>
               <span>Mensaje</span>
             </div>
