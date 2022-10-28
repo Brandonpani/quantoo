@@ -8,13 +8,18 @@
     session_start();
 }
  unset($_SESSION['message']);
+ unset($_SESSION['Nombre']);
+ unset($_SESSION['NombreEmpresa']);
+ unset($_SESSION['Correo']);
+ unset($_SESSION['Telefono']);
+ unset($_SESSION['Mensaje']);
 if(!empty($_POST['Nombre']) && !empty($_POST['NombreEmpresa']) && !empty($_POST['Correo']) && !empty($_POST['Telefono']) && $atributos['success'] ){
-    $cabeceras = 'From: bpaniagua@quanto.mx' . "\r\n" .
-        'Reply-To: bpaniagua@quanto.mx' . "\r\n" .
+    $cabeceras = 'From: contacto@quanto.mx' . "\r\n" .
+        'Reply-To: contacto@quanto.mx' . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
     $message = "Nombre de la empresa: {$_POST['NombreEmpresa']}\r\nNombre del contacto: {$_POST['Nombre']}\r\nCorreo electronico: {$_POST['Correo']}\r\nTelefono: {$_POST['Telefono']}\r\nMensaje: {$_POST['Mensaje']}";
-    $send = mail("bpaniagua@quanto.mx","Solicitud de Demo",$message,$cabeceras);
     $_SESSION['message'] = "¡Tu mensaje ha sido enviado satisfactoriamente!";
+    $send = mail("contacto@quanto.mx","Solicitud de Demo",$message,$cabeceras);
     $file = fopen($_SERVER['DOCUMENT_ROOT'] . "\solicituddemoempresa.txt","a+");
     fwrite($file, "Nombre de la empresa: {$_POST['NombreEmpresa']}\t\tNombre del contacto: {$_POST['Nombre']}\t\tCorreo electronico: {$_POST['Correo']}\t\tTelefono: {$_POST['Telefono']}\t\tMensaje: {$_POST['Mensaje']}\r\n");
     fclose($file);
