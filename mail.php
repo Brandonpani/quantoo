@@ -14,8 +14,8 @@
  unset($_SESSION['Telefono']);
  unset($_SESSION['Mensaje']);
 if(!empty($_POST['Nombre']) && !empty($_POST['NombreEmpresa']) && !empty($_POST['Correo']) && !empty($_POST['Telefono']) && $atributos['success'] ){
-    $cabeceras = 'From: contacto@quanto.mx' . "\r\n" .
-        'Reply-To: contacto@quanto.mx' . "\r\n" .
+    $cabeceras = 'From: demo@quanto.mx' . "\r\n" .
+        'Reply-To: demo@quanto.mx' . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
     $message = "Nombre de la empresa: {$_POST['NombreEmpresa']}\r\nNombre del contacto: {$_POST['Nombre']}\r\nCorreo electronico: {$_POST['Correo']}\r\nTelefono: {$_POST['Telefono']}\r\nMensaje: {$_POST['Mensaje']}";
     $_SESSION['message'] = "¡Tu mensaje ha sido enviado satisfactoriamente!";
