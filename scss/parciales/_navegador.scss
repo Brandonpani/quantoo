@@ -15,9 +15,10 @@
 
 // NAVEGADOR
 nav {
+
     background-color: $clr-dark-gray;
     width: 100vw;
-    min-height: 4rem;
+    min-height: $nav-height;
     position: fixed;
     top: 0;
     left: 0;

@@ -1,3 +1,7 @@
+.red {
+    color: #1079e2;
+}
+
 #main {
     width: 100vw;
     // height: 100vh;
@@ -40,4 +44,84 @@
     }
 
     .img {}
+}
+
+.landingMain {
+    @include container;
+    // background-color: aqua;
+    min-height: calc(100vh - $nav-height);
+    display: grid;
+    grid-template-rows: repeat(2 1fr);
+    grid-template-areas:
+        'info'
+        'form'
+    ;
+
+    .info {
+        grid-area: info;
+        padding: 3rem 0;
+
+
+        .container {
+            text-align: center;
+            width: 70%;
+            margin-inline: auto;
+
+            .landiingTitle {
+                color: #24262a;
+                font-size: 2.5rem;
+                line-height: 1.2;
+                margin-block-end: 1rem;
+            }
+
+            p {
+                color: #24262ac6;
+            }
+
+            .btn {
+                display: block;
+                width: 50%;
+                margin-block-start: 2rem;
+                margin-inline: auto;
+            }
+        }
+    }
+
+    .formulario {
+        grid-area: form;
+        background-color: #202020;
+        color: #f2f2f2dc;
+        // @include container;
+
+        .container {
+            padding-inline: 3rem;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            // justify-content: space-between;
+
+            .landiingTitle {
+                margin-block-start: 2rem;
+                margin-block-end: 2rem;
+            }
+
+            *span {
+                color: #1079e2;
+            }
+
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            'info form'
+        ;
+    }
+}
+
+.card-container {
+    @include container;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
 }
