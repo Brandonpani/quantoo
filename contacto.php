@@ -29,6 +29,16 @@ if ( !session_id() ) {
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VK4GS4VDPW"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-VK4GS4VDPW');
+    </script>
+
     <title>Quanto | Solucion Financiera Integral</title>
     <!-- font awesome -->
     <link
